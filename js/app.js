@@ -16,6 +16,7 @@ import {
 
 import { firebaseConfig } from "./firebase-config.js";
 import { courses, getCourseById } from "./courses.js";
+import { mountPianoTrainer } from "./piano/piano-trainer.js";
 
 const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
   String(value).startsWith("REMPLACE_")
@@ -26,6 +27,7 @@ let auth = null;
 let db = null;
 let currentCourse = null;
 let currentLevel = 0;
+let pianoTrainer = null;
 
 if (firebaseConfigured) {
   const app = initializeApp(firebaseConfig);
@@ -92,8 +94,27 @@ function clearCourseUI() {
   map.innerHTML = "";
 }
 
+
+function mountCourseTools(course) {
+  const slot = document.getElementById("courseWidgetSlot");
+
+  if (pianoTrainer) {
+    pianoTrainer.destroy();
+    pianoTrainer = null;
+  }
+
+  slot.innerHTML = "";
+  slot.classList.add("hidden");
+
+  if (course.id === "piano") {
+    slot.classList.remove("hidden");
+    pianoTrainer = mountPianoTrainer(slot);
+  }
+}
+
 function buildCourse(course) {
   clearCourseUI();
+  mountCourseTools(course);
 
   document.getElementById("courseTitle").textContent = course.title;
   document.getElementById("courseIntro").textContent = course.intro || "";
@@ -300,6 +321,11 @@ function showLevel(index) {
   });
 
   updateCourseUI();
+
+  if (currentCourse?.id === "piano" && pianoTrainer) {
+    pianoTrainer.setWeek(currentLevel);
+  }
+
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   if (firebaseUser) {
