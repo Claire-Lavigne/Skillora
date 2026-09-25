@@ -48,7 +48,8 @@ main.course-main{max-width:1000px;margin:auto;padding:16px 14px 90px}
 
 .group-card{border:1px solid var(--border);border-radius:14px;padding:12px;margin:12px 0;background:var(--soft)}
 .group-card h3{margin:0 0 8px;font-size:17px;color:var(--accent)}
-.step{display:flex;gap:12px;align-items:flex-start;padding:13px 8px;border-top:1px solid #edf0ee}
+.step{display:grid;grid-template-columns:auto auto 1fr;gap:10px;align-items:flex-start;padding:13px 8px;border-top:1px solid #edf0ee}
+.step-number{min-width:68px;font-size:12px;font-weight:800;color:var(--accent);background:var(--accent2);border-radius:999px;padding:4px 8px;text-align:center;margin-top:1px}
 .step:first-of-type{border-top:0}
 .step input{margin-top:4px;transform:scale(1.25)}
 .step span{font-size:16px;line-height:1.45}
