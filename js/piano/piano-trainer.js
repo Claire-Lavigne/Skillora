@@ -84,7 +84,7 @@ export function mountPianoTrainer(container) {
 
       <div class="trainer-sequence-panel">
         <div class="trainer-section-title">
-          <strong>4. Suis la séquence</strong>
+          <strong>4. Suis la séquence — note et doigt</strong>
           <span id="trainerSequenceStatus"></span>
         </div>
         <div id="trainerSequence" class="trainer-sequence"></div>
@@ -135,10 +135,25 @@ export function mountPianoTrainer(container) {
     return list[Math.max(0, Math.min(stepIndex, list.length - 1))] || [];
   }
 
-  function noteInfoForCurrent() {
-    const target = currentStep();
-    if (target.length !== 1) return null;
-    return flattenExercise(exercise).find(item => item.note === target[0]) || null;
+  function stepEntries(index = stepIndex) {
+    if (exercise.mode === "chord-sequence") {
+      return (exercise.groups || [])[index] || [];
+    }
+    if (exercise.mode === "chord") {
+      return exercise.notes || [];
+    }
+    const note = (exercise.notes || [])[index];
+    return note ? [note] : [];
+  }
+
+  function fingersLabel(entries) {
+    const fingers = entries
+      .map(item => item?.finger)
+      .filter(value => value !== undefined && value !== null);
+
+    if (!fingers.length) return "";
+    if (fingers.length === 1) return `Doigt ${fingers[0]}`;
+    return `Doigts ${fingers.join(" - ")}`;
   }
 
   function renderSequence() {
@@ -149,7 +164,16 @@ export function mountPianoTrainer(container) {
       item.type = "button";
       item.className = "trainer-sequence__item";
       item.classList.toggle("is-current", index === stepIndex);
-      item.innerHTML = `<span>${index + 1}</span><strong>${notes.map(noteLabelFr).join(" + ")}</strong>`;
+
+      const entryList = stepEntries(index);
+      const fingerLabel = fingersLabel(entryList);
+
+      item.innerHTML = `
+        <span class="trainer-sequence__step">Étape ${index + 1}</span>
+        <strong>${notes.map(noteLabelFr).join(" + ")}</strong>
+        <em class="trainer-sequence__finger">${fingerLabel}</em>
+      `;
+
       item.addEventListener("click", () => {
         stopPlayback();
         stepIndex = index;
@@ -164,8 +188,9 @@ export function mountPianoTrainer(container) {
     const target = currentStep();
     current.textContent = message || prettyTarget(target);
 
-    const info = noteInfoForCurrent();
-    finger.textContent = info?.finger ? `Doigt ${info.finger}` : target.length > 1 ? "Joue les notes ensemble" : "";
+    const entryList = stepEntries();
+    const fingerLabel = fingersLabel(entryList);
+    finger.textContent = fingerLabel || (target.length > 1 ? "Joue les notes ensemble" : "");
 
     // Le clavier ne montre que l'étape sélectionnée dans la séquence.
     // Pour un accord, seules les notes de cet accord sont colorées.
