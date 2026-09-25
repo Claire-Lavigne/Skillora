@@ -44,66 +44,17 @@
       <span id="homeUser"></span>
       <button id="logoutHome">Se déconnecter</button>
     </div>
-
-    <div class="course-grid">
-      <article class="course-card">
-        <span class="tag">Disponible</span>
-        <h2>Shopify — Développement</h2>
-        <p>Du niveau débutant au niveau expert : découverte de Shopify, gestion d’une boutique, thèmes, Liquid, applications, GraphQL, extensions, Functions, Git et projets complets.</p>
-        <div class="small" id="shopifyHomeProgress">0 % terminé</div>
-        <button id="openShopifyCourse">Ouvrir le cours</button>
-      </article>
-
-      <article class="course-card">
-        <span class="tag">À venir</span>
-        <h2>WordPress — Développement</h2>
-        <p>Du niveau débutant au niveau expert : découverte de WordPress, administration, thèmes, extensions, PHP, hooks, blocs, sécurité, performance et projets complets.</p>
-        <button class="disabled" disabled>Pas encore disponible</button>
-      </article>
-
-      <article class="course-card">
-        <span class="tag">À venir</span>
-        <h2>Google Workspace</h2>
-        <p>Du niveau débutant au niveau expert sur Gmail, Drive, Docs, Sheets, Slides, Calendar, Forms, automatisations et organisation du travail.</p>
-        <button class="disabled" disabled>Pas encore disponible</button>
-      </article>
-
-      <article class="course-card">
-        <span class="tag">À venir</span>
-        <h2>Pack Office</h2>
-        <p>Du niveau débutant au niveau expert sur Word, Excel, PowerPoint, Outlook et les usages professionnels associés.</p>
-        <button class="disabled" disabled>Pas encore disponible</button>
-      </article>
-
-      <article class="course-card">
-        <span class="tag">À venir</span>
-        <h2>Ingénieur Systèmes</h2>
-        <p>Du niveau débutant au niveau expert : systèmes Windows et Linux, réseau, virtualisation, Active Directory, serveurs, automatisation, sécurité, supervision et infrastructure.</p>
-        <button class="disabled" disabled>Pas encore disponible</button>
-      </article>
-
-      <article class="course-card">
-        <span class="tag">À venir</span>
-        <h2>Piano</h2>
-        <p>Du niveau débutant au niveau expert : posture, rythme, lecture, accords, morceaux, indépendance des mains, technique, harmonie, interprétation et jeu avancé.</p>
-        <button class="disabled" disabled>Pas encore disponible</button>
-      </article>
-    </div>
+    <div class="course-grid" id="courseGrid"></div>
   </main>
 </section>
 
-<section id="shopifyView" class="hidden">
+<section id="courseView" class="hidden">
   <header class="course-header">
     <div class="course-inner">
       <div class="course-head-row">
         <div>
-          <h1>Parcours Shopify</h1>
-          <div class="course-intro">
-            Ce parcours a pour objectif de t’amener progressivement de la découverte de Shopify jusqu’au développement avancé.
-            Tu commenceras par créer et manipuler une boutique de test, puis tu apprendras à modifier un thème, utiliser Liquid,
-            développer des sections et des fonctionnalités, créer une application Shopify, utiliser GraphQL, les extensions,
-            les Functions, Git et enfin construire un projet complet.
-          </div>
+          <h1 id="courseTitle"></h1>
+          <div class="course-intro" id="courseIntro"></div>
         </div>
         <button class="home-btn" id="backHome">← Retour à l’accueil</button>
       </div>
@@ -130,7 +81,7 @@
 </section>
 
 <footer class="site-footer">
-  Créé avec soin par Claire Lavigne.
+  Créé par Claire Lavigne.
 </footer>
 
 <script type="module" src="js/app.js"></script>
