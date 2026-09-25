@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcours d'apprentissage</title>
+  <meta name="description" content="Plateforme d'apprentissage progressive avec suivi de progression.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<section id="firebaseSetupView" class="auth-screen hidden">
+  <div class="auth-card">
+    <h1>Configuration Firebase requise</h1>
+    <p>Ajoute la configuration Firebase de ton application Web dans <code>js/firebase-config.js</code>.</p>
+    <p>Consulte le README pour suivre les étapes.</p>
+  </div>
+</section>
+
+<section id="authView" class="auth-screen">
+  <div class="auth-card">
+    <h1>Connexion</h1>
+    <p>Crée un compte ou connecte-toi pour retrouver ta progression sur tous tes appareils.</p>
+    <input id="authUser" type="email" placeholder="Adresse e-mail" autocomplete="email">
+    <input id="authPass" type="password" placeholder="Mot de passe" autocomplete="current-password">
+    <div class="auth-actions">
+      <button class="auth-primary" id="loginBtn">Se connecter</button>
+      <button class="auth-secondary" id="registerBtn">Créer un compte</button>
+    </div>
+    <div class="auth-error" id="authError"></div>
+    <div class="auth-info">La progression est synchronisée avec ton compte.</div>
+  </div>
+</section>
+
+<section id="homeView" class="hidden">
+  <header class="home-header">
+    <div class="home-inner">
+      <h1>Parcours d'apprentissage</h1>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <div class="user-bar">
+      <span id="homeUser"></span>
+      <button id="logoutHome">Se déconnecter</button>
+    </div>
+
+    <div class="course-grid">
+      <article class="course-card">
+        <span class="tag">Disponible</span>
+        <h2>Shopify — Développement</h2>
+        <p>Du niveau débutant au niveau expert : découverte de Shopify, gestion d’une boutique, thèmes, Liquid, applications, GraphQL, extensions, Functions, Git et projets complets.</p>
+        <div class="small" id="shopifyHomeProgress">0 % terminé</div>
+        <button id="openShopifyCourse">Ouvrir le cours</button>
+      </article>
+
+      <article class="course-card">
+        <span class="tag">À venir</span>
+        <h2>WordPress — Développement</h2>
+        <p>Du niveau débutant au niveau expert : découverte de WordPress, administration, thèmes, extensions, PHP, hooks, blocs, sécurité, performance et projets complets.</p>
+        <button class="disabled" disabled>Pas encore disponible</button>
+      </article>
+
+      <article class="course-card">
+        <span class="tag">À venir</span>
+        <h2>Google Workspace</h2>
+        <p>Du niveau débutant au niveau expert sur Gmail, Drive, Docs, Sheets, Slides, Calendar, Forms, automatisations et organisation du travail.</p>
+        <button class="disabled" disabled>Pas encore disponible</button>
+      </article>
+
+      <article class="course-card">
+        <span class="tag">À venir</span>
+        <h2>Pack Office</h2>
+        <p>Du niveau débutant au niveau expert sur Word, Excel, PowerPoint, Outlook et les usages professionnels associés.</p>
+        <button class="disabled" disabled>Pas encore disponible</button>
+      </article>
+
+      <article class="course-card">
+        <span class="tag">À venir</span>
+        <h2>Ingénieur Systèmes</h2>
+        <p>Du niveau débutant au niveau expert : systèmes Windows et Linux, réseau, virtualisation, Active Directory, serveurs, automatisation, sécurité, supervision et infrastructure.</p>
+        <button class="disabled" disabled>Pas encore disponible</button>
+      </article>
+
+      <article class="course-card">
+        <span class="tag">À venir</span>
+        <h2>Piano</h2>
+        <p>Du niveau débutant au niveau expert : posture, rythme, lecture, accords, morceaux, indépendance des mains, technique, harmonie, interprétation et jeu avancé.</p>
+        <button class="disabled" disabled>Pas encore disponible</button>
+      </article>
+    </div>
+  </main>
+</section>
+
+<section id="shopifyView" class="hidden">
+  <header class="course-header">
+    <div class="course-inner">
+      <div class="course-head-row">
+        <div>
+          <h1>Parcours Shopify</h1>
+          <div class="course-intro">
+            Ce parcours a pour objectif de t’amener progressivement de la découverte de Shopify jusqu’au développement avancé.
+            Tu commenceras par créer et manipuler une boutique de test, puis tu apprendras à modifier un thème, utiliser Liquid,
+            développer des sections et des fonctionnalités, créer une application Shopify, utiliser GraphQL, les extensions,
+            les Functions, Git et enfin construire un projet complet.
+          </div>
+        </div>
+        <button class="home-btn" id="backHome">← Retour à l’accueil</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="course-main">
+    <div class="user-bar">
+      <span id="courseUser"></span>
+      <button id="logoutCourse">Se déconnecter</button>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="level-row">
+        <div class="level-badge" id="levelLabel"></div>
+        <div class="small" id="stepCount"></div>
+      </div>
+      <div class="progress"><div id="bar"></div></div>
+      <div class="level-map" id="levelMap"></div>
+    </div>
+
+    <div id="pages"></div>
+  </main>
+</section>
+
+<footer class="site-footer">
+  Créé avec soin par Claire Lavigne.
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
