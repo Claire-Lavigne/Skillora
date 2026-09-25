@@ -355,7 +355,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Cinq doigts ensemble",
-          "objective": "Coordonne les deux mains en mouvement conjoint.",
+          "objective": "Coordonne les deux mains en mouvement conjoint sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -379,6 +379,26 @@ export const pianoTrainingWeeks = [
               "note": "F4",
               "finger": 4,
               "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -400,6 +420,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D3",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -1077,7 +1117,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Quatre temps",
-          "objective": "Joue une mesure régulière à deux mains.",
+          "objective": "Joue une mesure régulière à deux mains sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -1101,6 +1141,26 @@ export const pianoTrainingWeeks = [
               "note": "F4",
               "finger": 4,
               "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -1122,6 +1182,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -2438,7 +2518,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Cadence",
-          "objective": "Assemble une ligne simple et les basses.",
+          "objective": "Assemble une ligne simple et les basses sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -2462,6 +2542,26 @@ export const pianoTrainingWeeks = [
               "note": "G4",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -2477,6 +2577,26 @@ export const pianoTrainingWeeks = [
             },
             {
               "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
               "finger": 1,
               "duration": "q"
             },
@@ -2657,7 +2777,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Métronome",
-          "objective": "Joue sans accélérer.",
+          "objective": "Joue sans accélérer sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -2681,6 +2801,26 @@ export const pianoTrainingWeeks = [
               "note": "G4",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -2702,6 +2842,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -2921,7 +3081,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Fragment de gamme",
-          "objective": "Utilise la gamme dans une phrase.",
+          "objective": "Utilise la gamme dans une phrase sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -2950,6 +3110,21 @@ export const pianoTrainingWeeks = [
               "note": "G4",
               "finger": 2,
               "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -2961,6 +3136,21 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
               "duration": "q"
             },
             {
@@ -4099,7 +4289,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Progression complète",
-          "objective": "Joue une note mélodique sur chaque basse.",
+          "objective": "Joue une note mélodique sur chaque basse sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -4123,9 +4313,49 @@ export const pianoTrainingWeeks = [
               "note": "B4",
               "finger": 3,
               "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
             }
           ],
           "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A2",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 4,
+              "duration": "q"
+            },
             {
               "note": "C3",
               "finger": 5,
@@ -4323,7 +4553,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Deux rôles",
-          "objective": "Garde les deux fonctions distinctes.",
+          "objective": "Garde les deux fonctions distinctes sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -4347,6 +4577,26 @@ export const pianoTrainingWeeks = [
               "note": "G4",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -4368,6 +4618,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -4557,7 +4827,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Lecture à vue",
-          "objective": "Fais une première lecture complète.",
+          "objective": "Fais une première lecture complète sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -4581,6 +4851,26 @@ export const pianoTrainingWeeks = [
               "note": "G4",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -4602,6 +4892,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A2",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "D3",
+              "finger": 4,
               "duration": "q"
             }
           ],
@@ -5004,7 +5314,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Accompagnement",
-          "objective": "Assemble motif gauche et phrase droite.",
+          "objective": "Assemble motif gauche et phrase droite sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -5028,6 +5338,26 @@ export const pianoTrainingWeeks = [
               "note": "E4",
               "finger": 3,
               "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -5049,6 +5379,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "D3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -5238,7 +5588,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Deux phrases",
-          "objective": "Fais entendre une respiration musicale.",
+          "objective": "Fais entendre une respiration musicale sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -5267,6 +5617,21 @@ export const pianoTrainingWeeks = [
               "note": "E4",
               "finger": 3,
               "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -5288,6 +5653,21 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
               "duration": "q"
             },
             {
@@ -5487,7 +5867,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Deux tonalités",
-          "objective": "Entends la couleur différente des deux tonalités.",
+          "objective": "Entends la couleur différente des deux tonalités sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -5511,6 +5891,26 @@ export const pianoTrainingWeeks = [
               "note": "D5",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "B4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -5532,6 +5932,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "Bb3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -5910,7 +6330,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Regard sur la partition",
-          "objective": "Joue une phrase sans regarder chaque touche.",
+          "objective": "Joue une phrase sans regarder chaque touche sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -5934,6 +6354,26 @@ export const pianoTrainingWeeks = [
               "note": "F4",
               "finger": 4,
               "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -5955,6 +6395,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "D3",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -6139,7 +6599,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Improvisation guidée",
-          "objective": "Joue librement au-dessus d’une basse Do / Sol.",
+          "objective": "Joue librement au-dessus d’une basse Do / Sol sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -6163,6 +6623,26 @@ export const pianoTrainingWeeks = [
               "note": "A4",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -6184,6 +6664,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -6338,7 +6838,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Tension / résolution",
-          "objective": "Entends clairement le retour vers Do.",
+          "objective": "Entends clairement le retour vers Do sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -6362,9 +6862,49 @@ export const pianoTrainingWeeks = [
               "note": "C5",
               "finger": 1,
               "duration": "q"
+            },
+            {
+              "note": "B4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
             {
               "note": "G2",
               "finger": 5,
@@ -6592,7 +7132,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Propre avant rapide",
-          "objective": "Joue une phrase au tempo choisi sans erreur.",
+          "objective": "Joue une phrase au tempo choisi sans erreur sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 64,
           "mode": "two-hand",
@@ -6616,6 +7156,26 @@ export const pianoTrainingWeeks = [
               "note": "C5",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "B4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
@@ -6637,6 +7197,26 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "B3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
               "duration": "q"
             }
           ],
@@ -7045,7 +7625,7 @@ export const pianoTrainingWeeks = [
         ],
         "practice": {
           "title": "Mélodie finale — Même idée, autre tonalité",
-          "objective": "Entends la même fonction dans une autre hauteur.",
+          "objective": "Entends la même fonction dans une autre hauteur sur une phrase plus complète de deux mesures.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -7069,12 +7649,52 @@ export const pianoTrainingWeeks = [
               "note": "G5",
               "finger": 5,
               "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "B4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
             }
           ],
           "leftHand": [
             {
               "note": "G3",
               "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
               "duration": "q"
             },
             {

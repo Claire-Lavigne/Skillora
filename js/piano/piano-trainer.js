@@ -40,6 +40,26 @@ function prettyTarget(notes) {
   return notes.map(note => `${noteLabelFr(note)} (${note})`).join(" + ");
 }
 
+function activityNotes(activity) {
+  if (activity.mode === "two-hand") {
+    return [
+      ...(activity.rightHand || []).map(item => item.note),
+      ...(activity.leftHand || []).map(item => item.note)
+    ].filter(Boolean);
+  }
+
+  if (activity.mode === "chord-sequence") {
+    return (activity.groups || [])
+      .flat()
+      .map(item => item.note)
+      .filter(Boolean);
+  }
+
+  return (activity.notes || [])
+    .map(item => item.note)
+    .filter(Boolean);
+}
+
 function entriesForStep(activity, index) {
   if (activity.mode === "two-hand") {
     const result = [];
@@ -112,10 +132,22 @@ export function mountPianoStageTrainer(container, stage) {
       </div>
 
       <div class="trainer-score-panel">
-        <div class="trainer-section-title">
-          <strong>Portée</strong>
-          <span>Clé de sol = main droite · clé de fa = main gauche.</span>
+        <div class="trainer-section-title trainer-score-title">
+          <div>
+            <strong>Portée</strong>
+            <span>Clé de sol = main droite · clé de fa = main gauche.</span>
+          </div>
+
+          <div class="score-help-controls" aria-label="Aides de lecture">
+            <button type="button" class="score-help-toggle score-help-notes" aria-pressed="false">
+              Aide lecture
+            </button>
+            <button type="button" class="score-help-toggle score-help-fingers" aria-pressed="false">
+              Aide doigté
+            </button>
+          </div>
         </div>
+
         <div class="trainer-score" aria-label="Partition de l’étape"></div>
       </div>
 
@@ -139,13 +171,6 @@ export function mountPianoStageTrainer(container, stage) {
         </div>
       </div>
 
-      <div class="trainer-sequence-panel">
-        <div class="trainer-section-title">
-          <strong>Séquence — note et doigt</strong>
-          <span class="trainer-sequence-status"></span>
-        </div>
-        <div class="trainer-sequence"></div>
-      </div>
 
       <details class="trainer-midi-panel trainer-midi-details">
         <summary>Vérifier avec un piano numérique MIDI (optionnel)</summary>
@@ -164,19 +189,22 @@ export function mountPianoStageTrainer(container, stage) {
   const current = container.querySelector(".trainer-current");
   const finger = container.querySelector(".trainer-finger");
   const score = container.querySelector(".trainer-score");
-  const sequence = container.querySelector(".trainer-sequence");
-  const sequenceStatus = container.querySelector(".trainer-sequence-status");
   const midiStatus = container.querySelector(".trainer-midi-status");
   const audioStatus = container.querySelector(".trainer-audio-status");
   const playAllButton = container.querySelector(".trainer-play-all");
 
   const keyboard = createPianoKeyboard(
     container.querySelector(".trainer-keyboard-slot"),
-    { startOctave: 2, endOctave: 5 }
+    {
+      notes: activityNotes(activity),
+      minWhiteKeys: 7
+    }
   );
 
   let stepIndex = 0;
   let midiConnection = null;
+  let showNoteNames = false;
+  let showFingers = false;
 
   function steps() {
     return targetSteps(activity);
@@ -187,33 +215,12 @@ export function mountPianoStageTrainer(container, stage) {
     return list[Math.max(0, Math.min(stepIndex, list.length - 1))] || [];
   }
 
-  function renderSequence() {
-    sequence.innerHTML = "";
-    const list = steps();
-
-    list.forEach((notes, index) => {
-      const item = document.createElement("button");
-      item.type = "button";
-      item.className = "trainer-sequence__item";
-      item.classList.toggle("is-current", index === stepIndex);
-
-      item.innerHTML = `
-        <span class="trainer-sequence__step">Étape ${index + 1}</span>
-        <strong>${notes.map(noteLabelFr).join(" + ")}</strong>
-        <em class="trainer-sequence__finger">${fingersLabel(entriesForStep(activity, index))}</em>
-      `;
-
-      item.addEventListener("click", () => {
-        stopPlayback();
-        stepIndex = index;
-        renderCurrent();
-      });
-
-      sequence.appendChild(item);
+  async function refreshScore() {
+    await renderScore(score, activity, {
+      showNoteNames,
+      showFingers,
+      currentStep: stepIndex
     });
-
-    sequenceStatus.textContent =
-      `${Math.min(stepIndex + 1, list.length)} / ${list.length}`;
   }
 
   function renderCurrent(message = "") {
@@ -225,7 +232,7 @@ export function mountPianoStageTrainer(container, stage) {
       (target.length > 1 ? "Joue les notes ensemble" : "");
 
     keyboard.highlight(target, target);
-    renderSequence();
+    refreshScore();
   }
 
   function demoStep(notes, index) {
@@ -234,7 +241,7 @@ export function mountPianoStageTrainer(container, stage) {
     keyboard.animate(notes, 460);
     current.textContent = prettyTarget(notes);
     finger.textContent = fingersLabel(entriesForStep(activity, stepIndex));
-    renderSequence();
+    refreshScore();
   }
 
   container.querySelector(".trainer-listen").addEventListener("click", async () => {
@@ -322,6 +329,23 @@ export function mountPianoStageTrainer(container, stage) {
     renderCurrent();
   });
 
+  const noteHelpButton = container.querySelector(".score-help-notes");
+  const fingerHelpButton = container.querySelector(".score-help-fingers");
+
+  noteHelpButton.addEventListener("click", () => {
+    showNoteNames = !showNoteNames;
+    noteHelpButton.setAttribute("aria-pressed", String(showNoteNames));
+    noteHelpButton.classList.toggle("is-active", showNoteNames);
+    refreshScore();
+  });
+
+  fingerHelpButton.addEventListener("click", () => {
+    showFingers = !showFingers;
+    fingerHelpButton.setAttribute("aria-pressed", String(showFingers));
+    fingerHelpButton.classList.toggle("is-active", showFingers);
+    refreshScore();
+  });
+
   container.querySelector(".trainer-midi").addEventListener("click", async () => {
     if (midiConnection?.disconnect) midiConnection.disconnect();
 
@@ -343,7 +367,7 @@ export function mountPianoStageTrainer(container, stage) {
     midiStatus.textContent = midiConnection.message;
   });
 
-  renderScore(score, activity);
+  refreshScore();
   renderCurrent();
 
   return {
