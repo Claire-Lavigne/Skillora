@@ -285,3 +285,63 @@ status: "available"
 - ne jamais renommer l'`id` d'un cours déjà utilisé en production ;
 - ne pas mettre de secrets serveur dans le dépôt ;
 - la configuration Web Firebase peut être publique, mais la sécurité doit reposer sur Authentication et les règles Firestore.
+
+
+## Bibliothèque interactive Piano
+
+Le cours Piano possède maintenant un outil d'entraînement destiné à être reproduit sur un **vrai piano**.
+
+Fichiers :
+
+```text
+css/piano-trainer.css
+js/piano/piano-trainer.js
+js/piano/piano-keyboard.js
+js/piano/score-renderer.js
+js/piano/audio-player.js
+js/piano/midi-input.js
+js/piano/exercises/piano-exercises.js
+```
+
+Fonctions principales :
+
+- affiche les notes de la semaine sur une portée avec VexFlow ;
+- montre les touches correspondantes sur un clavier visuel ;
+- indique le doigt à utiliser ;
+- permet d'avancer note par note ;
+- permet d'écouter une note, un accord ou tout l'exercice ;
+- permet de connecter un piano numérique avec Web MIDI quand le navigateur le prend en charge ;
+- vérifie automatiquement une note jouée via MIDI pour les exercices note par note.
+
+Les exercices sont associés aux semaines dans :
+
+```text
+js/piano/exercises/piano-exercises.js
+```
+
+`app.js` monte automatiquement l'outil lorsque :
+
+```js
+course.id === "piano"
+```
+
+Lors d'un changement de semaine, `app.js` appelle :
+
+```js
+pianoTrainer.setWeek(currentLevel);
+```
+
+### Dépendance externe
+
+La portée utilise VexFlow depuis jsDelivr :
+
+```text
+https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm
+```
+
+Si VexFlow ne peut pas être chargé, un affichage texte des notes est utilisé automatiquement et l'exercice reste fonctionnel.
+
+### Web MIDI
+
+Web MIDI est optionnel. Le site fonctionne sans piano numérique connecté.
+Pour utiliser la validation MIDI, ouvrir le site en HTTPS et utiliser un navigateur compatible.
