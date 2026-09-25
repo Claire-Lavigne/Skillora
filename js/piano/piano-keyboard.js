@@ -101,8 +101,27 @@ function visibleWhiteRange(notes = [], minWhiteKeys = 7) {
   return ALL_WHITE_NOTES.slice(startIndex, endIndex + 1);
 }
 
-export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } = {}) {
-  const whites = visibleWhiteRange(notes, minWhiteKeys);
+export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7, maxWhiteKeys = 14 } = {}) {
+  let whites = visibleWhiteRange(notes, minWhiteKeys);
+
+  // Évite un clavier tellement large que les touches deviennent illisibles.
+  // Si une étape couvre une plage trop vaste, on garde une zone centrée sur les notes utiles.
+  if (whites.length > maxWhiteKeys) {
+    const noteMidis = notes.map(canonicalNote).map(noteToMidi);
+    const center = noteMidis.length
+      ? (Math.min(...noteMidis) + Math.max(...noteMidis)) / 2
+      : noteToMidi("C4");
+
+    const centerIndex = whites.reduce((best, item, index) => {
+      return Math.abs(item.midi - center) < Math.abs(whites[best].midi - center)
+        ? index
+        : best;
+    }, 0);
+
+    const half = Math.floor(maxWhiteKeys / 2);
+    const start = Math.max(0, Math.min(whites.length - maxWhiteKeys, centerIndex - half));
+    whites = whites.slice(start, start + maxWhiteKeys);
+  }
 
   container.innerHTML = `
     <div
