@@ -16,7 +16,7 @@ import {
 
 import { firebaseConfig } from "./firebase-config.js";
 import { courses, getCourseById } from "./courses.js";
-import { mountPianoTrainer } from "./piano/piano-trainer.js";
+import { mountPianoStageTrainer } from "./piano/piano-trainer.js";
 
 const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
   String(value).startsWith("REMPLACE_")
@@ -27,7 +27,7 @@ let auth = null;
 let db = null;
 let currentCourse = null;
 let currentLevel = 0;
-let pianoTrainer = null;
+let pianoStageTrainers = [];
 
 if (firebaseConfigured) {
   const app = initializeApp(firebaseConfig);
@@ -98,18 +98,74 @@ function clearCourseUI() {
 function mountCourseTools(course) {
   const slot = document.getElementById("courseWidgetSlot");
 
-  if (pianoTrainer) {
-    pianoTrainer.destroy();
-    pianoTrainer = null;
-  }
+  pianoStageTrainers.forEach(trainer => trainer?.destroy?.());
+  pianoStageTrainers = [];
 
   slot.innerHTML = "";
   slot.classList.add("hidden");
+}
 
-  if (course.id === "piano") {
-    slot.classList.remove("hidden");
-    pianoTrainer = mountPianoTrainer(slot);
-  }
+
+function makePianoStage(stage, weekIndex, stageIndex) {
+  const card = document.createElement("article");
+  card.className = "piano-learning-stage";
+  card.dataset.pianoStage = stageIndex;
+
+  const progressId = `pw${weekIndex}a${stageIndex}`;
+
+  const instructions = (stage.instructions || [])
+    .map(text => `<li>${safeLink(text)}</li>`)
+    .join("");
+
+  card.innerHTML = `
+    <div class="piano-learning-stage__head">
+      <div>
+        <span class="piano-learning-stage__label">${stage.label}</span>
+        <h3>${stage.title}</h3>
+        <p>${stage.objective}</p>
+      </div>
+
+      <label class="piano-stage-complete">
+        <input type="checkbox" id="${progressId}">
+        <span>Étape terminée</span>
+      </label>
+    </div>
+
+    <div class="piano-stage-instructions">
+      <strong>Ce que tu dois faire</strong>
+      <ol>${instructions}</ol>
+    </div>
+
+    <div class="piano-stage-trainer-slot"></div>
+  `;
+
+  return card;
+}
+
+function mountPianoWeekTools(weekIndex) {
+  pianoStageTrainers.forEach(trainer => trainer?.destroy?.());
+  pianoStageTrainers = [];
+
+  if (currentCourse?.id !== "piano") return;
+
+  const week = currentCourse.weeks[weekIndex];
+  const stages = week?.[1] || [];
+  const page = document.querySelector(`.week-page[data-week="${weekIndex}"]`);
+
+  if (!page) return;
+
+  const cards = [...page.querySelectorAll(".piano-learning-stage")];
+
+  cards.forEach((card, stageIndex) => {
+    const slot = card.querySelector(".piano-stage-trainer-slot");
+    const stage = stages[stageIndex];
+
+    if (slot && stage?.practice) {
+      pianoStageTrainers.push(
+        mountPianoStageTrainer(slot, stage)
+      );
+    }
+  });
 }
 
 function buildCourse(course) {
@@ -140,7 +196,8 @@ function buildCourse(course) {
       const boxes = [...page.querySelectorAll('input[type="checkbox"]')];
       boxes.forEach(checkbox => {
         checkbox.checked = true;
-        checkbox.closest(".step").classList.add("done");
+        checkbox.closest(".step")?.classList.add("done");
+        checkbox.closest(".piano-learning-stage")?.classList.add("done");
       });
       await saveProgress();
       updateCourseUI();
@@ -153,7 +210,13 @@ function buildCourse(course) {
     let visibleStep = 1;
     const content = week[1];
 
-    if (content.length && typeof content[0] === "object" && content[0].group) {
+    if (course.id === "piano") {
+      content.forEach((stage, stageIndex) => {
+        page.appendChild(
+          makePianoStage(stage, weekIndex, stageIndex)
+        );
+      });
+    } else if (content.length && typeof content[0] === "object" && content[0].group) {
       content.forEach(group => {
         const card = document.createElement("div");
         card.className = "group-card";
@@ -216,9 +279,31 @@ async function loadProgress() {
   const data = snap.exists() ? snap.data() : {};
   const checks = data.checks || {};
 
+  if (currentCourse.id === "piano") {
+    // Migration conservatrice de l'ancienne progression :
+    // une ancienne semaine entièrement cochée devient une nouvelle semaine entièrement terminée.
+    currentCourse.weeks.forEach((week, weekIndex) => {
+      const newIds = week[1].map((_, stageIndex) => `pw${weekIndex}a${stageIndex}`);
+      const hasNewProgress = newIds.some(id => Object.prototype.hasOwnProperty.call(checks, id));
+
+      if (!hasNewProgress) {
+        const oldKeys = Object.keys(checks).filter(key =>
+          new RegExp(`^w${weekIndex}s\\d+$`).test(key)
+        );
+
+        if (oldKeys.length && oldKeys.every(key => checks[key] === true)) {
+          newIds.forEach(id => {
+            checks[id] = true;
+          });
+        }
+      }
+    });
+  }
+
   document.querySelectorAll('#courseView input[type="checkbox"]').forEach(checkbox => {
     checkbox.checked = !!checks[checkbox.id];
-    checkbox.closest(".step").classList.toggle("done", checkbox.checked);
+    checkbox.closest(".step")?.classList.toggle("done", checkbox.checked);
+    checkbox.closest(".piano-learning-stage")?.classList.toggle("done", checkbox.checked);
   });
 
   const savedLevel = Number.isInteger(data.currentLevel)
@@ -322,8 +407,8 @@ function showLevel(index) {
 
   updateCourseUI();
 
-  if (currentCourse?.id === "piano" && pianoTrainer) {
-    pianoTrainer.setWeek(currentLevel);
+  if (currentCourse?.id === "piano") {
+    mountPianoWeekTools(currentLevel);
   }
 
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -344,28 +429,47 @@ async function getCourseProgressPercent(course) {
   if (!snap.exists()) return 0;
 
   const checks = snap.data().checks || {};
-  const totalSteps = countCourseSteps(course);
-  const checkedSteps = Object.values(checks).filter(Boolean).length;
+  const expectedIds = expectedCourseStepIds(course);
+  const checkedSteps = expectedIds.filter(id => checks[id] === true).length;
 
-  return totalSteps ? Math.round((checkedSteps / totalSteps) * 100) : 0;
+  return expectedIds.length
+    ? Math.round((checkedSteps / expectedIds.length) * 100)
+    : 0;
 }
 
-function countCourseSteps(course) {
-  let total = 0;
+function expectedCourseStepIds(course) {
+  const ids = [];
 
-  course.weeks.forEach(week => {
+  course.weeks.forEach((week, weekIndex) => {
     const content = week[1];
+
+    if (course.id === "piano") {
+      content.forEach((_, stageIndex) => {
+        ids.push(`pw${weekIndex}a${stageIndex}`);
+      });
+      return;
+    }
+
+    let counter = 0;
 
     if (content.length && typeof content[0] === "object" && content[0].group) {
       content.forEach(group => {
-        total += group.steps.length;
+        group.steps.forEach(() => {
+          ids.push(`w${weekIndex}s${counter++}`);
+        });
       });
     } else {
-      total += content.length;
+      content.forEach(() => {
+        ids.push(`w${weekIndex}s${counter++}`);
+      });
     }
   });
 
-  return total;
+  return ids;
+}
+
+function countCourseSteps(course) {
+  return expectedCourseStepIds(course).length;
 }
 
 async function updateHomeProgressForCourse(courseId) {
@@ -486,7 +590,12 @@ async function logout() {
 
 document.addEventListener("change", async event => {
   if (event.target.matches('#courseView input[type="checkbox"]')) {
-    event.target.closest(".step").classList.toggle(
+    event.target.closest(".step")?.classList.toggle(
+      "done",
+      event.target.checked
+    );
+
+    event.target.closest(".piano-learning-stage")?.classList.toggle(
       "done",
       event.target.checked
     );
