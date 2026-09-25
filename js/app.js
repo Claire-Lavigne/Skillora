@@ -15,7 +15,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 import { firebaseConfig } from "./firebase-config.js";
-import { shopifyWeeks as weeks } from "./course-data.js";
+import { courses, getCourseById } from "./courses.js";
 
 const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
   String(value).startsWith("REMPLACE_")
@@ -24,7 +24,8 @@ const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
 let firebaseUser = null;
 let auth = null;
 let db = null;
-let current = 0;
+let currentCourse = null;
+let currentLevel = 0;
 
 if (firebaseConfigured) {
   const app = initializeApp(firebaseConfig);
@@ -34,6 +35,7 @@ if (firebaseConfigured) {
 
 const pages = document.getElementById("pages");
 const map = document.getElementById("levelMap");
+const courseGrid = document.getElementById("courseGrid");
 
 function safeLink(text) {
   const escaped = text
@@ -56,10 +58,14 @@ function extractCommand(text) {
   return index >= 0 ? text.slice(index + 1).trim() : text;
 }
 
-function makeStep(text, key) {
+function makeStep(text, key, stepNumber) {
   const label = document.createElement("label");
   label.className = "step";
-  label.innerHTML = `<input type="checkbox" id="${key}"><span>${safeLink(text)}</span>`;
+  label.innerHTML = `
+    <input type="checkbox" id="${key}">
+    <span class="step-number">Étape ${stepNumber}</span>
+    <span class="step-text">${safeLink(text)}</span>
+  `;
 
   if (isCommand(text)) {
     const button = document.createElement("button");
@@ -74,15 +80,25 @@ function makeStep(text, key) {
       setTimeout(() => (button.textContent = "Copier la commande"), 1000);
     });
 
-    label.querySelector("span").appendChild(document.createElement("br"));
-    label.querySelector("span").appendChild(button);
+    label.querySelector(".step-text").appendChild(document.createElement("br"));
+    label.querySelector(".step-text").appendChild(button);
   }
 
   return label;
 }
 
-function buildCourse() {
-  weeks.forEach((week, weekIndex) => {
+function clearCourseUI() {
+  pages.innerHTML = "";
+  map.innerHTML = "";
+}
+
+function buildCourse(course) {
+  clearCourseUI();
+
+  document.getElementById("courseTitle").textContent = course.title;
+  document.getElementById("courseIntro").textContent = course.intro || "";
+
+  course.weeks.forEach((week, weekIndex) => {
     const page = document.createElement("section");
     page.className = "week-page";
     page.dataset.week = weekIndex;
@@ -105,14 +121,15 @@ function buildCourse() {
         checkbox.checked = true;
         checkbox.closest(".step").classList.add("done");
       });
-      await saveChecks();
-      updateUI();
+      await saveProgress();
+      updateCourseUI();
     });
 
     head.appendChild(checkAllButton);
     page.appendChild(head);
 
     let counter = 0;
+    let visibleStep = 1;
     const content = week[1];
 
     if (content.length && typeof content[0] === "object" && content[0].group) {
@@ -125,14 +142,18 @@ function buildCourse() {
         card.appendChild(heading);
 
         group.steps.forEach(step => {
-          card.appendChild(makeStep(step, `w${weekIndex}s${counter++}`));
+          card.appendChild(
+            makeStep(step, `w${weekIndex}s${counter++}`, visibleStep++)
+          );
         });
 
         page.appendChild(card);
       });
     } else {
       content.forEach(step => {
-        page.appendChild(makeStep(step, `w${weekIndex}s${counter++}`));
+        page.appendChild(
+          makeStep(step, `w${weekIndex}s${counter++}`, visibleStep++)
+        );
       });
     }
 
@@ -154,54 +175,72 @@ function buildCourse() {
     dot.className = "dot";
     dot.textContent = weekIndex + 1;
     dot.title = week[0];
-    dot.addEventListener("click", () => showWeek(weekIndex));
+    dot.addEventListener("click", () => showLevel(weekIndex));
     map.appendChild(dot);
   });
 }
 
-async function loadChecks() {
-  if (!firebaseUser) return;
+async function loadProgress() {
+  if (!firebaseUser || !currentCourse) return;
 
-  const ref = doc(db, "users", firebaseUser.uid, "courses", "shopify");
+  const ref = doc(
+    db,
+    "users",
+    firebaseUser.uid,
+    "courses",
+    currentCourse.id
+  );
+
   const snap = await getDoc(ref);
   const data = snap.exists() ? snap.data() : {};
   const checks = data.checks || {};
 
-  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+  document.querySelectorAll('#courseView input[type="checkbox"]').forEach(checkbox => {
     checkbox.checked = !!checks[checkbox.id];
     checkbox.closest(".step").classList.toggle("done", checkbox.checked);
   });
 
-  const savedLevel = Number.isInteger(data.currentLevel) ? data.currentLevel : 0;
-  if (savedLevel >= 0 && savedLevel < weeks.length) {
-    current = savedLevel;
-  }
+  const savedLevel = Number.isInteger(data.currentLevel)
+    ? data.currentLevel
+    : 0;
+
+  currentLevel =
+    savedLevel >= 0 && savedLevel < currentCourse.weeks.length
+      ? savedLevel
+      : 0;
 }
 
-async function saveChecks() {
-  if (!firebaseUser) return;
+async function saveProgress() {
+  if (!firebaseUser || !currentCourse) return;
 
   const checks = {};
-  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+
+  document.querySelectorAll('#courseView input[type="checkbox"]').forEach(checkbox => {
     checks[checkbox.id] = checkbox.checked;
   });
 
-  const ref = doc(db, "users", firebaseUser.uid, "courses", "shopify");
+  const ref = doc(
+    db,
+    "users",
+    firebaseUser.uid,
+    "courses",
+    currentCourse.id
+  );
 
   await setDoc(
     ref,
     {
       checks,
-      currentLevel: current,
+      currentLevel,
       updatedAt: serverTimestamp()
     },
     { merge: true }
   );
 
-  updateHomeProgress();
+  await updateHomeProgressForCourse(currentCourse.id);
 }
 
-function weekFinished(index) {
+function levelFinished(index) {
   const boxes = [
     ...document.querySelectorAll(
       `.week-page[data-week="${index}"] input[type="checkbox"]`
@@ -211,27 +250,24 @@ function weekFinished(index) {
   return boxes.length > 0 && boxes.every(box => box.checked);
 }
 
-function updateHomeProgress() {
-  const all = [...document.querySelectorAll('#shopifyView input[type="checkbox"]')];
+function calculateCurrentPercent() {
+  const all = [...document.querySelectorAll('#courseView input[type="checkbox"]')];
   const checked = all.filter(item => item.checked).length;
-  const percent = all.length ? Math.round((checked / all.length) * 100) : 0;
-
-  document.getElementById("shopifyHomeProgress").textContent =
-    `${percent} % terminé`;
+  return all.length ? Math.round((checked / all.length) * 100) : 0;
 }
 
-function updateUI() {
-  const all = [...document.querySelectorAll('#shopifyView input[type="checkbox"]')];
-  const checked = all.filter(item => item.checked).length;
-  const percent = all.length ? Math.round((checked / all.length) * 100) : 0;
+function updateCourseUI() {
+  if (!currentCourse) return;
+
+  const percent = calculateCurrentPercent();
 
   document.getElementById("bar").style.width = `${percent}%`;
   document.getElementById("levelLabel").textContent =
-    `Niveau ${current + 1} / ${weeks.length}`;
+    `Semaine ${currentLevel + 1} / ${currentCourse.weeks.length}`;
 
   const currentBoxes = [
     ...document.querySelectorAll(
-      `.week-page[data-week="${current}"] input[type="checkbox"]`
+      `.week-page[data-week="${currentLevel}"] input[type="checkbox"]`
     )
   ];
 
@@ -239,50 +275,140 @@ function updateUI() {
     `${currentBoxes.filter(item => item.checked).length} / ${currentBoxes.length} étapes`;
 
   document.querySelectorAll(".dot").forEach((dot, index) => {
-    dot.classList.toggle("current", index === current);
-    dot.classList.toggle("finished", weekFinished(index));
+    dot.classList.toggle("current", index === currentLevel);
+    dot.classList.toggle("finished", levelFinished(index));
   });
 
   document.querySelectorAll(".week-page").forEach((page, index) => {
-    page.querySelector(".complete").classList.toggle("show", weekFinished(index));
+    page.querySelector(".complete").classList.toggle("show", levelFinished(index));
     page.querySelector(".prev").disabled = index === 0;
-    page.querySelector(".next").disabled = index === weeks.length - 1;
+    page.querySelector(".next").disabled =
+      index === currentCourse.weeks.length - 1;
   });
-
-  updateHomeProgress();
 }
 
-function showWeek(index) {
-  current = Math.max(0, Math.min(weeks.length - 1, index));
+function showLevel(index) {
+  if (!currentCourse) return;
+
+  currentLevel = Math.max(
+    0,
+    Math.min(currentCourse.weeks.length - 1, index)
+  );
 
   document.querySelectorAll(".week-page").forEach((page, pageIndex) => {
-    page.classList.toggle("active", pageIndex === current);
+    page.classList.toggle("active", pageIndex === currentLevel);
   });
 
-  updateUI();
+  updateCourseUI();
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   if (firebaseUser) {
-    saveChecks();
+    saveProgress();
   }
 }
 
-function showHome() {
-  document.getElementById("shopifyView").classList.add("hidden");
-  document.getElementById("homeView").classList.remove("hidden");
-  updateHomeProgress();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+async function getCourseProgressPercent(course) {
+  if (!firebaseUser || course.status !== "available" || !course.weeks.length) {
+    return 0;
+  }
+
+  const ref = doc(db, "users", firebaseUser.uid, "courses", course.id);
+  const snap = await getDoc(ref);
+
+  if (!snap.exists()) return 0;
+
+  const checks = snap.data().checks || {};
+  const totalSteps = countCourseSteps(course);
+  const checkedSteps = Object.values(checks).filter(Boolean).length;
+
+  return totalSteps ? Math.round((checkedSteps / totalSteps) * 100) : 0;
 }
 
-function showShopify() {
+function countCourseSteps(course) {
+  let total = 0;
+
+  course.weeks.forEach(week => {
+    const content = week[1];
+
+    if (content.length && typeof content[0] === "object" && content[0].group) {
+      content.forEach(group => {
+        total += group.steps.length;
+      });
+    } else {
+      total += content.length;
+    }
+  });
+
+  return total;
+}
+
+async function updateHomeProgressForCourse(courseId) {
+  const course = getCourseById(courseId);
+  const element = document.querySelector(
+    `[data-course-progress="${courseId}"]`
+  );
+
+  if (!course || !element) return;
+
+  const percent = await getCourseProgressPercent(course);
+  element.textContent = `${percent} % terminé`;
+}
+
+async function renderHomeCourses() {
+  courseGrid.innerHTML = "";
+
+  for (const course of courses) {
+    const card = document.createElement("article");
+    card.className = "course-card";
+
+    const available = course.status === "available";
+
+    card.innerHTML = `
+      <span class="tag">${available ? "Disponible" : "À venir"}</span>
+      <h2>${course.title}</h2>
+      <p>${course.description}</p>
+      ${
+        available
+          ? `<div class="small" data-course-progress="${course.id}">0 % terminé</div>
+             <button data-open-course="${course.id}">Ouvrir le cours</button>`
+          : `<button class="disabled" disabled>Pas encore disponible</button>`
+      }
+    `;
+
+    courseGrid.appendChild(card);
+
+    if (available) {
+      await updateHomeProgressForCourse(course.id);
+    }
+  }
+}
+
+async function openCourse(courseId) {
+  const course = getCourseById(courseId);
+  if (!course || course.status !== "available") return;
+
+  currentCourse = course;
+  currentLevel = 0;
+
+  buildCourse(course);
+  await loadProgress();
+
   document.getElementById("homeView").classList.add("hidden");
-  document.getElementById("shopifyView").classList.remove("hidden");
-  showWeek(current);
+  document.getElementById("courseView").classList.remove("hidden");
+
+  showLevel(currentLevel);
+}
+
+async function showHome() {
+  document.getElementById("courseView").classList.add("hidden");
+  document.getElementById("homeView").classList.remove("hidden");
+  await renderHomeCourses();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function showSignedOut() {
   document.getElementById("homeView").classList.add("hidden");
-  document.getElementById("shopifyView").classList.add("hidden");
+  document.getElementById("courseView").classList.add("hidden");
   document.getElementById("firebaseSetupView").classList.add("hidden");
   document.getElementById("authView").classList.remove("hidden");
 }
@@ -293,12 +419,13 @@ async function showSignedIn(user) {
   document.getElementById("authView").classList.add("hidden");
   document.getElementById("firebaseSetupView").classList.add("hidden");
 
-  document.getElementById("homeUser").textContent = `Connecté : ${user.email}`;
-  document.getElementById("courseUser").textContent = `Connecté : ${user.email}`;
+  document.getElementById("homeUser").textContent =
+    `Connecté : ${user.email}`;
 
-  await loadChecks();
-  showWeek(current);
-  showHome();
+  document.getElementById("courseUser").textContent =
+    `Connecté : ${user.email}`;
+
+  await showHome();
 }
 
 function authMessage(message) {
@@ -331,26 +458,33 @@ async function logout() {
   await signOut(auth);
 }
 
-buildCourse();
-
 document.addEventListener("change", async event => {
-  if (event.target.matches('#shopifyView input[type="checkbox"]')) {
-    event.target.closest(".step").classList.toggle("done", event.target.checked);
-    await saveChecks();
-    updateUI();
+  if (event.target.matches('#courseView input[type="checkbox"]')) {
+    event.target.closest(".step").classList.toggle(
+      "done",
+      event.target.checked
+    );
+
+    await saveProgress();
+    updateCourseUI();
   }
 });
 
-document.addEventListener("click", event => {
+document.addEventListener("click", async event => {
   if (event.target.classList.contains("prev")) {
-    showWeek(current - 1);
+    showLevel(currentLevel - 1);
   }
+
   if (event.target.classList.contains("next")) {
-    showWeek(current + 1);
+    showLevel(currentLevel + 1);
+  }
+
+  const courseButton = event.target.closest("[data-open-course]");
+  if (courseButton) {
+    await openCourse(courseButton.dataset.openCourse);
   }
 });
 
-document.getElementById("openShopifyCourse").onclick = showShopify;
 document.getElementById("backHome").onclick = showHome;
 
 document.getElementById("registerBtn").addEventListener("click", async () => {
@@ -383,7 +517,7 @@ document.getElementById("logoutCourse").onclick = logout;
 if (!firebaseConfigured) {
   document.getElementById("authView").classList.add("hidden");
   document.getElementById("homeView").classList.add("hidden");
-  document.getElementById("shopifyView").classList.add("hidden");
+  document.getElementById("courseView").classList.add("hidden");
   document.getElementById("firebaseSetupView").classList.remove("hidden");
 } else {
   onAuthStateChanged(auth, async user => {
@@ -391,6 +525,7 @@ if (!firebaseConfigured) {
       await showSignedIn(user);
     } else {
       firebaseUser = null;
+      currentCourse = null;
       showSignedOut();
     }
   });
