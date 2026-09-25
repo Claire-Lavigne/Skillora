@@ -65,7 +65,7 @@ export function mountPianoTrainer(container) {
       <div class="trainer-keyboard-panel">
         <div class="trainer-section-title">
           <strong>2. Repère les touches sur ton vrai piano</strong>
-          <span>Les touches vertes sont utilisées. La touche foncée est celle à jouer maintenant.</span>
+          <span>Les touches colorées correspondent uniquement à l’étape sélectionnée dans la séquence.</span>
         </div>
         <div id="trainerKeyboard"></div>
       </div>
@@ -162,18 +162,21 @@ export function mountPianoTrainer(container) {
 
   function renderCurrent(message = "") {
     const target = currentStep();
-    const allNotes = [...new Set(flattenExercise(exercise).map(item => item.note))];
     current.textContent = message || prettyTarget(target);
 
     const info = noteInfoForCurrent();
     finger.textContent = info?.finger ? `Doigt ${info.finger}` : target.length > 1 ? "Joue les notes ensemble" : "";
-    keyboard.highlight(allNotes, target);
+
+    // Le clavier ne montre que l'étape sélectionnée dans la séquence.
+    // Pour un accord, seules les notes de cet accord sont colorées.
+    keyboard.highlight(target, target);
     renderSequence();
   }
 
   function demoStep(notes, index) {
     stepIndex = Math.min(index, steps().length - 1);
-    keyboard.highlight([...new Set(flattenExercise(exercise).map(item => item.note))], notes);
+    // Pendant la démonstration, n'affiche que le groupe joué à cet instant.
+    keyboard.highlight(notes, notes);
     keyboard.animate(notes, 460);
     current.textContent = prettyTarget(notes);
     renderSequence();
