@@ -10,21 +10,40 @@ import {
 } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
 import { renderScore } from "./score-renderer.js";
-import { getPianoExerciseByWeek } from "./exercises/piano-exercises.js";
+import { getPianoTrainingWeek } from "./exercises/piano-exercises.js";
 
-function flattenExercise(exercise) {
-  if (exercise.mode === "chord-sequence") return (exercise.groups || []).flat();
-  return exercise.notes || [];
-}
+function targetSteps(activity) {
+  if (activity.mode === "two-hand") {
+    const right = activity.rightHand || [];
+    const left = activity.leftHand || [];
+    const count = Math.max(right.length, left.length);
+    return Array.from({ length: count }, (_, index) => {
+      const notes = [];
+      if (right[index]?.note) notes.push(right[index].note);
+      if (left[index]?.note) notes.push(left[index].note);
+      return notes;
+    });
+  }
 
-function targetSteps(exercise) {
-  if (exercise.mode === "chord-sequence") return (exercise.groups || []).map(group => group.map(item => item.note));
-  if (exercise.mode === "chord") return [(exercise.notes || []).map(item => item.note)];
-  return (exercise.notes || []).map(item => [item.note]);
+  if (activity.mode === "chord-sequence") {
+    return (activity.groups || []).map(group => group.map(item => item.note));
+  }
+
+  if (activity.mode === "chord") {
+    return [(activity.notes || []).map(item => item.note)];
+  }
+
+  return (activity.notes || []).map(item => [item.note]);
 }
 
 function prettyTarget(notes) {
   return notes.map(note => `${noteLabelFr(note)} (${note})`).join(" + ");
+}
+
+function activityLabel(activity, index) {
+  if (activity.kind === "discovery") return "Découverte";
+  if (activity.kind === "melody") return "Mélodie finale";
+  return `Exercice ${index}`;
 }
 
 export function mountPianoTrainer(container) {
@@ -32,8 +51,18 @@ export function mountPianoTrainer(container) {
     <section class="piano-trainer">
       <div class="trainer-head">
         <div>
-          <span class="trainer-eyebrow">Exercice pratique de la semaine</span>
-          <h2 id="trainerTitle">Exercice</h2>
+          <span class="trainer-eyebrow">Parcours pratique de la semaine</span>
+          <h2 id="trainerWeekTitle">Semaine</h2>
+          <p>Découverte → petits exercices → mélodie finale</p>
+        </div>
+      </div>
+
+      <div id="trainerActivities" class="trainer-activities" aria-label="Activités de la semaine"></div>
+
+      <div class="trainer-activity-head">
+        <div>
+          <span class="trainer-activity-type" id="trainerActivityType"></span>
+          <h3 id="trainerTitle">Exercice</h3>
           <p id="trainerObjective"></p>
         </div>
         <div class="trainer-meta">
@@ -57,7 +86,7 @@ export function mountPianoTrainer(container) {
       <div class="trainer-score-panel">
         <div class="trainer-section-title">
           <strong>1. Lis la portée</strong>
-          <span>La clé s’adapte à la tessiture de l’exercice.</span>
+          <span>Clé de sol = main droite · clé de fa = main gauche.</span>
         </div>
         <div id="trainerScore" class="trainer-score" aria-label="Partition de l’exercice"></div>
       </div>
@@ -65,7 +94,7 @@ export function mountPianoTrainer(container) {
       <div class="trainer-keyboard-panel">
         <div class="trainer-section-title">
           <strong>2. Repère les touches sur ton vrai piano</strong>
-          <span>Les touches colorées correspondent uniquement à l’étape sélectionnée dans la séquence.</span>
+          <span>Seules les notes de l’étape sélectionnée sont colorées.</span>
         </div>
         <div id="trainerKeyboard"></div>
       </div>
@@ -73,10 +102,10 @@ export function mountPianoTrainer(container) {
       <div class="trainer-demo-panel">
         <div class="trainer-section-title">
           <strong>3. Regarde et écoute la démonstration</strong>
-          <span id="trainerAudioStatus">Le premier lancement charge les vrais sons du piano.</span>
+          <span id="trainerAudioStatus">Le premier lancement charge les sons du piano.</span>
         </div>
         <div class="trainer-demo-actions">
-          <button type="button" id="trainerListen">♪ Écouter la note</button>
+          <button type="button" id="trainerListen">♪ Écouter</button>
           <button type="button" id="trainerPlayAll">▶ Démonstration animée</button>
           <button type="button" id="trainerStop">■ Arrêter</button>
         </div>
@@ -97,7 +126,7 @@ export function mountPianoTrainer(container) {
         </div>
         <div class="trainer-midi-row">
           <button type="button" id="trainerMidi">🎹 Connecter mon piano MIDI</button>
-          <span id="trainerMidiStatus" class="trainer-midi-status">Tu peux aussi faire l’exercice sans connexion MIDI.</span>
+          <span id="trainerMidiStatus" class="trainer-midi-status">Tu peux faire l’exercice sans connexion MIDI.</span>
         </div>
       </div>
 
@@ -107,6 +136,9 @@ export function mountPianoTrainer(container) {
     </section>
   `;
 
+  const weekTitle = container.querySelector("#trainerWeekTitle");
+  const activitiesNav = container.querySelector("#trainerActivities");
+  const activityType = container.querySelector("#trainerActivityType");
   const title = container.querySelector("#trainerTitle");
   const objective = container.querySelector("#trainerObjective");
   const hand = container.querySelector("#trainerHand");
@@ -120,14 +152,19 @@ export function mountPianoTrainer(container) {
   const audioStatus = container.querySelector("#trainerAudioStatus");
   const playAllButton = container.querySelector("#trainerPlayAll");
 
-  const keyboard = createPianoKeyboard(container.querySelector("#trainerKeyboard"), { startOctave: 3, endOctave: 5 });
+  const keyboard = createPianoKeyboard(container.querySelector("#trainerKeyboard"), {
+    startOctave: 2,
+    endOctave: 5
+  });
 
-  let exercise = getPianoExerciseByWeek(0);
+  let weekPlan = getPianoTrainingWeek(0);
+  let activityIndex = 0;
+  let activity = weekPlan.activities[0];
   let stepIndex = 0;
   let midiConnection = null;
 
   function steps() {
-    return targetSteps(exercise);
+    return targetSteps(activity);
   }
 
   function currentStep() {
@@ -136,37 +173,76 @@ export function mountPianoTrainer(container) {
   }
 
   function stepEntries(index = stepIndex) {
-    if (exercise.mode === "chord-sequence") {
-      return (exercise.groups || [])[index] || [];
+    if (activity.mode === "two-hand") {
+      const result = [];
+      if (activity.rightHand?.[index]) result.push({ ...activity.rightHand[index], handCode: "MD" });
+      if (activity.leftHand?.[index]) result.push({ ...activity.leftHand[index], handCode: "MG" });
+      return result;
     }
-    if (exercise.mode === "chord") {
-      return exercise.notes || [];
+
+    if (activity.mode === "chord-sequence") {
+      const group = (activity.groups || [])[index] || [];
+      const code = /gauche/i.test(activity.hand || "") ? "MG" : "MD";
+      return group.map(item => ({ ...item, handCode: code }));
     }
-    const note = (exercise.notes || [])[index];
-    return note ? [note] : [];
+
+    if (activity.mode === "chord") {
+      const code = /gauche/i.test(activity.hand || "") ? "MG" : "MD";
+      return (activity.notes || []).map(item => ({ ...item, handCode: code }));
+    }
+
+    const item = activity.notes?.[index];
+    if (!item) return [];
+    return [{ ...item, handCode: /gauche/i.test(activity.hand || "") ? "MG" : "MD" }];
   }
 
   function fingersLabel(entries) {
-    const fingers = entries
-      .map(item => item?.finger)
-      .filter(value => value !== undefined && value !== null);
+    if (!entries.length) return "";
 
-    if (!fingers.length) return "";
-    if (fingers.length === 1) return `Doigt ${fingers[0]}`;
-    return `Doigts ${fingers.join(" - ")}`;
+    const right = entries.filter(item => item.handCode === "MD" && item.finger);
+    const left = entries.filter(item => item.handCode === "MG" && item.finger);
+
+    const parts = [];
+    if (right.length) {
+      parts.push(`MD · ${right.length > 1 ? "doigts" : "doigt"} ${right.map(x => x.finger).join(" - ")}`);
+    }
+    if (left.length) {
+      parts.push(`MG · ${left.length > 1 ? "doigts" : "doigt"} ${left.map(x => x.finger).join(" - ")}`);
+    }
+
+    return parts.join(" · ");
+  }
+
+  function renderActivities() {
+    activitiesNav.innerHTML = "";
+    weekPlan.activities.forEach((entry, index) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "trainer-activity-tab";
+      button.classList.toggle("is-current", index === activityIndex);
+      button.textContent = activityLabel(entry, index);
+      button.addEventListener("click", () => {
+        stopPlayback();
+        activityIndex = index;
+        activity = weekPlan.activities[index];
+        stepIndex = 0;
+        loadActivity();
+      });
+      activitiesNav.appendChild(button);
+    });
   }
 
   function renderSequence() {
     sequence.innerHTML = "";
     const list = steps();
+
     list.forEach((notes, index) => {
       const item = document.createElement("button");
       item.type = "button";
       item.className = "trainer-sequence__item";
       item.classList.toggle("is-current", index === stepIndex);
 
-      const entryList = stepEntries(index);
-      const fingerLabel = fingersLabel(entryList);
+      const fingerLabel = fingersLabel(stepEntries(index));
 
       item.innerHTML = `
         <span class="trainer-sequence__step">Étape ${index + 1}</span>
@@ -179,47 +255,59 @@ export function mountPianoTrainer(container) {
         stepIndex = index;
         renderCurrent();
       });
+
       sequence.appendChild(item);
     });
+
     sequenceStatus.textContent = `${Math.min(stepIndex + 1, list.length)} / ${list.length}`;
   }
 
   function renderCurrent(message = "") {
     const target = currentStep();
     current.textContent = message || prettyTarget(target);
-
-    const entryList = stepEntries();
-    const fingerLabel = fingersLabel(entryList);
-    finger.textContent = fingerLabel || (target.length > 1 ? "Joue les notes ensemble" : "");
-
-    // Le clavier ne montre que l'étape sélectionnée dans la séquence.
-    // Pour un accord, seules les notes de cet accord sont colorées.
+    finger.textContent = fingersLabel(stepEntries()) || (target.length > 1 ? "Joue les notes ensemble" : "");
     keyboard.highlight(target, target);
     renderSequence();
   }
 
   function demoStep(notes, index) {
     stepIndex = Math.min(index, steps().length - 1);
-    // Pendant la démonstration, n'affiche que le groupe joué à cet instant.
     keyboard.highlight(notes, notes);
     keyboard.animate(notes, 460);
     current.textContent = prettyTarget(notes);
+    finger.textContent = fingersLabel(stepEntries());
     renderSequence();
+  }
+
+  async function loadActivity() {
+    stopPlayback();
+    keyboard.clearPlaying();
+
+    activity = weekPlan.activities[activityIndex];
+    stepIndex = 0;
+
+    activityType.textContent = activityLabel(activity, activityIndex);
+    title.textContent = activity.title;
+    objective.textContent = activity.objective;
+    hand.textContent = activity.hand;
+    tempo.textContent = `${activity.tempo || 60} BPM`;
+
+    renderActivities();
+    await renderScore(score, activity);
+    renderCurrent();
   }
 
   async function loadWeek(index) {
     stopPlayback();
     keyboard.clearPlaying();
-    exercise = getPianoExerciseByWeek(index);
+
+    weekPlan = getPianoTrainingWeek(index);
+    activityIndex = 0;
+    activity = weekPlan.activities[0];
     stepIndex = 0;
 
-    title.textContent = exercise.title;
-    objective.textContent = exercise.objective;
-    hand.textContent = exercise.hand;
-    tempo.textContent = `${exercise.tempo || 60} BPM`;
-
-    await renderScore(score, exercise);
-    renderCurrent();
+    weekTitle.textContent = weekPlan.title;
+    await loadActivity();
   }
 
   container.querySelector("#trainerListen").addEventListener("click", async () => {
@@ -243,8 +331,7 @@ export function mountPianoTrainer(container) {
 
   container.querySelector("#trainerNext").addEventListener("click", () => {
     stopPlayback();
-    const list = steps();
-    stepIndex = Math.min(list.length - 1, stepIndex + 1);
+    stepIndex = Math.min(steps().length - 1, stepIndex + 1);
     renderCurrent();
   });
 
@@ -270,15 +357,17 @@ export function mountPianoTrainer(container) {
     };
 
     try {
-      if (exercise.mode === "chord-sequence") {
-        await playChordSequence((exercise.groups || []).map(group => group.map(item => item.note)), exercise.tempo, options);
-      } else if (exercise.mode === "chord") {
-        const notes = (exercise.notes || []).map(item => item.note);
+      if (activity.mode === "chord-sequence") {
+        await playChordSequence((activity.groups || []).map(group => group.map(item => item.note)), activity.tempo, options);
+      } else if (activity.mode === "chord") {
+        const notes = (activity.notes || []).map(item => item.note);
         demoStep(notes, 0);
         await playChord(notes);
         options.onDone();
+      } else if (activity.mode === "two-hand") {
+        await playChordSequence(steps(), activity.tempo, options);
       } else {
-        await playSequence((exercise.notes || []).map(item => item.note), exercise.tempo, options);
+        await playSequence((activity.notes || []).map(item => item.note), activity.tempo, options);
       }
     } catch (_) {
       playAllButton.disabled = false;

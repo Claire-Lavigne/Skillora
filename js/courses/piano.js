@@ -2,327 +2,935 @@ export const pianoCourse = {
   "id": "piano",
   "title": "Piano",
   "status": "available",
-  "description": "Du niveau débutant au niveau expert : posture, rythme, lecture, accords, morceaux, indépendance des mains, technique, harmonie, interprétation et jeu avancé.",
-  "intro": "Ce parcours t’accompagne depuis les toutes premières touches jusqu’à un jeu autonome et avancé. Tu apprendras progressivement à te repérer sur le clavier, lire, jouer avec les deux mains, utiliser les accords, le rythme, la pédale, les gammes, l’harmonie, l’improvisation et construire une interprétation complète.",
+  "description": "Du niveau débutant au niveau avancé : lecture en clé de sol et clé de fa dès le départ, coordination des deux mains, rythme, accords, gammes, pédale, harmonie et interprétation.",
+  "intro": "Chaque semaine suit le même parcours : découverte d’une notion, plusieurs petits exercices guidés, puis une mélodie finale. La clé de sol est utilisée pour la main droite et la clé de fa pour la main gauche dès les premières semaines.",
   "weeks": [
     [
-      "Semaine 1 — Découvrir le piano",
+      "Semaine 1 — Les deux portées et les Do",
       [
-        "Assieds-toi devant le piano avec le dos droit et les épaules détendues.",
-        "Repère les groupes de 2 touches noires puis les groupes de 3 touches noires.",
-        "Repère tous les Do du clavier.",
-        "Joue chaque Do avec l’index de la main droite.",
-        "Joue chaque Do avec l’index de la main gauche."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Repère la clé de sol : elle correspond à la main droite.",
+            "Repère la clé de fa : elle correspond à la main gauche.",
+            "Trouve Do central puis le Do grave sur ton vrai piano."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue Do Ré Mi main droite en lisant la clé de sol.",
+            "Joue Do Ré Mi main gauche en lisant la clé de fa.",
+            "Refais chaque exercice lentement sans regarder constamment tes mains."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Lis d’abord les deux portées.",
+            "Joue la petite phrase mains séparées.",
+            "Assemble les deux mains très lentement."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 2 — Numéros des doigts",
+      "Semaine 2 — Les cinq doigts sur les deux portées",
       [
-        "Main droite : identifie le pouce comme doigt 1, puis 2, 3, 4 et 5 jusqu’à l’auriculaire.",
-        "Main gauche : identifie aussi le pouce comme doigt 1, puis 2, 3, 4 et 5 jusqu’à l’auriculaire.",
-        "Pose les 5 doigts de la main droite sur Do Ré Mi Fa Sol.",
-        "Joue 1-2-3-4-5 lentement.",
-        "Refais le même exercice avec la main gauche."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Mémorise : les pouces sont toujours doigt 1.",
+            "Observe les cinq doigts indiqués sur la clé de sol.",
+            "Observe les cinq doigts indiqués sur la clé de fa."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Monte Do à Sol main droite.",
+            "Monte Do à Sol main gauche avec le doigté inverse.",
+            "Redescends chaque main lentement."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Lis les deux portées avant de jouer.",
+            "Joue d’abord mains séparées.",
+            "Assemble quatre notes seulement."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 3 — Jouer Do Ré Mi Fa Sol",
+      "Semaine 3 — Lire Do Ré Mi sur les deux clés",
       [
-        "Pose la main droite sur Do Ré Mi Fa Sol.",
-        "Joue Do Ré Mi Fa Sol lentement.",
-        "Joue Sol Fa Mi Ré Do.",
-        "Répète 5 fois sans accélérer.",
-        "Refais l’exercice avec la main gauche."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Lis Do Ré Mi sur la clé de sol.",
+            "Lis Do Ré Mi sur la clé de fa.",
+            "Dis le nom de la note avant d’appuyer sur la touche."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Fais la lecture mélangée main droite.",
+            "Fais la lecture mélangée main gauche.",
+            "Rejoue sans dire les noms à voix haute."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Travaille la mélodie main droite.",
+            "Travaille la basse main gauche.",
+            "Assemble les deux mains."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 4 — Premier rythme",
+      "Semaine 4 — Ajouter Fa et Sol",
       [
-        "Compte à voix haute : 1 - 2 - 3 - 4.",
-        "Tape une pulsation régulière avec la main.",
-        "Joue un Do sur chaque temps.",
-        "Joue Do Ré Mi Fa sur 4 temps.",
-        "Répète jusqu’à garder un rythme régulier."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Repère Fa et Sol sur la clé de sol.",
+            "Repère Fa et Sol sur la clé de fa.",
+            "Compare leur position avec Do Ré Mi."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Monte et descends cinq notes main droite.",
+            "Monte et descends cinq notes main gauche.",
+            "Garde les poignets détendus."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Lis toute la phrase avant de jouer.",
+            "Joue les deux mains séparément.",
+            "Assemble sans accélérer."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 5 — Première mélodie simple",
+      "Semaine 5 — Pulsation et rythme en 4/4",
       [
-        "Choisis une mélodie très simple de 5 notes maximum.",
-        "Joue seulement les notes avec la main droite.",
-        "Joue lentement sans t’arrêter.",
-        "Recommence 5 fois.",
-        "Enregistre-toi une fois et réécoute."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Compte 1 - 2 - 3 - 4 sans jouer.",
+            "Lis une mesure sur les deux portées.",
+            "Repère où tombe chaque note."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue une note par temps main droite.",
+            "Joue une note par temps main gauche.",
+            "Refais avec le métronome à 60 BPM."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Compte à voix haute.",
+            "Joue la mélodie main droite.",
+            "Ajoute la basse en gardant la pulsation."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 6 — Lire les notes de base",
+      "Semaine 6 — Lecture mélangée Do à Sol",
       [
-        "Repère Do, Ré, Mi, Fa et Sol sur une portée en clé de sol.",
-        "Associe chaque note écrite à une touche du piano.",
-        "Lis 5 notes avant de les jouer.",
-        "Joue ces 5 notes.",
-        "Répète avec une nouvelle série."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe les cinq positions en clé de sol.",
+            "Observe les cinq positions en clé de fa.",
+            "Ne déduis pas la note uniquement à partir de la précédente."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Lis six notes mélangées main droite.",
+            "Lis six notes mélangées main gauche.",
+            "Recommence en regardant moins le clavier."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Lis les deux portées avant de commencer.",
+            "Joue lentement mains séparées.",
+            "Assemble la phrase complète."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 7 — Main gauche basse simple",
+      "Semaine 7 — Secondes et tierces",
       [
-        "Joue un Do grave avec la main gauche.",
-        "Joue ensuite Sol grave.",
-        "Alterner Do et Sol en gardant 4 temps par note.",
-        "Ajoute une mélodie très simple à la main droite.",
-        "Répète jusqu’à jouer les deux mains lentement."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Reconnais une seconde et une tierce.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue des notes voisines.",
+            "Saute une note entre deux sons.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Mélange secondes et tierces.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 8 — Premier accord majeur",
+      "Semaine 8 — Première vraie mélodie à deux mains",
       [
-        "Joue Do, Mi et Sol ensemble.",
-        "Relâche puis rejoue l’accord de Do majeur.",
-        "Répète 10 fois.",
-        "Joue l’accord avec la main droite.",
-        "Joue ensuite l’accord avec la main gauche."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Lis une note à droite et une note à gauche.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Mémorise une phrase courte.",
+            "Stabilise la basse.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Assemble mélodie et basse.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 9 — Accords Fa et Sol",
+      "Semaine 9 — Accord de Do majeur",
       [
-        "Joue Fa, La et Do ensemble.",
-        "Répète l’accord de Fa majeur 10 fois.",
-        "Joue Sol, Si et Ré ensemble.",
-        "Répète l’accord de Sol majeur 10 fois.",
-        "Enchaîne Do majeur → Fa majeur → Sol majeur → Do majeur."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Vois l’accord à droite et la basse à gauche.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue les trois notes ensemble.",
+            "Forme le même accord plus grave.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue une mélodie sur une basse de Do.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 10 — Enchaîner trois accords",
+      "Semaine 10 — Accords de Fa et Sol",
       [
-        "Joue Do majeur pendant 4 temps.",
-        "Joue Fa majeur pendant 4 temps.",
-        "Joue Sol majeur pendant 4 temps.",
-        "Retourne sur Do majeur pendant 4 temps.",
-        "Répète la suite 5 fois sans t’arrêter."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Lis Fa et Sol sur les deux portées.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Forme Fa La Do.",
+            "Forme Sol Si Ré.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Entends le changement d’harmonie.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 11 — Accords + mélodie",
+      "Semaine 11 — Enchaînement Do Fa Sol Do",
       [
-        "Choisis une mélodie simple en Do majeur.",
-        "Joue la mélodie seule avec la main droite.",
-        "Joue les accords seuls avec la main gauche.",
-        "Assemble les deux très lentement.",
-        "Travaille seulement 2 mesures à la fois."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Lis les quatre accords dans l’ordre.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Prépare la main gauche.",
+            "Enchaîne sans t’arrêter.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Assemble une ligne simple et les basses.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 12 — Utiliser un métronome",
+      "Semaine 12 — Jouer avec le métronome",
       [
-        "Règle un métronome sur 60 BPM.",
-        "Joue une note par battement.",
-        "Joue Do Ré Mi Fa Sol avec le métronome.",
-        "Joue un accord tous les 4 battements.",
-        "Répète sans accélérer."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Les deux mains tombent ensemble sur le temps.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Reste exactement sur le clic.",
+            "Garde la basse régulière.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue sans accélérer.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
       "Semaine 13 — Gamme de Do majeur",
       [
-        "Main droite : joue Do Ré Mi, passe le pouce sous la main, puis Fa Sol La Si Do.",
-        "Refais très lentement.",
-        "Redescends de Do vers Do.",
-        "Répète 5 fois.",
-        "Joue ensuite la gamme avec la main gauche."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Observe le doigté des deux mains.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Passe le pouce après Mi.",
+            "Utilise le doigté de la main gauche.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Utilise la gamme dans une phrase.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 14 — Gamme mains ensemble",
+      "Semaine 14 — Gamme de Do, mains ensemble",
       [
-        "Joue la gamme de Do majeur main droite seule.",
-        "Joue la gamme main gauche seule.",
-        "Place les deux mains sur Do.",
-        "Joue les deux mains ensemble très lentement.",
-        "Répète sans chercher la vitesse."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Observe les deux doigtés ensemble.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Coordonne quatre notes seulement.",
+            "Ajoute Sol.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Termine par une phrase à deux mains.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 15 — Nuances",
+      "Semaine 15 — Nuances et expression",
       [
-        "Joue une phrase très doucement.",
-        "Joue la même phrase plus fort.",
-        "Alterne doux puis fort.",
-        "Joue une phrase en augmentant progressivement le volume.",
-        "Joue une phrase en diminuant progressivement le volume."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Joue la même phrase avec deux intensités.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue avec un toucher léger.",
+            "Joue plus fort sans taper.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Fais une phrase puis son écho plus doux.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 16 — Pédale",
+      "Semaine 16 — Pédale de sustain",
       [
-        "Pose le pied droit sur la pédale de sustain.",
-        "Joue un accord puis appuie sur la pédale.",
-        "Relâche les touches et écoute le son.",
-        "Relâche la pédale.",
-        "Enchaîne deux accords en changeant la pédale entre les deux."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Change la pédale quand l’harmonie change.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Écoute la résonance.",
+            "Relève puis remets la pédale au changement.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Coordonne pédale, basse et mélodie.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
       "Semaine 17 — Arpèges simples",
       [
-        "Joue Do puis Mi puis Sol séparément.",
-        "Redescends Sol Mi Do.",
-        "Répète 10 fois.",
-        "Fais la même chose avec Fa majeur.",
-        "Fais la même chose avec Sol majeur."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Vois l’accord sur deux portées.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue Do Mi Sol Mi Do.",
+            "Joue Do Mi Sol Mi Do en clé de fa.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Utilise un arpège contre une basse simple.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 18 — Progression d’accords",
+      "Semaine 18 — Progression Do La mineur Fa Sol",
       [
-        "Joue Do majeur.",
-        "Joue La mineur.",
-        "Joue Fa majeur.",
-        "Joue Sol majeur.",
-        "Enchaîne Do → La mineur → Fa → Sol pendant 4 tours."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe l’objectif : Lis la progression sur une portée d’accords.",
+            "Lis d’abord la clé de sol puis la clé de fa.",
+            "Repère les notes sur le clavier avant de jouer."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Lis Do La Fa Sol en clé de fa.",
+            "Enchaîne les quatre accords.",
+            "Rejoue lentement en gardant les bons doigtés."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue une note mélodique sur chaque basse.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale sans t’arrêter."
+          ]
+        }
       ]
     ],
     [
       "Semaine 19 — Indépendance des mains",
       [
-        "Main gauche : joue une note grave tous les 4 temps.",
-        "Main droite : joue une note à chaque temps.",
-        "Assemble lentement.",
-        "Change la note de basse.",
-        "Répète sur 4 accords différents."
+        {
+          "group": "Découverte",
+          "steps": [
+            "La main gauche tient la structure pendant que la droite bouge.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue une note à chaque temps.",
+            "Reste sur des basses longues et régulières.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Garde les deux fonctions distinctes.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 20 — Lecture plus fluide",
+      "Semaine 20 — Lecture à vue sur deux portées",
       [
-        "Choisis 8 mesures simples.",
-        "Lis-les une fois sans jouer.",
-        "Joue la main droite lentement.",
-        "Joue la main gauche lentement.",
-        "Assemble les mains."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Lis avant de toucher le clavier.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Lis six notes sans t’arrêter.",
+            "Lis six basses sans revenir en arrière.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Fais une première lecture complète.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 21 — Accords renversés",
+      "Semaine 21 — Renversements d’accords",
       [
-        "Joue Do majeur en position fondamentale.",
-        "Déplace Do à l’octave supérieure pour créer le premier renversement.",
-        "Déplace Mi à l’octave supérieure pour créer le deuxième renversement.",
-        "Répète avec Fa majeur.",
-        "Répète avec Sol majeur."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe trois positions du même accord.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue Mi Sol Do.",
+            "Joue Sol Do Mi.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Choisis la position qui demande le moins de déplacement.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
       "Semaine 22 — Accompagnement main gauche",
       [
-        "Choisis une progression de 4 accords.",
-        "Joue seulement la basse de chaque accord.",
-        "Ajoute la quinte.",
-        "Joue basse + accord.",
-        "Accompagne une mélodie simple."
+        {
+          "group": "Découverte",
+          "steps": [
+            "La main gauche crée un motif d’accompagnement.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Alterne fondamentale et quinte.",
+            "Garde une phrase liée.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Assemble motif gauche et phrase droite.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 23 — Jouer avec expression",
+      "Semaine 23 — Phrasé et respiration",
       [
-        "Choisis un morceau déjà connu.",
-        "Décide où jouer plus doucement.",
-        "Décide où jouer plus fort.",
-        "Ajoute la pédale uniquement aux endroits nécessaires.",
-        "Enregistre une version complète."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Repère début, sommet et fin.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Évite de détacher chaque note.",
+            "Fais une micro-pause entre deux idées.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Fais entendre une respiration musicale.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 24 — Gammes majeures supplémentaires",
+      "Semaine 24 — Sol majeur et Fa majeur",
       [
-        "Apprends la gamme de Sol majeur.",
-        "Joue-la main droite.",
-        "Joue-la main gauche.",
-        "Joue-la mains ensemble.",
-        "Apprends ensuite la gamme de Fa majeur."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Repère les premières altérations.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue avec Fa♯.",
+            "Joue avec Si♭.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Entends la couleur différente des deux tonalités.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
       "Semaine 25 — Accords mineurs",
       [
-        "Joue La mineur.",
-        "Joue Ré mineur.",
-        "Joue Mi mineur.",
-        "Enchaîne majeur et mineur.",
-        "Crée une progression de 4 accords."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Compare la tierce majeure et mineure.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue La Do Mi.",
+            "Joue Ré Fa La.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue une phrase en La mineur.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 26 — Jouer sans regarder constamment les mains",
+      "Semaine 26 — Jouer sans regarder les mains",
       [
-        "Choisis une gamme connue.",
-        "Regarde devant toi pendant 2 notes.",
-        "Augmente progressivement à 4 notes.",
-        "Joue un petit passage sans regarder.",
-        "Répète jusqu’à rester détendu."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Utilise les groupes de touches noires comme repères.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Regarde la portée pendant quatre notes.",
+            "Garde les yeux sur la clé de fa.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue une phrase sans regarder chaque touche.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 27 — Improvisation simple",
+      "Semaine 27 — Improvisation pentatonique",
       [
-        "Main gauche : joue Do majeur pendant 4 temps.",
-        "Main droite : improvise avec Do Ré Mi Sol La.",
-        "Change vers Fa majeur.",
-        "Continue avec les mêmes notes si elles sonnent bien.",
-        "Improvises pendant 2 minutes sans t’arrêter."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Utilise Do Ré Mi Sol La.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Improvise avec trois notes.",
+            "Change le rythme sans changer les notes.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue librement au-dessus d’une basse Do / Sol.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
       "Semaine 28 — Accords de septième",
       [
-        "Joue Sol Si Ré Fa.",
-        "Écoute la tension de l’accord.",
-        "Résous vers Do Mi Sol.",
-        "Répète plusieurs fois.",
-        "Utilise l’accord de septième dans une progression."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Observe Sol7 puis sa résolution vers Do.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue Sol Si Ré Fa.",
+            "Résous vers Do Mi Sol.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Entends clairement le retour vers Do.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
       "Semaine 29 — Technique et vitesse contrôlée",
       [
-        "Choisis une gamme connue.",
-        "Joue-la lentement avec le métronome.",
-        "Augmente de 5 BPM seulement si elle reste propre.",
-        "Arrête d’augmenter dès qu’une erreur apparaît.",
-        "Reviens au dernier tempo propre."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Ne monte le tempo qu’après une exécution propre.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue proprement avant d’accélérer.",
+            "Garde le même contrôle.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Joue une phrase au tempo choisi sans erreur.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 30 — Travail d’un morceau intermédiaire",
+      "Semaine 30 — Construire un morceau intermédiaire",
       [
-        "Choisis un morceau adapté à ton niveau.",
-        "Découpe-le en sections de 2 à 4 mesures.",
-        "Travaille chaque section mains séparées.",
-        "Assemble les mains.",
-        "Relie progressivement les sections."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Travaille une petite section complète.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Stabilise la mélodie.",
+            "Stabilise l’accompagnement.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Assemble la section entière.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 31 — Harmonie pratique",
+      "Semaine 31 — Harmonie et transposition",
       [
-        "Choisis une tonalité.",
-        "Construis les accords principaux de cette tonalité.",
-        "Joue I - IV - V - I.",
-        "Joue I - vi - IV - V.",
-        "Transpose une progression simple dans une autre tonalité."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Repère les fonctions dans une tonalité.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue I IV V I.",
+            "Joue Sol Do Ré Sol.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Entends la même fonction dans une autre hauteur.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ],
     [
-      "Semaine 32 — Projet final piano",
+      "Semaine 32 — Projet final",
       [
-        "Choisis un morceau complet.",
-        "Travaille la structure entière.",
-        "Ajoute nuances, pédale et expression.",
-        "Enregistre une version complète.",
-        "Réécoute et note 3 points à améliorer."
+        {
+          "group": "Découverte",
+          "steps": [
+            "Lis l’ensemble avant de travailler les détails.",
+            "Lis la clé de sol et la clé de fa avant de jouer.",
+            "Repère les doigtés utiles."
+          ]
+        },
+        {
+          "group": "Petits exercices",
+          "steps": [
+            "Joue la ligne sans interruption.",
+            "Joue l’accompagnement sans interruption.",
+            "Rejoue les deux petits exercices sans t’arrêter."
+          ]
+        },
+        {
+          "group": "Mélodie finale",
+          "steps": [
+            "Interprète une pièce courte avec les deux mains.",
+            "Travaille les mains séparées si nécessaire.",
+            "Joue la mélodie finale de la semaine."
+          ]
+        }
       ]
     ]
   ]

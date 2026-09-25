@@ -57,3 +57,60 @@
 .trainer-sequence__item.is-current .trainer-sequence__step{
   color:var(--accent);
 }
+
+
+.trainer-activities{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:8px;
+  margin-top:16px;
+}
+
+.trainer-activity-tab{
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--text);
+  border-radius:11px;
+  padding:10px 8px;
+  min-height:44px;
+  font-weight:800;
+}
+
+.trainer-activity-tab.is-current{
+  border-color:var(--accent);
+  background:var(--accent2);
+  color:var(--accent);
+}
+
+.trainer-activity-head{
+  margin-top:16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+}
+
+.trainer-activity-head h3{
+  margin:3px 0 5px;
+  font-size:21px;
+}
+
+.trainer-activity-head p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.trainer-activity-type{
+  display:inline-block;
+  color:var(--accent);
+  font-size:11px;
+  font-weight:850;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+@media(max-width:700px){
+  .trainer-activities{grid-template-columns:1fr 1fr}
+  .trainer-activity-head{display:block}
+}
