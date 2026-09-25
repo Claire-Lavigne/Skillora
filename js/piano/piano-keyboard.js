@@ -20,7 +20,7 @@ export function noteLabelFr(note) {
 
 function buildKeys(startOctave = 3, endOctave = 5) {
   const keys = [];
-  for (let octave = startOctave; octave <= endOctave; octave++) {
+  for (let octave = startOctave; octave <= endOctave; octave += 1) {
     for (const white of WHITE_PCS) {
       keys.push({ note: `${white}${octave}`, black: false });
       const black = BLACK_AFTER[white];
@@ -51,18 +51,45 @@ export function createPianoKeyboard(container, { startOctave = 3, endOctave = 5 
     keyboard.appendChild(key);
   }
 
-  function highlight(notes, currentNote = null) {
+  function highlight(notes, currentNotes = []) {
     const noteSet = new Set(notes || []);
+    const currentSet = new Set(Array.isArray(currentNotes) ? currentNotes : currentNotes ? [currentNotes] : []);
+
     keyboard.querySelectorAll(".trainer-key").forEach(key => {
       key.classList.toggle("is-target", noteSet.has(key.dataset.note));
-      key.classList.toggle("is-current", key.dataset.note === currentNote);
+      key.classList.toggle("is-current", currentSet.has(key.dataset.note));
     });
 
-    if (currentNote) {
-      const target = keyboard.querySelector(`[data-note="${currentNote}"]`);
-      target?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    const firstCurrent = [...currentSet][0];
+    if (firstCurrent) {
+      keyboard.querySelector(`[data-note="${firstCurrent}"]`)?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center"
+      });
     }
   }
 
-  return { highlight };
+  function animate(notes, duration = 500) {
+    const list = Array.isArray(notes) ? notes : [notes];
+    const active = [];
+
+    list.forEach(note => {
+      const key = keyboard.querySelector(`[data-note="${note}"]`);
+      if (key) {
+        key.classList.add("is-playing");
+        active.push(key);
+      }
+    });
+
+    window.setTimeout(() => {
+      active.forEach(key => key.classList.remove("is-playing"));
+    }, duration);
+  }
+
+  function clearPlaying() {
+    keyboard.querySelectorAll(".is-playing").forEach(key => key.classList.remove("is-playing"));
+  }
+
+  return { highlight, animate, clearPlaying };
 }
