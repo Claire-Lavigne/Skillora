@@ -61,28 +61,29 @@ function svgNode(name, attrs = {}, text = "") {
   return node;
 }
 
+function noteCenterX(tickable) {
+  // getAbsoluteX() correspond au TickContext, pas toujours au centre visuel
+  // de la tête de note. VexFlow expose les bornes de la tête de note :
+  // on les utilise pour centrer précisément les aides.
+  const begin = tickable.getNoteHeadBeginX?.();
+  const end = tickable.getNoteHeadEndX?.();
+
+  if (Number.isFinite(begin) && Number.isFinite(end)) {
+    return (begin + end) / 2;
+  }
+
+  return tickable.getAbsoluteX();
+}
+
 function drawHelp(svg, item, stave, clef, showNoteNames, showFingers) {
   if (!item.group?.length || item.isRest) return;
 
-  const x = item.tickable.getAbsoluteX();
-  const ys = item.tickable.getYs?.() || [];
-  const noteY = ys.length ? Math.min(...ys) : stave.getYForLine(2);
+  const x = noteCenterX(item.tickable);
 
-  if (showFingers) {
-    const fingers = item.group
-      .map(entry => entry.finger)
-      .filter(value => value !== undefined && value !== null);
-
-    if (fingers.length) {
-      const y = clef === "treble" ? noteY - 18 : noteY + 24;
-      svg.appendChild(svgNode("text", {
-        x,
-        y,
-        "text-anchor": "middle",
-        class: "score-help score-help--finger"
-      }, fingers.join("·")));
-    }
-  }
+  // Toutes les aides sont sous la portée concernée et partagent le même X
+  // que le centre de la tête de note.
+  const noteNameY = stave.getBottomLineY() + 27;
+  const fingerY = noteNameY + 17;
 
   if (showNoteNames) {
     const label = item.group
@@ -91,10 +92,52 @@ function drawHelp(svg, item, stave, clef, showNoteNames, showFingers) {
 
     svg.appendChild(svgNode("text", {
       x,
-      y: stave.getBottomLineY() + 28,
+      y: noteNameY,
       "text-anchor": "middle",
       class: "score-help score-help--note"
     }, label));
+  }
+
+  if (showFingers) {
+    const fingers = item.group
+      .map(entry => entry.finger)
+      .filter(value => value !== undefined && value !== null);
+
+    if (fingers.length) {
+      svg.appendChild(svgNode("text", {
+        x,
+        y: fingerY,
+        "text-anchor": "middle",
+        class: "score-help score-help--finger"
+      }, fingers.join("·")));
+    }
+  }
+}
+
+function alignGrandStaffBeats(trebleItems, bassItems) {
+  // Même si les voix partagent le même Formatter, les modificateurs de portée
+  // (clé, métrique, etc.) peuvent provoquer un léger décalage visuel au premier temps.
+  // On recale donc explicitement chaque paire de notes/repos sur le même X.
+  const count = Math.min(trebleItems.length, bassItems.length);
+
+  for (let index = 0; index < count; index += 1) {
+    const trebleTickable = trebleItems[index].tickable;
+    const bassTickable = bassItems[index].tickable;
+
+    const trebleX = trebleTickable.getAbsoluteX();
+    const bassX = bassTickable.getAbsoluteX();
+    const sharedX = Math.max(trebleX, bassX);
+
+    const trebleShift = sharedX - trebleX;
+    const bassShift = sharedX - bassX;
+
+    if (Math.abs(trebleShift) > 0.01 && trebleTickable.setXShift) {
+      trebleTickable.setXShift((trebleTickable.getXShift?.() || 0) + trebleShift);
+    }
+
+    if (Math.abs(bassShift) > 0.01 && bassTickable.setXShift) {
+      bassTickable.setXShift((bassTickable.getXShift?.() || 0) + bassShift);
+    }
   }
 }
 
@@ -320,6 +363,10 @@ export async function renderScore(
       const usable = measureWidth - (firstOnSystem ? 92 : 28);
       formatter.format([trebleVoice, bassVoice], usable);
 
+      // Recalage explicite : chaque temps de la clé de sol et de la clé de fa
+      // partage exactement le même axe horizontal, y compris le premier.
+      alignGrandStaffBeats(trebleItems, bassItems);
+
       trebleVoice.draw(context, treble);
       bassVoice.draw(context, bass);
 
@@ -330,7 +377,7 @@ export async function renderScore(
 
       // On prend les X de la voix de dessus : la voix de dessous partage les mêmes temps.
       guideQueue.push({
-        xs: trebleItems.map(item => item.tickable.getAbsoluteX()),
+        xs: trebleItems.map(item => noteCenterX(item.tickable)),
         top: treble.getYForLine(0) - 20,
         bottom: bass.getBottomLineY() + 20
       });

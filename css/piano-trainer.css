@@ -522,3 +522,21 @@
     flex:1 1 140px;
   }
 }
+
+
+/* Alignement final des aides sous chaque note */
+.score-help{
+  dominant-baseline:middle;
+  text-anchor:middle;
+}
+
+.score-help--note{
+  font-size:12px;
+  font-weight:800;
+}
+
+.score-help--finger{
+  font-size:11px;
+  font-weight:900;
+  fill:#10664c;
+}
