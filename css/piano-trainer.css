@@ -634,3 +634,6 @@
     grid-template-columns:1fr;
   }
 }
+
+
+.trainer-demo-settings{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 12px}.trainer-demo-settings label{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700}.trainer-demo-settings select{border:1px solid var(--border);border-radius:9px;padding:7px 9px;background:var(--surface,#fff);color:inherit}.trainer-score svg{max-width:100%;height:auto}.score-fallback{padding:16px;border:1px solid var(--border);border-radius:12px;background:var(--soft)}

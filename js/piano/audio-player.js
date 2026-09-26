@@ -262,6 +262,75 @@ export async function playTimedEvents(events, bpm = 60, { onStep, onDone } = {})
   }
 }
 
+
+export async function playTimeline(timelineRows, bpm = 60, {
+  onStep,
+  onDone,
+  countInBeats = 0,
+  speed = 1
+} = {}) {
+  const instrument = await ensurePiano();
+  const token = ++playbackToken;
+  const safeBpm = clamp(bpm * speed, 25, 220);
+  const beatSeconds = 60 / safeBpm;
+  const startTime = Tone.now() + Math.max(0.08, countInBeats * beatSeconds);
+
+  const grouped = new Map();
+  timelineRows.forEach(row => {
+    const key = row.startBeat.toFixed(6);
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(row);
+  });
+
+  timelineRows.forEach((row, index) => {
+    const event = row.event;
+    if (!event || event.type === "rest") return;
+    const notes = event.type === "chord" ? (event.pitches || []) : [event.pitch].filter(Boolean);
+    if (!notes.length) return;
+    const duration = Math.max(0.08, row.durationBeats * beatSeconds * 0.94);
+    instrument.triggerAttackRelease(
+      notes,
+      duration,
+      startTime + row.startBeat * beatSeconds,
+      naturalVelocity(index, notes.length > 1 ? 0.61 : 0.72)
+    );
+  });
+
+  const moments = [...grouped.values()]
+    .map(events => ({ startBeat:events[0].startBeat, events }))
+    .sort((a,b) => a.startBeat-b.startBeat);
+
+  const totalBeats = timelineRows.reduce((max,row) => Math.max(max, row.startBeat + row.durationBeats), 0);
+  const delayBefore = countInBeats * beatSeconds * 1000;
+
+  for (let count = 0; count < countInBeats; count += 1) {
+    if (token !== playbackToken) return;
+    onStep?.({ countIn:true, count:count+1, notes:[], events:[] }, -1);
+    await wait(beatSeconds * 1000);
+  }
+
+  const playbackStartMs = performance.now();
+  for (let index = 0; index < moments.length; index += 1) {
+    if (token !== playbackToken) return;
+    const moment = moments[index];
+    const targetMs = moment.startBeat * beatSeconds * 1000;
+    const elapsed = performance.now() - playbackStartMs;
+    if (targetMs > elapsed) await wait(targetMs - elapsed);
+    if (token !== playbackToken) return;
+    const notes = moment.events.flatMap(row => {
+      const e = row.event;
+      if (e.type === "rest") return [];
+      return e.type === "chord" ? (e.pitches || []) : [e.pitch].filter(Boolean);
+    });
+    onStep?.({ ...moment, notes, countIn:false }, index);
+  }
+
+  const elapsed = performance.now() - playbackStartMs;
+  const remaining = totalBeats * beatSeconds * 1000 - elapsed;
+  if (remaining > 0) await wait(remaining);
+  if (token === playbackToken) onDone?.();
+}
+
 export const pianoSoundCredits = {
   engine: "Tone.js 15.1.22",
   instrument: "Salamander Grand Piano — Yamaha C5",

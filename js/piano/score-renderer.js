@@ -1,80 +1,29 @@
+import {
+  durationBeats,
+  timeSignatureCapacity,
+  validateTimeline,
+  momentIndexByEventId
+} from "./music-model.js";
+
 function normalizeNoteForVex(note) {
   const match = /^([A-G])(#|b)?(\d)$/.exec(note);
   if (!match) return "c/4";
   return `${match[1].toLowerCase()}${match[2] || ""}/${match[3]}`;
 }
 
-const NOTE_NAMES_FR = {
-  C: "Do", D: "Ré", E: "Mi", F: "Fa", G: "Sol", A: "La", B: "Si"
-};
-const DURATION_BEATS = {
-  w: 4,
-  h: 2,
-  q: 1,
-  "8": 0.5,
-  hd: 3,
-  qd: 1.5
-};
-
-function durationBeats(duration = "q") {
-  return DURATION_BEATS[duration] || 1;
-}
-
-function baseDuration(duration = "q") {
-  if (duration === "hd") return "h";
-  if (duration === "qd") return "q";
-  return duration;
-}
-
-function isDotted(duration = "") {
-  return duration === "hd" || duration === "qd";
-}
-
+const NOTE_NAMES_FR = { C:"Do", D:"Ré", E:"Mi", F:"Fa", G:"Sol", A:"La", B:"Si" };
 
 function noteLabelFr(note) {
-  const match = /^([A-G])(#|b)?(\d)$/.exec(note);
-  if (!match) return note;
-
-  const accidental =
-    match[2] === "#" ? "♯" :
-    match[2] === "b" ? "♭" : "";
-
-  return `${NOTE_NAMES_FR[match[1]]}${accidental}`;
+  const m = /^([A-G])(#|b)?(\d)$/.exec(note);
+  if (!m) return note;
+  const a = m[2] === "#" ? "♯" : m[2] === "b" ? "♭" : "";
+  return `${NOTE_NAMES_FR[m[1]]}${a}`;
 }
 
-function addAccidentals(note, chord, Accidental) {
-  chord.forEach((entry, index) => {
-    if (entry.note.includes("#")) note.addModifier(new Accidental("#"), index);
-    if (entry.note.includes("b")) note.addModifier(new Accidental("b"), index);
-  });
-}
-
-function activityGroups(activity) {
-  if (activity.mode === "two-hand") {
-    return {
-      right: (activity.rightHand || []).map(item => [item]),
-      left: (activity.leftHand || []).map(item => [item])
-    };
-  }
-
-  if (activity.mode === "chord-sequence") {
-    const groups = activity.groups || [];
-    return activity.staff === "bass"
-      ? { right: [], left: groups }
-      : { right: groups, left: [] };
-  }
-
-  if (activity.mode === "chord") {
-    const group = [activity.notes || []];
-    return activity.staff === "bass"
-      ? { right: [], left: group }
-      : { right: group, left: [] };
-  }
-
-  const groups = (activity.notes || []).map(item => [item]);
-  return activity.staff === "bass"
-    ? { right: [], left: groups }
-    : { right: groups, left: [] };
+function vexDuration(duration, rest = false) {
+  const dotted = duration === "hd" || duration === "qd";
+  const base = duration === "hd" ? "h" : duration === "qd" ? "q" : duration;
+  return { value: `${base}${rest ? "r" : ""}`, dotted };
 }
 
 function svgNode(name, attrs = {}, text = "") {
@@ -84,343 +33,196 @@ function svgNode(name, attrs = {}, text = "") {
   return node;
 }
 
+function eventPitches(event) {
+  if (event.type === "note") return [event.pitch];
+  if (event.type === "chord") return event.pitches || [];
+  return [];
+}
+
+function eventFingers(event) {
+  if (event.type === "note") return event.finger ? [event.finger] : [];
+  if (event.type === "chord") return event.fingers || [];
+  return [];
+}
+
 function noteCenterX(tickable) {
-  // getAbsoluteX() correspond au TickContext, pas toujours au centre visuel
-  // de la tête de note. VexFlow expose les bornes de la tête de note :
-  // on les utilise pour centrer précisément les aides.
   const begin = tickable.getNoteHeadBeginX?.();
   const end = tickable.getNoteHeadEndX?.();
-
-  if (Number.isFinite(begin) && Number.isFinite(end)) {
-    return (begin + end) / 2;
-  }
-
-  return tickable.getAbsoluteX();
+  if (Number.isFinite(begin) && Number.isFinite(end)) return (begin + end) / 2;
+  return tickable.getAbsoluteX?.() || 0;
 }
 
-function drawHelp(svg, item, stave, clef, showNoteNames, showFingers) {
-  if (!item.group?.length || item.isRest) return;
-
-  const x = noteCenterX(item.tickable);
-
-  // Toutes les aides sont sous la portée concernée et partagent le même X
-  // que le centre de la tête de note.
-  const noteNameY = stave.getBottomLineY() + 27;
-  const fingerY = noteNameY + 17;
-
-  if (showNoteNames) {
-    const label = item.group
-      .map(entry => noteLabelFr(entry.note))
-      .join(" + ");
-
-    svg.appendChild(svgNode("text", {
-      x,
-      y: noteNameY,
-      "text-anchor": "middle",
-      class: "score-help score-help--note"
-    }, label));
-  }
-
-  if (showFingers) {
-    const fingers = item.group
-      .map(entry => entry.finger)
-      .filter(value => value !== undefined && value !== null);
-
-    if (fingers.length) {
-      svg.appendChild(svgNode("text", {
-        x,
-        y: fingerY,
-        "text-anchor": "middle",
-        class: "score-help score-help--finger"
-      }, fingers.join("·")));
-    }
+function addBeatGrid(svg, staveTop, staveBottom, measureStartX, measureEndX, signature) {
+  const [numerator, denominator] = signature.split("/").map(Number);
+  const beatCount = numerator;
+  for (let beat = 1; beat < beatCount; beat += 1) {
+    const ratio = beat / beatCount;
+    const x = measureStartX + (measureEndX - measureStartX) * ratio;
+    svg.insertBefore(svgNode("line", {
+      x1:x, x2:x, y1:staveTop, y2:staveBottom, class:"score-beat-guide"
+    }), svg.firstChild);
   }
 }
 
+export async function renderScore(container, activity, {
+  showNoteNames = false,
+  showFingers = false,
+  currentStep = 0
+} = {}) {
+  const timeline = activity.timeline;
+  if (!timeline) {
+    container.innerHTML = '<div class="score-fallback"><strong>Exercice ancien.</strong><br><span>Cette étape sera convertie vers le nouveau moteur musical.</span></div>';
+    return;
+  }
 
-function drawBeatGuides(svg, beatXs, topY, bottomY, firstBeatOfMeasure = 0) {
-  beatXs.forEach((x, index) => {
-    if (index === firstBeatOfMeasure) return;
+  const validation = validateTimeline(timeline);
+  if (!validation.ok) {
+    container.innerHTML = `<div class="score-fallback"><strong>Partition invalide.</strong><br><span>${validation.problems.join(" ")}</span></div>`;
+    return;
+  }
 
-    const line = svgNode("line", {
-      x1: x,
-      x2: x,
-      y1: topY,
-      y2: bottomY,
-      class: "score-beat-guide"
-    });
-
-    // Mettre les repères derrière les notes.
-    svg.insertBefore(line, svg.firstChild);
-  });
-}
-
-export async function renderScore(
-  container,
-  activity,
-  {
-    showNoteNames = false,
-    showFingers = false,
-    currentStep = 0
-  } = {}
-) {
-  container.innerHTML = `<div class="score-loading">Chargement de la portée…</div>`;
+  container.innerHTML = '<div class="score-loading">Chargement de la partition…</div>';
 
   try {
     const Vex = await import("https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm");
     const {
-      Renderer,
-      Stave,
-      StaveNote,
-      Voice,
-      Formatter,
-      Accidental,
-      StaveConnector,
-      Barline,
-      Dot
+      Renderer, Stave, StaveNote, Voice, Formatter, Accidental,
+      StaveConnector, Barline, Dot
     } = Vex;
 
-    const { right, left } = activityGroups(activity);
-    const hasRight = right.length > 0;
-    const hasLeft = left.length > 0;
-    const grand =
-      activity.staff === "grand" ||
-      activity.mode === "two-hand" ||
-      (hasRight && hasLeft);
-
-    if (!hasRight && !hasLeft) {
-      container.textContent = "Aucune note à afficher.";
-      return;
-    }
-
-    const totalSteps = Math.max(right.length, left.length);
-    const measureCount = Math.max(1, Math.ceil(totalSteps / 4));
-    const measuresPerSystem = 2;
-    const systems = Math.ceil(measureCount / measuresPerSystem);
+    const signature = timeline.timeSignature || "4/4";
+    const [numBeats, beatValue] = signature.split("/").map(Number);
+    const measures = timeline.measures || [];
+    const measuresPerSystem = activity.measuresPerSystem || 2;
+    const systems = Math.ceil(measures.length / measuresPerSystem);
+    const width = Math.max(620, Math.min(1100, container.clientWidth || 900));
+    const systemHeight = 320;
+    const height = systems * systemHeight + 20;
 
     container.innerHTML = "";
-
-    const width = Math.max(540, Math.min(980, container.clientWidth || 820));
-    const systemHeight = grand ? 330 : 220;
-    const height = systems * systemHeight + 10;
-
     const renderer = new Renderer(container, Renderer.Backends.SVG);
     renderer.resize(width, height);
     const context = renderer.getContext();
+    const eventToMoment = momentIndexByEventId(timeline);
+    const hints = [];
+    const grids = [];
 
-    function makeNote(chord, clef, globalIndex) {
-      const rawDuration = chord[0]?.duration || "q";
-      const note = new StaveNote({
-        clef,
-        keys: chord.map(entry => normalizeNoteForVex(entry.note)),
-        duration: baseDuration(rawDuration),
-        autoStem: true
+    function createTickable(event, clef, eventId) {
+      const pitches = eventPitches(event);
+      const isRest = event.type === "rest";
+      const { value, dotted } = vexDuration(event.duration, isRest);
+      const keys = isRest
+        ? [clef === "bass" ? "d/3" : "b/4"]
+        : pitches.map(normalizeNoteForVex);
+
+      const note = new StaveNote({ clef, keys, duration:value, autoStem:true });
+      if (dotted && Dot?.buildAndAttach) Dot.buildAndAttach([note], { all:true });
+
+      pitches.forEach((pitch, index) => {
+        if (pitch.includes("#")) note.addModifier(new Accidental("#"), index);
+        if (pitch.includes("b")) note.addModifier(new Accidental("b"), index);
       });
 
-      if (isDotted(rawDuration) && Dot?.buildAndAttach) {
-        Dot.buildAndAttach([note], { all: true });
+      if (eventToMoment.get(eventId) === currentStep) {
+        note.setStyle({ fillStyle:"#10664c", strokeStyle:"#10664c" });
       }
-
-      addAccidentals(note, chord, Accidental);
-
-      if (globalIndex === currentStep) {
-        note.setStyle({
-          fillStyle: "#10664c",
-          strokeStyle: "#10664c"
-        });
-      }
-
       return note;
     }
 
-    function makeRest(clef) {
-      return new StaveNote({
-        clef,
-        keys: [clef === "bass" ? "d/3" : "b/4"],
-        duration: "qr"
+    function buildVoice(events, clef, measureIndex, staff) {
+      const items = events.map((event, eventIndex) => {
+        const id = `m${measureIndex}-${staff}-${eventIndex}`;
+        return { id, event, tickable:createTickable(event, clef, id) };
       });
+      const voice = new Voice({ numBeats, beatValue }).setStrict(true);
+      voice.addTickables(items.map(x => x.tickable));
+      return { voice, items };
     }
 
-    function measureItems(groups, measureIndex, clef) {
-      const start = measureIndex * 4;
+    const pad = 14;
+    const measureWidth = (width - pad * 2) / measuresPerSystem;
 
-      return Array.from({ length: 4 }, (_, beat) => {
-        const globalIndex = start + beat;
-        const group = groups[globalIndex] || null;
-
-        return {
-          globalIndex,
-          group,
-          isRest: !group,
-          tickable: group
-            ? makeNote(group, clef, globalIndex)
-            : makeRest(clef)
-        };
-      });
-    }
-
-    const sidePadding = 12;
-    const measureWidth = (width - sidePadding * 2) / measuresPerSystem;
-    const hintQueue = [];
-    const guideQueue = [];
-
-    for (let measureIndex = 0; measureIndex < measureCount; measureIndex += 1) {
+    measures.forEach((measure, measureIndex) => {
       const systemIndex = Math.floor(measureIndex / measuresPerSystem);
-      const positionInSystem = measureIndex % measuresPerSystem;
-      const x = sidePadding + positionInSystem * measureWidth;
-      const yBase = systemIndex * systemHeight;
-      const firstOnSystem = positionInSystem === 0;
+      const pos = measureIndex % measuresPerSystem;
+      const x = pad + pos * measureWidth;
+      const y = systemIndex * systemHeight;
+      const firstOnSystem = pos === 0;
       const firstOverall = measureIndex === 0;
-      const lastOverall = measureIndex === measureCount - 1;
+      const lastOverall = measureIndex === measures.length - 1;
 
-      if (!grand) {
-        const clef = hasLeft ? "bass" : "treble";
-        const groups = hasLeft ? left : right;
-        const stave = new Stave(x, yBase + 34, measureWidth);
-
-        if (firstOnSystem) {
-          stave.addClef(clef);
-          if (firstOverall) stave.addTimeSignature(activity.timeSignature || "4/4");
-        }
-
-        if (Barline?.type) {
-          stave.setEndBarType(lastOverall ? Barline.type.END : Barline.type.SINGLE);
-        }
-
-        stave.setContext(context).draw();
-
-        const items = measureItems(groups, measureIndex, clef);
-        const voice = new Voice({ numBeats: 4, beatValue: 4 }).setStrict(false);
-        voice.addTickables(items.map(item => item.tickable));
-
-        const usable = measureWidth - (firstOnSystem ? 92 : 28);
-        const formatter = new Formatter();
-        formatter.joinVoices([voice]).format([voice], usable);
-        voice.draw(context, stave);
-
-        hintQueue.push({ items, stave, clef });
-        guideQueue.push({
-          xs: items.map(item => item.tickable.getAbsoluteX()),
-          top: stave.getYForLine(0) - 22,
-          bottom: stave.getBottomLineY() + 22
-        });
-
-        continue;
-      }
-
-      const treble = new Stave(x, yBase + 14, measureWidth);
-      const bass = new Stave(x, yBase + 165, measureWidth);
+      const treble = new Stave(x, y + 16, measureWidth);
+      const bass = new Stave(x, y + 162, measureWidth);
 
       if (firstOnSystem) {
         treble.addClef("treble");
         bass.addClef("bass");
-
         if (firstOverall) {
-          treble.addTimeSignature(activity.timeSignature || "4/4");
-          bass.addTimeSignature(activity.timeSignature || "4/4");
+          treble.addTimeSignature(signature);
+          bass.addTimeSignature(signature);
         }
       }
 
       if (Barline?.type) {
-        const type = lastOverall ? Barline.type.END : Barline.type.SINGLE;
-        treble.setEndBarType(type);
-        bass.setEndBarType(type);
+        const endType = lastOverall ? Barline.type.END : Barline.type.SINGLE;
+        treble.setEndBarType(endType);
+        bass.setEndBarType(endType);
       }
 
-      treble.setContext(context);
-      bass.setContext(context);
-
-      // VexFlow fournit une méthode dédiée aux systèmes multi-portées.
-      // Elle aligne les clés, signatures rythmiques et surtout le début
-      // réel de la zone de notes des deux portées.
+      treble.setContext(context); bass.setContext(context);
       if (typeof Stave.formatBegModifiers === "function") {
         Stave.formatBegModifiers([treble, bass]);
       } else {
-        const sharedStart = Math.max(
-          treble.getNoteStartX(),
-          bass.getNoteStartX()
-        );
-        treble.setNoteStartX(sharedStart);
-        bass.setNoteStartX(sharedStart);
+        const shared = Math.max(treble.getNoteStartX(), bass.getNoteStartX());
+        treble.setNoteStartX(shared); bass.setNoteStartX(shared);
       }
-
-      treble.draw();
-      bass.draw();
+      treble.draw(); bass.draw();
 
       try {
         if (firstOnSystem) {
-          new StaveConnector(treble, bass)
-            .setType(StaveConnector.type.BRACE)
-            .setContext(context)
-            .draw();
-
-          new StaveConnector(treble, bass)
-            .setType(StaveConnector.type.SINGLE_LEFT)
-            .setContext(context)
-            .draw();
+          new StaveConnector(treble,bass).setType(StaveConnector.type.BRACE).setContext(context).draw();
+          new StaveConnector(treble,bass).setType(StaveConnector.type.SINGLE_LEFT).setContext(context).draw();
         }
-
-        new StaveConnector(treble, bass)
-          .setType(StaveConnector.type.SINGLE_RIGHT)
-          .setContext(context)
-          .draw();
+        new StaveConnector(treble,bass).setType(StaveConnector.type.SINGLE_RIGHT).setContext(context).draw();
       } catch (_) {}
 
-      const trebleItems = measureItems(right, measureIndex, "treble");
-      const bassItems = measureItems(left, measureIndex, "bass");
-
-      const trebleVoice = new Voice({ numBeats: 4, beatValue: 4 }).setStrict(false);
-      const bassVoice = new Voice({ numBeats: 4, beatValue: 4 }).setStrict(false);
-
-      trebleVoice.addTickables(trebleItems.map(item => item.tickable));
-      bassVoice.addTickables(bassItems.map(item => item.tickable));
-
-      // Les deux voix sont formatées ENSEMBLE.
-      // Cela impose le même TickContext pour chaque temps :
-      // temps 1 clé de sol = temps 1 clé de fa sur la même verticale.
+      const tv = buildVoice(measure.treble || [], "treble", measureIndex, "treble");
+      const bv = buildVoice(measure.bass || [], "bass", measureIndex, "bass");
       const formatter = new Formatter();
-      formatter.joinVoices([trebleVoice, bassVoice]);
-      const usable = measureWidth - (firstOnSystem ? 92 : 28);
-      formatter.format([trebleVoice, bassVoice], usable);
+      formatter.joinVoices([tv.voice, bv.voice]);
+      formatter.format([tv.voice, bv.voice], measureWidth - (firstOnSystem ? 98 : 30));
+      tv.voice.draw(context, treble); bv.voice.draw(context, bass);
 
-      // Les deux portées ont maintenant exactement le même noteStartX,
-      // et les deux voix utilisent le même Formatter : chaque pulsation
-      // possède donc la même coordonnée horizontale dans les deux clés.
-      trebleVoice.draw(context, treble);
-      bassVoice.draw(context, bass);
-
-      hintQueue.push(
-        { items: trebleItems, stave: treble, clef: "treble" },
-        { items: bassItems, stave: bass, clef: "bass" }
-      );
-
-      // On prend les X de la voix de dessus : la voix de dessous partage les mêmes temps.
-      guideQueue.push({
-        xs: trebleItems.map(item => noteCenterX(item.tickable)),
-        top: treble.getYForLine(0) - 20,
-        bottom: bass.getBottomLineY() + 20
+      hints.push({ items:tv.items, stave:treble }, { items:bv.items, stave:bass });
+      grids.push({
+        top:treble.getYForLine(0)-20,
+        bottom:bass.getBottomLineY()+20,
+        start:Math.max(treble.getNoteStartX(), bass.getNoteStartX()),
+        end:x + measureWidth - 12
       });
-    }
-
-    const svg = container.querySelector("svg");
-
-    guideQueue.forEach(({ xs, top, bottom }) => {
-      drawBeatGuides(svg, xs, top, bottom);
     });
 
-    hintQueue.forEach(({ items, stave, clef }) => {
-      items.forEach(item => {
-        drawHelp(svg, item, stave, clef, showNoteNames, showFingers);
+    const svg = container.querySelector("svg");
+    grids.forEach(g => addBeatGrid(svg, g.top, g.bottom, g.start, g.end, signature));
+
+    hints.forEach(({items, stave}) => {
+      items.forEach(({event, tickable}) => {
+        if (event.type === "rest") return;
+        const x = noteCenterX(tickable);
+        const y1 = stave.getBottomLineY() + 26;
+        const y2 = y1 + 17;
+        if (showNoteNames) {
+          svg.appendChild(svgNode("text", {x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"},
+            eventPitches(event).map(noteLabelFr).join(" + ")));
+        }
+        if (showFingers) {
+          const fingers = eventFingers(event);
+          if (fingers.length) svg.appendChild(svgNode("text", {x,y:y2,"text-anchor":"middle",class:"score-help score-help--finger"}, fingers.join("·")));
+        }
       });
     });
   } catch (error) {
     console.error("Erreur VexFlow :", error);
-
-    container.innerHTML = `
-      <div class="score-fallback">
-        <strong>La portée n’a pas pu être chargée.</strong><br>
-        <span>L’exercice reste utilisable avec le clavier et l’audio.</span>
-      </div>
-    `;
+    container.innerHTML = '<div class="score-fallback"><strong>La partition n’a pas pu être chargée.</strong><br><span>Le clavier et l’audio restent disponibles.</span></div>';
   }
 }

@@ -1,304 +1,923 @@
 export const pianoTrainingWeeks = [
   {
-    "title": "Semaine 1 — Les deux portées et les Do",
+    "title": "Semaine 1 — Deux portées, pulsation et vrais silences",
     "stages": [
       {
         "id": "w01-a1",
         "label": "Découverte",
-        "title": "Découvrir clé de sol et clé de fa",
-        "objective": "Clé de sol + clé de fa : repérer les Do. Rythme : Noires. Accompagnement : Basse simple : fondamentale.",
+        "title": "Le Do des deux mains et le silence",
+        "objective": "Repérer le Do main droite et le Do main gauche. Jouer une noire = 1 temps ; respecter un soupir = 1 temps.",
         "instructions": [
-          "Lecture : Clé de sol + clé de fa : repérer les Do.",
-          "Rythme : travaille noires.",
-          "Main gauche / harmonie : basse simple : fondamentale.",
-          "Repère la clé de sol : elle correspond à la main droite.",
-          "Repère la clé de fa : elle correspond à la main gauche.",
-          "Trouve Do central puis le Do grave sur ton vrai piano."
+          "Compte 1-2-3-4 à voix haute.",
+          "Quand tu vois un soupir, ne joue rien mais continue de compter.",
+          "Clé de sol : main droite. Clé de fa : main gauche."
         ],
-        "practice": {
-          "title": "Découvrir clé de sol et clé de fa",
-          "objective": "Repère une note sur chaque portée dès le premier jour.",
-          "hand": "Deux mains",
-          "tempo": 54,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "label": "Do central",
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "label": "Do grave",
-              "duration": "q"
-            }
-          ],
-          "staff": "grand",
-          "kind": "discovery",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires",
-          "accompanimentFocus": "Basse simple : fondamentale",
-          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
-        },
         "curriculum": {
-          "reading": "Clé de sol + clé de fa : repérer les Do",
-          "rhythm": "Noires",
-          "accompaniment": "Basse simple : fondamentale"
+          "reading": "Repérer Do4 en clé de sol et Do3 en clé de fa",
+          "rhythm": "Noire et soupir",
+          "accompaniment": "Basse simple"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Do + silences",
+          "tempo": 54,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w01-a2",
         "label": "Exercice 1",
-        "title": "Main droite — Do Ré Mi",
-        "objective": "Lis trois notes en clé de sol.",
+        "title": "Question main droite, réponse main gauche",
+        "objective": "Lire 4 mesures sans arrêter la pulsation.",
         "instructions": [
-          "Joue Do Ré Mi main droite en lisant la clé de sol."
+          "Joue seulement quand ta portée contient une note.",
+          "Les silences de l’autre main comptent aussi."
         ],
-        "practice": {
-          "title": "Main droite — Do Ré Mi",
-          "objective": "Lis trois notes en clé de sol.",
-          "hand": "Main droite",
-          "tempo": 54,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            }
-          ],
-          "staff": "treble",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires",
-          "accompanimentFocus": "Basse simple : fondamentale",
-          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
-        },
         "curriculum": {
-          "reading": "Clé de sol + clé de fa : repérer les Do",
-          "rhythm": "Noires",
-          "accompaniment": "Basse simple : fondamentale"
+          "reading": "Do4 / Do3",
+          "rhythm": "Noires, blanches et silences déjà expliqués visuellement",
+          "accompaniment": "Réponse de basse"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Question-réponse",
+          "tempo": 56,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "w"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w01-a3",
         "label": "Exercice 2",
-        "title": "Main gauche — Do Ré Mi",
-        "objective": "Lis trois notes en clé de fa.",
+        "title": "Silence sur le temps 2",
+        "objective": "Ne pas combler les silences : le silence fait partie de la musique.",
         "instructions": [
-          "Joue Do Ré Mi main gauche en lisant la clé de fa.",
-          "Refais chaque exercice lentement sans regarder constamment tes mains."
+          "Compte chaque mesure jusqu’à 4.",
+          "Sur le temps 2, garde les mains immobiles quand le soupir apparaît."
         ],
-        "practice": {
-          "title": "Main gauche — Do Ré Mi",
-          "objective": "Lis trois notes en clé de fa.",
-          "hand": "Main gauche",
-          "tempo": 54,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            }
-          ],
-          "staff": "bass",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires",
-          "accompanimentFocus": "Basse simple : fondamentale",
-          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
-        },
         "curriculum": {
-          "reading": "Clé de sol + clé de fa : repérer les Do",
-          "rhythm": "Noires",
-          "accompaniment": "Basse simple : fondamentale"
+          "reading": "Do sur les deux portées",
+          "rhythm": "Soupir placé sur différents temps",
+          "accompaniment": "Basse simple tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Silences précis",
+          "tempo": 58,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w01-a4",
         "label": "Mélodie finale",
-        "title": "Mélodie finale — Question / réponse",
-        "objective": "Joue une courte phrase avec les deux mains.",
+        "title": "Écho de Do — étude originale",
+        "objective": "Jouer 8 mesures en respectant notes et silences.",
         "instructions": [
-          "Lis d’abord les deux portées.",
-          "Joue la petite phrase mains séparées.",
-          "Assemble les deux mains très lentement."
+          "Commence lentement.",
+          "Les deux dernières mesures se jouent ensemble."
         ],
-        "practice": {
-          "title": "Mélodie finale — Question / réponse",
-          "objective": "Joue une courte phrase avec les deux mains.",
-          "hand": "Deux mains",
-          "tempo": 54,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
-          "staff": "grand",
-          "kind": "melody",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires",
-          "accompanimentFocus": "Basse simple : fondamentale",
-          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
-        },
         "curriculum": {
-          "reading": "Clé de sol + clé de fa : repérer les Do",
-          "rhythm": "Noires",
-          "accompaniment": "Basse simple : fondamentale"
+          "reading": "Do dans deux registres",
+          "rhythm": "Pulsation stable + silences",
+          "accompaniment": "Basse simple"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Écho de Do",
+          "tempo": 60,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w01-chant",
-        "label": "Morceau / chant de la semaine",
-        "title": "Étude Skillora — Deux portées",
-        "objective": "Appliquer la découverte de la semaine (Noires ; Basse simple : fondamentale) et réutiliser les acquis précédents.",
+        "label": "Morceau de la semaine",
+        "title": "Premier duo — pièce originale complète",
+        "objective": "Jouer une pièce complète de 8 mesures avec des silences réels.",
         "instructions": [
-          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
-          "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite seule.",
-          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
-          "Assemble lentement les deux mains.",
-          "Masque progressivement les aides.",
-          "Termine par l’extrait réel du morceau ou du chant."
+          "Joue la pièce du début à la fin.",
+          "Essaie ensuite sans Aide lecture.",
+          "Objectif : 3 passages sans arrêt à 60 BPM."
         ],
         "curriculum": {
-          "reading": "Clé de sol + clé de fa : repérer les Do",
-          "rhythm": "Noires",
-          "accompaniment": "Basse simple : fondamentale"
+          "reading": "Clé de sol + clé de fa",
+          "rhythm": "Noire, blanche, ronde et silences",
+          "accompaniment": "Basse simple"
         },
         "song": {
-          "title": "Étude Skillora — Deux portées",
+          "title": "Premier duo",
           "sourceMode": "original",
-          "sourceNote": "Étude originale conçue pour Skillora.",
-          "requiredSkills": [
-            "Clé de sol + clé de fa : repérer les Do",
-            "Basse simple : fondamentale"
-          ],
-          "usesCurrentDiscovery": true,
+          "sourceNote": "Pièce originale Skillora complète.",
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation cumulative — Étude Skillora — Deux portées",
-          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
-          "hand": "Deux mains",
-          "tempo": 54,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
+          "engine": "timeline-v2",
+          "title": "Premier duo",
+          "tempo": 60,
           "staff": "grand",
-          "kind": "song-preparation",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires",
-          "accompanimentFocus": "Basse simple : fondamentale",
-          "readingFocus": "Clé de sol + clé de fa : repérer les Do",
-          "songPreparationOnly": true
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       }
     ],
@@ -306,448 +925,1046 @@ export const pianoTrainingWeeks = [
       "reading": "Clé de sol + clé de fa : repérer les Do",
       "rhythm": "Noires",
       "accompaniment": "Basse simple : fondamentale"
-    }
+    },
+    "engine": "timeline-v2"
   },
   {
-    "title": "Semaine 2 — Les cinq doigts sur les deux portées",
+    "title": "Semaine 2 — Do Ré Mi, doigtés et blanches",
     "stages": [
       {
         "id": "w02-a1",
         "label": "Découverte",
-        "title": "Découvrir les numéros de doigts",
-        "objective": "Cinq doigts sur les deux portées. Rythme : Blanches. Accompagnement : Basse répétée.",
+        "title": "Do–Ré–Mi et les doigts 1–2–3",
+        "objective": "Déplacer les doigts sans bouger toute la main. Découvrir la blanche = 2 temps.",
         "instructions": [
-          "Lecture : Cinq doigts sur les deux portées.",
-          "Rythme : travaille blanches.",
-          "Main gauche / harmonie : basse répétée.",
-          "Mémorise : les pouces sont toujours doigt 1.",
-          "Observe les cinq doigts indiqués sur la clé de sol.",
-          "Observe les cinq doigts indiqués sur la clé de fa."
+          "MD : Do(1), Ré(2), Mi(3).",
+          "MG : Do(5), Ré(4), Mi(3).",
+          "Une blanche tient pendant 2 pulsations."
         ],
-        "practice": {
-          "title": "Découvrir les numéros de doigts",
-          "objective": "Associe les doigts aux deux mains.",
-          "hand": "Deux mains",
-          "tempo": 56,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "h"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "h"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "h"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "h"
-            }
-          ],
-          "staff": "grand",
-          "kind": "discovery",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Blanches",
-          "accompanimentFocus": "Basse répétée",
-          "readingFocus": "Cinq doigts sur les deux portées"
-        },
         "curriculum": {
-          "reading": "Cinq doigts sur les deux portées",
-          "rhythm": "Blanches",
+          "reading": "Do Ré Mi sur les deux clés",
+          "rhythm": "Noire + blanche",
           "accompaniment": "Basse répétée"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Trois notes",
+          "tempo": 58,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w02-a2",
         "label": "Exercice 1",
-        "title": "Main droite — 1 2 3 4 5",
-        "objective": "Garde la main posée sans déplacement.",
+        "title": "Main droite : motifs différents",
+        "objective": "Lire sans réciter Do–Ré–Mi toujours dans le même ordre.",
         "instructions": [
-          "Monte Do à Sol main droite."
+          "Observe avant de jouer.",
+          "Garde les doigts posés au-dessus des touches."
         ],
-        "practice": {
-          "title": "Main droite — 1 2 3 4 5",
-          "objective": "Garde la main posée sans déplacement.",
-          "hand": "Main droite",
-          "tempo": 56,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "h"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "h"
-            }
-          ],
-          "staff": "treble",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Blanches",
-          "accompanimentFocus": "Basse répétée",
-          "readingFocus": "Cinq doigts sur les deux portées"
-        },
         "curriculum": {
-          "reading": "Cinq doigts sur les deux portées",
-          "rhythm": "Blanches",
-          "accompaniment": "Basse répétée"
+          "reading": "Lecture mélangée Do Ré Mi",
+          "rhythm": "Noires et blanches",
+          "accompaniment": "Basse tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Motifs MD",
+          "tempo": 60,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w02-a3",
         "label": "Exercice 2",
-        "title": "Main gauche — 5 4 3 2 1",
-        "objective": "Lis la même zone en clé de fa.",
+        "title": "Main gauche : Do–Ré–Mi avec silences",
+        "objective": "Lire la clé de fa sans copier la main droite.",
         "instructions": [
-          "Monte Do à Sol main gauche avec le doigté inverse.",
-          "Redescends chaque main lentement."
+          "MG : 5–4–3.",
+          "Ne joue pas pendant les silences."
         ],
-        "practice": {
-          "title": "Main gauche — 5 4 3 2 1",
-          "objective": "Lis la même zone en clé de fa.",
-          "hand": "Main gauche",
-          "tempo": 56,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "h"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "h"
-            }
-          ],
-          "staff": "bass",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Blanches",
-          "accompanimentFocus": "Basse répétée",
-          "readingFocus": "Cinq doigts sur les deux portées"
-        },
         "curriculum": {
-          "reading": "Cinq doigts sur les deux portées",
-          "rhythm": "Blanches",
-          "accompaniment": "Basse répétée"
+          "reading": "Do Ré Mi en clé de fa",
+          "rhythm": "Blanche + silences",
+          "accompaniment": "Basse mélodique"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Motifs MG",
+          "tempo": 58,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w02-a4",
         "label": "Mélodie finale",
-        "title": "Mélodie finale — Cinq doigts ensemble",
-        "objective": "Coordonne les deux mains en mouvement conjoint.",
+        "title": "Trois lumières — étude originale",
+        "objective": "Coordonner une mélodie Do–Ré–Mi avec une basse indépendante.",
         "instructions": [
-          "Lis les deux portées avant de jouer.",
-          "Joue d’abord mains séparées.",
-          "Assemble quatre notes seulement."
+          "Travaille MD seule, puis MG seule, puis ensemble."
         ],
-        "practice": {
-          "title": "Mélodie finale — Cinq doigts ensemble",
-          "objective": "Coordonne les deux mains en mouvement conjoint sur une phrase plus complète de deux mesures.",
-          "hand": "Deux mains",
-          "tempo": 56,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "h"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "h"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "h"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "h"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "h"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "h"
-            }
-          ],
-          "staff": "grand",
-          "kind": "melody",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Blanches",
-          "accompanimentFocus": "Basse répétée",
-          "readingFocus": "Cinq doigts sur les deux portées"
-        },
         "curriculum": {
-          "reading": "Cinq doigts sur les deux portées",
-          "rhythm": "Blanches",
+          "reading": "Do Ré Mi deux mains",
+          "rhythm": "Noire + blanche + ronde",
           "accompaniment": "Basse répétée"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Trois lumières",
+          "tempo": 62,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w02-chant",
-        "label": "Morceau / chant de la semaine",
-        "title": "Hymne à la joie — Beethoven",
-        "objective": "Appliquer la découverte de la semaine (Blanches ; Basse répétée) et réutiliser les acquis précédents.",
+        "label": "Morceau de la semaine",
+        "title": "Chemin tranquille — pièce originale complète",
+        "objective": "Jouer 12 mesures complètes avec Do–Ré–Mi et des durées variées.",
         "instructions": [
-          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
-          "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite seule.",
-          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
-          "Assemble lentement les deux mains.",
-          "Masque progressivement les aides.",
-          "Termine par l’extrait réel du morceau ou du chant."
+          "Objectif : aucun arrêt entre les mesures.",
+          "Puis rejoue à 75 % sans aides."
         ],
         "curriculum": {
-          "reading": "Cinq doigts sur les deux portées",
-          "rhythm": "Blanches",
+          "reading": "Trois notes sur deux portées",
+          "rhythm": "Noire, blanche, ronde, silences",
           "accompaniment": "Basse répétée"
         },
         "song": {
-          "title": "Hymne à la joie — Beethoven",
-          "sourceMode": "domaine_public",
-          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
-          "requiredSkills": [
-            "Clé de sol + clé de fa : repérer les Do",
-            "Cinq doigts sur les deux portées",
-            "Basse simple : fondamentale",
-            "Basse répétée"
-          ],
-          "usesCurrentDiscovery": true,
+          "title": "Chemin tranquille",
+          "sourceMode": "original",
+          "sourceNote": "Pièce originale Skillora complète.",
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation cumulative — Hymne à la joie — Beethoven",
-          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
-          "hand": "Deux mains",
-          "tempo": 56,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "h"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "h"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "h"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "h"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "h"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "h"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "h"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "h"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "h"
-            }
-          ],
+          "engine": "timeline-v2",
+          "title": "Chemin tranquille",
+          "tempo": 64,
           "staff": "grand",
-          "kind": "song-preparation",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Blanches",
-          "accompanimentFocus": "Basse répétée",
-          "readingFocus": "Cinq doigts sur les deux portées",
-          "songPreparationOnly": true
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "w",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       }
     ],
@@ -755,390 +1972,979 @@ export const pianoTrainingWeeks = [
       "reading": "Cinq doigts sur les deux portées",
       "rhythm": "Blanches",
       "accompaniment": "Basse répétée"
-    }
+    },
+    "engine": "timeline-v2"
   },
   {
-    "title": "Semaine 3 — Lire Do Ré Mi sur les deux clés",
+    "title": "Semaine 3 — Rondes et indépendance des mains",
     "stages": [
       {
         "id": "w03-a1",
         "label": "Découverte",
-        "title": "Découvrir les positions de Do Ré Mi",
-        "objective": "Do Ré Mi mélangés sur les deux clés. Rythme : Rondes. Accompagnement : Fondamentale + quinte.",
+        "title": "La ronde et la mesure complète",
+        "objective": "Comprendre qu’une ronde occupe les 4 temps d’une mesure en 4/4.",
         "instructions": [
-          "Lecture : Do Ré Mi mélangés sur les deux clés.",
-          "Rythme : travaille rondes.",
-          "Main gauche / harmonie : fondamentale + quinte.",
-          "Lis Do Ré Mi sur la clé de sol.",
-          "Lis Do Ré Mi sur la clé de fa.",
-          "Dis le nom de la note avant d’appuyer sur la touche."
+          "Compte 1-2-3-4 pendant toute la ronde.",
+          "Ne rejoue pas la note au milieu."
         ],
-        "practice": {
-          "title": "Découvrir les positions de Do Ré Mi",
-          "objective": "Reconnais visuellement les mêmes noms de notes sur deux clés.",
-          "hand": "Deux mains",
-          "tempo": 58,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "w"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "w"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "w"
-            }
-          ],
-          "staff": "grand",
-          "kind": "discovery",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Rondes",
-          "accompanimentFocus": "Fondamentale + quinte",
-          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do Ré Mi mélangés sur les deux clés",
-          "rhythm": "Rondes",
-          "accompaniment": "Fondamentale + quinte"
+          "reading": "Do Ré Mi sans aide automatique",
+          "rhythm": "Ronde, blanche, noire et silences",
+          "accompaniment": "Fondamentale tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Ronde tenue",
+          "tempo": 56,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 4
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w03-a2",
         "label": "Exercice 1",
-        "title": "Lecture mélangée — main droite",
-        "objective": "Lis sans réciter toujours dans l’ordre.",
+        "title": "Une main tient, l’autre bouge",
+        "objective": "Commencer l’indépendance : tenir une ronde pendant que l’autre main joue.",
         "instructions": [
-          "Fais la lecture mélangée main droite."
+          "Ne coupe pas la note tenue quand l’autre main change."
         ],
-        "practice": {
-          "title": "Lecture mélangée — main droite",
-          "objective": "Lis sans réciter toujours dans l’ordre.",
-          "hand": "Main droite",
-          "tempo": 58,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "w"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            }
-          ],
-          "staff": "treble",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Rondes",
-          "accompanimentFocus": "Fondamentale + quinte",
-          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do Ré Mi mélangés sur les deux clés",
-          "rhythm": "Rondes",
-          "accompaniment": "Fondamentale + quinte"
+          "reading": "Do Ré Mi deux mains",
+          "rhythm": "Durées différentes simultanées",
+          "accompaniment": "Note tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Indépendance 1",
+          "tempo": 58,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w03-a3",
         "label": "Exercice 2",
-        "title": "Lecture mélangée — main gauche",
-        "objective": "Lis les mêmes trois noms en clé de fa.",
+        "title": "Silences indépendants",
+        "objective": "Une main peut être silencieuse pendant que l’autre continue.",
         "instructions": [
-          "Fais la lecture mélangée main gauche.",
-          "Rejoue sans dire les noms à voix haute."
+          "Ne transforme pas les silences en notes.",
+          "Garde la pulsation dans ta tête."
         ],
-        "practice": {
-          "title": "Lecture mélangée — main gauche",
-          "objective": "Lis les mêmes trois noms en clé de fa.",
-          "hand": "Main gauche",
-          "tempo": 58,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            }
-          ],
-          "staff": "bass",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Rondes",
-          "accompanimentFocus": "Fondamentale + quinte",
-          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do Ré Mi mélangés sur les deux clés",
-          "rhythm": "Rondes",
-          "accompaniment": "Fondamentale + quinte"
+          "reading": "Deux portées indépendantes",
+          "rhythm": "Silences à des endroits différents",
+          "accompaniment": "Fondamentale + note voisine"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Indépendance 2",
+          "tempo": 60,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w03-a4",
         "label": "Mélodie finale",
-        "title": "Mélodie finale — Trois notes",
-        "objective": "Alterne mouvement et notes répétées.",
+        "title": "Respire — étude originale",
+        "objective": "Jouer une phrase de 8 mesures avec de vrais espaces de silence.",
         "instructions": [
-          "Travaille la mélodie main droite.",
-          "Travaille la basse main gauche.",
-          "Assemble les deux mains."
+          "Les silences font respirer la phrase.",
+          "Essaie d’entendre intérieurement la pulsation pendant les silences."
         ],
-        "practice": {
-          "title": "Mélodie finale — Trois notes",
-          "objective": "Alterne mouvement et notes répétées.",
-          "hand": "Deux mains",
-          "tempo": 58,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "w"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "w"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            }
-          ],
-          "staff": "grand",
-          "kind": "melody",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Rondes",
-          "accompanimentFocus": "Fondamentale + quinte",
-          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do Ré Mi mélangés sur les deux clés",
-          "rhythm": "Rondes",
-          "accompaniment": "Fondamentale + quinte"
+          "reading": "Lecture fluide Do Ré Mi",
+          "rhythm": "Rondes + silences + durées superposées",
+          "accompaniment": "Basse tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Respire",
+          "tempo": 62,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "q",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w03-chant",
-        "label": "Morceau / chant de la semaine",
-        "title": "Clair de lune — Debussy (court extrait)",
-        "objective": "Appliquer la découverte de la semaine (Rondes ; Fondamentale + quinte) et réutiliser les acquis précédents.",
+        "label": "Morceau de la semaine",
+        "title": "Trois notes, une phrase — pièce originale complète",
+        "objective": "Jouer 12 mesures en gardant la continuité malgré les silences.",
         "instructions": [
-          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
-          "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite seule.",
-          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
-          "Assemble lentement les deux mains.",
-          "Masque progressivement les aides.",
-          "Termine par l’extrait réel du morceau ou du chant."
+          "Travaille 4 mesures par 4 mesures.",
+          "Puis enchaîne les 12 mesures sans arrêt."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi mélangés sur les deux clés",
-          "rhythm": "Rondes",
-          "accompaniment": "Fondamentale + quinte"
+          "reading": "Do Ré Mi autonome",
+          "rhythm": "Noire, blanche, ronde, silences indépendants",
+          "accompaniment": "Basse tenue et mouvement conjoint"
         },
         "song": {
-          "title": "Clair de lune — Debussy (court extrait)",
-          "sourceMode": "domaine_public",
-          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
-          "requiredSkills": [
-            "Clé de sol + clé de fa : repérer les Do",
-            "Cinq doigts sur les deux portées",
-            "Do Ré Mi mélangés sur les deux clés",
-            "Basse simple : fondamentale",
-            "Basse répétée",
-            "Fondamentale + quinte"
-          ],
-          "usesCurrentDiscovery": true,
+          "title": "Trois notes, une phrase",
+          "sourceMode": "original",
+          "sourceNote": "Pièce originale Skillora complète.",
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation cumulative — Clair de lune — Debussy (court extrait)",
-          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
-          "hand": "Deux mains",
-          "tempo": 58,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "w"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "w"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "w"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "w"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "w"
-            }
-          ],
+          "engine": "timeline-v2",
+          "title": "Trois notes, une phrase",
+          "tempo": 64,
           "staff": "grand",
-          "kind": "song-preparation",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Rondes",
-          "accompanimentFocus": "Fondamentale + quinte",
-          "readingFocus": "Do Ré Mi mélangés sur les deux clés",
-          "songPreparationOnly": true
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 3
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "w",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "h"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "h",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       }
     ],
@@ -1146,440 +2952,1293 @@ export const pianoTrainingWeeks = [
       "reading": "Do Ré Mi mélangés sur les deux clés",
       "rhythm": "Rondes",
       "accompaniment": "Fondamentale + quinte"
-    }
+    },
+    "engine": "timeline-v2"
   },
   {
-    "title": "Semaine 4 — Ajouter Fa et Sol",
+    "title": "Semaine 4 — Do à Sol et Hymne à la joie",
     "stages": [
       {
         "id": "w04-a1",
         "label": "Découverte",
-        "title": "Découvrir Fa et Sol sur les deux clés",
-        "objective": "Do à Sol sur les deux clés. Rythme : Noires + silences. Accompagnement : Basse alternée.",
+        "title": "Ajouter Fa et Sol",
+        "objective": "Étendre la position de cinq doigts jusqu’à Sol.",
         "instructions": [
-          "Lecture : Do à Sol sur les deux clés.",
-          "Rythme : travaille noires + silences.",
-          "Main gauche / harmonie : basse alternée.",
-          "Repère Fa et Sol sur la clé de sol.",
-          "Repère Fa et Sol sur la clé de fa.",
-          "Compare leur position avec Do Ré Mi."
+          "MD : Do1 Ré2 Mi3 Fa4 Sol5.",
+          "MG : Do5 Ré4 Mi3 Fa2 Sol1."
         ],
-        "practice": {
-          "title": "Découvrir Fa et Sol sur les deux clés",
-          "objective": "Élargis la lecture à cinq notes.",
-          "hand": "Deux mains",
-          "tempo": 60,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            }
-          ],
-          "staff": "grand",
-          "kind": "discovery",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires + silences",
-          "accompanimentFocus": "Basse alternée",
-          "readingFocus": "Do à Sol sur les deux clés"
-        },
         "curriculum": {
           "reading": "Do à Sol sur les deux clés",
-          "rhythm": "Noires + silences",
-          "accompaniment": "Basse alternée"
+          "rhythm": "Noire, blanche, ronde",
+          "accompaniment": "Fondamentale tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Cinq notes",
+          "tempo": 58,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w04-a2",
         "label": "Exercice 1",
-        "title": "Montée et descente — main droite",
-        "objective": "Joue cinq notes sans accélérer.",
+        "title": "Sauts dans les cinq notes",
+        "objective": "Lire des notes qui ne montent pas toujours dans l’ordre.",
         "instructions": [
-          "Monte et descends cinq notes main droite."
+          "Lis la note avant de regarder le clavier."
         ],
-        "practice": {
-          "title": "Montée et descente — main droite",
-          "objective": "Joue cinq notes sans accélérer.",
-          "hand": "Main droite",
-          "tempo": 60,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            }
-          ],
-          "staff": "treble",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires + silences",
-          "accompanimentFocus": "Basse alternée",
-          "readingFocus": "Do à Sol sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do à Sol sur les deux clés",
-          "rhythm": "Noires + silences",
-          "accompaniment": "Basse alternée"
+          "reading": "Do à Sol mélangés",
+          "rhythm": "Noires + blanches",
+          "accompaniment": "Basse C/G"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Lecture mélangée",
+          "tempo": 60,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w04-a3",
         "label": "Exercice 2",
-        "title": "Montée et descente — main gauche",
-        "objective": "Lis cinq notes en clé de fa.",
+        "title": "Préparation à l’Hymne à la joie",
+        "objective": "Travailler les cellules rythmiques et les notes réellement utilisées dans le morceau final.",
         "instructions": [
-          "Monte et descends cinq notes main gauche.",
-          "Garde les poignets détendus."
+          "Répète chaque mesure jusqu’à la jouer sans hésitation.",
+          "La main gauche tient une basse pendant que la droite joue quatre noires."
         ],
-        "practice": {
-          "title": "Montée et descente — main gauche",
-          "objective": "Lis cinq notes en clé de fa.",
-          "hand": "Main gauche",
-          "tempo": 60,
-          "mode": "sequence",
-          "notes": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
-          "staff": "bass",
-          "kind": "exercise",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires + silences",
-          "accompanimentFocus": "Basse alternée",
-          "readingFocus": "Do à Sol sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do à Sol sur les deux clés",
-          "rhythm": "Noires + silences",
-          "accompaniment": "Basse alternée"
+          "reading": "Do Ré Mi Fa Sol",
+          "rhythm": "4 noires contre une ronde",
+          "accompaniment": "Basse fondamentale tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Cellules Beethoven",
+          "tempo": 62,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 1
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w04-a4",
         "label": "Mélodie finale",
-        "title": "Mélodie finale — Escalier",
-        "objective": "Joue une phrase à cinq notes avec basse simple.",
+        "title": "Hymne à la joie — première phrase réelle",
+        "objective": "Jouer les 8 premières mesures de la vraie mélodie de Beethoven avec basse simple.",
         "instructions": [
-          "Lis toute la phrase avant de jouer.",
-          "Joue les deux mains séparément.",
-          "Assemble sans accélérer."
+          "Travaille d’abord la main droite seule.",
+          "Ajoute ensuite les rondes de basse."
         ],
-        "practice": {
-          "title": "Mélodie finale — Escalier",
-          "objective": "Joue une phrase à cinq notes avec basse simple.",
-          "hand": "Deux mains",
-          "tempo": 60,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
-          "staff": "grand",
-          "kind": "melody",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires + silences",
-          "accompanimentFocus": "Basse alternée",
-          "readingFocus": "Do à Sol sur les deux clés"
-        },
         "curriculum": {
-          "reading": "Do à Sol sur les deux clés",
-          "rhythm": "Noires + silences",
-          "accompaniment": "Basse alternée"
+          "reading": "Do à Sol",
+          "rhythm": "Noires + blanches",
+          "accompaniment": "Basse C/G tenue"
+        },
+        "practice": {
+          "engine": "timeline-v2",
+          "title": "Hymne à la joie — 8 mesures",
+          "tempo": 66,
+          "staff": "grand",
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       },
       {
         "id": "w04-chant",
-        "label": "Morceau / chant de la semaine",
-        "title": "Prélude en Do majeur — Bach (court extrait)",
-        "objective": "Appliquer la découverte de la semaine (Noires + silences ; Basse alternée) et réutiliser les acquis précédents.",
+        "label": "Morceau de la semaine",
+        "title": "Hymne à la joie — Beethoven — thème complet",
+        "objective": "Jouer le thème complet de 16 mesures, avec la vraie mélodie et une basse pédagogique simple.",
         "instructions": [
-          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
-          "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite seule.",
-          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
-          "Assemble lentement les deux mains.",
-          "Masque progressivement les aides.",
-          "Termine par l’extrait réel du morceau ou du chant."
+          "Ceci n’est pas une préparation générique : la mélodie est celle du thème public-domain.",
+          "Travaille 4 mesures à la fois.",
+          "Puis joue les 16 mesures sans arrêt.",
+          "Objectif final : 3 passages à 72 BPM."
         ],
         "curriculum": {
-          "reading": "Do à Sol sur les deux clés",
-          "rhythm": "Noires + silences",
-          "accompaniment": "Basse alternée"
+          "reading": "Do à Sol sur deux portées",
+          "rhythm": "Noires + blanches, 4/4",
+          "accompaniment": "Basses fondamentales tenues"
         },
         "song": {
-          "title": "Prélude en Do majeur — Bach (court extrait)",
+          "title": "Hymne à la joie",
+          "composer": "Ludwig van Beethoven",
           "sourceMode": "domaine_public",
-          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
-          "requiredSkills": [
-            "Cinq doigts sur les deux portées",
-            "Do Ré Mi mélangés sur les deux clés",
-            "Do à Sol sur les deux clés",
-            "Basse répétée",
-            "Fondamentale + quinte",
-            "Basse alternée"
-          ],
-          "usesCurrentDiscovery": true,
-          "uniqueForWeek": true
+          "sourceNote": "Mélodie du thème public-domain ; accompagnement de basse simplifié pour le niveau 4.",
+          "uniqueForWeek": true,
+          "complete": true
         },
         "practice": {
-          "title": "Préparation cumulative — Prélude en Do majeur — Bach (court extrait)",
-          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
-          "hand": "Deux mains",
-          "tempo": 60,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
+          "engine": "timeline-v2",
+          "title": "Hymne à la joie — thème complet",
+          "tempo": 72,
           "staff": "grand",
-          "kind": "song-preparation",
-          "timeSignature": "4/4",
-          "rhythmFocus": "Noires + silences",
-          "accompanimentFocus": "Basse alternée",
-          "readingFocus": "Do à Sol sur les deux clés",
-          "songPreparationOnly": true
+          "measuresPerSystem": 2,
+          "timeline": {
+            "timeSignature": "4/4",
+            "measures": [
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              }
+            ]
+          },
+          "description": ""
         }
       }
     ],
@@ -1587,7 +4246,8 @@ export const pianoTrainingWeeks = [
       "reading": "Do à Sol sur les deux clés",
       "rhythm": "Noires + silences",
       "accompaniment": "Basse alternée"
-    }
+    },
+    "engine": "timeline-v2"
   },
   {
     "title": "Semaine 5 — Pulsation et rythme en 4/4",
