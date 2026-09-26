@@ -147,9 +147,9 @@ function makePianoStage(stage, weekIndex, stageIndex) {
     ${stage.song ? `
       <div class="piano-song-goal">
         <strong>Objectif chant</strong>
-        <span>${stage.song.title}</span>
-        <p>${stage.song.sourceNote}</p>
-        <small>À réutiliser : ${stage.song.requiredSkills.join(" · ")}</small>
+        <span>${stage.song.title || stage.title || "Morceau de la semaine"}</span>
+        ${stage.song.sourceNote ? `<p>${stage.song.sourceNote}</p>` : ""}
+        ${Array.isArray(stage.song.requiredSkills) && stage.song.requiredSkills.length ? `<small>À réutiliser : ${stage.song.requiredSkills.join(" · ")}</small>` : ""}
       </div>
     ` : ""}
 
