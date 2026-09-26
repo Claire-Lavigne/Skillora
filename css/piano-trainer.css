@@ -557,3 +557,80 @@
 
 
 .piano-song-goal{margin-top:12px;padding:13px 14px;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;background:#fff}.piano-song-goal strong{display:block;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.04em}.piano-song-goal>span{display:block;margin-top:4px;font-weight:850;font-size:17px}.piano-song-goal p{margin:7px 0 6px;color:var(--muted);line-height:1.45}.piano-song-goal small{display:block;line-height:1.45}
+
+
+/* Démonstration piano fluide */
+.trainer-key{
+  transition:
+    background-color .18s ease,
+    box-shadow .18s ease,
+    opacity .18s ease !important;
+}
+
+.trainer-key.is-playing{
+  transform:none !important;
+  background:#83c8ab;
+  box-shadow:inset 0 0 0 3px var(--accent), inset 0 5px 12px rgba(0,0,0,.10);
+}
+
+.trainer-key--black.is-playing{
+  transform:translateX(-50%) !important;
+  background:#0b5942;
+  box-shadow:inset 0 0 0 2px #fff;
+}
+
+/* Le clavier reste entièrement dans son cadre même avec une grande tessiture. */
+.trainer-keyboard{
+  overflow:hidden !important;
+  contain:layout paint;
+}
+
+.trainer-key--white{
+  min-width:0 !important;
+}
+
+.trainer-key__label{
+  overflow:hidden;
+  text-overflow:clip;
+}
+
+
+.piano-curriculum-strip,
+.trainer-learning-focus{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+  margin-top:12px;
+}
+
+.piano-curriculum-strip span,
+.trainer-learning-focus span{
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:9px 10px;
+  background:var(--soft);
+  font-size:12px;
+  line-height:1.35;
+}
+
+.piano-curriculum-strip strong,
+.trainer-learning-focus strong{
+  display:block;
+  color:var(--accent);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  margin-bottom:3px;
+}
+
+.trainer-learning-focus{
+  margin-top:2px;
+  margin-bottom:12px;
+}
+
+@media(max-width:700px){
+  .piano-curriculum-strip,
+  .trainer-learning-focus{
+    grid-template-columns:1fr;
+  }
+}

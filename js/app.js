@@ -131,6 +131,14 @@ function makePianoStage(stage, weekIndex, stageIndex) {
       </label>
     </div>
 
+    ${stage.curriculum ? `
+      <div class="piano-curriculum-strip">
+        <span><strong>Lecture</strong>${stage.curriculum.reading}</span>
+        <span><strong>Rythme</strong>${stage.curriculum.rhythm}</span>
+        <span><strong>Accompagnement</strong>${stage.curriculum.accompaniment}</span>
+      </div>
+    ` : ""}
+
     <div class="piano-stage-instructions">
       <strong>Ce que tu dois faire</strong>
       <ol>${instructions}</ol>
