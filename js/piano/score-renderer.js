@@ -114,32 +114,6 @@ function drawHelp(svg, item, stave, clef, showNoteNames, showFingers) {
   }
 }
 
-function alignGrandStaffBeats(trebleItems, bassItems) {
-  // Même si les voix partagent le même Formatter, les modificateurs de portée
-  // (clé, métrique, etc.) peuvent provoquer un léger décalage visuel au premier temps.
-  // On recale donc explicitement chaque paire de notes/repos sur le même X.
-  const count = Math.min(trebleItems.length, bassItems.length);
-
-  for (let index = 0; index < count; index += 1) {
-    const trebleTickable = trebleItems[index].tickable;
-    const bassTickable = bassItems[index].tickable;
-
-    const trebleX = trebleTickable.getAbsoluteX();
-    const bassX = bassTickable.getAbsoluteX();
-    const sharedX = Math.max(trebleX, bassX);
-
-    const trebleShift = sharedX - trebleX;
-    const bassShift = sharedX - bassX;
-
-    if (Math.abs(trebleShift) > 0.01 && trebleTickable.setXShift) {
-      trebleTickable.setXShift((trebleTickable.getXShift?.() || 0) + trebleShift);
-    }
-
-    if (Math.abs(bassShift) > 0.01 && bassTickable.setXShift) {
-      bassTickable.setXShift((bassTickable.getXShift?.() || 0) + bassShift);
-    }
-  }
-}
 
 function drawBeatGuides(svg, beatXs, topY, bottomY, firstBeatOfMeasure = 0) {
   beatXs.forEach((x, index) => {
@@ -324,8 +298,25 @@ export async function renderScore(
         bass.setEndBarType(type);
       }
 
-      treble.setContext(context).draw();
-      bass.setContext(context).draw();
+      treble.setContext(context);
+      bass.setContext(context);
+
+      // VexFlow fournit une méthode dédiée aux systèmes multi-portées.
+      // Elle aligne les clés, signatures rythmiques et surtout le début
+      // réel de la zone de notes des deux portées.
+      if (typeof Stave.formatBegModifiers === "function") {
+        Stave.formatBegModifiers([treble, bass]);
+      } else {
+        const sharedStart = Math.max(
+          treble.getNoteStartX(),
+          bass.getNoteStartX()
+        );
+        treble.setNoteStartX(sharedStart);
+        bass.setNoteStartX(sharedStart);
+      }
+
+      treble.draw();
+      bass.draw();
 
       try {
         if (firstOnSystem) {
@@ -363,10 +354,9 @@ export async function renderScore(
       const usable = measureWidth - (firstOnSystem ? 92 : 28);
       formatter.format([trebleVoice, bassVoice], usable);
 
-      // Recalage explicite : chaque temps de la clé de sol et de la clé de fa
-      // partage exactement le même axe horizontal, y compris le premier.
-      alignGrandStaffBeats(trebleItems, bassItems);
-
+      // Les deux portées ont maintenant exactement le même noteStartX,
+      // et les deux voix utilisent le même Formatter : chaque pulsation
+      // possède donc la même coordonnée horizontale dans les deux clés.
       trebleVoice.draw(context, treble);
       bassVoice.draw(context, bass);
 

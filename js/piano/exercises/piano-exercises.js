@@ -172,6 +172,114 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w01-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Les deux portées et les Do » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 1",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 48,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -446,6 +554,154 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w02-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Les cinq doigts sur les deux portées » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 2",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 49,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -679,6 +935,194 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w03-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Lire Do Ré Mi sur les deux clés » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 3",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 50,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -954,6 +1398,234 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w04-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Ajouter Fa et Sol » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 4",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 51,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -1207,6 +1879,114 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w05-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Pulsation et rythme en 4/4 » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 5",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 52,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -1482,6 +2262,154 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w06-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Lecture mélangée Do à Sol » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 6",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 53,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -1683,6 +2611,194 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w07-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Secondes et tierces » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 7",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 54,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -1908,6 +3024,234 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w08-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Première vraie mélodie à deux mains » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 8",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 55,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -2091,6 +3435,114 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w09-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Accord de Do majeur » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 9",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 56,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -2280,6 +3732,154 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w10-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Accords de Fa et Sol » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 10",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 57,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -2609,6 +4209,194 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w11-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Enchaînement Do Fa Sol Do » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 11",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 58,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -2867,6 +4655,234 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w12-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Jouer avec le métronome » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 12",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 59,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -3172,6 +5188,114 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w13-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Gamme de Do majeur » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 13",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 60,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -3450,6 +5574,154 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w14-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Gamme de Do, mains ensemble » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 14",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 61,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -3654,6 +5926,194 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w15-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Nuances et expression » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 15",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 62,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -3837,6 +6297,234 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w16-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Pédale de sustain » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 16",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 63,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -4051,6 +6739,114 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w17-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Arpèges simples » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 17",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 64,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -4380,6 +7176,154 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w18-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Progression Do La mineur Fa Sol » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 18",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 65,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -4643,6 +7587,194 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w19-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Indépendance des mains » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 19",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 66,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -4918,6 +8050,234 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w20-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Amazing Grace",
+        "objective": "Appliquer la leçon « Lecture à vue sur deux portées » dans un extrait progressif de Amazing Grace, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Amazing Grace — arrangement niveau 20",
+          "objective": "Jouer un extrait adapté de Amazing Grace avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 67,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "D5",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E5",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "C5",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Amazing Grace",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -5130,6 +8490,114 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w21-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Renversements d’accords » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 21",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 68,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -5405,6 +8873,154 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w22-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Accompagnement main gauche » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 22",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 69,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -5678,6 +9294,194 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w23-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Phrasé et respiration » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 23",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 70,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -5958,6 +9762,234 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w24-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
+        "objective": "Appliquer la leçon « Sol majeur et Fa majeur » dans un extrait progressif de Joyful, Joyful, We Adore Thee, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Joyful, Joyful, We Adore Thee — arrangement niveau 24",
+          "objective": "Jouer un extrait adapté de Joyful, Joyful, We Adore Thee avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 71,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Joyful, Joyful, We Adore Thee",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -6156,6 +10188,114 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w25-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Accords mineurs » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 25",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -6420,6 +10560,154 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w26-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Jouer sans regarder les mains » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 26",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -6690,6 +10978,194 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w27-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Improvisation pentatonique » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 27",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -6928,6 +11404,234 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w28-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — When the Saints Go Marching In",
+        "objective": "Appliquer la leçon « Accords de septième » dans un extrait progressif de When the Saints Go Marching In, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "When the Saints Go Marching In — arrangement niveau 28",
+          "objective": "Jouer un extrait adapté de When the Saints Go Marching In avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "When the Saints Go Marching In",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -7223,6 +11927,114 @@ export const pianoTrainingWeeks = [
           "staff": "grand",
           "kind": "melody"
         }
+      },
+      {
+        "id": "w29-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Technique et vitesse contrôlée » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 29",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
+        }
       }
     ]
   },
@@ -7461,6 +12273,154 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w30-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Construire un morceau intermédiaire » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 30",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -7715,6 +12675,194 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w31-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Harmonie et transposition » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 31",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
         }
       }
     ]
@@ -8009,6 +13157,234 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody"
+        }
+      },
+      {
+        "id": "w32-chant",
+        "label": "Chant de la semaine",
+        "title": "Chant de la semaine — Jesus Loves Me",
+        "objective": "Appliquer la leçon « Projet final » dans un extrait progressif de Jesus Loves Me, puis le jouer sans t’arrêter.",
+        "instructions": [
+          "Active d’abord Aide lecture et Aide doigté.",
+          "Joue la main droite seule jusqu’à reconnaître la mélodie.",
+          "Travaille ensuite la main gauche seule en clé de fa.",
+          "Assemble les deux mains très lentement.",
+          "Quand le passage est stable, masque progressivement les aides."
+        ],
+        "practice": {
+          "title": "Jesus Loves Me — arrangement niveau 32",
+          "objective": "Jouer un extrait adapté de Jesus Loves Me avec les acquis de la semaine.",
+          "hand": "Deux mains",
+          "tempo": 72,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "D4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "F4",
+              "finger": 4,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "F3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "A3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "E3",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "hymn",
+          "hymnTitle": "Jesus Loves Me",
+          "publicDomainArrangement": true
         }
       }
     ]

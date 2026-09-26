@@ -540,3 +540,17 @@
   font-weight:900;
   fill:#10664c;
 }
+
+
+/* Le 5e bloc est l'objectif musical final de la semaine. */
+.piano-learning-stage:last-of-type{
+  border-width:2px;
+}
+
+.piano-learning-stage:last-of-type .piano-learning-stage__label{
+  font-size:12px;
+}
+
+.piano-learning-stage:last-of-type .piano-stage-instructions{
+  border-left:4px solid var(--accent);
+}
