@@ -5,6 +5,7 @@ import {
   playChord,
   playSequence,
   playChordSequence,
+  playTimedEvents,
   stopPlayback,
   pianoSoundCredits
 } from "./audio-player.js";
@@ -34,6 +35,46 @@ function targetSteps(activity) {
   }
 
   return (activity.notes || []).map(item => [item.note]);
+}
+
+function timedEvents(activity) {
+  if (activity.mode === "two-hand") {
+    const right = activity.rightHand || [];
+    const left = activity.leftHand || [];
+    const count = Math.max(right.length, left.length);
+
+    return Array.from({ length: count }, (_, index) => {
+      const notes = [];
+      if (right[index]?.note) notes.push(right[index].note);
+      if (left[index]?.note) notes.push(left[index].note);
+
+      const duration =
+        right[index]?.duration ||
+        left[index]?.duration ||
+        "q";
+
+      return { notes, duration };
+    });
+  }
+
+  if (activity.mode === "chord-sequence") {
+    return (activity.groups || []).map(group => ({
+      notes: group.map(item => item.note),
+      duration: group[0]?.duration || "q"
+    }));
+  }
+
+  if (activity.mode === "chord") {
+    return [{
+      notes: (activity.notes || []).map(item => item.note),
+      duration: activity.notes?.[0]?.duration || "q"
+    }];
+  }
+
+  return (activity.notes || []).map(item => ({
+    notes: [item.note],
+    duration: item.duration || "q"
+  }));
 }
 
 function prettyTarget(notes) {
@@ -119,6 +160,12 @@ export function mountPianoStageTrainer(container, stage) {
 
   container.innerHTML = `
     <div class="piano-stage-tools">
+      <div class="trainer-learning-focus">
+        <span><strong>Lecture</strong> ${stage.curriculum?.reading || activity.readingFocus || "—"}</span>
+        <span><strong>Rythme</strong> ${stage.curriculum?.rhythm || activity.rhythmFocus || "—"}</span>
+        <span><strong>Accompagnement</strong> ${stage.curriculum?.accompaniment || activity.accompanimentFocus || "—"}</span>
+      </div>
+
       <div class="trainer-focus" aria-live="polite">
         <div>
           <span class="trainer-focus__label">À jouer maintenant sur ton vrai piano</span>
@@ -237,11 +284,14 @@ export function mountPianoStageTrainer(container, stage) {
 
   function demoStep(notes, index) {
     stepIndex = Math.min(index, steps().length - 1);
+
+    // Pendant la démonstration, on ne reconstruit pas toute la partition à
+    // chaque temps : cela provoquait un effet de flash.
     keyboard.highlight(notes, notes);
-    keyboard.animate(notes, 460);
+    keyboard.animate(notes, 0, true);
+
     current.textContent = prettyTarget(notes);
     finger.textContent = fingersLabel(entriesForStep(activity, stepIndex));
-    refreshScore();
   }
 
   container.querySelector(".trainer-listen").addEventListener("click", async () => {
@@ -288,6 +338,7 @@ export function mountPianoStageTrainer(container, stage) {
     const options = {
       onStep: demoStep,
       onDone: () => {
+        keyboard.clearPlaying();
         playAllButton.disabled = false;
         audioStatus.textContent = "Démonstration terminée. À toi de jouer.";
         renderCurrent();
@@ -295,26 +346,8 @@ export function mountPianoStageTrainer(container, stage) {
     };
 
     try {
-      if (activity.mode === "chord-sequence") {
-        await playChordSequence(
-          (activity.groups || []).map(group => group.map(item => item.note)),
-          activity.tempo,
-          options
-        );
-      } else if (activity.mode === "chord") {
-        const notes = (activity.notes || []).map(item => item.note);
-        demoStep(notes, 0);
-        await playChord(notes);
-        options.onDone();
-      } else if (activity.mode === "two-hand") {
-        await playChordSequence(steps(), activity.tempo, options);
-      } else {
-        await playSequence(
-          (activity.notes || []).map(item => item.note),
-          activity.tempo,
-          options
-        );
-      }
+      const events = timedEvents(activity);
+      await playTimedEvents(events, activity.tempo, options);
     } catch (_) {
       playAllButton.disabled = false;
       audioStatus.textContent = "La démonstration audio a été interrompue.";

@@ -101,27 +101,11 @@ function visibleWhiteRange(notes = [], minWhiteKeys = 7) {
   return ALL_WHITE_NOTES.slice(startIndex, endIndex + 1);
 }
 
-export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7, maxWhiteKeys = 14 } = {}) {
-  let whites = visibleWhiteRange(notes, minWhiteKeys);
-
-  // Évite un clavier tellement large que les touches deviennent illisibles.
-  // Si une étape couvre une plage trop vaste, on garde une zone centrée sur les notes utiles.
-  if (whites.length > maxWhiteKeys) {
-    const noteMidis = notes.map(canonicalNote).map(noteToMidi);
-    const center = noteMidis.length
-      ? (Math.min(...noteMidis) + Math.max(...noteMidis)) / 2
-      : noteToMidi("C4");
-
-    const centerIndex = whites.reduce((best, item, index) => {
-      return Math.abs(item.midi - center) < Math.abs(whites[best].midi - center)
-        ? index
-        : best;
-    }, 0);
-
-    const half = Math.floor(maxWhiteKeys / 2);
-    const start = Math.max(0, Math.min(whites.length - maxWhiteKeys, centerIndex - half));
-    whites = whites.slice(start, start + maxWhiteKeys);
-  }
+export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } = {}) {
+  // On affiche TOUJOURS toute l'étendue utilisée par l'exercice.
+  // Les touches se compressent pour tenir dans le conteneur au lieu de couper
+  // les notes graves ou aiguës.
+  const whites = visibleWhiteRange(notes, minWhiteKeys);
 
   container.innerHTML = `
     <div
@@ -185,26 +169,44 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7, m
     });
   }
 
-  function animate(notesToAnimate, duration = 500) {
+  let releaseTimer = null;
+
+  function animate(notesToAnimate, duration = 500, holdUntilNext = false) {
     const list = (Array.isArray(notesToAnimate) ? notesToAnimate : [notesToAnimate])
       .map(canonicalNote);
 
-    const active = [];
+    if (releaseTimer) {
+      window.clearTimeout(releaseTimer);
+      releaseTimer = null;
+    }
+
+    // Une seule étape visuelle reste active : on passe doucement de l'ancienne
+    // note/accord à la nouvelle sans laisser une période "éteinte".
+    keyboard.querySelectorAll(".is-playing").forEach(key => {
+      key.classList.remove("is-playing");
+    });
 
     list.forEach(note => {
       const key = keyboard.querySelector(`[data-note="${note}"]`);
-      if (key) {
-        key.classList.add("is-playing");
-        active.push(key);
-      }
+      if (key) key.classList.add("is-playing");
     });
 
-    window.setTimeout(() => {
-      active.forEach(key => key.classList.remove("is-playing"));
-    }, duration);
+    if (!holdUntilNext && duration > 0) {
+      releaseTimer = window.setTimeout(() => {
+        keyboard.querySelectorAll(".is-playing").forEach(key => {
+          key.classList.remove("is-playing");
+        });
+        releaseTimer = null;
+      }, duration);
+    }
   }
 
   function clearPlaying() {
+    if (releaseTimer) {
+      window.clearTimeout(releaseTimer);
+      releaseTimer = null;
+    }
+
     keyboard.querySelectorAll(".is-playing").forEach(key => {
       key.classList.remove("is-playing");
     });

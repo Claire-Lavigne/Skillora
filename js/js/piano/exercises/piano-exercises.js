@@ -6,8 +6,11 @@ export const pianoTrainingWeeks = [
         "id": "w01-a1",
         "label": "Découverte",
         "title": "Découvrir clé de sol et clé de fa",
-        "objective": "Repère une note sur chaque portée dès le premier jour.",
+        "objective": "Clé de sol + clé de fa : repérer les Do. Rythme : Noires. Accompagnement : Basse simple : fondamentale.",
         "instructions": [
+          "Lecture : Clé de sol + clé de fa : repérer les Do.",
+          "Rythme : travaille noires.",
+          "Main gauche / harmonie : basse simple : fondamentale.",
           "Repère la clé de sol : elle correspond à la main droite.",
           "Repère la clé de fa : elle correspond à la main gauche.",
           "Trouve Do central puis le Do grave sur ton vrai piano."
@@ -35,7 +38,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires",
+          "accompanimentFocus": "Basse simple : fondamentale",
+          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
+        },
+        "curriculum": {
+          "reading": "Clé de sol + clé de fa : repérer les Do",
+          "rhythm": "Noires",
+          "accompaniment": "Basse simple : fondamentale"
         }
       },
       {
@@ -70,7 +82,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires",
+          "accompanimentFocus": "Basse simple : fondamentale",
+          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
+        },
+        "curriculum": {
+          "reading": "Clé de sol + clé de fa : repérer les Do",
+          "rhythm": "Noires",
+          "accompaniment": "Basse simple : fondamentale"
         }
       },
       {
@@ -106,7 +127,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires",
+          "accompanimentFocus": "Basse simple : fondamentale",
+          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
+        },
+        "curriculum": {
+          "reading": "Clé de sol + clé de fa : repérer les Do",
+          "rhythm": "Noires",
+          "accompaniment": "Basse simple : fondamentale"
         }
       },
       {
@@ -170,38 +200,51 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires",
+          "accompanimentFocus": "Basse simple : fondamentale",
+          "readingFocus": "Clé de sol + clé de fa : repérer les Do"
+        },
+        "curriculum": {
+          "reading": "Clé de sol + clé de fa : repérer les Do",
+          "rhythm": "Noires",
+          "accompaniment": "Basse simple : fondamentale"
         }
       },
       {
         "id": "w01-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Amazing Grace",
-        "objective": "Jouer un extrait de « Amazing Grace » en utilisant la découverte « Découvrir clé de sol et clé de fa » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Étude Skillora — Deux portées",
+        "objective": "Appliquer la découverte de la semaine (Noires ; Basse simple : fondamentale) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Clé de sol + clé de fa : repérer les Do",
+          "rhythm": "Noires",
+          "accompaniment": "Basse simple : fondamentale"
+        },
         "song": {
-          "title": "Amazing Grace",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Étude Skillora — Deux portées",
+          "sourceMode": "original",
+          "sourceNote": "Étude originale conçue pour Skillora.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Clé de sol + clé de fa : repérer les Do",
+            "Basse simple : fondamentale"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Étude Skillora — Deux portées",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -225,26 +268,6 @@ export const pianoTrainingWeeks = [
               "note": "D4",
               "finger": 2,
               "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
             }
           ],
           "leftHand": [
@@ -267,34 +290,23 @@ export const pianoTrainingWeeks = [
               "note": "C3",
               "finger": 5,
               "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires",
+          "accompanimentFocus": "Basse simple : fondamentale",
+          "readingFocus": "Clé de sol + clé de fa : repérer les Do",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Clé de sol + clé de fa : repérer les Do",
+      "rhythm": "Noires",
+      "accompaniment": "Basse simple : fondamentale"
+    }
   },
   {
     "title": "Semaine 2 — Les cinq doigts sur les deux portées",
@@ -303,8 +315,11 @@ export const pianoTrainingWeeks = [
         "id": "w02-a1",
         "label": "Découverte",
         "title": "Découvrir les numéros de doigts",
-        "objective": "Associe les doigts aux deux mains.",
+        "objective": "Cinq doigts sur les deux portées. Rythme : Blanches. Accompagnement : Basse répétée.",
         "instructions": [
+          "Lecture : Cinq doigts sur les deux portées.",
+          "Rythme : travaille blanches.",
+          "Main gauche / harmonie : basse répétée.",
           "Mémorise : les pouces sont toujours doigt 1.",
           "Observe les cinq doigts indiqués sur la clé de sol.",
           "Observe les cinq doigts indiqués sur la clé de fa."
@@ -319,58 +334,67 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanches",
+          "accompanimentFocus": "Basse répétée",
+          "readingFocus": "Cinq doigts sur les deux portées"
+        },
+        "curriculum": {
+          "reading": "Cinq doigts sur les deux portées",
+          "rhythm": "Blanches",
+          "accompaniment": "Basse répétée"
         }
       },
       {
@@ -391,31 +415,40 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanches",
+          "accompanimentFocus": "Basse répétée",
+          "readingFocus": "Cinq doigts sur les deux portées"
+        },
+        "curriculum": {
+          "reading": "Cinq doigts sur les deux portées",
+          "rhythm": "Blanches",
+          "accompaniment": "Basse répétée"
         }
       },
       {
@@ -437,31 +470,40 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanches",
+          "accompanimentFocus": "Basse répétée",
+          "readingFocus": "Cinq doigts sur les deux portées"
+        },
+        "curriculum": {
+          "reading": "Cinq doigts sur les deux portées",
+          "rhythm": "Blanches",
+          "accompaniment": "Basse répétée"
         }
       },
       {
@@ -484,119 +526,134 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanches",
+          "accompanimentFocus": "Basse répétée",
+          "readingFocus": "Cinq doigts sur les deux portées"
+        },
+        "curriculum": {
+          "reading": "Cinq doigts sur les deux portées",
+          "rhythm": "Blanches",
+          "accompaniment": "Basse répétée"
         }
       },
       {
         "id": "w02-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Jesus Loves Me",
-        "objective": "Jouer un extrait de « Jesus Loves Me » en utilisant la découverte « Découvrir les numéros de doigts » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Hymne à la joie — Beethoven",
+        "objective": "Appliquer la découverte de la semaine (Blanches ; Basse répétée) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Cinq doigts sur les deux portées",
+          "rhythm": "Blanches",
+          "accompaniment": "Basse répétée"
+        },
         "song": {
-          "title": "Jesus Loves Me",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Hymne à la joie — Beethoven",
+          "sourceMode": "domaine_public",
+          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Clé de sol + clé de fa : repérer les Do",
+            "Cinq doigts sur les deux portées",
+            "Basse simple : fondamentale",
+            "Basse répétée"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Hymne à la joie — Beethoven",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -604,92 +661,101 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanches",
+          "accompanimentFocus": "Basse répétée",
+          "readingFocus": "Cinq doigts sur les deux portées",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Cinq doigts sur les deux portées",
+      "rhythm": "Blanches",
+      "accompaniment": "Basse répétée"
+    }
   },
   {
     "title": "Semaine 3 — Lire Do Ré Mi sur les deux clés",
@@ -698,8 +764,11 @@ export const pianoTrainingWeeks = [
         "id": "w03-a1",
         "label": "Découverte",
         "title": "Découvrir les positions de Do Ré Mi",
-        "objective": "Reconnais visuellement les mêmes noms de notes sur deux clés.",
+        "objective": "Do Ré Mi mélangés sur les deux clés. Rythme : Rondes. Accompagnement : Fondamentale + quinte.",
         "instructions": [
+          "Lecture : Do Ré Mi mélangés sur les deux clés.",
+          "Rythme : travaille rondes.",
+          "Main gauche / harmonie : fondamentale + quinte.",
           "Lis Do Ré Mi sur la clé de sol.",
           "Lis Do Ré Mi sur la clé de fa.",
           "Dis le nom de la note avant d’appuyer sur la touche."
@@ -714,38 +783,47 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rondes",
+          "accompanimentFocus": "Fondamentale + quinte",
+          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do Ré Mi mélangés sur les deux clés",
+          "rhythm": "Rondes",
+          "accompaniment": "Fondamentale + quinte"
         }
       },
       {
@@ -766,31 +844,40 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rondes",
+          "accompanimentFocus": "Fondamentale + quinte",
+          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do Ré Mi mélangés sur les deux clés",
+          "rhythm": "Rondes",
+          "accompaniment": "Fondamentale + quinte"
         }
       },
       {
@@ -812,31 +899,40 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rondes",
+          "accompanimentFocus": "Fondamentale + quinte",
+          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do Ré Mi mélangés sur les deux clés",
+          "rhythm": "Rondes",
+          "accompaniment": "Fondamentale + quinte"
         }
       },
       {
@@ -859,99 +955,116 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rondes",
+          "accompanimentFocus": "Fondamentale + quinte",
+          "readingFocus": "Do Ré Mi mélangés sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do Ré Mi mélangés sur les deux clés",
+          "rhythm": "Rondes",
+          "accompaniment": "Fondamentale + quinte"
         }
       },
       {
         "id": "w03-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — When the Saints Go Marching In",
-        "objective": "Jouer un extrait de « When the Saints Go Marching In » en utilisant la découverte « Découvrir les positions de Do Ré Mi » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Clair de lune — Debussy (court extrait)",
+        "objective": "Appliquer la découverte de la semaine (Rondes ; Fondamentale + quinte) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Do Ré Mi mélangés sur les deux clés",
+          "rhythm": "Rondes",
+          "accompaniment": "Fondamentale + quinte"
+        },
         "song": {
-          "title": "When the Saints Go Marching In",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Clair de lune — Debussy (court extrait)",
+          "sourceMode": "domaine_public",
+          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Clé de sol + clé de fa : repérer les Do",
+            "Cinq doigts sur les deux portées",
+            "Do Ré Mi mélangés sur les deux clés",
+            "Basse simple : fondamentale",
+            "Basse répétée",
+            "Fondamentale + quinte"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Clair de lune — Debussy (court extrait)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 58,
           "mode": "two-hand",
@@ -959,92 +1072,81 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rondes",
+          "accompanimentFocus": "Fondamentale + quinte",
+          "readingFocus": "Do Ré Mi mélangés sur les deux clés",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Do Ré Mi mélangés sur les deux clés",
+      "rhythm": "Rondes",
+      "accompaniment": "Fondamentale + quinte"
+    }
   },
   {
     "title": "Semaine 4 — Ajouter Fa et Sol",
@@ -1053,8 +1155,11 @@ export const pianoTrainingWeeks = [
         "id": "w04-a1",
         "label": "Découverte",
         "title": "Découvrir Fa et Sol sur les deux clés",
-        "objective": "Élargis la lecture à cinq notes.",
+        "objective": "Do à Sol sur les deux clés. Rythme : Noires + silences. Accompagnement : Basse alternée.",
         "instructions": [
+          "Lecture : Do à Sol sur les deux clés.",
+          "Rythme : travaille noires + silences.",
+          "Main gauche / harmonie : basse alternée.",
           "Repère Fa et Sol sur la clé de sol.",
           "Repère Fa et Sol sur la clé de fa.",
           "Compare leur position avec Do Ré Mi."
@@ -1090,7 +1195,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires + silences",
+          "accompanimentFocus": "Basse alternée",
+          "readingFocus": "Do à Sol sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do à Sol sur les deux clés",
+          "rhythm": "Noires + silences",
+          "accompaniment": "Basse alternée"
         }
       },
       {
@@ -1155,7 +1269,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires + silences",
+          "accompanimentFocus": "Basse alternée",
+          "readingFocus": "Do à Sol sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do à Sol sur les deux clés",
+          "rhythm": "Noires + silences",
+          "accompaniment": "Basse alternée"
         }
       },
       {
@@ -1221,7 +1344,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires + silences",
+          "accompanimentFocus": "Basse alternée",
+          "readingFocus": "Do à Sol sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do à Sol sur les deux clés",
+          "rhythm": "Noires + silences",
+          "accompaniment": "Basse alternée"
         }
       },
       {
@@ -1315,38 +1447,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires + silences",
+          "accompanimentFocus": "Basse alternée",
+          "readingFocus": "Do à Sol sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Do à Sol sur les deux clés",
+          "rhythm": "Noires + silences",
+          "accompaniment": "Basse alternée"
         }
       },
       {
         "id": "w04-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Joyful, Joyful, We Adore Thee",
-        "objective": "Jouer un extrait de « Joyful, Joyful, We Adore Thee » en utilisant la découverte « Découvrir Fa et Sol sur les deux clés » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Prélude en Do majeur — Bach (court extrait)",
+        "objective": "Appliquer la découverte de la semaine (Noires + silences ; Basse alternée) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Do à Sol sur les deux clés",
+          "rhythm": "Noires + silences",
+          "accompaniment": "Basse alternée"
+        },
         "song": {
-          "title": "Joyful, Joyful, We Adore Thee",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Prélude en Do majeur — Bach (court extrait)",
+          "sourceMode": "domaine_public",
+          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Cinq doigts sur les deux portées",
+            "Do Ré Mi mélangés sur les deux clés",
+            "Do à Sol sur les deux clés",
+            "Basse répétée",
+            "Fondamentale + quinte",
+            "Basse alternée"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Prélude en Do majeur — Bach (court extrait)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -1385,11 +1534,6 @@ export const pianoTrainingWeeks = [
               "note": "C4",
               "finger": 1,
               "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
             }
           ],
           "leftHand": [
@@ -1427,19 +1571,23 @@ export const pianoTrainingWeeks = [
               "note": "C3",
               "finger": 5,
               "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noires + silences",
+          "accompanimentFocus": "Basse alternée",
+          "readingFocus": "Do à Sol sur les deux clés",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Do à Sol sur les deux clés",
+      "rhythm": "Noires + silences",
+      "accompaniment": "Basse alternée"
+    }
   },
   {
     "title": "Semaine 5 — Pulsation et rythme en 4/4",
@@ -1448,8 +1596,11 @@ export const pianoTrainingWeeks = [
         "id": "w05-a1",
         "label": "Découverte",
         "title": "Découvrir quatre temps",
-        "objective": "Garde une pulsation commune aux deux mains.",
+        "objective": "Lire en gardant la pulsation. Rythme : Croches par paires. Accompagnement : Basse double / octave simple.",
         "instructions": [
+          "Lecture : Lire en gardant la pulsation.",
+          "Rythme : travaille croches par paires.",
+          "Main gauche / harmonie : basse double / octave simple.",
           "Compte 1 - 2 - 3 - 4 sans jouer.",
           "Lis une mesure sur les deux portées.",
           "Repère où tombe chaque note."
@@ -1464,12 +1615,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
@@ -1479,19 +1630,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -1501,11 +1652,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches par paires",
+          "accompanimentFocus": "Basse double / octave simple",
+          "readingFocus": "Lire en gardant la pulsation"
+        },
+        "curriculum": {
+          "reading": "Lire en gardant la pulsation",
+          "rhythm": "Croches par paires",
+          "accompaniment": "Basse double / octave simple"
         }
       },
       {
@@ -1526,12 +1686,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -1541,11 +1701,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches par paires",
+          "accompanimentFocus": "Basse double / octave simple",
+          "readingFocus": "Lire en gardant la pulsation"
+        },
+        "curriculum": {
+          "reading": "Lire en gardant la pulsation",
+          "rhythm": "Croches par paires",
+          "accompaniment": "Basse double / octave simple"
         }
       },
       {
@@ -1567,12 +1736,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
@@ -1582,11 +1751,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches par paires",
+          "accompanimentFocus": "Basse double / octave simple",
+          "readingFocus": "Lire en gardant la pulsation"
+        },
+        "curriculum": {
+          "reading": "Lire en gardant la pulsation",
+          "rhythm": "Croches par paires",
+          "accompaniment": "Basse double / octave simple"
         }
       },
       {
@@ -1609,12 +1787,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
@@ -1624,39 +1802,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -1666,62 +1844,79 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches par paires",
+          "accompanimentFocus": "Basse double / octave simple",
+          "readingFocus": "Lire en gardant la pulsation"
+        },
+        "curriculum": {
+          "reading": "Lire en gardant la pulsation",
+          "rhythm": "Croches par paires",
+          "accompaniment": "Basse double / octave simple"
         }
       },
       {
         "id": "w05-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Dieu est une fête aujourd’hui",
-        "objective": "Jouer un extrait de « Dieu est une fête aujourd’hui » en utilisant la découverte « Découvrir quatre temps » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Für Elise — Beethoven (court extrait)",
+        "objective": "Appliquer la découverte de la semaine (Croches par paires ; Basse double / octave simple) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire en gardant la pulsation",
+          "rhythm": "Croches par paires",
+          "accompaniment": "Basse double / octave simple"
+        },
         "song": {
-          "title": "Dieu est une fête aujourd’hui",
-          "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "title": "Für Elise — Beethoven (court extrait)",
+          "sourceMode": "domaine_public",
+          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Do Ré Mi mélangés sur les deux clés",
+            "Do à Sol sur les deux clés",
+            "Lire en gardant la pulsation",
+            "Fondamentale + quinte",
+            "Basse alternée",
+            "Basse double / octave simple"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Für Elise — Beethoven (court extrait)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -1729,12 +1924,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
@@ -1744,39 +1939,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -1786,35 +1981,44 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches par paires",
+          "accompanimentFocus": "Basse double / octave simple",
+          "readingFocus": "Lire en gardant la pulsation",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire en gardant la pulsation",
+      "rhythm": "Croches par paires",
+      "accompaniment": "Basse double / octave simple"
+    }
   },
   {
     "title": "Semaine 6 — Lecture mélangée Do à Sol",
@@ -1823,8 +2027,11 @@ export const pianoTrainingWeeks = [
         "id": "w06-a1",
         "label": "Découverte",
         "title": "Découvrir la lecture sans ordre",
-        "objective": "Lis Do à Sol sans t’aider de la suite des notes.",
+        "objective": "Lecture mélangée sans réciter les notes. Rythme : Noire + blanche + ronde. Accompagnement : Premier accord plaqué majeur.",
         "instructions": [
+          "Lecture : Lecture mélangée sans réciter les notes.",
+          "Rythme : travaille noire + blanche + ronde.",
+          "Main gauche / harmonie : premier accord plaqué majeur.",
           "Observe les cinq positions en clé de sol.",
           "Observe les cinq positions en clé de fa.",
           "Ne déduis pas la note uniquement à partir de la précédente."
@@ -1844,7 +2051,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -1854,7 +2061,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F4",
@@ -1871,7 +2078,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D3",
@@ -1881,7 +2088,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F3",
@@ -1890,7 +2097,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire + blanche + ronde",
+          "accompanimentFocus": "Premier accord plaqué majeur",
+          "readingFocus": "Lecture mélangée sans réciter les notes"
+        },
+        "curriculum": {
+          "reading": "Lecture mélangée sans réciter les notes",
+          "rhythm": "Noire + blanche + ronde",
+          "accompaniment": "Premier accord plaqué majeur"
         }
       },
       {
@@ -1916,7 +2132,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
@@ -1926,7 +2142,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F4",
@@ -1936,11 +2152,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire + blanche + ronde",
+          "accompanimentFocus": "Premier accord plaqué majeur",
+          "readingFocus": "Lecture mélangée sans réciter les notes"
+        },
+        "curriculum": {
+          "reading": "Lecture mélangée sans réciter les notes",
+          "rhythm": "Noire + blanche + ronde",
+          "accompaniment": "Premier accord plaqué majeur"
         }
       },
       {
@@ -1967,7 +2192,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
@@ -1977,7 +2202,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "D3",
@@ -1987,11 +2212,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire + blanche + ronde",
+          "accompanimentFocus": "Premier accord plaqué majeur",
+          "readingFocus": "Lecture mélangée sans réciter les notes"
+        },
+        "curriculum": {
+          "reading": "Lecture mélangée sans réciter les notes",
+          "rhythm": "Noire + blanche + ronde",
+          "accompaniment": "Premier accord plaqué majeur"
         }
       },
       {
@@ -2019,7 +2253,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -2029,7 +2263,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F4",
@@ -2039,7 +2273,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
@@ -2056,7 +2290,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -2066,7 +2300,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
@@ -2076,7 +2310,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -2085,38 +2319,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire + blanche + ronde",
+          "accompanimentFocus": "Premier accord plaqué majeur",
+          "readingFocus": "Lecture mélangée sans réciter les notes"
+        },
+        "curriculum": {
+          "reading": "Lecture mélangée sans réciter les notes",
+          "rhythm": "Noire + blanche + ronde",
+          "accompaniment": "Premier accord plaqué majeur"
         }
       },
       {
         "id": "w06-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Je chanterai l’Éternel tant que je vivrai",
-        "objective": "Jouer un extrait de « Je chanterai l’Éternel tant que je vivrai » en utilisant la découverte « Découvrir la lecture sans ordre » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Menuet — Bach/Petzold (court extrait)",
+        "objective": "Appliquer la découverte de la semaine (Noire + blanche + ronde ; Premier accord plaqué majeur) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lecture mélangée sans réciter les notes",
+          "rhythm": "Noire + blanche + ronde",
+          "accompaniment": "Premier accord plaqué majeur"
+        },
         "song": {
-          "title": "Je chanterai l’Éternel tant que je vivrai",
-          "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "title": "Menuet — Bach/Petzold (court extrait)",
+          "sourceMode": "domaine_public",
+          "sourceNote": "Morceau du domaine public : utiliser un extrait adapté au niveau de la semaine, avec l’accompagnement appris jusqu’ici.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Do à Sol sur les deux clés",
+            "Lire en gardant la pulsation",
+            "Lecture mélangée sans réciter les notes",
+            "Basse alternée",
+            "Basse double / octave simple",
+            "Premier accord plaqué majeur"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Menuet — Bach/Petzold (court extrait)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -2129,7 +2380,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -2139,7 +2390,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F4",
@@ -2149,16 +2400,11 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
               "duration": "q"
             }
           ],
@@ -2171,7 +2417,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -2181,7 +2427,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "C3",
@@ -2191,25 +2437,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
               "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire + blanche + ronde",
+          "accompanimentFocus": "Premier accord plaqué majeur",
+          "readingFocus": "Lecture mélangée sans réciter les notes",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lecture mélangée sans réciter les notes",
+      "rhythm": "Noire + blanche + ronde",
+      "accompaniment": "Premier accord plaqué majeur"
+    }
   },
   {
     "title": "Semaine 7 — Secondes et tierces",
@@ -2218,8 +2468,11 @@ export const pianoTrainingWeeks = [
         "id": "w07-a1",
         "label": "Découverte",
         "title": "Découvrir les intervalles",
-        "objective": "Reconnais une seconde et une tierce.",
+        "objective": "Secondes et tierces. Rythme : Blanche pointée. Accompagnement : Accords plaqués majeurs et mineurs.",
         "instructions": [
+          "Lecture : Secondes et tierces.",
+          "Rythme : travaille blanche pointée.",
+          "Main gauche / harmonie : accords plaqués majeurs et mineurs.",
           "Observe l’objectif : Reconnais une seconde et une tierce.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -2234,7 +2487,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "D4",
@@ -2244,7 +2497,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "G4",
@@ -2253,7 +2506,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanche pointée",
+          "accompanimentFocus": "Accords plaqués majeurs et mineurs",
+          "readingFocus": "Secondes et tierces"
+        },
+        "curriculum": {
+          "reading": "Secondes et tierces",
+          "rhythm": "Blanche pointée",
+          "accompaniment": "Accords plaqués majeurs et mineurs"
         }
       },
       {
@@ -2274,7 +2536,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "D4",
@@ -2284,7 +2546,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "F4",
@@ -2293,7 +2555,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanche pointée",
+          "accompanimentFocus": "Accords plaqués majeurs et mineurs",
+          "readingFocus": "Secondes et tierces"
+        },
+        "curriculum": {
+          "reading": "Secondes et tierces",
+          "rhythm": "Blanche pointée",
+          "accompaniment": "Accords plaqués majeurs et mineurs"
         }
       },
       {
@@ -2315,7 +2586,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "E3",
@@ -2325,7 +2596,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "F3",
@@ -2334,7 +2605,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanche pointée",
+          "accompanimentFocus": "Accords plaqués majeurs et mineurs",
+          "readingFocus": "Secondes et tierces"
+        },
+        "curriculum": {
+          "reading": "Secondes et tierces",
+          "rhythm": "Blanche pointée",
+          "accompaniment": "Accords plaqués majeurs et mineurs"
         }
       },
       {
@@ -2357,7 +2637,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "D4",
@@ -2367,7 +2647,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "E4",
@@ -2377,14 +2657,14 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "hd"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "E3",
@@ -2394,7 +2674,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "F3",
@@ -2404,42 +2684,59 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "hd"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanche pointée",
+          "accompanimentFocus": "Accords plaqués majeurs et mineurs",
+          "readingFocus": "Secondes et tierces"
+        },
+        "curriculum": {
+          "reading": "Secondes et tierces",
+          "rhythm": "Blanche pointée",
+          "accompaniment": "Accords plaqués majeurs et mineurs"
         }
       },
       {
         "id": "w07-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Venez le célébrer",
-        "objective": "Jouer un extrait de « Venez le célébrer » en utilisant la découverte « Découvrir les intervalles » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Amazing Grace",
+        "objective": "Appliquer la découverte de la semaine (Blanche pointée ; Accords plaqués majeurs et mineurs) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Secondes et tierces",
+          "rhythm": "Blanche pointée",
+          "accompaniment": "Accords plaqués majeurs et mineurs"
+        },
         "song": {
-          "title": "Venez le célébrer",
-          "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "title": "Amazing Grace",
+          "sourceMode": "historique",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation"
+            "Lire en gardant la pulsation",
+            "Lecture mélangée sans réciter les notes",
+            "Secondes et tierces",
+            "Basse double / octave simple",
+            "Premier accord plaqué majeur",
+            "Accords plaqués majeurs et mineurs"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Amazing Grace",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -2447,7 +2744,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "D4",
@@ -2457,7 +2754,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "E4",
@@ -2467,29 +2764,14 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
+              "duration": "hd"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "E3",
@@ -2499,7 +2781,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "hd"
             },
             {
               "note": "F3",
@@ -2509,30 +2791,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
+              "duration": "hd"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Blanche pointée",
+          "accompanimentFocus": "Accords plaqués majeurs et mineurs",
+          "readingFocus": "Secondes et tierces",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Secondes et tierces",
+      "rhythm": "Blanche pointée",
+      "accompaniment": "Accords plaqués majeurs et mineurs"
+    }
   },
   {
     "title": "Semaine 8 — Première vraie mélodie à deux mains",
@@ -2541,8 +2817,11 @@ export const pianoTrainingWeeks = [
         "id": "w08-a1",
         "label": "Découverte",
         "title": "Découvrir deux lignes simultanées",
-        "objective": "Lis une note à droite et une note à gauche.",
+        "objective": "Première vraie lecture à deux mains. Rythme : Noire pointée + croche. Accompagnement : Basse + accord.",
         "instructions": [
+          "Lecture : Première vraie lecture à deux mains.",
+          "Rythme : travaille noire pointée + croche.",
+          "Main gauche / harmonie : basse + accord.",
           "Observe l’objectif : Lis une note à droite et une note à gauche.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -2557,12 +2836,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -2574,12 +2853,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -2588,7 +2867,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire pointée + croche",
+          "accompanimentFocus": "Basse + accord",
+          "readingFocus": "Première vraie lecture à deux mains"
+        },
+        "curriculum": {
+          "reading": "Première vraie lecture à deux mains",
+          "rhythm": "Noire pointée + croche",
+          "accompaniment": "Basse + accord"
         }
       },
       {
@@ -2609,12 +2897,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -2629,11 +2917,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "qd"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire pointée + croche",
+          "accompanimentFocus": "Basse + accord",
+          "readingFocus": "Première vraie lecture à deux mains"
+        },
+        "curriculum": {
+          "reading": "Première vraie lecture à deux mains",
+          "rhythm": "Noire pointée + croche",
+          "accompaniment": "Basse + accord"
         }
       },
       {
@@ -2655,12 +2952,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -2675,11 +2972,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire pointée + croche",
+          "accompanimentFocus": "Basse + accord",
+          "readingFocus": "Première vraie lecture à deux mains"
+        },
+        "curriculum": {
+          "reading": "Première vraie lecture à deux mains",
+          "rhythm": "Noire pointée + croche",
+          "accompaniment": "Basse + accord"
         }
       },
       {
@@ -2702,12 +3008,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -2722,19 +3028,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "qd"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -2749,43 +3055,59 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire pointée + croche",
+          "accompanimentFocus": "Basse + accord",
+          "readingFocus": "Première vraie lecture à deux mains"
+        },
+        "curriculum": {
+          "reading": "Première vraie lecture à deux mains",
+          "rhythm": "Noire pointée + croche",
+          "accompaniment": "Basse + accord"
         }
       },
       {
         "id": "w08-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Et je chante car tu es bon",
-        "objective": "Jouer un extrait de « Et je chante car tu es bon » en utilisant la découverte « Découvrir deux lignes simultanées » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Jesus Loves Me",
+        "objective": "Appliquer la découverte de la semaine (Noire pointée + croche ; Basse + accord) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Première vraie lecture à deux mains",
+          "rhythm": "Noire pointée + croche",
+          "accompaniment": "Basse + accord"
+        },
         "song": {
-          "title": "Et je chante car tu es bon",
-          "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "title": "Jesus Loves Me",
+          "sourceMode": "historique",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains"
+            "Lecture mélangée sans réciter les notes",
+            "Secondes et tierces",
+            "Première vraie lecture à deux mains",
+            "Premier accord plaqué majeur",
+            "Accords plaqués majeurs et mineurs",
+            "Basse + accord"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Jesus Loves Me",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 58,
           "mode": "two-hand",
@@ -2793,12 +3115,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -2813,34 +3135,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
+              "duration": "qd"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -2855,30 +3162,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
+              "duration": "qd"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Noire pointée + croche",
+          "accompanimentFocus": "Basse + accord",
+          "readingFocus": "Première vraie lecture à deux mains",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Première vraie lecture à deux mains",
+      "rhythm": "Noire pointée + croche",
+      "accompaniment": "Basse + accord"
+    }
   },
   {
     "title": "Semaine 9 — Accord de Do majeur",
@@ -2887,8 +3188,11 @@ export const pianoTrainingWeeks = [
         "id": "w09-a1",
         "label": "Découverte",
         "title": "Découvrir l’accord et sa basse",
-        "objective": "Vois l’accord à droite et la basse à gauche.",
+        "objective": "Lire un accord sur la portée. Rythme : Croches + silences de croche. Accompagnement : Accords plaqués I–IV–V.",
         "instructions": [
+          "Lecture : Lire un accord sur la portée.",
+          "Rythme : travaille croches + silences de croche.",
+          "Main gauche / harmonie : accords plaqués i–iv–v.",
           "Observe l’objectif : Vois l’accord à droite et la basse à gauche.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -2903,12 +3207,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -2920,11 +3224,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches + silences de croche",
+          "accompanimentFocus": "Accords plaqués I–IV–V",
+          "readingFocus": "Lire un accord sur la portée"
+        },
+        "curriculum": {
+          "reading": "Lire un accord sur la portée",
+          "rhythm": "Croches + silences de croche",
+          "accompaniment": "Accords plaqués I–IV–V"
         }
       },
       {
@@ -2945,21 +3258,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches + silences de croche",
+          "accompanimentFocus": "Accords plaqués I–IV–V",
+          "readingFocus": "Lire un accord sur la portée"
+        },
+        "curriculum": {
+          "reading": "Lire un accord sur la portée",
+          "rhythm": "Croches + silences de croche",
+          "accompaniment": "Accords plaqués I–IV–V"
         }
       },
       {
@@ -2981,21 +3303,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches + silences de croche",
+          "accompanimentFocus": "Accords plaqués I–IV–V",
+          "readingFocus": "Lire un accord sur la portée"
+        },
+        "curriculum": {
+          "reading": "Lire un accord sur la portée",
+          "rhythm": "Croches + silences de croche",
+          "accompaniment": "Accords plaqués I–IV–V"
         }
       },
       {
@@ -3018,12 +3349,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -3033,19 +3364,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -3055,44 +3386,59 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches + silences de croche",
+          "accompanimentFocus": "Accords plaqués I–IV–V",
+          "readingFocus": "Lire un accord sur la portée"
+        },
+        "curriculum": {
+          "reading": "Lire un accord sur la portée",
+          "rhythm": "Croches + silences de croche",
+          "accompaniment": "Accords plaqués I–IV–V"
         }
       },
       {
         "id": "w09-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Jireh",
-        "objective": "Jouer un extrait de « Jireh » en utilisant la découverte « Découvrir l’accord et sa basse » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Glorious — chant à choisir avec partition",
+        "objective": "Appliquer la découverte de la semaine (Croches + silences de croche ; Accords plaqués I–IV–V) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire un accord sur la portée",
+          "rhythm": "Croches + silences de croche",
+          "accompaniment": "Accords plaqués I–IV–V"
+        },
         "song": {
-          "title": "Jireh",
+          "title": "Glorious — chant à choisir avec partition",
           "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses"
+            "Secondes et tierces",
+            "Première vraie lecture à deux mains",
+            "Lire un accord sur la portée",
+            "Accords plaqués majeurs et mineurs",
+            "Basse + accord",
+            "Accords plaqués I–IV–V"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Glorious — chant à choisir avec partition",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 58,
           "mode": "two-hand",
@@ -3100,12 +3446,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -3115,59 +3461,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -3177,55 +3483,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches + silences de croche",
+          "accompanimentFocus": "Accords plaqués I–IV–V",
+          "readingFocus": "Lire un accord sur la portée",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire un accord sur la portée",
+      "rhythm": "Croches + silences de croche",
+      "accompaniment": "Accords plaqués I–IV–V"
+    }
   },
   {
     "title": "Semaine 10 — Accords de Fa et Sol",
@@ -3234,8 +3509,11 @@ export const pianoTrainingWeeks = [
         "id": "w10-a1",
         "label": "Découverte",
         "title": "Découvrir deux nouvelles harmonies",
-        "objective": "Lis Fa et Sol sur les deux portées.",
+        "objective": "Lire Fa et Sol majeurs. Rythme : Premières syncopes simples. Accompagnement : Enchaînement d’accords sans déplacer inutilement la main.",
         "instructions": [
+          "Lecture : Lire Fa et Sol majeurs.",
+          "Rythme : travaille premières syncopes simples.",
+          "Main gauche / harmonie : enchaînement d’accords sans déplacer inutilement la main.",
           "Observe l’objectif : Lis Fa et Sol sur les deux portées.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -3250,7 +3528,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
@@ -3260,14 +3538,14 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "F3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -3276,7 +3554,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Premières syncopes simples",
+          "accompanimentFocus": "Enchaînement d’accords sans déplacer inutilement la main",
+          "readingFocus": "Lire Fa et Sol majeurs"
+        },
+        "curriculum": {
+          "reading": "Lire Fa et Sol majeurs",
+          "rhythm": "Premières syncopes simples",
+          "accompaniment": "Enchaînement d’accords sans déplacer inutilement la main"
         }
       },
       {
@@ -3297,21 +3584,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Premières syncopes simples",
+          "accompanimentFocus": "Enchaînement d’accords sans déplacer inutilement la main",
+          "readingFocus": "Lire Fa et Sol majeurs"
+        },
+        "curriculum": {
+          "reading": "Lire Fa et Sol majeurs",
+          "rhythm": "Premières syncopes simples",
+          "accompaniment": "Enchaînement d’accords sans déplacer inutilement la main"
         }
       },
       {
@@ -3333,21 +3629,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Premières syncopes simples",
+          "accompanimentFocus": "Enchaînement d’accords sans déplacer inutilement la main",
+          "readingFocus": "Lire Fa et Sol majeurs"
+        },
+        "curriculum": {
+          "reading": "Lire Fa et Sol majeurs",
+          "rhythm": "Premières syncopes simples",
+          "accompaniment": "Enchaînement d’accords sans déplacer inutilement la main"
         }
       },
       {
@@ -3370,7 +3675,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
@@ -3380,7 +3685,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -3392,7 +3697,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -3402,7 +3707,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -3411,40 +3716,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Premières syncopes simples",
+          "accompanimentFocus": "Enchaînement d’accords sans déplacer inutilement la main",
+          "readingFocus": "Lire Fa et Sol majeurs"
+        },
+        "curriculum": {
+          "reading": "Lire Fa et Sol majeurs",
+          "rhythm": "Premières syncopes simples",
+          "accompaniment": "Enchaînement d’accords sans déplacer inutilement la main"
         }
       },
       {
         "id": "w10-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Jésus Roi des rois",
-        "objective": "Jouer un extrait de « Jésus Roi des rois » en utilisant la découverte « Découvrir deux nouvelles harmonies » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Super Mario — thème principal (extrait autorisé)",
+        "objective": "Appliquer la découverte de la semaine (Premières syncopes simples ; Enchaînement d’accords sans déplacer inutilement la main) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire Fa et Sol majeurs",
+          "rhythm": "Premières syncopes simples",
+          "accompaniment": "Enchaînement d’accords sans déplacer inutilement la main"
+        },
         "song": {
-          "title": "Jésus Roi des rois",
+          "title": "Super Mario — thème principal (extrait autorisé)",
           "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses"
+            "Première vraie lecture à deux mains",
+            "Lire un accord sur la portée",
+            "Lire Fa et Sol majeurs",
+            "Basse + accord",
+            "Accords plaqués I–IV–V",
+            "Enchaînement d’accords sans déplacer inutilement la main"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Super Mario — thème principal (extrait autorisé)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 58,
           "mode": "two-hand",
@@ -3452,7 +3772,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
@@ -3462,51 +3782,11 @@ export const pianoTrainingWeeks = [
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
               "duration": "q"
             }
           ],
@@ -3514,7 +3794,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -3524,60 +3804,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
               "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Premières syncopes simples",
+          "accompanimentFocus": "Enchaînement d’accords sans déplacer inutilement la main",
+          "readingFocus": "Lire Fa et Sol majeurs",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire Fa et Sol majeurs",
+      "rhythm": "Premières syncopes simples",
+      "accompaniment": "Enchaînement d’accords sans déplacer inutilement la main"
+    }
   },
   {
     "title": "Semaine 11 — Enchaînement Do Fa Sol Do",
@@ -3586,8 +3835,11 @@ export const pianoTrainingWeeks = [
         "id": "w11-a1",
         "label": "Découverte",
         "title": "Découvrir I - IV - V - I",
-        "objective": "Lis les quatre accords dans l’ordre.",
+        "objective": "Lire une cadence I–IV–V–I. Rythme : Liaisons de durée. Accompagnement : Basse + accord sur plusieurs harmonies.",
         "instructions": [
+          "Lecture : Lire une cadence I–IV–V–I.",
+          "Rythme : travaille liaisons de durée.",
+          "Main gauche / harmonie : basse + accord sur plusieurs harmonies.",
           "Observe l’objectif : Lis les quatre accords dans l’ordre.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -3603,17 +3855,17 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "h"
               }
             ],
             [
@@ -3654,22 +3906,31 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "h"
               }
             ]
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Liaisons de durée",
+          "accompanimentFocus": "Basse + accord sur plusieurs harmonies",
+          "readingFocus": "Lire une cadence I–IV–V–I"
+        },
+        "curriculum": {
+          "reading": "Lire une cadence I–IV–V–I",
+          "rhythm": "Liaisons de durée",
+          "accompaniment": "Basse + accord sur plusieurs harmonies"
         }
       },
       {
@@ -3690,7 +3951,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
@@ -3705,11 +3966,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Liaisons de durée",
+          "accompanimentFocus": "Basse + accord sur plusieurs harmonies",
+          "readingFocus": "Lire une cadence I–IV–V–I"
+        },
+        "curriculum": {
+          "reading": "Lire une cadence I–IV–V–I",
+          "rhythm": "Liaisons de durée",
+          "accompaniment": "Basse + accord sur plusieurs harmonies"
         }
       },
       {
@@ -3732,17 +4002,17 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "h"
               }
             ],
             [
@@ -3783,22 +4053,31 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "h"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "h"
               }
             ]
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Liaisons de durée",
+          "accompanimentFocus": "Basse + accord sur plusieurs harmonies",
+          "readingFocus": "Lire une cadence I–IV–V–I"
+        },
+        "curriculum": {
+          "reading": "Lire une cadence I–IV–V–I",
+          "rhythm": "Liaisons de durée",
+          "accompaniment": "Basse + accord sur plusieurs harmonies"
         }
       },
       {
@@ -3821,7 +4100,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
@@ -3836,7 +4115,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
@@ -3851,7 +4130,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
@@ -3863,7 +4142,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
@@ -3878,7 +4157,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
@@ -3893,169 +4172,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
-          "staff": "grand",
-          "kind": "melody"
-        }
-      },
-      {
-        "id": "w11-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Ta présence, mes délices",
-        "objective": "Jouer un extrait de « Ta présence, mes délices » en utilisant la découverte « Découvrir I - IV - V - I » et tous les acquis des semaines précédentes.",
-        "instructions": [
-          "Commence par la préparation technique cumulative.",
-          "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
-        ],
-        "song": {
-          "title": "Ta présence, mes délices",
-          "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
-          "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses"
-          ],
-          "usesCurrentDiscovery": true,
-          "uniqueForWeek": true
-        },
-        "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
-          "hand": "Deux mains",
-          "tempo": 56,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -4065,10 +4182,156 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody",
-          "isSongPreparation": true
+          "timeSignature": "4/4",
+          "rhythmFocus": "Liaisons de durée",
+          "accompanimentFocus": "Basse + accord sur plusieurs harmonies",
+          "readingFocus": "Lire une cadence I–IV–V–I"
+        },
+        "curriculum": {
+          "reading": "Lire une cadence I–IV–V–I",
+          "rhythm": "Liaisons de durée",
+          "accompaniment": "Basse + accord sur plusieurs harmonies"
+        }
+      },
+      {
+        "id": "w11-chant",
+        "label": "Morceau / chant de la semaine",
+        "title": "MLK — chant à choisir avec partition",
+        "objective": "Appliquer la découverte de la semaine (Liaisons de durée ; Basse + accord sur plusieurs harmonies) et réutiliser les acquis précédents.",
+        "instructions": [
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
+          "Active Aide lecture et Aide doigté au premier passage.",
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
+        ],
+        "curriculum": {
+          "reading": "Lire une cadence I–IV–V–I",
+          "rhythm": "Liaisons de durée",
+          "accompaniment": "Basse + accord sur plusieurs harmonies"
+        },
+        "song": {
+          "title": "MLK — chant à choisir avec partition",
+          "sourceMode": "partition_autorisee",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
+          "requiredSkills": [
+            "Lire un accord sur la portée",
+            "Lire Fa et Sol majeurs",
+            "Lire une cadence I–IV–V–I",
+            "Accords plaqués I–IV–V",
+            "Enchaînement d’accords sans déplacer inutilement la main",
+            "Basse + accord sur plusieurs harmonies"
+          ],
+          "usesCurrentDiscovery": true,
+          "uniqueForWeek": true
+        },
+        "practice": {
+          "title": "Préparation cumulative — MLK — chant à choisir avec partition",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
+          "hand": "Deux mains",
+          "tempo": 56,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "h"
+            },
+            {
+              "note": "A4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "B4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "h"
+            },
+            {
+              "note": "A4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "h"
+            },
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "h"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "h"
+            },
+            {
+              "note": "F3",
+              "finger": 2,
+              "duration": "q"
+            },
+            {
+              "note": "G3",
+              "finger": 1,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "h"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Liaisons de durée",
+          "accompanimentFocus": "Basse + accord sur plusieurs harmonies",
+          "readingFocus": "Lire une cadence I–IV–V–I",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire une cadence I–IV–V–I",
+      "rhythm": "Liaisons de durée",
+      "accompaniment": "Basse + accord sur plusieurs harmonies"
+    }
   },
   {
     "title": "Semaine 12 — Jouer avec le métronome",
@@ -4077,8 +4340,11 @@ export const pianoTrainingWeeks = [
         "id": "w12-a1",
         "label": "Découverte",
         "title": "Découvrir la pulsation partagée",
-        "objective": "Les deux mains tombent ensemble sur le temps.",
+        "objective": "Lire sans perdre le tempo. Rythme : Mesure à 3/4. Accompagnement : Accords réguliers au métronome.",
         "instructions": [
+          "Lecture : Lire sans perdre le tempo.",
+          "Rythme : travaille mesure à 3/4.",
+          "Main gauche / harmonie : accords réguliers au métronome.",
           "Observe l’objectif : Les deux mains tombent ensemble sur le temps.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -4108,7 +4374,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -4130,11 +4396,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "3/4",
+          "rhythmFocus": "Mesure à 3/4",
+          "accompanimentFocus": "Accords réguliers au métronome",
+          "readingFocus": "Lire sans perdre le tempo"
+        },
+        "curriculum": {
+          "reading": "Lire sans perdre le tempo",
+          "rhythm": "Mesure à 3/4",
+          "accompaniment": "Accords réguliers au métronome"
         }
       },
       {
@@ -4170,7 +4445,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
@@ -4179,7 +4454,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "3/4",
+          "rhythmFocus": "Mesure à 3/4",
+          "accompanimentFocus": "Accords réguliers au métronome",
+          "readingFocus": "Lire sans perdre le tempo"
+        },
+        "curriculum": {
+          "reading": "Lire sans perdre le tempo",
+          "rhythm": "Mesure à 3/4",
+          "accompaniment": "Accords réguliers au métronome"
         }
       },
       {
@@ -4216,11 +4500,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "3/4",
+          "rhythmFocus": "Mesure à 3/4",
+          "accompanimentFocus": "Accords réguliers au métronome",
+          "readingFocus": "Lire sans perdre le tempo"
+        },
+        "curriculum": {
+          "reading": "Lire sans perdre le tempo",
+          "rhythm": "Mesure à 3/4",
+          "accompaniment": "Accords réguliers au métronome"
         }
       },
       {
@@ -4258,7 +4551,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
@@ -4300,7 +4593,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
@@ -4324,40 +4617,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "3/4",
+          "rhythmFocus": "Mesure à 3/4",
+          "accompanimentFocus": "Accords réguliers au métronome",
+          "readingFocus": "Lire sans perdre le tempo"
+        },
+        "curriculum": {
+          "reading": "Lire sans perdre le tempo",
+          "rhythm": "Mesure à 3/4",
+          "accompaniment": "Accords réguliers au métronome"
         }
       },
       {
         "id": "w12-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Glorious",
-        "objective": "Jouer un extrait de « Glorious » en utilisant la découverte « Découvrir la pulsation partagée » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "The Legend of Zelda — thème (extrait autorisé)",
+        "objective": "Appliquer la découverte de la semaine (Mesure à 3/4 ; Accords réguliers au métronome) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire sans perdre le tempo",
+          "rhythm": "Mesure à 3/4",
+          "accompaniment": "Accords réguliers au métronome"
+        },
         "song": {
-          "title": "Glorious",
+          "title": "The Legend of Zelda — thème (extrait autorisé)",
           "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses"
+            "Lire Fa et Sol majeurs",
+            "Lire une cadence I–IV–V–I",
+            "Lire sans perdre le tempo",
+            "Enchaînement d’accords sans déplacer inutilement la main",
+            "Basse + accord sur plusieurs harmonies",
+            "Accords réguliers au métronome"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — The Legend of Zelda — thème (extrait autorisé)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -4380,7 +4688,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
@@ -4395,26 +4703,6 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
               "duration": "q"
             },
             {
@@ -4442,7 +4730,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
@@ -4463,34 +4751,23 @@ export const pianoTrainingWeeks = [
               "note": "C3",
               "finger": 5,
               "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "3/4",
+          "rhythmFocus": "Mesure à 3/4",
+          "accompanimentFocus": "Accords réguliers au métronome",
+          "readingFocus": "Lire sans perdre le tempo",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire sans perdre le tempo",
+      "rhythm": "Mesure à 3/4",
+      "accompaniment": "Accords réguliers au métronome"
+    }
   },
   {
     "title": "Semaine 13 — Gamme de Do majeur",
@@ -4499,8 +4776,11 @@ export const pianoTrainingWeeks = [
         "id": "w13-a1",
         "label": "Découverte",
         "title": "Découvrir le passage du pouce",
-        "objective": "Observe le doigté des deux mains.",
+        "objective": "Lire une gamme complète. Rythme : Triolets simples. Accompagnement : Basse + notes de gamme.",
         "instructions": [
+          "Lecture : Lire une gamme complète.",
+          "Rythme : travaille triolets simples.",
+          "Main gauche / harmonie : basse + notes de gamme.",
           "Observe l’objectif : Observe le doigté des deux mains.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -4515,17 +4795,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -4542,17 +4822,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -4566,7 +4846,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets simples",
+          "accompanimentFocus": "Basse + notes de gamme",
+          "readingFocus": "Lire une gamme complète"
+        },
+        "curriculum": {
+          "reading": "Lire une gamme complète",
+          "rhythm": "Triolets simples",
+          "accompaniment": "Basse + notes de gamme"
         }
       },
       {
@@ -4587,17 +4876,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -4612,21 +4901,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets simples",
+          "accompanimentFocus": "Basse + notes de gamme",
+          "readingFocus": "Lire une gamme complète"
+        },
+        "curriculum": {
+          "reading": "Lire une gamme complète",
+          "rhythm": "Triolets simples",
+          "accompaniment": "Basse + notes de gamme"
         }
       },
       {
@@ -4648,17 +4946,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -4673,21 +4971,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "A3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets simples",
+          "accompanimentFocus": "Basse + notes de gamme",
+          "readingFocus": "Lire une gamme complète"
+        },
+        "curriculum": {
+          "reading": "Lire une gamme complète",
+          "rhythm": "Triolets simples",
+          "accompaniment": "Basse + notes de gamme"
         }
       },
       {
@@ -4710,17 +5017,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -4735,34 +5042,34 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -4777,55 +5084,69 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets simples",
+          "accompanimentFocus": "Basse + notes de gamme",
+          "readingFocus": "Lire une gamme complète"
+        },
+        "curriculum": {
+          "reading": "Lire une gamme complète",
+          "rhythm": "Triolets simples",
+          "accompaniment": "Basse + notes de gamme"
         }
       },
       {
         "id": "w13-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — MLK",
-        "objective": "Jouer un extrait de « MLK » en utilisant la découverte « Découvrir le passage du pouce » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Glorious — 2e chant à choisir avec partition",
+        "objective": "Appliquer la découverte de la semaine (Triolets simples ; Basse + notes de gamme) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire une gamme complète",
+          "rhythm": "Triolets simples",
+          "accompaniment": "Basse + notes de gamme"
+        },
         "song": {
-          "title": "MLK",
+          "title": "Glorious — 2e chant à choisir avec partition",
           "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes"
+            "Lire une cadence I–IV–V–I",
+            "Lire sans perdre le tempo",
+            "Lire une gamme complète",
+            "Basse + accord sur plusieurs harmonies",
+            "Accords réguliers au métronome",
+            "Basse + notes de gamme"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Glorious — 2e chant à choisir avec partition",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -4833,17 +5154,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -4858,54 +5179,34 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -4920,45 +5221,34 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets simples",
+          "accompanimentFocus": "Basse + notes de gamme",
+          "readingFocus": "Lire une gamme complète",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire une gamme complète",
+      "rhythm": "Triolets simples",
+      "accompaniment": "Basse + notes de gamme"
+    }
   },
   {
     "title": "Semaine 14 — Gamme de Do, mains ensemble",
@@ -4967,8 +5257,11 @@ export const pianoTrainingWeeks = [
         "id": "w14-a1",
         "label": "Découverte",
         "title": "Découvrir le mouvement parallèle",
-        "objective": "Observe les deux doigtés ensemble.",
+        "objective": "Lire les deux mains simultanément. Rythme : Mesure à 6/8. Accompagnement : Deux mains en mouvement parallèle.",
         "instructions": [
+          "Lecture : Lire les deux mains simultanément.",
+          "Rythme : travaille mesure à 6/8.",
+          "Main gauche / harmonie : deux mains en mouvement parallèle.",
           "Observe l’objectif : Observe les deux doigtés ensemble.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -4983,48 +5276,57 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "6/8",
+          "rhythmFocus": "Mesure à 6/8",
+          "accompanimentFocus": "Deux mains en mouvement parallèle",
+          "readingFocus": "Lire les deux mains simultanément"
+        },
+        "curriculum": {
+          "reading": "Lire les deux mains simultanément",
+          "rhythm": "Mesure à 6/8",
+          "accompaniment": "Deux mains en mouvement parallèle"
         }
       },
       {
@@ -5045,48 +5347,57 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "6/8",
+          "rhythmFocus": "Mesure à 6/8",
+          "accompanimentFocus": "Deux mains en mouvement parallèle",
+          "readingFocus": "Lire les deux mains simultanément"
+        },
+        "curriculum": {
+          "reading": "Lire les deux mains simultanément",
+          "rhythm": "Mesure à 6/8",
+          "accompaniment": "Deux mains en mouvement parallèle"
         }
       },
       {
@@ -5108,58 +5419,67 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "6/8",
+          "rhythmFocus": "Mesure à 6/8",
+          "accompanimentFocus": "Deux mains en mouvement parallèle",
+          "readingFocus": "Lire les deux mains simultanément"
+        },
+        "curriculum": {
+          "reading": "Lire les deux mains simultanément",
+          "rhythm": "Mesure à 6/8",
+          "accompaniment": "Deux mains en mouvement parallèle"
         }
       },
       {
@@ -5182,92 +5502,106 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "6/8",
+          "rhythmFocus": "Mesure à 6/8",
+          "accompanimentFocus": "Deux mains en mouvement parallèle",
+          "readingFocus": "Lire les deux mains simultanément"
+        },
+        "curriculum": {
+          "reading": "Lire les deux mains simultanément",
+          "rhythm": "Mesure à 6/8",
+          "accompaniment": "Deux mains en mouvement parallèle"
         }
       },
       {
         "id": "w14-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Yahweh se manifestera",
-        "objective": "Jouer un extrait de « Yahweh se manifestera » en utilisant la découverte « Découvrir le mouvement parallèle » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Hedwig’s Theme — extrait autorisé",
+        "objective": "Appliquer la découverte de la semaine (Mesure à 6/8 ; Deux mains en mouvement parallèle) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire les deux mains simultanément",
+          "rhythm": "Mesure à 6/8",
+          "accompaniment": "Deux mains en mouvement parallèle"
+        },
         "song": {
-          "title": "Yahweh se manifestera",
+          "title": "Hedwig’s Theme — extrait autorisé",
           "sourceMode": "partition_autorisee",
-          "sourceNote": "Pour ce chant contemporain, l’extrait exact sera affiché à partir d’une partition autorisée ou fournie par toi. La préparation ci-dessous travaille déjà les compétences nécessaires sans recopier la mélodie protégée.",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes"
+            "Lire sans perdre le tempo",
+            "Lire une gamme complète",
+            "Lire les deux mains simultanément",
+            "Accords réguliers au métronome",
+            "Basse + notes de gamme",
+            "Deux mains en mouvement parallèle"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Hedwig’s Theme — extrait autorisé",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 50,
           "mode": "two-hand",
@@ -5275,132 +5609,71 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "6/8",
+          "rhythmFocus": "Mesure à 6/8",
+          "accompanimentFocus": "Deux mains en mouvement parallèle",
+          "readingFocus": "Lire les deux mains simultanément",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire les deux mains simultanément",
+      "rhythm": "Mesure à 6/8",
+      "accompaniment": "Deux mains en mouvement parallèle"
+    }
   },
   {
     "title": "Semaine 15 — Nuances et expression",
@@ -5409,8 +5682,11 @@ export const pianoTrainingWeeks = [
         "id": "w15-a1",
         "label": "Découverte",
         "title": "Découvrir piano et forte",
-        "objective": "Joue la même phrase avec deux intensités.",
+        "objective": "Lire avec nuances. Rythme : Mélange 3/4 et 4/4. Accompagnement : Accords plaqués avec nuances.",
         "instructions": [
+          "Lecture : Lire avec nuances.",
+          "Rythme : travaille mélange 3/4 et 4/4.",
+          "Main gauche / harmonie : accords plaqués avec nuances.",
           "Observe l’objectif : Joue la même phrase avec deux intensités.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -5430,7 +5706,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
@@ -5447,7 +5723,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -5456,7 +5732,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Mélange 3/4 et 4/4",
+          "accompanimentFocus": "Accords plaqués avec nuances",
+          "readingFocus": "Lire avec nuances"
+        },
+        "curriculum": {
+          "reading": "Lire avec nuances",
+          "rhythm": "Mélange 3/4 et 4/4",
+          "accompaniment": "Accords plaqués avec nuances"
         }
       },
       {
@@ -5482,7 +5767,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
@@ -5496,7 +5781,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Mélange 3/4 et 4/4",
+          "accompanimentFocus": "Accords plaqués avec nuances",
+          "readingFocus": "Lire avec nuances"
+        },
+        "curriculum": {
+          "reading": "Lire avec nuances",
+          "rhythm": "Mélange 3/4 et 4/4",
+          "accompaniment": "Accords plaqués avec nuances"
         }
       },
       {
@@ -5523,7 +5817,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G3",
@@ -5537,7 +5831,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Mélange 3/4 et 4/4",
+          "accompanimentFocus": "Accords plaqués avec nuances",
+          "readingFocus": "Lire avec nuances"
+        },
+        "curriculum": {
+          "reading": "Lire avec nuances",
+          "rhythm": "Mélange 3/4 et 4/4",
+          "accompaniment": "Accords plaqués avec nuances"
         }
       },
       {
@@ -5565,7 +5868,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
@@ -5587,7 +5890,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -5601,41 +5904,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Mélange 3/4 et 4/4",
+          "accompanimentFocus": "Accords plaqués avec nuances",
+          "readingFocus": "Lire avec nuances"
+        },
+        "curriculum": {
+          "reading": "Lire avec nuances",
+          "rhythm": "Mélange 3/4 et 4/4",
+          "accompaniment": "Accords plaqués avec nuances"
         }
       },
       {
         "id": "w15-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — What a Friend We Have in Jesus",
-        "objective": "Jouer un extrait de « What a Friend We Have in Jesus » en utilisant la découverte « Découvrir piano et forte » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "MLK — 2e chant à choisir avec partition",
+        "objective": "Appliquer la découverte de la semaine (Mélange 3/4 et 4/4 ; Accords plaqués avec nuances) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire avec nuances",
+          "rhythm": "Mélange 3/4 et 4/4",
+          "accompaniment": "Accords plaqués avec nuances"
+        },
         "song": {
-          "title": "What a Friend We Have in Jesus",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "MLK — 2e chant à choisir avec partition",
+          "sourceMode": "partition_autorisee",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes"
+            "Lire une gamme complète",
+            "Lire les deux mains simultanément",
+            "Lire avec nuances",
+            "Basse + notes de gamme",
+            "Deux mains en mouvement parallèle",
+            "Accords plaqués avec nuances"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — MLK — 2e chant à choisir avec partition",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -5648,7 +5965,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
@@ -5658,46 +5975,6 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
               "duration": "q"
             }
           ],
@@ -5710,51 +5987,11 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
               "duration": "q"
             },
             {
@@ -5764,11 +6001,20 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Mélange 3/4 et 4/4",
+          "accompanimentFocus": "Accords plaqués avec nuances",
+          "readingFocus": "Lire avec nuances",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire avec nuances",
+      "rhythm": "Mélange 3/4 et 4/4",
+      "accompaniment": "Accords plaqués avec nuances"
+    }
   },
   {
     "title": "Semaine 16 — Pédale de sustain",
@@ -5777,8 +6023,11 @@ export const pianoTrainingWeeks = [
         "id": "w16-a1",
         "label": "Découverte",
         "title": "Découvrir la pédale avec deux portées",
-        "objective": "Change la pédale quand l’harmonie change.",
+        "objective": "Lire et pédaler. Rythme : Tenues + pédale. Accompagnement : Accords + pédale.",
         "instructions": [
+          "Lecture : Lire et pédaler.",
+          "Rythme : travaille tenues + pédale.",
+          "Main gauche / harmonie : accords + pédale.",
           "Observe l’objectif : Change la pédale quand l’harmonie change.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -5793,28 +6042,37 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "w"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Tenues + pédale",
+          "accompanimentFocus": "Accords + pédale",
+          "readingFocus": "Lire et pédaler"
+        },
+        "curriculum": {
+          "reading": "Lire et pédaler",
+          "rhythm": "Tenues + pédale",
+          "accompaniment": "Accords + pédale"
         }
       },
       {
@@ -5835,21 +6093,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Tenues + pédale",
+          "accompanimentFocus": "Accords + pédale",
+          "readingFocus": "Lire et pédaler"
+        },
+        "curriculum": {
+          "reading": "Lire et pédaler",
+          "rhythm": "Tenues + pédale",
+          "accompaniment": "Accords + pédale"
         }
       },
       {
@@ -5871,21 +6138,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Tenues + pédale",
+          "accompanimentFocus": "Accords + pédale",
+          "readingFocus": "Lire et pédaler"
+        },
+        "curriculum": {
+          "reading": "Lire et pédaler",
+          "rhythm": "Tenues + pédale",
+          "accompaniment": "Accords + pédale"
         }
       },
       {
@@ -5908,83 +6184,96 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Tenues + pédale",
+          "accompanimentFocus": "Accords + pédale",
+          "readingFocus": "Lire et pédaler"
+        },
+        "curriculum": {
+          "reading": "Lire et pédaler",
+          "rhythm": "Tenues + pédale",
+          "accompaniment": "Accords + pédale"
         }
       },
       {
         "id": "w16-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Nearer, My God, to Thee",
-        "objective": "Jouer un extrait de « Nearer, My God, to Thee » en utilisant la découverte « Découvrir la pédale avec deux portées » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Interstellar — thème (extrait autorisé)",
+        "objective": "Appliquer la découverte de la semaine (Tenues + pédale ; Accords + pédale) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire et pédaler",
+          "rhythm": "Tenues + pédale",
+          "accompaniment": "Accords + pédale"
+        },
         "song": {
-          "title": "Nearer, My God, to Thee",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Interstellar — thème (extrait autorisé)",
+          "sourceMode": "partition_autorisee",
+          "sourceNote": "Utiliser un extrait court à partir d’une partition autorisée ou fournie. La préparation interactive n’est pas présentée comme la mélodie originale.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances"
+            "Lire les deux mains simultanément",
+            "Lire avec nuances",
+            "Lire et pédaler",
+            "Deux mains en mouvement parallèle",
+            "Accords plaqués avec nuances",
+            "Accords + pédale"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Interstellar — thème (extrait autorisé)",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 50,
           "mode": "two-hand",
@@ -5992,132 +6281,61 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
               "finger": 3,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "w"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Tenues + pédale",
+          "accompanimentFocus": "Accords + pédale",
+          "readingFocus": "Lire et pédaler",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire et pédaler",
+      "rhythm": "Tenues + pédale",
+      "accompaniment": "Accords + pédale"
+    }
   },
   {
     "title": "Semaine 17 — Arpèges simples",
@@ -6126,8 +6344,11 @@ export const pianoTrainingWeeks = [
         "id": "w17-a1",
         "label": "Découverte",
         "title": "Découvrir l’accord décomposé",
-        "objective": "Vois l’accord sur deux portées.",
+        "objective": "Lire un arpège. Rythme : Syncopes régulières. Accompagnement : Accords brisés / premiers arpèges.",
         "instructions": [
+          "Lecture : Lire un arpège.",
+          "Rythme : travaille syncopes régulières.",
+          "Main gauche / harmonie : accords brisés / premiers arpèges.",
           "Observe l’objectif : Vois l’accord sur deux portées.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -6142,7 +6363,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -6152,14 +6373,14 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -6169,11 +6390,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Syncopes régulières",
+          "accompanimentFocus": "Accords brisés / premiers arpèges",
+          "readingFocus": "Lire un arpège"
+        },
+        "curriculum": {
+          "reading": "Lire un arpège",
+          "rhythm": "Syncopes régulières",
+          "accompaniment": "Accords brisés / premiers arpèges"
         }
       },
       {
@@ -6194,7 +6424,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -6204,7 +6434,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -6218,7 +6448,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Syncopes régulières",
+          "accompanimentFocus": "Accords brisés / premiers arpèges",
+          "readingFocus": "Lire un arpège"
+        },
+        "curriculum": {
+          "reading": "Lire un arpège",
+          "rhythm": "Syncopes régulières",
+          "accompaniment": "Accords brisés / premiers arpèges"
         }
       },
       {
@@ -6240,7 +6479,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
@@ -6250,7 +6489,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
@@ -6264,7 +6503,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Syncopes régulières",
+          "accompanimentFocus": "Accords brisés / premiers arpèges",
+          "readingFocus": "Lire un arpège"
+        },
+        "curriculum": {
+          "reading": "Lire un arpège",
+          "rhythm": "Syncopes régulières",
+          "accompaniment": "Accords brisés / premiers arpèges"
         }
       },
       {
@@ -6287,7 +6535,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -6297,7 +6545,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -6309,7 +6557,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -6319,172 +6567,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            }
-          ],
-          "staff": "grand",
-          "kind": "melody"
-        }
-      },
-      {
-        "id": "w17-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Rock of Ages",
-        "objective": "Jouer un extrait de « Rock of Ages » en utilisant la découverte « Découvrir l’accord décomposé » et tous les acquis des semaines précédentes.",
-        "instructions": [
-          "Commence par la préparation technique cumulative.",
-          "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
-        ],
-        "song": {
-          "title": "Rock of Ages",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
-          "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges"
-          ],
-          "usesCurrentDiscovery": true,
-          "uniqueForWeek": true
-        },
-        "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
-          "hand": "Deux mains",
-          "tempo": 56,
-          "mode": "two-hand",
-          "rightHand": [
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            }
-          ],
-          "leftHand": [
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -6494,10 +6577,116 @@ export const pianoTrainingWeeks = [
           ],
           "staff": "grand",
           "kind": "melody",
-          "isSongPreparation": true
+          "timeSignature": "4/4",
+          "rhythmFocus": "Syncopes régulières",
+          "accompanimentFocus": "Accords brisés / premiers arpèges",
+          "readingFocus": "Lire un arpège"
+        },
+        "curriculum": {
+          "reading": "Lire un arpège",
+          "rhythm": "Syncopes régulières",
+          "accompaniment": "Accords brisés / premiers arpèges"
+        }
+      },
+      {
+        "id": "w17-chant",
+        "label": "Morceau / chant de la semaine",
+        "title": "What a Friend We Have in Jesus",
+        "objective": "Appliquer la découverte de la semaine (Syncopes régulières ; Accords brisés / premiers arpèges) et réutiliser les acquis précédents.",
+        "instructions": [
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
+          "Active Aide lecture et Aide doigté au premier passage.",
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
+        ],
+        "curriculum": {
+          "reading": "Lire un arpège",
+          "rhythm": "Syncopes régulières",
+          "accompaniment": "Accords brisés / premiers arpèges"
+        },
+        "song": {
+          "title": "What a Friend We Have in Jesus",
+          "sourceMode": "historique",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
+          "requiredSkills": [
+            "Lire avec nuances",
+            "Lire et pédaler",
+            "Lire un arpège",
+            "Accords plaqués avec nuances",
+            "Accords + pédale",
+            "Accords brisés / premiers arpèges"
+          ],
+          "usesCurrentDiscovery": true,
+          "uniqueForWeek": true
+        },
+        "practice": {
+          "title": "Préparation cumulative — What a Friend We Have in Jesus",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
+          "hand": "Deux mains",
+          "tempo": 56,
+          "mode": "two-hand",
+          "rightHand": [
+            {
+              "note": "C4",
+              "finger": 1,
+              "duration": "8"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            },
+            {
+              "note": "G4",
+              "finger": 5,
+              "duration": "8"
+            },
+            {
+              "note": "E4",
+              "finger": 3,
+              "duration": "q"
+            }
+          ],
+          "leftHand": [
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "8"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            },
+            {
+              "note": "G2",
+              "finger": 1,
+              "duration": "8"
+            },
+            {
+              "note": "C3",
+              "finger": 5,
+              "duration": "q"
+            }
+          ],
+          "staff": "grand",
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Syncopes régulières",
+          "accompanimentFocus": "Accords brisés / premiers arpèges",
+          "readingFocus": "Lire un arpège",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire un arpège",
+      "rhythm": "Syncopes régulières",
+      "accompaniment": "Accords brisés / premiers arpèges"
+    }
   },
   {
     "title": "Semaine 18 — Progression Do La mineur Fa Sol",
@@ -6506,8 +6695,11 @@ export const pianoTrainingWeeks = [
         "id": "w18-a1",
         "label": "Découverte",
         "title": "Découvrir quatre accords",
-        "objective": "Lis la progression sur une portée d’accords.",
+        "objective": "Lire une progression d’accords. Rythme : Croches d’accompagnement. Accompagnement : Arpèges d’accompagnement.",
         "instructions": [
+          "Lecture : Lire une progression d’accords.",
+          "Rythme : travaille croches d’accompagnement.",
+          "Main gauche / harmonie : arpèges d’accompagnement.",
           "Observe l’objectif : Lis la progression sur une portée d’accords.",
           "Lis d’abord la clé de sol puis la clé de fa.",
           "Repère les notes sur le clavier avant de jouer."
@@ -6523,34 +6715,34 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ],
             [
               {
                 "note": "A3",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "C4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "E4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ],
             [
@@ -6574,22 +6766,31 @@ export const pianoTrainingWeeks = [
               {
                 "note": "G4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "B4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "D5",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ]
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches d’accompagnement",
+          "accompanimentFocus": "Arpèges d’accompagnement",
+          "readingFocus": "Lire une progression d’accords"
+        },
+        "curriculum": {
+          "reading": "Lire une progression d’accords",
+          "rhythm": "Croches d’accompagnement",
+          "accompaniment": "Arpèges d’accompagnement"
         }
       },
       {
@@ -6610,12 +6811,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F2",
@@ -6625,11 +6826,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches d’accompagnement",
+          "accompanimentFocus": "Arpèges d’accompagnement",
+          "readingFocus": "Lire une progression d’accords"
+        },
+        "curriculum": {
+          "reading": "Lire une progression d’accords",
+          "rhythm": "Croches d’accompagnement",
+          "accompaniment": "Arpèges d’accompagnement"
         }
       },
       {
@@ -6652,34 +6862,34 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ],
             [
               {
                 "note": "A3",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "C4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "E4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ],
             [
@@ -6703,22 +6913,31 @@ export const pianoTrainingWeeks = [
               {
                 "note": "G4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "B4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "D5",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ]
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches d’accompagnement",
+          "accompanimentFocus": "Arpèges d’accompagnement",
+          "readingFocus": "Lire une progression d’accords"
+        },
+        "curriculum": {
+          "reading": "Lire une progression d’accords",
+          "rhythm": "Croches d’accompagnement",
+          "accompaniment": "Arpèges d’accompagnement"
         }
       },
       {
@@ -6741,12 +6960,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
@@ -6756,39 +6975,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F2",
@@ -6798,67 +7017,79 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches d’accompagnement",
+          "accompanimentFocus": "Arpèges d’accompagnement",
+          "readingFocus": "Lire une progression d’accords"
+        },
+        "curriculum": {
+          "reading": "Lire une progression d’accords",
+          "rhythm": "Croches d’accompagnement",
+          "accompaniment": "Arpèges d’accompagnement"
         }
       },
       {
         "id": "w18-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — All Hail the Power of Jesus’ Name",
-        "objective": "Jouer un extrait de « All Hail the Power of Jesus’ Name » en utilisant la découverte « Découvrir quatre accords » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "It Is Well with My Soul",
+        "objective": "Appliquer la découverte de la semaine (Croches d’accompagnement ; Arpèges d’accompagnement) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire une progression d’accords",
+          "rhythm": "Croches d’accompagnement",
+          "accompaniment": "Arpèges d’accompagnement"
+        },
         "song": {
-          "title": "All Hail the Power of Jesus’ Name",
+          "title": "It Is Well with My Soul",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges"
+            "Lire et pédaler",
+            "Lire un arpège",
+            "Lire une progression d’accords",
+            "Accords + pédale",
+            "Accords brisés / premiers arpèges",
+            "Arpèges d’accompagnement"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — It Is Well with My Soul",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -6866,12 +7097,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
@@ -6881,59 +7112,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F2",
@@ -6943,55 +7154,44 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "F2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "F2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Croches d’accompagnement",
+          "accompanimentFocus": "Arpèges d’accompagnement",
+          "readingFocus": "Lire une progression d’accords",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire une progression d’accords",
+      "rhythm": "Croches d’accompagnement",
+      "accompaniment": "Arpèges d’accompagnement"
+    }
   },
   {
     "title": "Semaine 19 — Indépendance des mains",
@@ -7000,8 +7200,11 @@ export const pianoTrainingWeeks = [
         "id": "w19-a1",
         "label": "Découverte",
         "title": "Découvrir deux rythmes différents",
-        "objective": "La main gauche tient la structure pendant que la droite bouge.",
+        "objective": "Deux rôles différents aux mains. Rythme : Indépendance rythmique des mains. Accompagnement : Motif main gauche autonome.",
         "instructions": [
+          "Lecture : Deux rôles différents aux mains.",
+          "Rythme : travaille indépendance rythmique des mains.",
+          "Main gauche / harmonie : motif main gauche autonome.",
           "La main gauche tient la structure pendant que la droite bouge.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -7021,12 +7224,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -7043,12 +7246,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -7057,7 +7260,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Indépendance rythmique des mains",
+          "accompanimentFocus": "Motif main gauche autonome",
+          "readingFocus": "Deux rôles différents aux mains"
+        },
+        "curriculum": {
+          "reading": "Deux rôles différents aux mains",
+          "rhythm": "Indépendance rythmique des mains",
+          "accompaniment": "Motif main gauche autonome"
         }
       },
       {
@@ -7083,12 +7295,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -7107,7 +7319,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Indépendance rythmique des mains",
+          "accompanimentFocus": "Motif main gauche autonome",
+          "readingFocus": "Deux rôles différents aux mains"
+        },
+        "curriculum": {
+          "reading": "Deux rôles différents aux mains",
+          "rhythm": "Indépendance rythmique des mains",
+          "accompaniment": "Motif main gauche autonome"
         }
       },
       {
@@ -7134,12 +7355,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -7148,7 +7369,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Indépendance rythmique des mains",
+          "accompanimentFocus": "Motif main gauche autonome",
+          "readingFocus": "Deux rôles différents aux mains"
+        },
+        "curriculum": {
+          "reading": "Deux rôles différents aux mains",
+          "rhythm": "Indépendance rythmique des mains",
+          "accompaniment": "Motif main gauche autonome"
         }
       },
       {
@@ -7176,12 +7406,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -7201,12 +7431,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -7218,12 +7448,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -7243,52 +7473,64 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Indépendance rythmique des mains",
+          "accompanimentFocus": "Motif main gauche autonome",
+          "readingFocus": "Deux rôles différents aux mains"
+        },
+        "curriculum": {
+          "reading": "Deux rôles différents aux mains",
+          "rhythm": "Indépendance rythmique des mains",
+          "accompaniment": "Motif main gauche autonome"
         }
       },
       {
         "id": "w19-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Crown Him with Many Crowns",
-        "objective": "Jouer un extrait de « Crown Him with Many Crowns » en utilisant la découverte « Découvrir deux rythmes différents » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Come Thou Fount of Every Blessing",
+        "objective": "Appliquer la découverte de la semaine (Indépendance rythmique des mains ; Motif main gauche autonome) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Deux rôles différents aux mains",
+          "rhythm": "Indépendance rythmique des mains",
+          "accompaniment": "Motif main gauche autonome"
+        },
         "song": {
-          "title": "Crown Him with Many Crowns",
+          "title": "Come Thou Fount of Every Blessing",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges"
+            "Lire un arpège",
+            "Lire une progression d’accords",
+            "Deux rôles différents aux mains",
+            "Accords brisés / premiers arpèges",
+            "Arpèges d’accompagnement",
+            "Motif main gauche autonome"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Come Thou Fount of Every Blessing",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -7301,12 +7543,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -7326,32 +7568,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -7363,12 +7585,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -7388,40 +7610,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Indépendance rythmique des mains",
+          "accompanimentFocus": "Motif main gauche autonome",
+          "readingFocus": "Deux rôles différents aux mains",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Deux rôles différents aux mains",
+      "rhythm": "Indépendance rythmique des mains",
+      "accompaniment": "Motif main gauche autonome"
+    }
   },
   {
     "title": "Semaine 20 — Lecture à vue sur deux portées",
@@ -7430,8 +7641,11 @@ export const pianoTrainingWeeks = [
         "id": "w20-a1",
         "label": "Découverte",
         "title": "Découvrir une phrase inconnue",
-        "objective": "Lis avant de toucher le clavier.",
+        "objective": "Lecture à vue sur deux portées. Rythme : Lecture rythmique à vue. Accompagnement : Choisir les positions les plus proches.",
         "instructions": [
+          "Lecture : Lecture à vue sur deux portées.",
+          "Rythme : travaille lecture rythmique à vue.",
+          "Main gauche / harmonie : choisir les positions les plus proches.",
           "Lis avant de toucher le clavier.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -7456,12 +7670,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -7478,16 +7692,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture rythmique à vue",
+          "accompanimentFocus": "Choisir les positions les plus proches",
+          "readingFocus": "Lecture à vue sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Lecture à vue sur deux portées",
+          "rhythm": "Lecture rythmique à vue",
+          "accompaniment": "Choisir les positions les plus proches"
         }
       },
       {
@@ -7518,17 +7741,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -7537,7 +7760,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture rythmique à vue",
+          "accompanimentFocus": "Choisir les positions les plus proches",
+          "readingFocus": "Lecture à vue sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Lecture à vue sur deux portées",
+          "rhythm": "Lecture rythmique à vue",
+          "accompaniment": "Choisir les positions les plus proches"
         }
       },
       {
@@ -7569,17 +7801,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -7588,7 +7820,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture rythmique à vue",
+          "accompanimentFocus": "Choisir les positions les plus proches",
+          "readingFocus": "Lecture à vue sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Lecture à vue sur deux portées",
+          "rhythm": "Lecture rythmique à vue",
+          "accompaniment": "Choisir les positions les plus proches"
         }
       },
       {
@@ -7621,17 +7862,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
@@ -7646,7 +7887,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -7663,17 +7904,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -7688,47 +7929,59 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture rythmique à vue",
+          "accompanimentFocus": "Choisir les positions les plus proches",
+          "readingFocus": "Lecture à vue sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Lecture à vue sur deux portées",
+          "rhythm": "Lecture rythmique à vue",
+          "accompaniment": "Choisir les positions les plus proches"
         }
       },
       {
         "id": "w20-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — It Is Well with My Soul",
-        "objective": "Jouer un extrait de « It Is Well with My Soul » en utilisant la découverte « Découvrir une phrase inconnue » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Blessed Assurance",
+        "objective": "Appliquer la découverte de la semaine (Lecture rythmique à vue ; Choisir les positions les plus proches) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lecture à vue sur deux portées",
+          "rhythm": "Lecture rythmique à vue",
+          "accompaniment": "Choisir les positions les plus proches"
+        },
         "song": {
-          "title": "It Is Well with My Soul",
+          "title": "Blessed Assurance",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges"
+            "Lire une progression d’accords",
+            "Deux rôles différents aux mains",
+            "Lecture à vue sur deux portées",
+            "Arpèges d’accompagnement",
+            "Motif main gauche autonome",
+            "Choisir les positions les plus proches"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Blessed Assurance",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -7746,17 +7999,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A4",
@@ -7771,27 +8024,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -7808,17 +8041,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -7833,35 +8066,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture rythmique à vue",
+          "accompanimentFocus": "Choisir les positions les plus proches",
+          "readingFocus": "Lecture à vue sur deux portées",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lecture à vue sur deux portées",
+      "rhythm": "Lecture rythmique à vue",
+      "accompaniment": "Choisir les positions les plus proches"
+    }
   },
   {
     "title": "Semaine 21 — Renversements d’accords",
@@ -7870,8 +8092,11 @@ export const pianoTrainingWeeks = [
         "id": "w21-a1",
         "label": "Découverte",
         "title": "Découvrir les renversements",
-        "objective": "Observe trois positions du même accord.",
+        "objective": "Lire les renversements. Rythme : Triolets + noires. Accompagnement : Renversements : premier renversement.",
         "instructions": [
+          "Lecture : Lire les renversements.",
+          "Rythme : travaille triolets + noires.",
+          "Main gauche / harmonie : renversements : premier renversement.",
           "Observe trois positions du même accord.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -7887,56 +8112,65 @@ export const pianoTrainingWeeks = [
               {
                 "note": "C4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "E4",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "G4",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ],
             [
               {
                 "note": "E4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "G4",
                 "finger": 2,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "C5",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ],
             [
               {
                 "note": "G4",
                 "finger": 1,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "C5",
                 "finger": 3,
-                "duration": "q"
+                "duration": "8"
               },
               {
                 "note": "E5",
                 "finger": 5,
-                "duration": "q"
+                "duration": "8"
               }
             ]
           ],
           "staff": "treble",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets + noires",
+          "accompanimentFocus": "Renversements : premier renversement",
+          "readingFocus": "Lire les renversements"
+        },
+        "curriculum": {
+          "reading": "Lire les renversements",
+          "rhythm": "Triolets + noires",
+          "accompaniment": "Renversements : premier renversement"
         }
       },
       {
@@ -7957,21 +8191,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets + noires",
+          "accompanimentFocus": "Renversements : premier renversement",
+          "readingFocus": "Lire les renversements"
+        },
+        "curriculum": {
+          "reading": "Lire les renversements",
+          "rhythm": "Triolets + noires",
+          "accompaniment": "Renversements : premier renversement"
         }
       },
       {
@@ -7993,21 +8236,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets + noires",
+          "accompanimentFocus": "Renversements : premier renversement",
+          "readingFocus": "Lire les renversements"
+        },
+        "curriculum": {
+          "reading": "Lire les renversements",
+          "rhythm": "Triolets + noires",
+          "accompaniment": "Renversements : premier renversement"
         }
       },
       {
@@ -8030,17 +8282,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
@@ -8052,17 +8304,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -8071,44 +8323,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets + noires",
+          "accompanimentFocus": "Renversements : premier renversement",
+          "readingFocus": "Lire les renversements"
+        },
+        "curriculum": {
+          "reading": "Lire les renversements",
+          "rhythm": "Triolets + noires",
+          "accompaniment": "Renversements : premier renversement"
         }
       },
       {
         "id": "w21-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Come Thou Fount of Every Blessing",
-        "objective": "Jouer un extrait de « Come Thou Fount of Every Blessing » en utilisant la découverte « Découvrir les renversements » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Crown Him with Many Crowns",
+        "objective": "Appliquer la découverte de la semaine (Triolets + noires ; Renversements : premier renversement) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire les renversements",
+          "rhythm": "Triolets + noires",
+          "accompaniment": "Renversements : premier renversement"
+        },
         "song": {
-          "title": "Come Thou Fount of Every Blessing",
+          "title": "Crown Him with Many Crowns",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement"
+            "Deux rôles différents aux mains",
+            "Lecture à vue sur deux portées",
+            "Lire les renversements",
+            "Motif main gauche autonome",
+            "Choisir les positions les plus proches",
+            "Renversements : premier renversement"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Crown Him with Many Crowns",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -8116,81 +8379,21 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 1,
               "duration": "q"
             }
           ],
@@ -8198,90 +8401,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
               "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Triolets + noires",
+          "accompanimentFocus": "Renversements : premier renversement",
+          "readingFocus": "Lire les renversements",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire les renversements",
+      "rhythm": "Triolets + noires",
+      "accompaniment": "Renversements : premier renversement"
+    }
   },
   {
     "title": "Semaine 22 — Accompagnement main gauche",
@@ -8290,8 +8442,11 @@ export const pianoTrainingWeeks = [
         "id": "w22-a1",
         "label": "Découverte",
         "title": "Découvrir basse + quinte",
-        "objective": "La main gauche crée un motif d’accompagnement.",
+        "objective": "Lire un accompagnement main gauche. Rythme : Motifs d’accompagnement. Accompagnement : Renversements + basse/quinte.",
         "instructions": [
+          "Lecture : Lire un accompagnement main gauche.",
+          "Rythme : travaille motifs d’accompagnement.",
+          "Main gauche / harmonie : renversements + basse/quinte.",
           "La main gauche crée un motif d’accompagnement.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -8306,12 +8461,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -8321,19 +8476,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -8343,11 +8498,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Motifs d’accompagnement",
+          "accompanimentFocus": "Renversements + basse/quinte",
+          "readingFocus": "Lire un accompagnement main gauche"
+        },
+        "curriculum": {
+          "reading": "Lire un accompagnement main gauche",
+          "rhythm": "Motifs d’accompagnement",
+          "accompaniment": "Renversements + basse/quinte"
         }
       },
       {
@@ -8368,12 +8532,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
@@ -8383,12 +8547,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
@@ -8397,7 +8561,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Motifs d’accompagnement",
+          "accompanimentFocus": "Renversements + basse/quinte",
+          "readingFocus": "Lire un accompagnement main gauche"
+        },
+        "curriculum": {
+          "reading": "Lire un accompagnement main gauche",
+          "rhythm": "Motifs d’accompagnement",
+          "accompaniment": "Renversements + basse/quinte"
         }
       },
       {
@@ -8419,12 +8592,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -8434,12 +8607,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
@@ -8448,7 +8621,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Motifs d’accompagnement",
+          "accompanimentFocus": "Renversements + basse/quinte",
+          "readingFocus": "Lire un accompagnement main gauche"
+        },
+        "curriculum": {
+          "reading": "Lire un accompagnement main gauche",
+          "rhythm": "Motifs d’accompagnement",
+          "accompaniment": "Renversements + basse/quinte"
         }
       },
       {
@@ -8471,12 +8653,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -8486,12 +8668,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -8501,24 +8683,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -8528,12 +8710,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
@@ -8543,53 +8725,64 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Motifs d’accompagnement",
+          "accompanimentFocus": "Renversements + basse/quinte",
+          "readingFocus": "Lire un accompagnement main gauche"
+        },
+        "curriculum": {
+          "reading": "Lire un accompagnement main gauche",
+          "rhythm": "Motifs d’accompagnement",
+          "accompaniment": "Renversements + basse/quinte"
         }
       },
       {
         "id": "w22-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Abide with Me",
-        "objective": "Jouer un extrait de « Abide with Me » en utilisant la découverte « Découvrir basse + quinte » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "To God Be the Glory",
+        "objective": "Appliquer la découverte de la semaine (Motifs d’accompagnement ; Renversements + basse/quinte) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire un accompagnement main gauche",
+          "rhythm": "Motifs d’accompagnement",
+          "accompaniment": "Renversements + basse/quinte"
+        },
         "song": {
-          "title": "Abide with Me",
+          "title": "To God Be the Glory",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement"
+            "Lecture à vue sur deux portées",
+            "Lire les renversements",
+            "Lire un accompagnement main gauche",
+            "Choisir les positions les plus proches",
+            "Renversements : premier renversement",
+            "Renversements + basse/quinte"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — To God Be the Glory",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -8597,12 +8790,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -8612,12 +8805,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
@@ -8627,64 +8820,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
@@ -8694,12 +8847,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
@@ -8709,60 +8862,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Motifs d’accompagnement",
+          "accompanimentFocus": "Renversements + basse/quinte",
+          "readingFocus": "Lire un accompagnement main gauche",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire un accompagnement main gauche",
+      "rhythm": "Motifs d’accompagnement",
+      "accompaniment": "Renversements + basse/quinte"
+    }
   },
   {
     "title": "Semaine 23 — Phrasé et respiration",
@@ -8771,8 +8893,11 @@ export const pianoTrainingWeeks = [
         "id": "w23-a1",
         "label": "Découverte",
         "title": "Découvrir les phrases musicales",
-        "objective": "Repère début, sommet et fin.",
+        "objective": "Phrasé sur deux portées. Rythme : Respiration et phrasé. Accompagnement : Accompagnement lié et respiré.",
         "instructions": [
+          "Lecture : Phrasé sur deux portées.",
+          "Rythme : travaille respiration et phrasé.",
+          "Main gauche / harmonie : accompagnement lié et respiré.",
           "Repère début, sommet et fin.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -8787,7 +8912,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
@@ -8802,19 +8927,19 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -8829,16 +8954,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Respiration et phrasé",
+          "accompanimentFocus": "Accompagnement lié et respiré",
+          "readingFocus": "Phrasé sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Phrasé sur deux portées",
+          "rhythm": "Respiration et phrasé",
+          "accompaniment": "Accompagnement lié et respiré"
         }
       },
       {
@@ -8859,7 +8993,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
@@ -8874,16 +9008,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Respiration et phrasé",
+          "accompanimentFocus": "Accompagnement lié et respiré",
+          "readingFocus": "Phrasé sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Phrasé sur deux portées",
+          "rhythm": "Respiration et phrasé",
+          "accompaniment": "Accompagnement lié et respiré"
         }
       },
       {
@@ -8905,7 +9048,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -8920,16 +9063,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Respiration et phrasé",
+          "accompanimentFocus": "Accompagnement lié et respiré",
+          "readingFocus": "Phrasé sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Phrasé sur deux portées",
+          "rhythm": "Respiration et phrasé",
+          "accompaniment": "Accompagnement lié et respiré"
         }
       },
       {
@@ -8952,7 +9104,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
@@ -8967,12 +9119,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -8987,14 +9139,14 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -9009,12 +9161,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -9029,48 +9181,59 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Respiration et phrasé",
+          "accompanimentFocus": "Accompagnement lié et respiré",
+          "readingFocus": "Phrasé sur deux portées"
+        },
+        "curriculum": {
+          "reading": "Phrasé sur deux portées",
+          "rhythm": "Respiration et phrasé",
+          "accompaniment": "Accompagnement lié et respiré"
         }
       },
       {
         "id": "w23-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Onward, Christian Soldiers",
-        "objective": "Jouer un extrait de « Onward, Christian Soldiers » en utilisant la découverte « Découvrir les phrases musicales » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "I Surrender All",
+        "objective": "Appliquer la découverte de la semaine (Respiration et phrasé ; Accompagnement lié et respiré) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Phrasé sur deux portées",
+          "rhythm": "Respiration et phrasé",
+          "accompaniment": "Accompagnement lié et respiré"
+        },
         "song": {
-          "title": "Onward, Christian Soldiers",
+          "title": "I Surrender All",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement"
+            "Lire les renversements",
+            "Lire un accompagnement main gauche",
+            "Phrasé sur deux portées",
+            "Renversements : premier renversement",
+            "Renversements + basse/quinte",
+            "Accompagnement lié et respiré"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — I Surrender All",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -9078,7 +9241,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
@@ -9093,12 +9256,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -9113,54 +9276,14 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -9175,12 +9298,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -9195,55 +9318,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Respiration et phrasé",
+          "accompanimentFocus": "Accompagnement lié et respiré",
+          "readingFocus": "Phrasé sur deux portées",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Phrasé sur deux portées",
+      "rhythm": "Respiration et phrasé",
+      "accompaniment": "Accompagnement lié et respiré"
+    }
   },
   {
     "title": "Semaine 24 — Sol majeur et Fa majeur",
@@ -9252,8 +9344,11 @@ export const pianoTrainingWeeks = [
         "id": "w24-a1",
         "label": "Découverte",
         "title": "Découvrir Fa♯ et Si♭",
-        "objective": "Repère les premières altérations.",
+        "objective": "Altérations : Fa♯ et Si♭. Rythme : Rythmes avec altérations. Accompagnement : Accords dans plusieurs tonalités.",
         "instructions": [
+          "Lecture : Altérations : Fa♯ et Si♭.",
+          "Rythme : travaille rythmes avec altérations.",
+          "Main gauche / harmonie : accords dans plusieurs tonalités.",
           "Repère les premières altérations.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -9273,17 +9368,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -9295,21 +9390,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "A3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec altérations",
+          "accompanimentFocus": "Accords dans plusieurs tonalités",
+          "readingFocus": "Altérations : Fa♯ et Si♭"
+        },
+        "curriculum": {
+          "reading": "Altérations : Fa♯ et Si♭",
+          "rhythm": "Rythmes avec altérations",
+          "accompaniment": "Accords dans plusieurs tonalités"
         }
       },
       {
@@ -9335,17 +9439,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D5",
@@ -9360,16 +9464,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "F#5",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec altérations",
+          "accompanimentFocus": "Accords dans plusieurs tonalités",
+          "readingFocus": "Altérations : Fa♯ et Si♭"
+        },
+        "curriculum": {
+          "reading": "Altérations : Fa♯ et Si♭",
+          "rhythm": "Rythmes avec altérations",
+          "accompaniment": "Accords dans plusieurs tonalités"
         }
       },
       {
@@ -9396,17 +9509,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "Bb3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C4",
@@ -9415,7 +9528,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec altérations",
+          "accompanimentFocus": "Accords dans plusieurs tonalités",
+          "readingFocus": "Altérations : Fa♯ et Si♭"
+        },
+        "curriculum": {
+          "reading": "Altérations : Fa♯ et Si♭",
+          "rhythm": "Rythmes avec altérations",
+          "accompaniment": "Accords dans plusieurs tonalités"
         }
       },
       {
@@ -9443,17 +9565,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C5",
@@ -9468,12 +9590,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -9485,17 +9607,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "Bb3",
@@ -9510,53 +9632,64 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec altérations",
+          "accompanimentFocus": "Accords dans plusieurs tonalités",
+          "readingFocus": "Altérations : Fa♯ et Si♭"
+        },
+        "curriculum": {
+          "reading": "Altérations : Fa♯ et Si♭",
+          "rhythm": "Rythmes avec altérations",
+          "accompaniment": "Accords dans plusieurs tonalités"
         }
       },
       {
         "id": "w24-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Leaning on the Everlasting Arms",
-        "objective": "Jouer un extrait de « Leaning on the Everlasting Arms » en utilisant la découverte « Découvrir Fa♯ et Si♭ » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Nothing but the Blood",
+        "objective": "Appliquer la découverte de la semaine (Rythmes avec altérations ; Accords dans plusieurs tonalités) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Altérations : Fa♯ et Si♭",
+          "rhythm": "Rythmes avec altérations",
+          "accompaniment": "Accords dans plusieurs tonalités"
+        },
         "song": {
-          "title": "Leaning on the Everlasting Arms",
+          "title": "Nothing but the Blood",
           "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "sourceNote": "Chant historique : utiliser un extrait vérifié et adapté au niveau de la semaine.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement"
+            "Lire un accompagnement main gauche",
+            "Phrasé sur deux portées",
+            "Altérations : Fa♯ et Si♭",
+            "Renversements + basse/quinte",
+            "Accompagnement lié et respiré",
+            "Accords dans plusieurs tonalités"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Nothing but the Blood",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -9569,17 +9702,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C5",
@@ -9594,52 +9727,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -9651,17 +9744,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "Bb3",
@@ -9676,60 +9769,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec altérations",
+          "accompanimentFocus": "Accords dans plusieurs tonalités",
+          "readingFocus": "Altérations : Fa♯ et Si♭",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Altérations : Fa♯ et Si♭",
+      "rhythm": "Rythmes avec altérations",
+      "accompaniment": "Accords dans plusieurs tonalités"
+    }
   },
   {
     "title": "Semaine 25 — Accords mineurs",
@@ -9738,8 +9800,11 @@ export const pianoTrainingWeeks = [
         "id": "w25-a1",
         "label": "Découverte",
         "title": "Découvrir majeur et mineur",
-        "objective": "Compare la tierce majeure et mineure.",
+        "objective": "Accords mineurs sur les deux clés. Rythme : Rythmes en accords mineurs. Accompagnement : Accords mineurs.",
         "instructions": [
+          "Lecture : Accords mineurs sur les deux clés.",
+          "Rythme : travaille rythmes en accords mineurs.",
+          "Main gauche / harmonie : accords mineurs.",
           "Compare la tierce majeure et mineure.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -9759,12 +9824,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -9776,11 +9841,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes en accords mineurs",
+          "accompanimentFocus": "Accords mineurs",
+          "readingFocus": "Accords mineurs sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Accords mineurs sur les deux clés",
+          "rhythm": "Rythmes en accords mineurs",
+          "accompaniment": "Accords mineurs"
         }
       },
       {
@@ -9815,7 +9889,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes en accords mineurs",
+          "accompanimentFocus": "Accords mineurs",
+          "readingFocus": "Accords mineurs sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Accords mineurs sur les deux clés",
+          "rhythm": "Rythmes en accords mineurs",
+          "accompaniment": "Accords mineurs"
         }
       },
       {
@@ -9851,7 +9934,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes en accords mineurs",
+          "accompanimentFocus": "Accords mineurs",
+          "readingFocus": "Accords mineurs sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Accords mineurs sur les deux clés",
+          "rhythm": "Rythmes en accords mineurs",
+          "accompaniment": "Accords mineurs"
         }
       },
       {
@@ -9879,17 +9971,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C5",
@@ -9906,17 +9998,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A2",
@@ -9925,45 +10017,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes en accords mineurs",
+          "accompanimentFocus": "Accords mineurs",
+          "readingFocus": "Accords mineurs sur les deux clés"
+        },
+        "curriculum": {
+          "reading": "Accords mineurs sur les deux clés",
+          "rhythm": "Rythmes en accords mineurs",
+          "accompaniment": "Accords mineurs"
         }
       },
       {
         "id": "w25-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — There Is Power in the Blood",
-        "objective": "Jouer un extrait de « There Is Power in the Blood » en utilisant la découverte « Découvrir majeur et mineur » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Ta présence, mes délices",
+        "objective": "Appliquer la découverte de la semaine (Rythmes en accords mineurs ; Accords mineurs) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Accords mineurs sur les deux clés",
+          "rhythm": "Rythmes en accords mineurs",
+          "accompaniment": "Accords mineurs"
+        },
         "song": {
-          "title": "There Is Power in the Blood",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Ta présence, mes délices",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs"
+            "Phrasé sur deux portées",
+            "Altérations : Fa♯ et Si♭",
+            "Accords mineurs sur les deux clés",
+            "Accompagnement lié et respiré",
+            "Accords dans plusieurs tonalités",
+            "Accords mineurs"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Ta présence, mes délices",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 54,
           "mode": "two-hand",
@@ -9976,72 +10078,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E5",
-              "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C5",
@@ -10058,85 +10105,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "A2",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 1,
               "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes en accords mineurs",
+          "accompanimentFocus": "Accords mineurs",
+          "readingFocus": "Accords mineurs sur les deux clés",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Accords mineurs sur les deux clés",
+      "rhythm": "Rythmes en accords mineurs",
+      "accompaniment": "Accords mineurs"
+    }
   },
   {
     "title": "Semaine 26 — Jouer sans regarder les mains",
@@ -10145,8 +10146,11 @@ export const pianoTrainingWeeks = [
         "id": "w26-a1",
         "label": "Découverte",
         "title": "Découvrir les repères tactiles",
-        "objective": "Utilise les groupes de touches noires comme repères.",
+        "objective": "Lire sans regarder le clavier. Rythme : Lecture continue sans regarder les mains. Accompagnement : Basses doubles / octaves avec repères tactiles.",
         "instructions": [
+          "Lecture : Lire sans regarder le clavier.",
+          "Rythme : travaille lecture continue sans regarder les mains.",
+          "Main gauche / harmonie : basses doubles / octaves avec repères tactiles.",
           "Utilise les groupes de touches noires comme repères.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -10171,12 +10175,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -10193,16 +10197,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture continue sans regarder les mains",
+          "accompanimentFocus": "Basses doubles / octaves avec repères tactiles",
+          "readingFocus": "Lire sans regarder le clavier"
+        },
+        "curriculum": {
+          "reading": "Lire sans regarder le clavier",
+          "rhythm": "Lecture continue sans regarder les mains",
+          "accompaniment": "Basses doubles / octaves avec repères tactiles"
         }
       },
       {
@@ -10233,12 +10246,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -10247,7 +10260,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture continue sans regarder les mains",
+          "accompanimentFocus": "Basses doubles / octaves avec repères tactiles",
+          "readingFocus": "Lire sans regarder le clavier"
+        },
+        "curriculum": {
+          "reading": "Lire sans regarder le clavier",
+          "rhythm": "Lecture continue sans regarder les mains",
+          "accompaniment": "Basses doubles / octaves avec repères tactiles"
         }
       },
       {
@@ -10279,12 +10301,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -10293,7 +10315,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture continue sans regarder les mains",
+          "accompanimentFocus": "Basses doubles / octaves avec repères tactiles",
+          "readingFocus": "Lire sans regarder le clavier"
+        },
+        "curriculum": {
+          "reading": "Lire sans regarder le clavier",
+          "rhythm": "Lecture continue sans regarder les mains",
+          "accompaniment": "Basses doubles / octaves avec repères tactiles"
         }
       },
       {
@@ -10326,12 +10357,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -10351,7 +10382,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -10368,12 +10399,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -10393,49 +10424,59 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture continue sans regarder les mains",
+          "accompanimentFocus": "Basses doubles / octaves avec repères tactiles",
+          "readingFocus": "Lire sans regarder le clavier"
+        },
+        "curriculum": {
+          "reading": "Lire sans regarder le clavier",
+          "rhythm": "Lecture continue sans regarder les mains",
+          "accompaniment": "Basses doubles / octaves avec repères tactiles"
         }
       },
       {
         "id": "w26-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — I Surrender All",
-        "objective": "Jouer un extrait de « I Surrender All » en utilisant la découverte « Découvrir les repères tactiles » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Et je chante car tu es bon",
+        "objective": "Appliquer la découverte de la semaine (Lecture continue sans regarder les mains ; Basses doubles / octaves avec repères tactiles) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire sans regarder le clavier",
+          "rhythm": "Lecture continue sans regarder les mains",
+          "accompaniment": "Basses doubles / octaves avec repères tactiles"
+        },
         "song": {
-          "title": "I Surrender All",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Et je chante car tu es bon",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs"
+            "Altérations : Fa♯ et Si♭",
+            "Accords mineurs sur les deux clés",
+            "Lire sans regarder le clavier",
+            "Accords dans plusieurs tonalités",
+            "Accords mineurs",
+            "Basses doubles / octaves avec repères tactiles"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Et je chante car tu es bon",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -10453,12 +10494,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -10478,47 +10519,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -10535,12 +10536,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -10560,55 +10561,24 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "D3",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Lecture continue sans regarder les mains",
+          "accompanimentFocus": "Basses doubles / octaves avec repères tactiles",
+          "readingFocus": "Lire sans regarder le clavier",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire sans regarder le clavier",
+      "rhythm": "Lecture continue sans regarder les mains",
+      "accompaniment": "Basses doubles / octaves avec repères tactiles"
+    }
   },
   {
     "title": "Semaine 27 — Improvisation pentatonique",
@@ -10617,8 +10587,11 @@ export const pianoTrainingWeeks = [
         "id": "w27-a1",
         "label": "Découverte",
         "title": "Découvrir cinq notes sûres",
-        "objective": "Utilise Do Ré Mi Sol La.",
+        "objective": "Lire une grille simple pour improviser. Rythme : Improvisation sur pulsation. Accompagnement : Accompagnement libre sur grille.",
         "instructions": [
+          "Lecture : Lire une grille simple pour improviser.",
+          "Rythme : travaille improvisation sur pulsation.",
+          "Main gauche / harmonie : accompagnement libre sur grille.",
           "Utilise Do Ré Mi Sol La.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -10638,12 +10611,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -10653,7 +10626,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "A4",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -10665,12 +10638,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -10680,11 +10653,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Improvisation sur pulsation",
+          "accompanimentFocus": "Accompagnement libre sur grille",
+          "readingFocus": "Lire une grille simple pour improviser"
+        },
+        "curriculum": {
+          "reading": "Lire une grille simple pour improviser",
+          "rhythm": "Improvisation sur pulsation",
+          "accompaniment": "Accompagnement libre sur grille"
         }
       },
       {
@@ -10710,12 +10692,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
@@ -10724,7 +10706,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Improvisation sur pulsation",
+          "accompanimentFocus": "Accompagnement libre sur grille",
+          "readingFocus": "Lire une grille simple pour improviser"
+        },
+        "curriculum": {
+          "reading": "Lire une grille simple pour improviser",
+          "rhythm": "Improvisation sur pulsation",
+          "accompaniment": "Accompagnement libre sur grille"
         }
       },
       {
@@ -10751,12 +10742,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
@@ -10766,11 +10757,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Improvisation sur pulsation",
+          "accompanimentFocus": "Accompagnement libre sur grille",
+          "readingFocus": "Lire une grille simple pour improviser"
+        },
+        "curriculum": {
+          "reading": "Lire une grille simple pour improviser",
+          "rhythm": "Improvisation sur pulsation",
+          "accompaniment": "Accompagnement libre sur grille"
         }
       },
       {
@@ -10798,12 +10798,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
@@ -10813,7 +10813,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -10823,12 +10823,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -10840,12 +10840,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -10855,7 +10855,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -10865,54 +10865,64 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Improvisation sur pulsation",
+          "accompanimentFocus": "Accompagnement libre sur grille",
+          "readingFocus": "Lire une grille simple pour improviser"
+        },
+        "curriculum": {
+          "reading": "Lire une grille simple pour improviser",
+          "rhythm": "Improvisation sur pulsation",
+          "accompaniment": "Accompagnement libre sur grille"
         }
       },
       {
         "id": "w27-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Softly and Tenderly",
-        "objective": "Jouer un extrait de « Softly and Tenderly » en utilisant la découverte « Découvrir cinq notes sûres » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Venez le célébrer",
+        "objective": "Appliquer la découverte de la semaine (Improvisation sur pulsation ; Accompagnement libre sur grille) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lire une grille simple pour improviser",
+          "rhythm": "Improvisation sur pulsation",
+          "accompaniment": "Accompagnement libre sur grille"
+        },
         "song": {
-          "title": "Softly and Tenderly",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Venez le célébrer",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs"
+            "Accords mineurs sur les deux clés",
+            "Lire sans regarder le clavier",
+            "Lire une grille simple pour improviser",
+            "Accords mineurs",
+            "Basses doubles / octaves avec repères tactiles",
+            "Accompagnement libre sur grille"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Venez le célébrer",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 60,
           "mode": "two-hand",
@@ -10925,12 +10935,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
@@ -10940,7 +10950,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "D4",
@@ -10950,52 +10960,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -11007,12 +10977,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G2",
@@ -11022,7 +10992,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -11032,60 +11002,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Improvisation sur pulsation",
+          "accompanimentFocus": "Accompagnement libre sur grille",
+          "readingFocus": "Lire une grille simple pour improviser",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lire une grille simple pour improviser",
+      "rhythm": "Improvisation sur pulsation",
+      "accompaniment": "Accompagnement libre sur grille"
+    }
   },
   {
     "title": "Semaine 28 — Accords de septième",
@@ -11094,8 +11033,11 @@ export const pianoTrainingWeeks = [
         "id": "w28-a1",
         "label": "Découverte",
         "title": "Découvrir la tension de dominante",
-        "objective": "Observe Sol7 puis sa résolution vers Do.",
+        "objective": "Accords de septième sur portée. Rythme : Rythmes avec accords de 7e. Accompagnement : Accords de septième.",
         "instructions": [
+          "Lecture : Accords de septième sur portée.",
+          "Rythme : travaille rythmes avec accords de 7e.",
+          "Main gauche / harmonie : accords de septième.",
           "Observe Sol7 puis sa résolution vers Do.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -11115,17 +11057,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "B4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -11137,11 +11079,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec accords de 7e",
+          "accompanimentFocus": "Accords de septième",
+          "readingFocus": "Accords de septième sur portée"
+        },
+        "curriculum": {
+          "reading": "Accords de septième sur portée",
+          "rhythm": "Rythmes avec accords de 7e",
+          "accompaniment": "Accords de septième"
         }
       },
       {
@@ -11181,7 +11132,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec accords de 7e",
+          "accompanimentFocus": "Accords de septième",
+          "readingFocus": "Accords de septième sur portée"
+        },
+        "curriculum": {
+          "reading": "Accords de septième sur portée",
+          "rhythm": "Rythmes avec accords de 7e",
+          "accompaniment": "Accords de septième"
         }
       },
       {
@@ -11217,7 +11177,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec accords de 7e",
+          "accompanimentFocus": "Accords de septième",
+          "readingFocus": "Accords de septième sur portée"
+        },
+        "curriculum": {
+          "reading": "Accords de septième sur portée",
+          "rhythm": "Rythmes avec accords de 7e",
+          "accompaniment": "Accords de septième"
         }
       },
       {
@@ -11245,17 +11214,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E5",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "B4",
@@ -11270,12 +11239,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -11287,17 +11256,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -11312,55 +11281,64 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec accords de 7e",
+          "accompanimentFocus": "Accords de septième",
+          "readingFocus": "Accords de septième sur portée"
+        },
+        "curriculum": {
+          "reading": "Accords de septième sur portée",
+          "rhythm": "Rythmes avec accords de 7e",
+          "accompaniment": "Accords de septième"
         }
       },
       {
         "id": "w28-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Pass Me Not, O Gentle Savior",
-        "objective": "Jouer un extrait de « Pass Me Not, O Gentle Savior » en utilisant la découverte « Découvrir la tension de dominante » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Dieu est une fête aujourd’hui",
+        "objective": "Appliquer la découverte de la semaine (Rythmes avec accords de 7e ; Accords de septième) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Accords de septième sur portée",
+          "rhythm": "Rythmes avec accords de 7e",
+          "accompaniment": "Accords de septième"
+        },
         "song": {
-          "title": "Pass Me Not, O Gentle Savior",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Dieu est une fête aujourd’hui",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs",
-            "accords de septième"
+            "Lire sans regarder le clavier",
+            "Lire une grille simple pour improviser",
+            "Accords de septième sur portée",
+            "Basses doubles / octaves avec repères tactiles",
+            "Accompagnement libre sur grille",
+            "Accords de septième"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Dieu est une fête aujourd’hui",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -11373,17 +11351,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E5",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D5",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "B4",
@@ -11398,52 +11376,12 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E5",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "F5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "E5",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "F5",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
@@ -11455,17 +11393,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G2",
@@ -11480,60 +11418,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Rythmes avec accords de 7e",
+          "accompanimentFocus": "Accords de septième",
+          "readingFocus": "Accords de septième sur portée",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Accords de septième sur portée",
+      "rhythm": "Rythmes avec accords de 7e",
+      "accompaniment": "Accords de septième"
+    }
   },
   {
     "title": "Semaine 29 — Technique et vitesse contrôlée",
@@ -11542,8 +11449,11 @@ export const pianoTrainingWeeks = [
         "id": "w29-a1",
         "label": "Découverte",
         "title": "Découvrir le tempo de travail",
-        "objective": "Ne monte le tempo qu’après une exécution propre.",
+        "objective": "Lecture plus rapide sans perdre la précision. Rythme : Vitesse contrôlée. Accompagnement : Basse + accord + arpège à tempo contrôlé.",
         "instructions": [
+          "Lecture : Lecture plus rapide sans perdre la précision.",
+          "Rythme : travaille vitesse contrôlée.",
+          "Main gauche / harmonie : basse + accord + arpège à tempo contrôlé.",
           "Ne monte le tempo qu’après une exécution propre.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -11558,48 +11468,57 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Vitesse contrôlée",
+          "accompanimentFocus": "Basse + accord + arpège à tempo contrôlé",
+          "readingFocus": "Lecture plus rapide sans perdre la précision"
+        },
+        "curriculum": {
+          "reading": "Lecture plus rapide sans perdre la précision",
+          "rhythm": "Vitesse contrôlée",
+          "accompaniment": "Basse + accord + arpège à tempo contrôlé"
         }
       },
       {
@@ -11620,22 +11539,22 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
@@ -11650,16 +11569,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "B4",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Vitesse contrôlée",
+          "accompanimentFocus": "Basse + accord + arpège à tempo contrôlé",
+          "readingFocus": "Lecture plus rapide sans perdre la précision"
+        },
+        "curriculum": {
+          "reading": "Lecture plus rapide sans perdre la précision",
+          "rhythm": "Vitesse contrôlée",
+          "accompaniment": "Basse + accord + arpège à tempo contrôlé"
         }
       },
       {
@@ -11681,22 +11609,22 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D3",
               "finger": 4,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -11711,16 +11639,25 @@ export const pianoTrainingWeeks = [
             {
               "note": "B3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Vitesse contrôlée",
+          "accompanimentFocus": "Basse + accord + arpège à tempo contrôlé",
+          "readingFocus": "Lecture plus rapide sans perdre la précision"
+        },
+        "curriculum": {
+          "reading": "Lecture plus rapide sans perdre la précision",
+          "rhythm": "Vitesse contrôlée",
+          "accompaniment": "Basse + accord + arpège à tempo contrôlé"
         }
       },
       {
@@ -11743,22 +11680,22 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
@@ -11773,34 +11710,34 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B3",
@@ -11815,56 +11752,64 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Vitesse contrôlée",
+          "accompanimentFocus": "Basse + accord + arpège à tempo contrôlé",
+          "readingFocus": "Lecture plus rapide sans perdre la précision"
+        },
+        "curriculum": {
+          "reading": "Lecture plus rapide sans perdre la précision",
+          "rhythm": "Vitesse contrôlée",
+          "accompaniment": "Basse + accord + arpège à tempo contrôlé"
         }
       },
       {
         "id": "w29-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — To God Be the Glory",
-        "objective": "Jouer un extrait de « To God Be the Glory » en utilisant la découverte « Découvrir le tempo de travail » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Je chanterai l’Éternel tant que je vivrai",
+        "objective": "Appliquer la découverte de la semaine (Vitesse contrôlée ; Basse + accord + arpège à tempo contrôlé) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lecture plus rapide sans perdre la précision",
+          "rhythm": "Vitesse contrôlée",
+          "accompaniment": "Basse + accord + arpège à tempo contrôlé"
+        },
         "song": {
-          "title": "To God Be the Glory",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Je chanterai l’Éternel tant que je vivrai",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs",
-            "accords de septième",
-            "lecture rapide et interprétation"
+            "Lire une grille simple pour improviser",
+            "Accords de septième sur portée",
+            "Lecture plus rapide sans perdre la précision",
+            "Accompagnement libre sur grille",
+            "Accords de septième",
+            "Basse + accord + arpège à tempo contrôlé"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Je chanterai l’Éternel tant que je vivrai",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 64,
           "mode": "two-hand",
@@ -11872,22 +11817,22 @@ export const pianoTrainingWeeks = [
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B4",
@@ -11902,74 +11847,34 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "leftHand": [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C4",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "B3",
@@ -11984,60 +11889,29 @@ export const pianoTrainingWeeks = [
             {
               "note": "E3",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "E3",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
+              "duration": "8"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Vitesse contrôlée",
+          "accompanimentFocus": "Basse + accord + arpège à tempo contrôlé",
+          "readingFocus": "Lecture plus rapide sans perdre la précision",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lecture plus rapide sans perdre la précision",
+      "rhythm": "Vitesse contrôlée",
+      "accompaniment": "Basse + accord + arpège à tempo contrôlé"
+    }
   },
   {
     "title": "Semaine 30 — Construire un morceau intermédiaire",
@@ -12046,8 +11920,11 @@ export const pianoTrainingWeeks = [
         "id": "w30-a1",
         "label": "Découverte",
         "title": "Découvrir une section A",
-        "objective": "Travaille une petite section complète.",
+        "objective": "Lecture d’un morceau intermédiaire. Rythme : Morceau intermédiaire complet. Accompagnement : Arrangement complet : basse, accords et arpèges.",
         "instructions": [
+          "Lecture : Lecture d’un morceau intermédiaire.",
+          "Rythme : travaille morceau intermédiaire complet.",
+          "Main gauche / harmonie : arrangement complet : basse, accords et arpèges.",
           "Travaille une petite section complète.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -12067,17 +11944,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -12089,21 +11966,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Morceau intermédiaire complet",
+          "accompanimentFocus": "Arrangement complet : basse, accords et arpèges",
+          "readingFocus": "Lecture d’un morceau intermédiaire"
+        },
+        "curriculum": {
+          "reading": "Lecture d’un morceau intermédiaire",
+          "rhythm": "Morceau intermédiaire complet",
+          "accompaniment": "Arrangement complet : basse, accords et arpèges"
         }
       },
       {
@@ -12129,17 +12015,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
@@ -12153,7 +12039,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Morceau intermédiaire complet",
+          "accompanimentFocus": "Arrangement complet : basse, accords et arpèges",
+          "readingFocus": "Lecture d’un morceau intermédiaire"
+        },
+        "curriculum": {
+          "reading": "Lecture d’un morceau intermédiaire",
+          "rhythm": "Morceau intermédiaire complet",
+          "accompaniment": "Arrangement complet : basse, accords et arpèges"
         }
       },
       {
@@ -12180,17 +12075,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -12199,7 +12094,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Morceau intermédiaire complet",
+          "accompanimentFocus": "Arrangement complet : basse, accords et arpèges",
+          "readingFocus": "Lecture d’un morceau intermédiaire"
+        },
+        "curriculum": {
+          "reading": "Lecture d’un morceau intermédiaire",
+          "rhythm": "Morceau intermédiaire complet",
+          "accompaniment": "Arrangement complet : basse, accords et arpèges"
         }
       },
       {
@@ -12227,17 +12131,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
@@ -12254,17 +12158,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
@@ -12273,47 +12177,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Morceau intermédiaire complet",
+          "accompanimentFocus": "Arrangement complet : basse, accords et arpèges",
+          "readingFocus": "Lecture d’un morceau intermédiaire"
+        },
+        "curriculum": {
+          "reading": "Lecture d’un morceau intermédiaire",
+          "rhythm": "Morceau intermédiaire complet",
+          "accompaniment": "Arrangement complet : basse, accords et arpèges"
         }
       },
       {
         "id": "w30-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Nothing but the Blood",
-        "objective": "Jouer un extrait de « Nothing but the Blood » en utilisant la découverte « Découvrir une section A » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Yahweh se manifestera",
+        "objective": "Appliquer la découverte de la semaine (Morceau intermédiaire complet ; Arrangement complet : basse, accords et arpèges) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lecture d’un morceau intermédiaire",
+          "rhythm": "Morceau intermédiaire complet",
+          "accompaniment": "Arrangement complet : basse, accords et arpèges"
+        },
         "song": {
-          "title": "Nothing but the Blood",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Yahweh se manifestera",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs",
-            "accords de septième",
-            "lecture rapide et interprétation"
+            "Accords de septième sur portée",
+            "Lecture plus rapide sans perdre la précision",
+            "Lecture d’un morceau intermédiaire",
+            "Accords de septième",
+            "Basse + accord + arpège à tempo contrôlé",
+            "Arrangement complet : basse, accords et arpèges"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Yahweh se manifestera",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 58,
           "mode": "two-hand",
@@ -12326,76 +12238,21 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
               "duration": "q"
             }
           ],
@@ -12408,85 +12265,39 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
               "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Morceau intermédiaire complet",
+          "accompanimentFocus": "Arrangement complet : basse, accords et arpèges",
+          "readingFocus": "Lecture d’un morceau intermédiaire",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lecture d’un morceau intermédiaire",
+      "rhythm": "Morceau intermédiaire complet",
+      "accompaniment": "Arrangement complet : basse, accords et arpèges"
+    }
   },
   {
     "title": "Semaine 31 — Harmonie et transposition",
@@ -12495,8 +12306,11 @@ export const pianoTrainingWeeks = [
         "id": "w31-a1",
         "label": "Découverte",
         "title": "Découvrir I IV V",
-        "objective": "Repère les fonctions dans une tonalité.",
+        "objective": "Transposition et accords enrichis. Rythme : Changements de mesure et harmonie. Accompagnement : Accords enrichis : sus2/sus4, maj7, m7.",
         "instructions": [
+          "Lecture : Transposition et accords enrichis.",
+          "Rythme : travaille changements de mesure et harmonie.",
+          "Main gauche / harmonie : accords enrichis : sus2/sus4, maj7, m7.",
           "Repère les fonctions dans une tonalité.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -12526,7 +12340,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -12548,11 +12362,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Changements de mesure et harmonie",
+          "accompanimentFocus": "Accords enrichis : sus2/sus4, maj7, m7",
+          "readingFocus": "Transposition et accords enrichis"
+        },
+        "curriculum": {
+          "reading": "Transposition et accords enrichis",
+          "rhythm": "Changements de mesure et harmonie",
+          "accompaniment": "Accords enrichis : sus2/sus4, maj7, m7"
         }
       },
       {
@@ -12588,11 +12411,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Changements de mesure et harmonie",
+          "accompanimentFocus": "Accords enrichis : sus2/sus4, maj7, m7",
+          "readingFocus": "Transposition et accords enrichis"
+        },
+        "curriculum": {
+          "reading": "Transposition et accords enrichis",
+          "rhythm": "Changements de mesure et harmonie",
+          "accompaniment": "Accords enrichis : sus2/sus4, maj7, m7"
         }
       },
       {
@@ -12629,11 +12461,20 @@ export const pianoTrainingWeeks = [
             {
               "note": "G5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Changements de mesure et harmonie",
+          "accompanimentFocus": "Accords enrichis : sus2/sus4, maj7, m7",
+          "readingFocus": "Transposition et accords enrichis"
+        },
+        "curriculum": {
+          "reading": "Transposition et accords enrichis",
+          "rhythm": "Changements de mesure et harmonie",
+          "accompaniment": "Accords enrichis : sus2/sus4, maj7, m7"
         }
       },
       {
@@ -12671,7 +12512,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E5",
@@ -12713,7 +12554,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
@@ -12737,47 +12578,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Changements de mesure et harmonie",
+          "accompanimentFocus": "Accords enrichis : sus2/sus4, maj7, m7",
+          "readingFocus": "Transposition et accords enrichis"
+        },
+        "curriculum": {
+          "reading": "Transposition et accords enrichis",
+          "rhythm": "Changements de mesure et harmonie",
+          "accompaniment": "Accords enrichis : sus2/sus4, maj7, m7"
         }
       },
       {
         "id": "w31-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Blessed Assurance",
-        "objective": "Jouer un extrait de « Blessed Assurance » en utilisant la découverte « Découvrir I IV V » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Nous croyons",
+        "objective": "Appliquer la découverte de la semaine (Changements de mesure et harmonie ; Accords enrichis : sus2/sus4, maj7, m7) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Transposition et accords enrichis",
+          "rhythm": "Changements de mesure et harmonie",
+          "accompaniment": "Accords enrichis : sus2/sus4, maj7, m7"
+        },
         "song": {
-          "title": "Blessed Assurance",
-          "sourceMode": "historique",
-          "sourceNote": "Le chant est historique. L’extrait exact sera intégré à partir d’une source de partition vérifiée afin d’éviter toute erreur de notes.",
+          "title": "Nous croyons",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs",
-            "accords de septième",
-            "lecture rapide et interprétation"
+            "Lecture plus rapide sans perdre la précision",
+            "Lecture d’un morceau intermédiaire",
+            "Transposition et accords enrichis",
+            "Basse + accord + arpège à tempo contrôlé",
+            "Arrangement complet : basse, accords et arpèges",
+            "Accords enrichis : sus2/sus4, maj7, m7"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Nous croyons",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 52,
           "mode": "two-hand",
@@ -12800,7 +12649,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E5",
@@ -12821,46 +12670,6 @@ export const pianoTrainingWeeks = [
               "note": "G4",
               "finger": 1,
               "duration": "q"
-            },
-            {
-              "note": "G5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "G5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D5",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "B4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 1,
-              "duration": "q"
             }
           ],
           "leftHand": [
@@ -12882,7 +12691,7 @@ export const pianoTrainingWeeks = [
             {
               "note": "G3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "E3",
@@ -12903,54 +12712,23 @@ export const pianoTrainingWeeks = [
               "note": "G3",
               "finger": 5,
               "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "D4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 5,
-              "duration": "q"
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Changements de mesure et harmonie",
+          "accompanimentFocus": "Accords enrichis : sus2/sus4, maj7, m7",
+          "readingFocus": "Transposition et accords enrichis",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Transposition et accords enrichis",
+      "rhythm": "Changements de mesure et harmonie",
+      "accompaniment": "Accords enrichis : sus2/sus4, maj7, m7"
+    }
   },
   {
     "title": "Semaine 32 — Projet final",
@@ -12959,8 +12737,11 @@ export const pianoTrainingWeeks = [
         "id": "w32-a1",
         "label": "Découverte",
         "title": "Découvrir la structure finale",
-        "objective": "Lis l’ensemble avant de travailler les détails.",
+        "objective": "Lecture autonome d’un arrangement complet. Rythme : Projet final : rythmes complets. Accompagnement : Accords enrichis et projet final : 7e, 9e, diminués selon le morceau.",
         "instructions": [
+          "Lecture : Lecture autonome d’un arrangement complet.",
+          "Rythme : travaille projet final : rythmes complets.",
+          "Main gauche / harmonie : accords enrichis et projet final : 7e, 9e, diminués selon le morceau.",
           "Lis l’ensemble avant de travailler les détails.",
           "Lis la clé de sol et la clé de fa avant de jouer.",
           "Repère les doigtés utiles."
@@ -12980,17 +12761,17 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C5",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "leftHand": [
@@ -13002,21 +12783,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "h"
             }
           ],
           "staff": "grand",
-          "kind": "discovery"
+          "kind": "discovery",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Projet final : rythmes complets",
+          "accompanimentFocus": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau",
+          "readingFocus": "Lecture autonome d’un arrangement complet"
+        },
+        "curriculum": {
+          "reading": "Lecture autonome d’un arrangement complet",
+          "rhythm": "Projet final : rythmes complets",
+          "accompaniment": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
         }
       },
       {
@@ -13042,27 +12832,27 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
@@ -13076,7 +12866,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "treble",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Projet final : rythmes complets",
+          "accompanimentFocus": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau",
+          "readingFocus": "Lecture autonome d’un arrangement complet"
+        },
+        "curriculum": {
+          "reading": "Lecture autonome d’un arrangement complet",
+          "rhythm": "Projet final : rythmes complets",
+          "accompaniment": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
         }
       },
       {
@@ -13103,27 +12902,27 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -13137,7 +12936,16 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "bass",
-          "kind": "exercise"
+          "kind": "exercise",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Projet final : rythmes complets",
+          "accompanimentFocus": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau",
+          "readingFocus": "Lecture autonome d’un arrangement complet"
+        },
+        "curriculum": {
+          "reading": "Lecture autonome d’un arrangement complet",
+          "rhythm": "Projet final : rythmes complets",
+          "accompaniment": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
         }
       },
       {
@@ -13165,27 +12973,27 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
@@ -13207,27 +13015,27 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
@@ -13241,47 +13049,55 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody"
+          "kind": "melody",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Projet final : rythmes complets",
+          "accompanimentFocus": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau",
+          "readingFocus": "Lecture autonome d’un arrangement complet"
+        },
+        "curriculum": {
+          "reading": "Lecture autonome d’un arrangement complet",
+          "rhythm": "Projet final : rythmes complets",
+          "accompaniment": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
         }
       },
       {
         "id": "w32-chant",
-        "label": "Chant de la semaine",
-        "title": "Chant de la semaine — Projet final — chant complet",
-        "objective": "Jouer un extrait de « Projet final — chant complet » en utilisant la découverte « Découvrir la structure finale » et tous les acquis des semaines précédentes.",
+        "label": "Morceau / chant de la semaine",
+        "title": "Oh ! viens et vois",
+        "objective": "Appliquer la découverte de la semaine (Projet final : rythmes complets ; Accords enrichis et projet final : 7e, 9e, diminués selon le morceau) et réutiliser les acquis précédents.",
         "instructions": [
-          "Commence par la préparation technique cumulative.",
+          "Travaille d’abord la préparation cumulative affichée ci-dessous.",
           "Active Aide lecture et Aide doigté au premier passage.",
-          "Travaille la main droite puis la main gauche.",
-          "Assemble les deux mains très lentement.",
-          "Masque ensuite les aides progressivement.",
-          "Termine par l’extrait du chant avec la partition autorisée ou vérifiée."
+          "Travaille la main droite seule.",
+          "Travaille la main gauche seule avec l’accompagnement de la semaine.",
+          "Assemble lentement les deux mains.",
+          "Masque progressivement les aides.",
+          "Termine par l’extrait réel du morceau ou du chant."
         ],
+        "curriculum": {
+          "reading": "Lecture autonome d’un arrangement complet",
+          "rhythm": "Projet final : rythmes complets",
+          "accompaniment": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
+        },
         "song": {
-          "title": "Projet final — chant complet",
-          "sourceMode": "projet_original",
-          "sourceNote": "Le projet final pourra utiliser un arrangement original construit directement dans Skillora.",
+          "title": "Oh ! viens et vois",
+          "sourceMode": "partition_fournie",
+          "sourceNote": "Partition fournie dans la conversation : utiliser l’extrait adapté à cette semaine. L’exercice préparatoire ci-dessous travaille la technique avant le vrai extrait.",
           "requiredSkills": [
-            "clé de sol",
-            "clé de fa",
-            "doigtés",
-            "pulsation",
-            "coordination des deux mains",
-            "accords et basses",
-            "gammes",
-            "pédale et nuances",
-            "arpèges",
-            "renversements et accompagnement",
-            "tonalités et accords mineurs",
-            "accords de septième",
-            "lecture rapide et interprétation"
+            "Lecture d’un morceau intermédiaire",
+            "Transposition et accords enrichis",
+            "Lecture autonome d’un arrangement complet",
+            "Arrangement complet : basse, accords et arpèges",
+            "Accords enrichis : sus2/sus4, maj7, m7",
+            "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
           ],
           "usesCurrentDiscovery": true,
           "uniqueForWeek": true
         },
         "practice": {
-          "title": "Préparation technique cumulative",
-          "objective": "Réutiliser la notion de la semaine et tous les acquis précédents avant le chant.",
+          "title": "Préparation cumulative — Oh ! viens et vois",
+          "objective": "Préparer le morceau en réutilisant la notion de la semaine et tous les acquis précédents.",
           "hand": "Deux mains",
           "tempo": 56,
           "mode": "two-hand",
@@ -13294,71 +13110,31 @@ export const pianoTrainingWeeks = [
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "A4",
               "finger": 4,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "G4",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "E4",
               "finger": 3,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "D4",
               "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
-              "duration": "q"
-            },
-            {
-              "note": "C4",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "A4",
-              "finger": 4,
-              "duration": "q"
-            },
-            {
-              "note": "G4",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "E4",
-              "finger": 3,
               "duration": "q"
             },
             {
@@ -13376,70 +13152,30 @@ export const pianoTrainingWeeks = [
             {
               "note": "G2",
               "finger": 1,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
               "finger": 1,
-              "duration": "q"
+              "duration": "h"
             },
             {
               "note": "C3",
               "finger": 5,
-              "duration": "q"
+              "duration": "qd"
             },
             {
               "note": "F3",
               "finger": 2,
-              "duration": "q"
+              "duration": "8"
             },
             {
               "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "C3",
-              "finger": 5,
-              "duration": "q"
-            },
-            {
-              "note": "G3",
-              "finger": 1,
-              "duration": "q"
-            },
-            {
-              "note": "F3",
-              "finger": 2,
-              "duration": "q"
-            },
-            {
-              "note": "G2",
               "finger": 1,
               "duration": "q"
             },
@@ -13450,11 +13186,20 @@ export const pianoTrainingWeeks = [
             }
           ],
           "staff": "grand",
-          "kind": "melody",
-          "isSongPreparation": true
+          "kind": "song-preparation",
+          "timeSignature": "4/4",
+          "rhythmFocus": "Projet final : rythmes complets",
+          "accompanimentFocus": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau",
+          "readingFocus": "Lecture autonome d’un arrangement complet",
+          "songPreparationOnly": true
         }
       }
-    ]
+    ],
+    "curriculum": {
+      "reading": "Lecture autonome d’un arrangement complet",
+      "rhythm": "Projet final : rythmes complets",
+      "accompaniment": "Accords enrichis et projet final : 7e, 9e, diminués selon le morceau"
+    }
   }
 ];
 

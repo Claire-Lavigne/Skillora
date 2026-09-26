@@ -218,6 +218,50 @@ export async function playChordSequence(groups, bpm = 60, { onStep, onDone } = {
   }
 }
 
+
+const BEATS_BY_DURATION = {
+  w: 4,
+  h: 2,
+  q: 1,
+  "8": 0.5,
+  hd: 3,
+  qd: 1.5
+};
+
+export async function playTimedEvents(events, bpm = 60, { onStep, onDone } = {}) {
+  const instrument = await ensurePiano();
+  const token = ++playbackToken;
+
+  const safeBpm = clamp(bpm, 30, 180);
+  const beatSeconds = 60 / safeBpm;
+
+  for (let index = 0; index < events.length; index += 1) {
+    if (token !== playbackToken) return;
+
+    const event = events[index];
+    const notes = event.notes || [];
+    const beats = BEATS_BY_DURATION[event.duration] || event.beats || 1;
+    const seconds = beatSeconds * beats;
+
+    onStep?.(notes, index);
+
+    if (notes.length) {
+      instrument.triggerAttackRelease(
+        notes,
+        Math.max(0.18, seconds * 0.92),
+        Tone.now(),
+        naturalVelocity(index, notes.length > 1 ? 0.61 : 0.72)
+      );
+    }
+
+    await wait(seconds * 1000);
+  }
+
+  if (token === playbackToken) {
+    onDone?.();
+  }
+}
+
 export const pianoSoundCredits = {
   engine: "Tone.js 15.1.22",
   instrument: "Salamander Grand Piano — Yamaha C5",

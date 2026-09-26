@@ -7,6 +7,29 @@ function normalizeNoteForVex(note) {
 const NOTE_NAMES_FR = {
   C: "Do", D: "Ré", E: "Mi", F: "Fa", G: "Sol", A: "La", B: "Si"
 };
+const DURATION_BEATS = {
+  w: 4,
+  h: 2,
+  q: 1,
+  "8": 0.5,
+  hd: 3,
+  qd: 1.5
+};
+
+function durationBeats(duration = "q") {
+  return DURATION_BEATS[duration] || 1;
+}
+
+function baseDuration(duration = "q") {
+  if (duration === "hd") return "h";
+  if (duration === "qd") return "q";
+  return duration;
+}
+
+function isDotted(duration = "") {
+  return duration === "hd" || duration === "qd";
+}
+
 
 function noteLabelFr(note) {
   const match = /^([A-G])(#|b)?(\d)$/.exec(note);
@@ -153,7 +176,8 @@ export async function renderScore(
       Formatter,
       Accidental,
       StaveConnector,
-      Barline
+      Barline,
+      Dot
     } = Vex;
 
     const { right, left } = activityGroups(activity);
@@ -185,12 +209,17 @@ export async function renderScore(
     const context = renderer.getContext();
 
     function makeNote(chord, clef, globalIndex) {
+      const rawDuration = chord[0]?.duration || "q";
       const note = new StaveNote({
         clef,
         keys: chord.map(entry => normalizeNoteForVex(entry.note)),
-        duration: chord[0]?.duration || "q",
+        duration: baseDuration(rawDuration),
         autoStem: true
       });
+
+      if (isDotted(rawDuration) && Dot?.buildAndAttach) {
+        Dot.buildAndAttach([note], { all: true });
+      }
 
       addAccidentals(note, chord, Accidental);
 
@@ -251,7 +280,7 @@ export async function renderScore(
 
         if (firstOnSystem) {
           stave.addClef(clef);
-          if (firstOverall) stave.addTimeSignature("4/4");
+          if (firstOverall) stave.addTimeSignature(activity.timeSignature || "4/4");
         }
 
         if (Barline?.type) {
@@ -287,8 +316,8 @@ export async function renderScore(
         bass.addClef("bass");
 
         if (firstOverall) {
-          treble.addTimeSignature("4/4");
-          bass.addTimeSignature("4/4");
+          treble.addTimeSignature(activity.timeSignature || "4/4");
+          bass.addTimeSignature(activity.timeSignature || "4/4");
         }
       }
 
