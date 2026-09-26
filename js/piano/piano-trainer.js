@@ -122,14 +122,40 @@ export function mountPianoStageTrainer(container, stage) {
         speed,
         countInBeats:Number((activity.timeline.timeSignature||'4/4').split('/')[0])||4,
         onStep:(moment,index)=>{
-          if(moment.countIn){ current.textContent=`Compte : ${moment.count}`; finger.textContent=''; keyboard.clearPlaying(); return; }
-          const m=moments[index]; if(!m) return;
-          const global=allMoments().findIndex(x=>Math.abs(x.startBeat-m.startBeat)<0.0001);
+          if(moment.countIn){
+            current.textContent=`Compte : ${moment.count}`;
+            finger.textContent='';
+            return;
+          }
+
+          const m=moments[index];
+          if(!m) return;
+
+          const global=allMoments().findIndex(
+            x=>Math.abs(x.startBeat-m.startBeat)<0.0001
+          );
           if(global>=0) stepIndex=global;
-          current.textContent=prettyMoment({...m,notes:m.notes}); finger.textContent=fingersForMoment(m);
-          keyboard.highlight(m.notes,m.notes); keyboard.animate(m.notes,0,true);
+
+          // Le texte indique ce qui COMMENCE maintenant.
+          // Le clavier, lui, est géré séparément par onVisualState afin de
+          // conserver les notes déjà tenues.
+          current.textContent=prettyMoment({...m,notes:m.notes});
+          finger.textContent=fingersForMoment(m);
         },
-        onDone:()=>{ keyboard.clearPlaying(); playAllButton.disabled=false; audioStatus.textContent='Démonstration terminée. À toi de jouer.'; renderCurrent(); }
+        onVisualState:(state)=>{
+          const active=state.activeNotes||[];
+
+          // Une ronde/blanche/etc. reste visuellement enfoncée jusqu'à sa
+          // vraie fin, même si l'autre main joue entre-temps.
+          keyboard.highlight(active,active);
+          keyboard.setPlaying(active);
+        },
+        onDone:()=>{
+          keyboard.clearPlaying();
+          playAllButton.disabled=false;
+          audioStatus.textContent='Démonstration terminée. À toi de jouer.';
+          renderCurrent();
+        }
       });
     }catch(_){ playAllButton.disabled=false; audioStatus.textContent='La démonstration a été interrompue.'; }
   });

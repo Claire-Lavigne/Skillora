@@ -265,6 +265,7 @@ export async function playTimedEvents(events, bpm = 60, { onStep, onDone } = {})
 
 export async function playTimeline(timelineRows, bpm = 60, {
   onStep,
+  onVisualState,
   onDone,
   countInBeats = 0,
   speed = 1
@@ -275,19 +276,19 @@ export async function playTimeline(timelineRows, bpm = 60, {
   const beatSeconds = 60 / safeBpm;
   const startTime = Tone.now() + Math.max(0.08, countInBeats * beatSeconds);
 
-  const grouped = new Map();
-  timelineRows.forEach(row => {
-    const key = row.startBeat.toFixed(6);
-    if (!grouped.has(key)) grouped.set(key, []);
-    grouped.get(key).push(row);
+  const soundingRows = timelineRows.filter(row => {
+    const event = row.event;
+    if (!event || event.type === "rest") return false;
+    const notes = event.type === "chord" ? (event.pitches || []) : [event.pitch].filter(Boolean);
+    return notes.length > 0;
   });
 
-  timelineRows.forEach((row, index) => {
+  // L'audio est planifié avec la durée musicale complète de chaque événement.
+  soundingRows.forEach((row, index) => {
     const event = row.event;
-    if (!event || event.type === "rest") return;
     const notes = event.type === "chord" ? (event.pitches || []) : [event.pitch].filter(Boolean);
-    if (!notes.length) return;
-    const duration = Math.max(0.08, row.durationBeats * beatSeconds * 0.94);
+    const duration = Math.max(0.08, row.durationBeats * beatSeconds);
+
     instrument.triggerAttackRelease(
       notes,
       duration,
@@ -296,38 +297,105 @@ export async function playTimeline(timelineRows, bpm = 60, {
     );
   });
 
-  const moments = [...grouped.values()]
-    .map(events => ({ startBeat:events[0].startBeat, events }))
-    .sort((a,b) => a.startBeat-b.startBeat);
+  // Les moments pédagogiques restent fondés sur les DÉBUTS d'événements.
+  const groupedStarts = new Map();
+  timelineRows.forEach(row => {
+    const key = row.startBeat.toFixed(6);
+    if (!groupedStarts.has(key)) groupedStarts.set(key, []);
+    groupedStarts.get(key).push(row);
+  });
 
-  const totalBeats = timelineRows.reduce((max,row) => Math.max(max, row.startBeat + row.durationBeats), 0);
-  const delayBefore = countInBeats * beatSeconds * 1000;
+  const startMoments = [...groupedStarts.values()]
+    .map(events => ({ startBeat: events[0].startBeat, events }))
+    .sort((a, b) => a.startBeat - b.startBeat);
+
+  // Pour l'animation du clavier, on crée aussi une frontière à CHAQUE FIN de note.
+  // Cela permet de maintenir une ronde pendant 4 temps même si l'autre main
+  // joue plusieurs événements pendant ce temps.
+  const boundarySet = new Set([0]);
+  timelineRows.forEach(row => {
+    boundarySet.add(Number(row.startBeat.toFixed(6)));
+    boundarySet.add(Number((row.startBeat + row.durationBeats).toFixed(6)));
+  });
+
+  const boundaries = [...boundarySet].sort((a, b) => a - b);
+  const totalBeats = timelineRows.reduce(
+    (max, row) => Math.max(max, row.startBeat + row.durationBeats),
+    0
+  );
 
   for (let count = 0; count < countInBeats; count += 1) {
     if (token !== playbackToken) return;
-    onStep?.({ countIn:true, count:count+1, notes:[], events:[] }, -1);
+    onStep?.({ countIn: true, count: count + 1, notes: [], events: [] }, -1);
+    onVisualState?.({
+      beat: -countInBeats + count,
+      activeNotes: [],
+      activeEvents: [],
+      countIn: true
+    });
     await wait(beatSeconds * 1000);
   }
 
   const playbackStartMs = performance.now();
-  for (let index = 0; index < moments.length; index += 1) {
+  let startIndex = 0;
+
+  for (const beat of boundaries) {
     if (token !== playbackToken) return;
-    const moment = moments[index];
-    const targetMs = moment.startBeat * beatSeconds * 1000;
+
+    const targetMs = beat * beatSeconds * 1000;
     const elapsed = performance.now() - playbackStartMs;
     if (targetMs > elapsed) await wait(targetMs - elapsed);
     if (token !== playbackToken) return;
-    const notes = moment.events.flatMap(row => {
-      const e = row.event;
-      if (e.type === "rest") return [];
-      return e.type === "chord" ? (e.pitches || []) : [e.pitch].filter(Boolean);
+
+    // Une note est visuellement active de son début inclus à sa fin exclue.
+    const activeRows = soundingRows.filter(row => {
+      const rowEnd = row.startBeat + row.durationBeats;
+      return row.startBeat <= beat + 0.000001 && rowEnd > beat + 0.000001;
     });
-    onStep?.({ ...moment, notes, countIn:false }, index);
+
+    const activeNotes = [...new Set(activeRows.flatMap(row => {
+      const event = row.event;
+      return event.type === "chord"
+        ? (event.pitches || [])
+        : [event.pitch].filter(Boolean);
+    }))];
+
+    onVisualState?.({
+      beat,
+      activeNotes,
+      activeEvents: activeRows,
+      countIn: false
+    });
+
+    // onStep n'est déclenché que lorsqu'un nouvel événement commence à cette frontière.
+    while (
+      startIndex < startMoments.length &&
+      Math.abs(startMoments[startIndex].startBeat - beat) < 0.000001
+    ) {
+      const moment = startMoments[startIndex];
+      const notes = moment.events.flatMap(row => {
+        const e = row.event;
+        if (e.type === "rest") return [];
+        return e.type === "chord" ? (e.pitches || []) : [e.pitch].filter(Boolean);
+      });
+
+      onStep?.({ ...moment, notes, countIn: false }, startIndex);
+      startIndex += 1;
+    }
   }
 
   const elapsed = performance.now() - playbackStartMs;
   const remaining = totalBeats * beatSeconds * 1000 - elapsed;
   if (remaining > 0) await wait(remaining);
+
+  // État final : toutes les touches sont relâchées.
+  onVisualState?.({
+    beat: totalBeats,
+    activeNotes: [],
+    activeEvents: [],
+    countIn: false
+  });
+
   if (token === playbackToken) onDone?.();
 }
 

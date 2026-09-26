@@ -201,6 +201,10 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
     }
   }
 
+  function setPlaying(notesToPlay = []) {
+    animate(notesToPlay, 0, true);
+  }
+
   function clearPlaying() {
     if (releaseTimer) {
       window.clearTimeout(releaseTimer);
