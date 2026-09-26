@@ -554,3 +554,6 @@
 .piano-learning-stage:last-of-type .piano-stage-instructions{
   border-left:4px solid var(--accent);
 }
+
+
+.piano-song-goal{margin-top:12px;padding:13px 14px;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:10px;background:#fff}.piano-song-goal strong{display:block;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.04em}.piano-song-goal>span{display:block;margin-top:4px;font-weight:850;font-size:17px}.piano-song-goal p{margin:7px 0 6px;color:var(--muted);line-height:1.45}.piano-song-goal small{display:block;line-height:1.45}

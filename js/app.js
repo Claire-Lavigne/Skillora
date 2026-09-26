@@ -136,6 +136,15 @@ function makePianoStage(stage, weekIndex, stageIndex) {
       <ol>${instructions}</ol>
     </div>
 
+    ${stage.song ? `
+      <div class="piano-song-goal">
+        <strong>Objectif chant</strong>
+        <span>${stage.song.title}</span>
+        <p>${stage.song.sourceNote}</p>
+        <small>À réutiliser : ${stage.song.requiredSkills.join(" · ")}</small>
+      </div>
+    ` : ""}
+
     <div class="piano-stage-trainer-slot"></div>
   `;
 
