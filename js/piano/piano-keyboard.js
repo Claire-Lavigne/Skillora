@@ -216,5 +216,5 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
     });
   }
 
-  return { highlight, animate, clearPlaying };
+  return { highlight, animate, setPlaying, clearPlaying };
 }

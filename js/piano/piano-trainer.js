@@ -157,7 +157,12 @@ export function mountPianoStageTrainer(container, stage) {
           renderCurrent();
         }
       });
-    }catch(_){ playAllButton.disabled=false; audioStatus.textContent='La démonstration a été interrompue.'; }
+    }catch(error){
+      console.error("Erreur démonstration piano :", error);
+      keyboard.clearPlaying();
+      playAllButton.disabled=false;
+      audioStatus.textContent='La démonstration a été interrompue. Consulte la console pour le détail.';
+    }
   });
 
   container.querySelector('.trainer-stop').addEventListener('click',()=>{ stopPlayback(); keyboard.clearPlaying(); playAllButton.disabled=false; audioStatus.textContent='Démonstration arrêtée.'; renderCurrent(); });
