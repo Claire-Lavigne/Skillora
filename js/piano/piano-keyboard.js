@@ -87,7 +87,6 @@ function visibleWhiteRange(notes = [], minWhiteKeys = 7) {
   let endIndex = ALL_WHITE_NOTES.findIndex(item => item.midi >= maxMidi);
   if (endIndex < 0) endIndex = ALL_WHITE_NOTES.length - 1;
 
-  // Une touche blanche de marge de chaque côté aide à retrouver la zone sur le vrai piano.
   startIndex = Math.max(0, startIndex - 1);
   endIndex = Math.min(ALL_WHITE_NOTES.length - 1, endIndex + 1);
 
@@ -102,9 +101,6 @@ function visibleWhiteRange(notes = [], minWhiteKeys = 7) {
 }
 
 export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } = {}) {
-  // On affiche TOUJOURS toute l'étendue utilisée par l'exercice.
-  // Les touches se compressent pour tenir dans le conteneur au lieu de couper
-  // les notes graves ou aiguës.
   const whites = visibleWhiteRange(notes, minWhiteKeys);
 
   container.innerHTML = `
@@ -145,8 +141,6 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
       black.className = "trainer-key trainer-key--black";
       black.dataset.note = blackNote;
       black.setAttribute("aria-label", `${noteLabelFr(blackNote)} ${blackNote}`);
-
-      // La touche noire se place exactement sur la frontière entre deux blanches.
       black.style.left = `${((index + 1) / whites.length) * 100}%`;
       blackLayer.appendChild(black);
     }
@@ -154,6 +148,10 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
 
   function allKeys() {
     return keyboard.querySelectorAll(".trainer-key");
+  }
+
+  function keyFor(note) {
+    return keyboard.querySelector(`[data-note="${canonicalNote(note)}"]`);
   }
 
   function highlight(notesToHighlight, currentNotes = []) {
@@ -171,6 +169,12 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
 
   let releaseTimer = null;
 
+  function removePlaying() {
+    keyboard.querySelectorAll(".is-playing").forEach(key => {
+      key.classList.remove("is-playing");
+    });
+  }
+
   function animate(notesToAnimate, duration = 500, holdUntilNext = false) {
     const list = (Array.isArray(notesToAnimate) ? notesToAnimate : [notesToAnimate])
       .map(canonicalNote);
@@ -180,22 +184,15 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
       releaseTimer = null;
     }
 
-    // Une seule étape visuelle reste active : on passe doucement de l'ancienne
-    // note/accord à la nouvelle sans laisser une période "éteinte".
-    keyboard.querySelectorAll(".is-playing").forEach(key => {
-      key.classList.remove("is-playing");
-    });
-
+    removePlaying();
     list.forEach(note => {
-      const key = keyboard.querySelector(`[data-note="${note}"]`);
+      const key = keyFor(note);
       if (key) key.classList.add("is-playing");
     });
 
     if (!holdUntilNext && duration > 0) {
       releaseTimer = window.setTimeout(() => {
-        keyboard.querySelectorAll(".is-playing").forEach(key => {
-          key.classList.remove("is-playing");
-        });
+        removePlaying();
         releaseTimer = null;
       }, duration);
     }
@@ -205,16 +202,27 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
     animate(notesToPlay, 0, true);
   }
 
+  function retrigger(notesToReplay = []) {
+    const list = (Array.isArray(notesToReplay) ? notesToReplay : [notesToReplay])
+      .map(canonicalNote);
+
+    list.forEach(note => {
+      const key = keyFor(note);
+      if (!key) return;
+      key.classList.remove('is-playing');
+      void key.offsetWidth;
+      key.classList.add('is-playing');
+    });
+  }
+
   function clearPlaying() {
     if (releaseTimer) {
       window.clearTimeout(releaseTimer);
       releaseTimer = null;
     }
 
-    keyboard.querySelectorAll(".is-playing").forEach(key => {
-      key.classList.remove("is-playing");
-    });
+    removePlaying();
   }
 
-  return { highlight, animate, setPlaying, clearPlaying };
+  return { highlight, animate, setPlaying, retrigger, clearPlaying };
 }

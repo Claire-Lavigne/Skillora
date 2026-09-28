@@ -1,5 +1,4 @@
 import {
-  durationBeats,
   timeSignatureCapacity,
   validateTimeline,
   momentIndexByEventId
@@ -52,15 +51,81 @@ function noteCenterX(tickable) {
   return tickable.getAbsoluteX?.() || 0;
 }
 
-function addBeatGrid(svg, staveTop, staveBottom, measureStartX, measureEndX, signature) {
-  const [numerator, denominator] = signature.split("/").map(Number);
-  const beatCount = numerator;
-  for (let beat = 1; beat < beatCount; beat += 1) {
-    const ratio = beat / beatCount;
-    const x = measureStartX + (measureEndX - measureStartX) * ratio;
+function beatSlotsForSignature(signature) {
+  return Math.max(1, Math.round(timeSignatureCapacity(signature || "4/4")));
+}
+
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function beatToCenterX(grid, beatInMeasure) {
+  const slots = grid.capacity || 1;
+  const usableWidth = grid.end - grid.start;
+  const centerBeat = clamp(beatInMeasure + 0.5, 0.5, slots - 0.0001);
+  return grid.start + (usableWidth * centerBeat / slots);
+}
+
+function addBeatGrid(svg, grid, signature) {
+  const slots = beatSlotsForSignature(signature);
+  const usableWidth = grid.end - grid.start;
+
+  for (let slot = 0; slot < slots; slot += 1) {
+    const x = grid.start + usableWidth * ((slot + 0.5) / slots);
     svg.insertBefore(svgNode("line", {
-      x1:x, x2:x, y1:staveTop, y2:staveBottom, class:"score-beat-guide"
+      x1:x, x2:x, y1:grid.top, y2:grid.bottom, class:"score-beat-guide"
     }), svg.firstChild);
+  }
+}
+
+function ensurePlayhead(container, svg) {
+  let line = svg.querySelector('.score-playhead');
+  if (!line) {
+    line = svgNode('line', {
+      x1:0, x2:0, y1:0, y2:0,
+      class:'score-playhead',
+      visibility:'hidden'
+    });
+    svg.appendChild(line);
+  }
+  container.__scorePlayheadEl = line;
+  return line;
+}
+
+export function setScorePlayhead(container, absoluteBeat = null) {
+  const state = container?.__scoreLayout;
+  const line = container?.__scorePlayheadEl;
+  if (!state || !line || absoluteBeat == null || absoluteBeat < 0) {
+    if (line) line.setAttribute('visibility', 'hidden');
+    return;
+  }
+
+  const grids = state.grids || [];
+  let grid = grids.find(g => absoluteBeat >= g.absoluteStart && absoluteBeat < g.absoluteStart + g.capacity - 0.000001);
+
+  if (!grid && grids.length) {
+    const last = grids[grids.length - 1];
+    if (absoluteBeat >= last.absoluteStart + last.capacity - 0.000001) grid = last;
+  }
+
+  if (!grid) {
+    line.setAttribute('visibility', 'hidden');
+    return;
+  }
+
+  const beatInMeasure = clamp(absoluteBeat - grid.absoluteStart, 0, grid.capacity - 0.0001);
+  const x = beatToCenterX(grid, beatInMeasure);
+
+  line.setAttribute('x1', x);
+  line.setAttribute('x2', x);
+  line.setAttribute('y1', grid.top);
+  line.setAttribute('y2', grid.bottom);
+  line.setAttribute('visibility', 'visible');
+}
+
+export function clearScorePlayhead(container) {
+  if (container?.__scorePlayheadEl) {
+    container.__scorePlayheadEl.setAttribute('visibility', 'hidden');
   }
 }
 
@@ -98,6 +163,7 @@ export async function renderScore(container, activity, {
     const width = Math.max(620, Math.min(1100, container.clientWidth || 900));
     const systemHeight = 320;
     const height = systems * systemHeight + 20;
+    const measureCapacity = timeSignatureCapacity(signature);
 
     container.innerHTML = "";
     const renderer = new Renderer(container, Renderer.Backends.SVG);
@@ -169,14 +235,17 @@ export async function renderScore(container, activity, {
         bass.setEndBarType(endType);
       }
 
-      treble.setContext(context); bass.setContext(context);
+      treble.setContext(context);
+      bass.setContext(context);
       if (typeof Stave.formatBegModifiers === "function") {
         Stave.formatBegModifiers([treble, bass]);
       } else {
         const shared = Math.max(treble.getNoteStartX(), bass.getNoteStartX());
-        treble.setNoteStartX(shared); bass.setNoteStartX(shared);
+        treble.setNoteStartX(shared);
+        bass.setNoteStartX(shared);
       }
-      treble.draw(); bass.draw();
+      treble.draw();
+      bass.draw();
 
       try {
         if (firstOnSystem) {
@@ -191,19 +260,22 @@ export async function renderScore(container, activity, {
       const formatter = new Formatter();
       formatter.joinVoices([tv.voice, bv.voice]);
       formatter.format([tv.voice, bv.voice], measureWidth - (firstOnSystem ? 98 : 30));
-      tv.voice.draw(context, treble); bv.voice.draw(context, bass);
+      tv.voice.draw(context, treble);
+      bv.voice.draw(context, bass);
 
       hints.push({ items:tv.items, stave:treble }, { items:bv.items, stave:bass });
       grids.push({
         top:treble.getYForLine(0)-20,
         bottom:bass.getBottomLineY()+20,
         start:Math.max(treble.getNoteStartX(), bass.getNoteStartX()),
-        end:x + measureWidth - 12
+        end:x + measureWidth - 12,
+        absoluteStart: measureIndex * measureCapacity,
+        capacity: measureCapacity
       });
     });
 
     const svg = container.querySelector("svg");
-    grids.forEach(g => addBeatGrid(svg, g.top, g.bottom, g.start, g.end, signature));
+    grids.forEach(grid => addBeatGrid(svg, grid, signature));
 
     hints.forEach(({items, stave}) => {
       items.forEach(({event, tickable}) => {
@@ -221,6 +293,10 @@ export async function renderScore(container, activity, {
         }
       });
     });
+
+    container.__scoreLayout = { grids, signature, totalBeats: measures.length * measureCapacity };
+    ensurePlayhead(container, svg);
+    clearScorePlayhead(container);
   } catch (error) {
     console.error("Erreur VexFlow :", error);
     container.innerHTML = '<div class="score-fallback"><strong>La partition n’a pas pu être chargée.</strong><br><span>Le clavier et l’audio restent disponibles.</span></div>';

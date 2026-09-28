@@ -60,6 +60,11 @@ function extractCommand(text) {
   return index >= 0 ? text.slice(index + 1).trim() : text;
 }
 
+function shortWeekTitle(title) {
+  const match = /^\s*(Semaine\s+\d+)/i.exec(title || "");
+  return match ? match[1] : title;
+}
+
 function makeStep(text, key, stepNumber) {
   const label = document.createElement("label");
   label.className = "step";
@@ -201,7 +206,7 @@ function buildCourse(course) {
     head.className = "week-head";
 
     const title = document.createElement("h2");
-    title.textContent = week[0];
+    title.textContent = shortWeekTitle(week[0]);
     head.appendChild(title);
 
     const checkAllButton = document.createElement("button");
@@ -275,7 +280,7 @@ function buildCourse(course) {
     const dot = document.createElement("button");
     dot.className = "dot";
     dot.textContent = weekIndex + 1;
-    dot.title = week[0];
+    dot.title = shortWeekTitle(week[0]);
     dot.addEventListener("click", () => showLevel(weekIndex));
     map.appendChild(dot);
   });

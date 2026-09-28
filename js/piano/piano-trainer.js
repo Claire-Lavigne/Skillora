@@ -1,8 +1,8 @@
 import { createPianoKeyboard, noteLabelFr } from "./piano-keyboard.js";
 import { preparePiano, playNote, playChord, playTimeline, stopPlayback, pianoSoundCredits } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
-import { renderScore } from "./score-renderer.js";
-import { timelineMoments, timelineNotes, timelineEventRows, eventPitches } from "./music-model.js";
+import { renderScore, setScorePlayhead, clearScorePlayhead } from "./score-renderer.js";
+import { timelineMoments, timelineNotes, timelineEventRows } from "./music-model.js";
 
 function prettyMoment(moment) {
   if (!moment) return "—";
@@ -33,12 +33,6 @@ export function mountPianoStageTrainer(container, stage) {
 
   container.innerHTML = `
     <div class="piano-stage-tools">
-      <div class="trainer-learning-focus">
-        <span><strong>Lecture</strong>${stage.curriculum?.reading || activity.readingFocus || "—"}</span>
-        <span><strong>Rythme</strong>${stage.curriculum?.rhythm || activity.rhythmFocus || "—"}</span>
-        <span><strong>Accompagnement</strong>${stage.curriculum?.accompaniment || activity.accompanimentFocus || "—"}</span>
-      </div>
-
       <div class="trainer-focus" aria-live="polite">
         <div><span class="trainer-focus__label">À jouer maintenant</span><strong class="trainer-current">—</strong><span class="trainer-finger"></span></div>
         <div class="trainer-focus__actions"><button class="trainer-prev" type="button">← Précédent</button><button class="trainer-next" type="button">Suivant →</button></div>
@@ -58,10 +52,11 @@ export function mountPianoStageTrainer(container, stage) {
       <div class="trainer-keyboard-panel"><div class="trainer-section-title"><strong>Clavier</strong><span>Toute la tessiture de l’exercice reste visible.</span></div><div class="trainer-keyboard-slot"></div></div>
 
       <div class="trainer-demo-panel">
-        <div class="trainer-section-title"><strong>Démonstration</strong><span class="trainer-audio-status">Choisis les mains et la vitesse.</span></div>
+        <div class="trainer-section-title"><strong>Démonstration</strong><span class="trainer-audio-status">Choisis les mains, la vitesse et le métronome.</span></div>
         <div class="trainer-demo-settings">
           <label>Mains <select class="trainer-hands"><option value="both">Deux mains</option><option value="right">Main droite</option><option value="left">Main gauche</option></select></label>
           <label>Vitesse <select class="trainer-speed"><option value="0.5">50 %</option><option value="0.75">75 %</option><option value="1" selected>100 %</option></select></label>
+          <label class="trainer-metronome-toggle"><input type="checkbox" class="trainer-metronome"> Métronome</label>
         </div>
         <div class="trainer-demo-actions"><button class="trainer-listen" type="button">♪ Écouter l’étape</button><button class="trainer-play-all" type="button">▶ Démo avec compte</button><button class="trainer-stop" type="button">■ Arrêter</button></div>
       </div>
@@ -77,6 +72,7 @@ export function mountPianoStageTrainer(container, stage) {
   const midiStatus = container.querySelector('.trainer-midi-status');
   const handsSelect = container.querySelector('.trainer-hands');
   const speedSelect = container.querySelector('.trainer-speed');
+  const metronomeInput = container.querySelector('.trainer-metronome');
   const playAllButton = container.querySelector('.trainer-play-all');
 
   const keyboard = createPianoKeyboard(container.querySelector('.trainer-keyboard-slot'), { notes:timelineNotes(activity.timeline), minWhiteKeys:7 });
@@ -97,6 +93,8 @@ export function mountPianoStageTrainer(container, stage) {
     current.textContent = message || prettyMoment(moment);
     finger.textContent = fingersForMoment(moment);
     keyboard.highlight(moment?.notes || [], moment?.notes || []);
+    keyboard.setPlaying(moment?.notes || []);
+    clearScorePlayhead(score);
     refreshScore();
   }
 
@@ -117,14 +115,18 @@ export function mountPianoStageTrainer(container, stage) {
     const hand=handsSelect.value; const speed=Number(speedSelect.value)||1;
     const rows=timelineEventRows(activity.timeline).filter(row=> hand==='both' || (hand==='right'&&row.staff==='treble') || (hand==='left'&&row.staff==='bass'));
     const moments=timelineMoments(activity.timeline,{hand});
+    const countInBeats=Number((activity.timeline.timeSignature||'4/4').split('/')[0])||4;
     try{
       await playTimeline(rows, activity.tempo||60, {
         speed,
-        countInBeats:Number((activity.timeline.timeSignature||'4/4').split('/')[0])||4,
+        countInBeats,
+        metronome: metronomeInput.checked,
+        timeSignature: activity.timeline.timeSignature || '4/4',
         onStep:(moment,index)=>{
           if(moment.countIn){
             current.textContent=`Compte : ${moment.count}`;
             finger.textContent='';
+            clearScorePlayhead(score);
             return;
           }
 
@@ -136,22 +138,20 @@ export function mountPianoStageTrainer(container, stage) {
           );
           if(global>=0) stepIndex=global;
 
-          // Le texte indique ce qui COMMENCE maintenant.
-          // Le clavier, lui, est géré séparément par onVisualState afin de
-          // conserver les notes déjà tenues.
           current.textContent=prettyMoment({...m,notes:m.notes});
           finger.textContent=fingersForMoment(m);
+          if (m.notes?.length) keyboard.retrigger(m.notes);
         },
         onVisualState:(state)=>{
           const active=state.activeNotes||[];
-
-          // Une ronde/blanche/etc. reste visuellement enfoncée jusqu'à sa
-          // vraie fin, même si l'autre main joue entre-temps.
           keyboard.highlight(active,active);
           keyboard.setPlaying(active);
+          if (state.countIn) clearScorePlayhead(score);
+          else setScorePlayhead(score, state.beat);
         },
         onDone:()=>{
           keyboard.clearPlaying();
+          clearScorePlayhead(score);
           playAllButton.disabled=false;
           audioStatus.textContent='Démonstration terminée. À toi de jouer.';
           renderCurrent();
@@ -160,12 +160,13 @@ export function mountPianoStageTrainer(container, stage) {
     }catch(error){
       console.error("Erreur démonstration piano :", error);
       keyboard.clearPlaying();
+      clearScorePlayhead(score);
       playAllButton.disabled=false;
       audioStatus.textContent='La démonstration a été interrompue. Consulte la console pour le détail.';
     }
   });
 
-  container.querySelector('.trainer-stop').addEventListener('click',()=>{ stopPlayback(); keyboard.clearPlaying(); playAllButton.disabled=false; audioStatus.textContent='Démonstration arrêtée.'; renderCurrent(); });
+  container.querySelector('.trainer-stop').addEventListener('click',()=>{ stopPlayback(); keyboard.clearPlaying(); clearScorePlayhead(score); playAllButton.disabled=false; audioStatus.textContent='Démonstration arrêtée.'; renderCurrent(); });
 
   const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers');
   bNotes.addEventListener('click',()=>{ showNoteNames=!showNoteNames; bNotes.classList.toggle('is-active',showNoteNames); bNotes.setAttribute('aria-pressed',String(showNoteNames)); refreshScore(); });

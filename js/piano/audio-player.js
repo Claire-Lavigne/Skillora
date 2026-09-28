@@ -16,6 +16,7 @@ let sampler = null;
 let channel = null;
 let reverb = null;
 let limiter = null;
+let metronomeSynth = null;
 let loadingPromise = null;
 let playbackToken = 0;
 
@@ -63,6 +64,12 @@ async function ensurePiano() {
     });
     sampler.connect(channel);
 
+    metronomeSynth = new Tone.Synth({
+      oscillator: { type: "triangle" },
+      envelope: { attack: 0.001, decay: 0.03, sustain: 0, release: 0.04 }
+    });
+    metronomeSynth.connect(limiter);
+
     await Tone.loaded();
 
     return sampler;
@@ -77,11 +84,13 @@ async function ensurePiano() {
     try { channel?.dispose?.(); } catch (_) {}
     try { reverb?.dispose?.(); } catch (_) {}
     try { limiter?.dispose?.(); } catch (_) {}
+    try { metronomeSynth?.dispose?.(); } catch (_) {}
 
     sampler = null;
     channel = null;
     reverb = null;
     limiter = null;
+    metronomeSynth = null;
 
     throw error;
   }
@@ -100,6 +109,25 @@ function naturalVelocity(index = 0, base = 0.72) {
 
 function noteDurationFromBeat(beatSeconds, ratio = 0.9, min = 0.55, max = 1.8) {
   return clamp(beatSeconds * ratio, min, max);
+}
+
+function scheduleMetronome(startTime, totalBeats, beatSeconds, countInBeats = 0, signature = "4/4") {
+  if (!Tone || !metronomeSynth) return;
+
+  const beatsPerMeasure = Math.max(1, Number((signature || "4/4").split("/")[0]) || 4);
+  const countInStart = startTime - countInBeats * beatSeconds;
+  const clickCount = Math.max(0, Math.ceil(countInBeats + totalBeats));
+
+  for (let i = 0; i < clickCount; i += 1) {
+    const time = countInStart + i * beatSeconds;
+    const isAccent = i % beatsPerMeasure === 0;
+    metronomeSynth.triggerAttackRelease(
+      isAccent ? "C6" : "A5",
+      isAccent ? "16n" : "32n",
+      time,
+      isAccent ? 0.58 : 0.38
+    );
+  }
 }
 
 export async function preparePiano() {
@@ -268,7 +296,9 @@ export async function playTimeline(timelineRows, bpm = 60, {
   onVisualState,
   onDone,
   countInBeats = 0,
-  speed = 1
+  speed = 1,
+  metronome = false,
+  timeSignature = "4/4"
 } = {}) {
   const instrument = await ensurePiano();
   const token = ++playbackToken;
@@ -323,6 +353,10 @@ export async function playTimeline(timelineRows, bpm = 60, {
     (max, row) => Math.max(max, row.startBeat + row.durationBeats),
     0
   );
+
+  if (metronome) {
+    scheduleMetronome(startTime, totalBeats, beatSeconds, countInBeats, timeSignature);
+  }
 
   for (let count = 0; count < countInBeats; count += 1) {
     if (token !== playbackToken) return;
