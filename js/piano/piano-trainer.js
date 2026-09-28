@@ -1,7 +1,7 @@
 import { createPianoKeyboard, noteLabelFr } from "./piano-keyboard.js";
 import { preparePiano, playNote, playChord, playTimeline, stopPlayback, pianoSoundCredits } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
-import { renderScore, setScorePlayhead, clearScorePlayhead } from "./score-renderer.js";
+import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js";
 import { timelineMoments, timelineNotes, timelineEventRows } from "./music-model.js";
 
 function prettyMoment(moment) {
@@ -33,7 +33,7 @@ export function mountPianoStageTrainer(container, stage) {
 
   container.innerHTML = `
     <div class="piano-stage-tools">
-      <div class="trainer-focus" aria-live="polite">
+      <div class="trainer-focus" role="status" aria-live="polite" aria-atomic="true">
         <div><span class="trainer-focus__label">À jouer maintenant</span><strong class="trainer-current">—</strong><span class="trainer-finger"></span></div>
         <div class="trainer-focus__actions"><button class="trainer-prev" type="button">← Précédent</button><button class="trainer-next" type="button">Suivant →</button></div>
       </div>
@@ -94,7 +94,7 @@ export function mountPianoStageTrainer(container, stage) {
     finger.textContent = fingersForMoment(moment);
     keyboard.highlight(moment?.notes || [], moment?.notes || []);
     keyboard.setPlaying(moment?.notes || []);
-    clearScorePlayhead(score);
+    clearScoreActiveEvents(score);
     refreshScore();
   }
 
@@ -126,7 +126,7 @@ export function mountPianoStageTrainer(container, stage) {
           if(moment.countIn){
             current.textContent=`Compte : ${moment.count}`;
             finger.textContent='';
-            clearScorePlayhead(score);
+            clearScoreActiveEvents(score);
             return;
           }
 
@@ -144,14 +144,17 @@ export function mountPianoStageTrainer(container, stage) {
         },
         onVisualState:(state)=>{
           const active=state.activeNotes||[];
+          const activeEventIds=(state.activeEvents||[]).map(row=>row.id);
+
           keyboard.highlight(active,active);
           keyboard.setPlaying(active);
-          if (state.countIn) clearScorePlayhead(score);
-          else setScorePlayhead(score, state.beat);
+
+          if (state.countIn) clearScoreActiveEvents(score);
+          else setScoreActiveEvents(score, activeEventIds);
         },
         onDone:()=>{
           keyboard.clearPlaying();
-          clearScorePlayhead(score);
+          clearScoreActiveEvents(score);
           playAllButton.disabled=false;
           audioStatus.textContent='Démonstration terminée. À toi de jouer.';
           renderCurrent();
@@ -160,13 +163,13 @@ export function mountPianoStageTrainer(container, stage) {
     }catch(error){
       console.error("Erreur démonstration piano :", error);
       keyboard.clearPlaying();
-      clearScorePlayhead(score);
+      clearScoreActiveEvents(score);
       playAllButton.disabled=false;
       audioStatus.textContent='La démonstration a été interrompue. Consulte la console pour le détail.';
     }
   });
 
-  container.querySelector('.trainer-stop').addEventListener('click',()=>{ stopPlayback(); keyboard.clearPlaying(); clearScorePlayhead(score); playAllButton.disabled=false; audioStatus.textContent='Démonstration arrêtée.'; renderCurrent(); });
+  container.querySelector('.trainer-stop').addEventListener('click',()=>{ stopPlayback(); keyboard.clearPlaying(); clearScoreActiveEvents(score); playAllButton.disabled=false; audioStatus.textContent='Démonstration arrêtée.'; renderCurrent(); });
 
   const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers');
   bNotes.addEventListener('click',()=>{ showNoteNames=!showNoteNames; bNotes.classList.toggle('is-active',showNoteNames); bNotes.setAttribute('aria-pressed',String(showNoteNames)); refreshScore(); });

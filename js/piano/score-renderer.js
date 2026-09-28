@@ -129,6 +129,32 @@ export function clearScorePlayhead(container) {
   }
 }
 
+
+export function setScoreActiveEvents(container, eventIds = []) {
+  const svg = container?.querySelector?.("svg");
+  if (!svg) return;
+
+  const activeIds = new Set(eventIds || []);
+  svg.classList.toggle("has-score-playback", activeIds.size > 0);
+
+  svg.querySelectorAll("[data-score-event-id]").forEach(element => {
+    element.classList.toggle(
+      "is-score-active",
+      activeIds.has(element.dataset.scoreEventId)
+    );
+  });
+}
+
+export function clearScoreActiveEvents(container) {
+  const svg = container?.querySelector?.("svg");
+  if (!svg) return;
+
+  svg.classList.remove("has-score-playback");
+  svg.querySelectorAll(".is-score-active").forEach(element => {
+    element.classList.remove("is-score-active");
+  });
+}
+
 export async function renderScore(container, activity, {
   showNoteNames = false,
   showFingers = false,
@@ -263,6 +289,19 @@ export async function renderScore(container, activity, {
       tv.voice.draw(context, treble);
       bv.voice.draw(context, bass);
 
+      [...tv.items, ...bv.items].forEach(({ id, event, tickable }) => {
+        if (event.type === "rest") return;
+        const element = tickable.getSVGElement?.();
+        if (!element) return;
+
+        element.classList.add("score-event");
+        element.dataset.scoreEventId = id;
+
+        if (eventToMoment.get(id) === currentStep) {
+          element.classList.add("is-current-step");
+        }
+      });
+
       hints.push({ items:tv.items, stave:treble }, { items:bv.items, stave:bass });
       grids.push({
         top:treble.getYForLine(0)-20,
@@ -295,8 +334,7 @@ export async function renderScore(container, activity, {
     });
 
     container.__scoreLayout = { grids, signature, totalBeats: measures.length * measureCapacity };
-    ensurePlayhead(container, svg);
-    clearScorePlayhead(container);
+    clearScoreActiveEvents(container);
   } catch (error) {
     console.error("Erreur VexFlow :", error);
     container.innerHTML = '<div class="score-fallback"><strong>La partition n’a pas pu être chargée.</strong><br><span>Le clavier et l’audio restent disponibles.</span></div>';

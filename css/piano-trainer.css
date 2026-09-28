@@ -696,3 +696,59 @@
     width:100%;
   }
 }
+
+
+/* Lecture automatique accessible : surlignage direct des notes actives. */
+.trainer-score svg.has-score-playback .score-event:not(.is-score-active){
+  opacity:.62;
+}
+
+.trainer-score svg .score-event{
+  transition:opacity .12s ease, filter .12s ease;
+}
+
+.trainer-score svg .score-event.is-score-active{
+  opacity:1;
+  filter:
+    drop-shadow(0 0 1px #ffffff)
+    drop-shadow(0 0 3px rgba(11,143,104,.8));
+}
+
+.trainer-score svg .score-event.is-score-active *,
+.trainer-score svg .score-event.is-score-active{
+  fill:#087a5b !important;
+  stroke:#087a5b !important;
+  stroke-width:1.35 !important;
+}
+
+.trainer-score svg .score-event.is-current-step{
+  filter:drop-shadow(0 0 1.5px rgba(16,102,76,.35));
+}
+
+.score-playhead{
+  display:none !important;
+}
+
+.score-help--note{
+  font-size:12px !important;
+  font-weight:500 !important;
+  letter-spacing:.01em;
+  fill:#3f4944 !important;
+}
+
+.score-help--finger{
+  font-size:11.5px !important;
+  font-weight:600 !important;
+  letter-spacing:.02em;
+  fill:#0d6c52 !important;
+}
+
+.score-help-toggle{
+  font-weight:650 !important;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .trainer-score svg .score-event{
+    transition:none;
+  }
+}
