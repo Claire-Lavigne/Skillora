@@ -151,6 +151,23 @@ function splitPracticeIntoParts(stage, targetSongTitle = "") {
   const measures = activity?.timeline?.measures || [];
   if (!measures.length) return [];
 
+  if (Array.isArray(stage?.practiceSections) && stage.practiceSections.length) {
+    return stage.practiceSections.map((section, index) => {
+      const first = Math.max(1, Number(section.startMeasure || 1));
+      const last = Math.min(measures.length, Number(section.endMeasure || first));
+      const slice = measures.slice(first - 1, last);
+      return {
+        label:section.label || `Partie ${index + 1}`,
+        activity:{
+          ...activity,
+          title:`${targetSongTitle || activity.title || "Morceau"} · ${section.label || `Partie ${index + 1}`}`,
+          sourceMeasures:`mesures ${first}–${last}`,
+          timeline:{ ...activity.timeline, measures:slice }
+        }
+      };
+    });
+  }
+
   const desiredNames = songSectionNames(targetSongTitle || stage.title || "");
   const partCount = Math.min(desiredNames.length, Math.max(1, Math.ceil(measures.length / 2)));
   const names = desiredNames.slice(0, partCount);
