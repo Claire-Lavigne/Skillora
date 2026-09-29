@@ -307,27 +307,51 @@ export async function playTimeline(timelineRows, bpm = 60, {
     return notes.length > 0;
   });
 
+  const laneRows = new Map();
+  soundingRows.forEach(row => {
+    const key = `${row.staff}::${row.voice || "v1"}`;
+    if (!laneRows.has(key)) laneRows.set(key, []);
+    laneRows.get(key).push(row);
+  });
+  laneRows.forEach(rows => rows.sort((a,b) => (a.playbackStartBeat ?? a.startBeat) - (b.playbackStartBeat ?? b.startBeat)));
+
+  function tiedDurationBeats(row) {
+    let total = row.playbackDurationBeats ?? row.durationBeats;
+    let current = row;
+    const lane = laneRows.get(`${row.staff}::${row.voice || "v1"}`) || [];
+    while (current.event?.tieToNext) {
+      const next = lane.find(candidate =>
+        (candidate.playbackStartBeat ?? candidate.startBeat) > (current.playbackStartBeat ?? current.startBeat) + 0.000001 &&
+        Math.abs((candidate.playbackStartBeat ?? candidate.startBeat) - ((current.playbackStartBeat ?? current.startBeat) + (current.playbackDurationBeats ?? current.durationBeats))) < 0.000001
+      );
+      if (!next) break;
+      total += next.playbackDurationBeats ?? next.durationBeats;
+      current = next;
+    }
+    return total;
+  }
+
   const groupedStarts = new Map();
   timelineRows.forEach(row => {
-    const key = row.startBeat.toFixed(6);
+    const key = (row.playbackStartBeat ?? row.startBeat).toFixed(6);
     if (!groupedStarts.has(key)) groupedStarts.set(key, []);
     groupedStarts.get(key).push(row);
   });
 
   const startMoments = [...groupedStarts.values()]
-    .map(events => ({ startBeat: events[0].startBeat, events }))
+    .map(events => ({ startBeat: events[0].playbackStartBeat ?? events[0].startBeat, events }))
     .sort((a, b) => a.startBeat - b.startBeat);
 
   const totalBeats = timelineRows.reduce(
-    (max, row) => Math.max(max, row.startBeat + row.durationBeats),
+    (max, row) => Math.max(max, (row.playbackStartBeat ?? row.startBeat) + (row.playbackDurationBeats ?? row.durationBeats)),
     0
   );
 
   // Toutes les frontières utiles : débuts, fins et pulsations du métronome.
   const boundarySet = new Set([0, Number(totalBeats.toFixed(6))]);
   timelineRows.forEach(row => {
-    boundarySet.add(Number(row.startBeat.toFixed(6)));
-    boundarySet.add(Number((row.startBeat + row.durationBeats).toFixed(6)));
+    boundarySet.add(Number((row.playbackStartBeat ?? row.startBeat).toFixed(6)));
+    boundarySet.add(Number(((row.playbackStartBeat ?? row.startBeat) + (row.playbackDurationBeats ?? row.durationBeats)).toFixed(6)));
   });
   if (metronome) {
     for (let beat = 0; beat <= Math.ceil(totalBeats); beat += 1) {
@@ -363,11 +387,13 @@ export async function playTimeline(timelineRows, bpm = 60, {
 
     // Joue uniquement les événements qui commencent MAINTENANT.
     // Aucun événement futur n'est mis en file d'attente, donc Stop est réellement immédiat.
-    const startingRows = soundingRows.filter(row => Math.abs(row.startBeat - beat) < 0.000001);
+    const startingRows = soundingRows.filter(row =>
+      !row.event?.tieFromPrevious && Math.abs((row.playbackStartBeat ?? row.startBeat) - beat) < 0.000001
+    );
     startingRows.forEach((row, index) => {
       const event = row.event;
       const notes = event.type === "chord" ? (event.pitches || []) : [event.pitch].filter(Boolean);
-      const duration = Math.max(0.08, row.durationBeats * beatSeconds);
+      const duration = Math.max(0.08, tiedDurationBeats(row) * beatSeconds);
       instrument.triggerAttackRelease(
         notes,
         duration,
@@ -381,8 +407,9 @@ export async function playTimeline(timelineRows, bpm = 60, {
     }
 
     const activeRows = soundingRows.filter(row => {
-      const rowEnd = row.startBeat + row.durationBeats;
-      return row.startBeat <= beat + 0.000001 && rowEnd > beat + 0.000001;
+      const rowStart = row.playbackStartBeat ?? row.startBeat;
+      const rowEnd = rowStart + (row.playbackDurationBeats ?? row.durationBeats);
+      return rowStart <= beat + 0.000001 && rowEnd > beat + 0.000001;
     });
 
     const activeNotes = [...new Set(activeRows.flatMap(row => {

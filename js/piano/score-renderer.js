@@ -1,7 +1,10 @@
 import {
   timeSignatureCapacity,
   validateTimeline,
-  momentIndexByEventId
+  momentIndexByEventId,
+  timelineStaves,
+  measureStaffVoices,
+  displayEventPitches
 } from "./music-model.js";
 
 function normalizeNoteForVex(note) {
@@ -11,7 +14,6 @@ function normalizeNoteForVex(note) {
 }
 
 const NOTE_NAMES_FR = { C:"Do", D:"Ré", E:"Mi", F:"Fa", G:"Sol", A:"La", B:"Si" };
-
 function noteLabelFr(note) {
   const m = /^([A-G])(#|b)?(\d)$/.exec(note);
   if (!m) return note;
@@ -22,14 +24,7 @@ function noteLabelFr(note) {
 function vexDuration(duration, rest = false) {
   const dotted = duration === "hd" || duration === "qd";
   const base = duration === "hd" ? "h" : duration === "qd" ? "q" : duration;
-
-  // Le suffixe `d` doit faire partie de la durée VexFlow pour que la note
-  // compte réellement 1,5× sa valeur dans la voix. Le Dot ci-dessous ne sert
-  // ensuite qu'à dessiner le point sur la portée. Sans ce `d`, une blanche
-  // pointée était comptée comme 2 temps au lieu de 3 et VexFlow rejetait la
-  // mesure en mode strict.
-  const value = `${base}${dotted ? "d" : ""}${rest ? "r" : ""}`;
-  return { value, dotted };
+  return { value:`${base}${dotted ? "d" : ""}${rest ? "r" : ""}`, dotted };
 }
 
 function svgNode(name, attrs = {}, text = "") {
@@ -37,12 +32,6 @@ function svgNode(name, attrs = {}, text = "") {
   Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
   if (text) node.textContent = text;
   return node;
-}
-
-function eventPitches(event) {
-  if (event.type === "note") return [event.pitch];
-  if (event.type === "chord") return event.pitches || [];
-  return [];
 }
 
 function eventFingers(event) {
@@ -58,25 +47,9 @@ function noteCenterX(tickable) {
   return tickable.getAbsoluteX?.() || 0;
 }
 
-function beatSlotsForSignature(signature) {
-  return Math.max(1, Math.round(timeSignatureCapacity(signature || "4/4")));
-}
-
-function clamp(value, min, max) {
-  return Math.max(min, Math.min(max, value));
-}
-
-function beatToCenterX(grid, beatInMeasure) {
-  const slots = grid.capacity || 1;
-  const usableWidth = grid.end - grid.start;
-  const centerBeat = clamp(beatInMeasure + 0.5, 0.5, slots - 0.0001);
-  return grid.start + (usableWidth * centerBeat / slots);
-}
-
 function addBeatGrid(svg, grid, signature) {
-  const slots = beatSlotsForSignature(signature);
+  const slots = Math.max(1, Math.round(timeSignatureCapacity(signature || "4/4")));
   const usableWidth = grid.end - grid.start;
-
   for (let slot = 0; slot < slots; slot += 1) {
     const x = grid.start + usableWidth * ((slot + 0.5) / slots);
     svg.insertBefore(svgNode("line", {
@@ -85,81 +58,21 @@ function addBeatGrid(svg, grid, signature) {
   }
 }
 
-function ensurePlayhead(container, svg) {
-  let line = svg.querySelector('.score-playhead');
-  if (!line) {
-    line = svgNode('line', {
-      x1:0, x2:0, y1:0, y2:0,
-      class:'score-playhead',
-      visibility:'hidden'
-    });
-    svg.appendChild(line);
-  }
-  container.__scorePlayheadEl = line;
-  return line;
-}
-
-export function setScorePlayhead(container, absoluteBeat = null) {
-  const state = container?.__scoreLayout;
-  const line = container?.__scorePlayheadEl;
-  if (!state || !line || absoluteBeat == null || absoluteBeat < 0) {
-    if (line) line.setAttribute('visibility', 'hidden');
-    return;
-  }
-
-  const grids = state.grids || [];
-  let grid = grids.find(g => absoluteBeat >= g.absoluteStart && absoluteBeat < g.absoluteStart + g.capacity - 0.000001);
-
-  if (!grid && grids.length) {
-    const last = grids[grids.length - 1];
-    if (absoluteBeat >= last.absoluteStart + last.capacity - 0.000001) grid = last;
-  }
-
-  if (!grid) {
-    line.setAttribute('visibility', 'hidden');
-    return;
-  }
-
-  const beatInMeasure = clamp(absoluteBeat - grid.absoluteStart, 0, grid.capacity - 0.0001);
-  const x = beatToCenterX(grid, beatInMeasure);
-
-  line.setAttribute('x1', x);
-  line.setAttribute('x2', x);
-  line.setAttribute('y1', grid.top);
-  line.setAttribute('y2', grid.bottom);
-  line.setAttribute('visibility', 'visible');
-}
-
-export function clearScorePlayhead(container) {
-  if (container?.__scorePlayheadEl) {
-    container.__scorePlayheadEl.setAttribute('visibility', 'hidden');
-  }
-}
-
-
 export function setScoreActiveEvents(container, eventIds = []) {
   const svg = container?.querySelector?.("svg");
   if (!svg) return;
-
   const activeIds = new Set(eventIds || []);
   svg.classList.toggle("has-score-playback", activeIds.size > 0);
-
   svg.querySelectorAll("[data-score-event-id]").forEach(element => {
-    element.classList.toggle(
-      "is-score-active",
-      activeIds.has(element.dataset.scoreEventId)
-    );
+    element.classList.toggle("is-score-active", activeIds.has(element.dataset.scoreEventId));
   });
 }
 
 export function clearScoreActiveEvents(container) {
   const svg = container?.querySelector?.("svg");
   if (!svg) return;
-
   svg.classList.remove("has-score-playback");
-  svg.querySelectorAll(".is-score-active").forEach(element => {
-    element.classList.remove("is-score-active");
-  });
+  svg.querySelectorAll(".is-score-active").forEach(element => element.classList.remove("is-score-active"));
 }
 
 export async function renderScore(container, activity, {
@@ -169,7 +82,7 @@ export async function renderScore(container, activity, {
 } = {}) {
   const timeline = activity.timeline;
   if (!timeline) {
-    container.innerHTML = '<div class="score-fallback"><strong>Exercice ancien.</strong><br><span>Cette étape sera convertie vers le nouveau moteur musical.</span></div>';
+    container.innerHTML = '<div class="score-fallback"><strong>Exercice ancien.</strong></div>';
     return;
   }
 
@@ -183,18 +96,17 @@ export async function renderScore(container, activity, {
 
   try {
     const Vex = await import("https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm");
-    const {
-      Renderer, Stave, StaveNote, Voice, Formatter, Accidental,
-      StaveConnector, Barline, Dot
-    } = Vex;
+    const { Renderer, Stave, StaveNote, Voice, Formatter, Accidental, StaveConnector, Barline, Dot, StaveTie, Tuplet } = Vex;
 
     const signature = timeline.timeSignature || "4/4";
     const [numBeats, beatValue] = signature.split("/").map(Number);
     const measures = timeline.measures || [];
+    const staffSpecs = timelineStaves(timeline);
     const measuresPerSystem = activity.measuresPerSystem || 2;
     const systems = Math.ceil(measures.length / measuresPerSystem);
     const width = Math.max(620, Math.min(1100, container.clientWidth || 900));
-    const systemHeight = 320;
+    const staffGap = staffSpecs.length >= 3 ? 108 : 146;
+    const systemHeight = 74 + staffGap * staffSpecs.length;
     const height = systems * systemHeight + 20;
     const measureCapacity = timeSignatureCapacity(signature);
 
@@ -205,34 +117,50 @@ export async function renderScore(container, activity, {
     const eventToMoment = momentIndexByEventId(timeline);
     const hints = [];
     const grids = [];
+    const renderedRows = [];
 
-    function createTickable(event, clef, eventId) {
-      const pitches = eventPitches(event);
+    function createTickable(event, clef) {
+      const pitches = displayEventPitches(event);
       const isRest = event.type === "rest";
       const { value, dotted } = vexDuration(event.duration, isRest);
-      const keys = isRest
-        ? [clef === "bass" ? "d/3" : "b/4"]
-        : pitches.map(normalizeNoteForVex);
-
+      const keys = isRest ? [clef === "bass" ? "d/3" : "b/4"] : pitches.map(normalizeNoteForVex);
       const note = new StaveNote({ clef, keys, duration:value, autoStem:true });
       if (dotted && Dot?.buildAndAttach) Dot.buildAndAttach([note], { all:true });
-
       pitches.forEach((pitch, index) => {
         if (pitch.includes("#")) note.addModifier(new Accidental("#"), index);
         if (pitch.includes("b")) note.addModifier(new Accidental("b"), index);
       });
-
       return note;
     }
 
-    function buildVoice(events, clef, measureIndex, staff) {
-      const items = events.map((event, eventIndex) => {
-        const id = `m${measureIndex}-${staff}-${eventIndex}`;
-        return { id, event, tickable:createTickable(event, clef, id) };
+    function buildVoice(voiceSpec, staffSpec, measureIndex) {
+      const items = (voiceSpec.events || []).map((event, eventIndex) => {
+        const id = `m${measureIndex}-${staffSpec.id}-${voiceSpec.id}-${eventIndex}`;
+        return { id, event, tickable:createTickable(event, staffSpec.clef), staffId:staffSpec.id, voiceId:voiceSpec.id };
       });
+      const tuplets = [];
+      if (Tuplet) {
+        const groups = new Map();
+        items.forEach((item, index) => {
+          const t = item.event?.tuplet;
+          if (!t) return;
+          const key = t.id || `${staffSpec.id}-${voiceSpec.id}-${Math.floor(index / Number(t.numNotes || 3))}`;
+          if (!groups.has(key)) groups.set(key, { spec:t, notes:[] });
+          groups.get(key).notes.push(item.tickable);
+        });
+        groups.forEach(group => {
+          const n = Number(group.spec.numNotes || 3);
+          if (group.notes.length === n) {
+            tuplets.push(new Tuplet(group.notes, {
+              num_notes:n,
+              notes_occupied:Number(group.spec.notesOccupied || 2)
+            }));
+          }
+        });
+      }
       const voice = new Voice({ numBeats, beatValue }).setStrict(true);
       voice.addTickables(items.map(x => x.tickable));
-      return { voice, items };
+      return { voice, items, tuplets };
     }
 
     const pad = 14;
@@ -247,74 +175,99 @@ export async function renderScore(container, activity, {
       const firstOverall = measureIndex === 0;
       const lastOverall = measureIndex === measures.length - 1;
 
-      const treble = new Stave(x, y + 16, measureWidth);
-      const bass = new Stave(x, y + 162, measureWidth);
-
-      if (firstOnSystem) {
-        treble.addClef("treble");
-        bass.addClef("bass");
-        if (firstOverall) {
-          treble.addTimeSignature(signature);
-          bass.addTimeSignature(signature);
+      const staves = staffSpecs.map((spec, index) => {
+        const stave = new Stave(x, y + 16 + index * staffGap, measureWidth);
+        if (firstOnSystem) {
+          stave.addClef(spec.clef);
+          if (spec.keySignature) stave.addKeySignature(spec.keySignature);
+          if (firstOverall) stave.addTimeSignature(signature);
         }
-      }
+        if (Barline?.type) stave.setEndBarType(lastOverall ? Barline.type.END : Barline.type.SINGLE);
+        stave.setContext(context);
+        return { spec, stave };
+      });
 
-      if (Barline?.type) {
-        const endType = lastOverall ? Barline.type.END : Barline.type.SINGLE;
-        treble.setEndBarType(endType);
-        bass.setEndBarType(endType);
-      }
-
-      treble.setContext(context);
-      bass.setContext(context);
       if (typeof Stave.formatBegModifiers === "function") {
-        Stave.formatBegModifiers([treble, bass]);
+        Stave.formatBegModifiers(staves.map(x => x.stave));
       } else {
-        const shared = Math.max(treble.getNoteStartX(), bass.getNoteStartX());
-        treble.setNoteStartX(shared);
-        bass.setNoteStartX(shared);
+        const shared = Math.max(...staves.map(x => x.stave.getNoteStartX()));
+        staves.forEach(x => x.stave.setNoteStartX(shared));
       }
-      treble.draw();
-      bass.draw();
+      staves.forEach(x => x.stave.draw());
 
       try {
+        const top = staves[0].stave;
+        const bottom = staves[staves.length - 1].stave;
         if (firstOnSystem) {
-          new StaveConnector(treble,bass).setType(StaveConnector.type.BRACE).setContext(context).draw();
-          new StaveConnector(treble,bass).setType(StaveConnector.type.SINGLE_LEFT).setContext(context).draw();
+          new StaveConnector(top,bottom).setType(StaveConnector.type.BRACE).setContext(context).draw();
+          new StaveConnector(top,bottom).setType(StaveConnector.type.SINGLE_LEFT).setContext(context).draw();
         }
-        new StaveConnector(treble,bass).setType(StaveConnector.type.SINGLE_RIGHT).setContext(context).draw();
+        new StaveConnector(top,bottom).setType(StaveConnector.type.SINGLE_RIGHT).setContext(context).draw();
       } catch (_) {}
 
-      const tv = buildVoice(measure.treble || [], "treble", measureIndex, "treble");
-      const bv = buildVoice(measure.bass || [], "bass", measureIndex, "bass");
+      const builtByStaff = staves.map(({spec, stave}) => ({
+        spec,
+        stave,
+        voices: measureStaffVoices(measure, spec.id).map(v => buildVoice(v, spec, measureIndex))
+      }));
+      const allVoices = builtByStaff.flatMap(x => x.voices.map(v => v.voice));
       const formatter = new Formatter();
-      formatter.joinVoices([tv.voice, bv.voice]);
-      formatter.format([tv.voice, bv.voice], measureWidth - (firstOnSystem ? 98 : 30));
-      tv.voice.draw(context, treble);
-      bv.voice.draw(context, bass);
+      builtByStaff.forEach(group => formatter.joinVoices(group.voices.map(v => v.voice)));
+      formatter.format(allVoices, measureWidth - (firstOnSystem ? 112 : 30));
 
-      [...tv.items, ...bv.items].forEach(({ id, event, tickable }) => {
-        if (event.type === "rest") return;
-        const element = tickable.getSVGElement?.();
-        if (!element) return;
-
-        element.classList.add("score-event");
-        element.dataset.scoreEventId = id;
-
-        if (eventToMoment.get(id) === currentStep) {
-          element.classList.add("is-current-step");
-        }
+      builtByStaff.forEach(group => {
+        group.voices.forEach(v => {
+          v.voice.draw(context, group.stave);
+          (v.tuplets || []).forEach(tuplet => {
+            try { tuplet.setContext(context).draw(); } catch (_) {}
+          });
+          v.items.forEach(item => {
+            if (item.event.type !== "rest") {
+              const element = item.tickable.getSVGElement?.();
+              if (element) {
+                element.classList.add("score-event");
+                element.dataset.scoreEventId = item.id;
+                if (eventToMoment.get(item.id) === currentStep) element.classList.add("is-current-step");
+              }
+            }
+            renderedRows.push({ ...item, systemIndex, stave:group.stave });
+          });
+          hints.push({ items:v.items, stave:group.stave });
+        });
       });
 
-      hints.push({ items:tv.items, stave:treble }, { items:bv.items, stave:bass });
+      const sharedStart = Math.max(...staves.map(x => x.stave.getNoteStartX()));
       grids.push({
-        top:treble.getYForLine(0)-20,
-        bottom:bass.getBottomLineY()+20,
-        start:Math.max(treble.getNoteStartX(), bass.getNoteStartX()),
+        top:staves[0].stave.getYForLine(0)-20,
+        bottom:staves[staves.length-1].stave.getBottomLineY()+20,
+        start:sharedStart,
         end:x + measureWidth - 12,
-        absoluteStart: measureIndex * measureCapacity,
-        capacity: measureCapacity
+        absoluteStart:measureIndex * measureCapacity,
+        capacity:measureCapacity
       });
+    });
+
+    // Liaisons de prolongation. Elles sont dessinées quand les deux notes
+    // se trouvent sur le même système ; l'audio, lui, peut rester lié même
+    // lorsque la liaison traverse un retour à la ligne.
+    renderedRows.forEach((row, index) => {
+      if (!row.event?.tieToNext || row.event.type === "rest") return;
+      const next = renderedRows.slice(index + 1).find(candidate =>
+        candidate.staffId === row.staffId && candidate.voiceId === row.voiceId && candidate.event.type !== "rest"
+      );
+      if (!next || next.systemIndex !== row.systemIndex || !StaveTie) return;
+      try {
+        const firstPitches = displayEventPitches(row.event);
+        const nextPitches = displayEventPitches(next.event);
+        const common = firstPitches.map((p,i) => ({p,i,j:nextPitches.indexOf(p)})).filter(x => x.j >= 0);
+        if (!common.length) return;
+        new StaveTie({
+          first_note:row.tickable,
+          last_note:next.tickable,
+          first_indices:common.map(x => x.i),
+          last_indices:common.map(x => x.j)
+        }).setContext(context).draw();
+      } catch (_) {}
     });
 
     const svg = container.querySelector("svg");
@@ -326,10 +279,7 @@ export async function renderScore(container, activity, {
         const x = noteCenterX(tickable);
         const y1 = stave.getBottomLineY() + 26;
         const y2 = y1 + 17;
-        if (showNoteNames) {
-          svg.appendChild(svgNode("text", {x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"},
-            eventPitches(event).map(noteLabelFr).join(" + ")));
-        }
+        if (showNoteNames) svg.appendChild(svgNode("text", {x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"}, displayEventPitches(event).map(noteLabelFr).join(" + ")));
         if (showFingers) {
           const fingers = eventFingers(event);
           if (fingers.length) svg.appendChild(svgNode("text", {x,y:y2,"text-anchor":"middle",class:"score-help score-help--finger"}, fingers.join("·")));
@@ -337,7 +287,7 @@ export async function renderScore(container, activity, {
       });
     });
 
-    container.__scoreLayout = { grids, signature, totalBeats: measures.length * measureCapacity };
+    container.__scoreLayout = { grids, signature, totalBeats:measures.length * measureCapacity };
     clearScoreActiveEvents(container);
   } catch (error) {
     console.error("Erreur VexFlow :", error);

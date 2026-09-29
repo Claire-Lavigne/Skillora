@@ -15,11 +15,11 @@ function prettyMoment(moment) {
 function fingersForMoment(moment) {
   if (!moment?.events) return "";
   const parts = [];
-  for (const staff of ["treble","bass"]) {
+  for (const hand of ["right","left"]) {
     const fingers = moment.events
-      .filter(row => row.staff === staff)
+      .filter(row => row.hand === hand)
       .flatMap(row => row.event.type === "chord" ? (row.event.fingers || []) : [row.event.finger].filter(Boolean));
-    if (fingers.length) parts.push(`${staff === "treble" ? "MD" : "MG"} · ${fingers.join(" - ")}`);
+    if (fingers.length) parts.push(`${hand === "right" ? "MD" : "MG"} · ${fingers.join(" - ")}`);
   }
   return parts.join(" · ");
 }
@@ -113,7 +113,7 @@ export function mountPianoStageTrainer(container, stage) {
     stopPlayback(); playAllButton.disabled=true; audioStatus.textContent='Préparation du piano…';
     const ready=await preparePiano(); if(!ready.ok){ playAllButton.disabled=false; audioStatus.textContent=ready.message; return; }
     const hand=handsSelect.value; const speed=Number(speedSelect.value)||1;
-    const rows=timelineEventRows(activity.timeline).filter(row=> hand==='both' || (hand==='right'&&row.staff==='treble') || (hand==='left'&&row.staff==='bass'));
+    const rows=timelineEventRows(activity.timeline).filter(row=> hand==='both' || row.hand===hand);
     const moments=timelineMoments(activity.timeline,{hand});
     const countInBeats=Number((activity.timeline.timeSignature||'4/4').split('/')[0])||4;
     try{
@@ -140,7 +140,10 @@ export function mountPianoStageTrainer(container, stage) {
 
           current.textContent=prettyMoment({...m,notes:m.notes});
           finger.textContent=fingersForMoment(m);
-          if (m.notes?.length) keyboard.retrigger(m.notes);
+          const attackNotes = (m.events || [])
+            .filter(row => !row.event?.tieFromPrevious)
+            .flatMap(row => row.event?.type === 'chord' ? (row.event.pitches || []) : [row.event?.pitch].filter(Boolean));
+          if (attackNotes.length) keyboard.retrigger(attackNotes, 55);
         },
         onVisualState:(state)=>{
           const active=state.activeNotes||[];

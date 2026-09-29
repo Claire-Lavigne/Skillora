@@ -698,31 +698,40 @@
 }
 
 
-/* Lecture automatique accessible : surlignage direct des notes actives. */
+/* Lecture automatique : toutes les notes restent noires.
+   La note active est signalée par un halo vert, sans diminuer
+   le contraste des autres notes. */
+.trainer-score svg .score-event,
+.trainer-score svg .score-event *{
+  opacity:1 !important;
+  fill:#111 !important;
+  stroke:#111 !important;
+}
+
 .trainer-score svg.has-score-playback .score-event:not(.is-score-active){
-  opacity:.62;
+  opacity:1 !important;
 }
 
 .trainer-score svg .score-event{
-  transition:opacity .12s ease, filter .12s ease;
+  transition:filter .12s ease;
 }
 
 .trainer-score svg .score-event.is-score-active{
-  opacity:1;
+  opacity:1 !important;
   filter:
-    drop-shadow(0 0 1px #ffffff)
-    drop-shadow(0 0 3px rgba(11,143,104,.8));
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 0 4px rgba(8,122,91,.95))
+    drop-shadow(0 0 7px rgba(8,122,91,.45)) !important;
 }
 
 .trainer-score svg .score-event.is-score-active *,
 .trainer-score svg .score-event.is-score-active{
-  fill:#087a5b !important;
-  stroke:#087a5b !important;
-  stroke-width:1.35 !important;
+  fill:#111 !important;
+  stroke:#111 !important;
 }
 
 .trainer-score svg .score-event.is-current-step{
-  filter:drop-shadow(0 0 1.5px rgba(16,102,76,.35));
+  filter:drop-shadow(0 0 2px rgba(16,102,76,.35));
 }
 
 .score-playhead{
@@ -747,8 +756,59 @@
   font-weight:650 !important;
 }
 
+.piano-reference-only-note{
+  margin-top:12px;
+  padding:12px 14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--soft);
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.45;
+}
+
 @media (prefers-reduced-motion: reduce){
   .trainer-score svg .score-event{
     transition:none;
   }
+}
+
+
+/* Partitions réelles fournies par l'utilisatrice */
+.piano-reference-score{
+  margin-top:12px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.piano-reference-score summary{
+  cursor:pointer;
+  padding:10px 12px;
+  font-weight:650;
+}
+
+.piano-reference-score img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-top:1px solid var(--border);
+}
+
+.piano-bonus-scores{
+  margin-top:14px;
+}
+
+.piano-bonus-scores>strong{
+  display:block;
+  margin-bottom:6px;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:var(--accent);
+}
+
+.piano-reference-score--bonus{
+  margin-top:8px;
 }

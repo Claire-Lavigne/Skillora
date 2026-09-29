@@ -9586,14 +9586,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w08-chant",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Les Aristochats",
-        "objective": "Jouer « Les Aristochats » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Les Aristochats",
+        "objective": "Jouer un extrait réel de « Les Aristochats » à partir de la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Travaille d’abord les mesures 1–4 main droite seule.",
+          "Ajoute ensuite la main gauche en gardant les durées exactes.",
+          "Utilise 50 %, puis 75 %, puis 100 % avant de jouer sur la partition complète."
         ],
         "curriculum": {
           "reading": "Deux lignes réellement simultanées",
@@ -9602,8 +9600,8 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Premier duo — pièce complète Skillora",
-          "tempo": 58,
+          "title": "Les Aristochats — extrait transcrit",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -9614,69 +9612,9 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
+                    "duration": "8",
                     "finger": 1
                   },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
                   {
                     "type": "note",
                     "pitch": "D4",
@@ -9691,422 +9629,16 @@ export const pianoTrainingWeeks = [
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
                     "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
                     "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
                     "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
                   },
                   {
                     "type": "note",
                     "pitch": "G4",
-                    "duration": "q",
+                    "duration": "8",
                     "finger": 5
                   },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
                   {
                     "type": "note",
                     "pitch": "E4",
@@ -10122,34 +9654,24 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
+                    "duration": "8",
                     "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
                   }
                 ],
                 "bass": [
                   {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 1
+                    "type": "chord",
+                    "pitches": [
+                      "C3",
+                      "E3",
+                      "G3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
                   }
                 ]
               },
@@ -10158,25 +9680,183 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "w",
+                    "duration": "8",
                     "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 5
                   }
                 ],
                 "bass": [
                   {
-                    "type": "note",
-                    "pitch": "C3",
+                    "type": "chord",
+                    "pitches": [
+                      "C3",
+                      "E3",
+                      "G3"
+                    ],
                     "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
                     "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "C3",
+                      "E3",
+                      "G3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "B3",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "8",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "C3",
+                      "E3",
+                      "G3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
                   }
                 ]
               }
             ]
-          }
+          },
+          "sourceMeasures": "1–4",
+          "transcriptionType": "exact-excerpt"
         },
         "song": {
           "title": "Les Aristochats",
-          "sourceNote": "Partition fournie : Première vraie pièce à deux mains : croches, accords et coordination.",
+          "sourceNote": "Transcription interactive des quatre premières mesures visibles de la partition fournie.",
           "requiredSkills": [
             "Deux lignes réellement simultanées",
             "Rythmes indépendants entre les mains",
@@ -10185,7 +9865,9 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/les-aristochats.png",
           "scoreImageAlt": "Partition fournie de Les Aristochats",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "exact-excerpt",
+          "sourceMeasures": "1–4",
+          "showScoreWithInteractiveTranscription": true
         }
       }
     ]
@@ -11577,14 +11259,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w09-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Joy to the World",
-        "objective": "Jouer « Joy to the World » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Joy to the World",
+        "objective": "Jouer un extrait réel de « Joy to the World » à partir de la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Travaille d’abord les mesures 1–7 main droite seule.",
+          "Ajoute ensuite la main gauche en gardant les durées exactes.",
+          "Utilise 50 %, puis 75 %, puis 100 % avant de jouer sur la partition complète."
         ],
         "curriculum": {
           "reading": "Lire une triade sur la portée",
@@ -11593,8 +11273,8 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Premiers accords — pièce complète Skillora",
-          "tempo": 64,
+          "title": "Joy to the World — extrait transcrit",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -11604,27 +11284,21 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
+                    "pitch": "C5",
+                    "duration": "h",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
                     "finger": 4
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
+                    "pitch": "A4",
+                    "duration": "q",
                     "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
                   }
                 ],
                 "bass": [
@@ -11632,13 +11306,11 @@ export const pianoTrainingWeeks = [
                     "type": "chord",
                     "pitches": [
                       "C3",
-                      "E3",
                       "G3"
                     ],
                     "duration": "w",
                     "fingers": [
                       5,
-                      3,
                       1
                     ]
                   }
@@ -11648,79 +11320,23 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
+                    "pitch": "G4",
+                    "duration": "hd",
                     "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 1
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
+                    "type": "note",
+                    "pitch": "C3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
                   }
                 ]
               },
@@ -11735,75 +11351,23 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "q",
+                    "duration": "h",
                     "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
+                    "pitch": "G3",
                     "duration": "h",
                     "finger": 1
                   }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
                 ]
               },
               {
@@ -11811,92 +11375,22 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "8",
+                    "duration": "hd",
                     "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
                   },
                   {
                     "type": "note",
                     "pitch": "G4",
                     "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
                     "finger": 2
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
+                    "type": "note",
+                    "pitch": "C3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
                   }
                 ]
               },
@@ -11904,35 +11398,23 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
+                    "pitch": "A4",
+                    "duration": "hd",
                     "finger": 3
                   },
                   {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
+                    "pitch": "B4",
+                    "duration": "q",
                     "finger": 4
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
+                    "type": "note",
+                    "pitch": "F3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 2
                   }
                 ]
               },
@@ -11940,175 +11422,23 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
+                    "pitch": "C5",
+                    "duration": "hd",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
+                    "pitch": "D5",
                     "duration": "q",
                     "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
+                    "type": "note",
+                    "pitch": "G3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 1
                   }
                 ]
               },
@@ -12116,158 +11446,34 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
+                    "pitch": "E5",
+                    "duration": "hd",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
+                    "pitch": "F5",
                     "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
+                    "finger": 5
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "note",
-                    "pitch": "C4",
+                    "pitch": "C3",
                     "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
                   }
                 ]
               }
             ]
-          }
+          },
+          "sourceMeasures": "1–7",
+          "transcriptionType": "exact-excerpt"
         },
         "song": {
           "title": "Joy to the World",
-          "sourceNote": "Partition fournie : Accords simples et mélodie réelle sur une partition accessible.",
+          "sourceNote": "Transcription interactive des mesures 1 à 7 de la version simplifiée fournie.",
           "requiredSkills": [
             "Lire une triade sur la portée",
             "Noires, blanches et croches dans la même phrase",
@@ -12276,7 +11482,9 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/joy-to-the-world.png",
           "scoreImageAlt": "Partition fournie de Joy to the World",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "exact-excerpt",
+          "sourceMeasures": "1–7",
+          "showScoreWithInteractiveTranscription": true
         }
       }
     ]
@@ -14042,14 +13250,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w10-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Mon secours est en toi",
-        "objective": "Jouer « Mon secours est en toi » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Mon secours est en toi",
+        "objective": "Jouer un extrait réel de « Mon secours est en toi » à partir de la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Travaille d’abord les mesures passage « Toi seul es ma force… » main droite seule.",
+          "Ajoute ensuite la main gauche en gardant les durées exactes.",
+          "Utilise 50 %, puis 75 %, puis 100 % avant de jouer sur la partition complète."
         ],
         "curriculum": {
           "reading": "Lire C, F et G comme formes d’accord",
@@ -14058,8 +13264,8 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Cadence claire — pièce complète Skillora",
-          "tempo": 66,
+          "title": "Mon secours est en toi — extrait transcrit",
+          "tempo": 68,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -14069,187 +13275,19 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
+                    "pitch": "C5",
+                    "duration": "h",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
+                    "pitch": "B4",
                     "duration": "q",
                     "finger": 2
                   },
                   {
                     "type": "rest",
                     "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
                   }
                 ],
                 "bass": [
@@ -14260,663 +13298,39 @@ export const pianoTrainingWeeks = [
                       "E3",
                       "G3"
                     ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
                     "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
                     "finger": 1
                   }
                 ],
@@ -14927,6 +13341,86 @@ export const pianoTrainingWeeks = [
                       "C3",
                       "E3",
                       "G3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "h",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G2",
+                      "B2",
+                      "D3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      5,
+                      3,
+                      1
+                    ]
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G2",
+                      "B2",
+                      "D3"
                     ],
                     "duration": "w",
                     "fingers": [
@@ -14938,11 +13432,13 @@ export const pianoTrainingWeeks = [
                 ]
               }
             ]
-          }
+          },
+          "sourceMeasures": "passage « Toi seul es ma force… »",
+          "transcriptionType": "melody-exact-accompaniment-adapted"
         },
         "song": {
           "title": "Mon secours est en toi",
-          "sourceNote": "Partition fournie : Travail des accords de Fa, Sol et Do dans un vrai chant.",
+          "sourceNote": "Mélodie transcrite depuis le passage « Toi seul es ma force… » de la partition fournie. La main gauche est une réalisation pédagogique des symboles Do et Sol imprimés sur la partition, car la source fournie ne contient pas de portée de piano main gauche.",
           "requiredSkills": [
             "Lire C, F et G comme formes d’accord",
             "Croches, noires et blanches",
@@ -14951,7 +13447,9 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/mon-secours-est-en-toi.png",
           "scoreImageAlt": "Partition fournie de Mon secours est en toi",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "melody-exact-accompaniment-adapted",
+          "sourceMeasures": "passage « Toi seul es ma force… »",
+          "showScoreWithInteractiveTranscription": true
         }
       }
     ]
@@ -17059,14 +15557,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w11-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Never Ending Story",
-        "objective": "Jouer « Never Ending Story » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Never Ending Story",
+        "objective": "Jouer un extrait réel de « Never Ending Story » à partir de la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Travaille d’abord les mesures 1–4 main droite seule.",
+          "Ajoute ensuite la main gauche en gardant les durées exactes.",
+          "Utilise 50 %, puis 75 %, puis 100 % avant de jouer sur la partition complète."
         ],
         "curriculum": {
           "reading": "Suivre une grille C–F–G–C",
@@ -17075,8 +15571,8 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Retour à la maison — pièce complète Skillora",
-          "tempo": 68,
+          "title": "Never Ending Story — extrait transcrit",
+          "tempo": 76,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -17086,613 +15582,81 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
                     "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
                     "duration": "qd",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
+                    "pitch": "C4",
                     "duration": "8",
-                    "finger": 4
+                    "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
+                    "pitch": "B3",
+                    "duration": "h",
+                    "finger": 1
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
+                    "pitch": "C3",
+                    "duration": "h",
                     "finger": 5
                   },
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
                     "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
                   }
                 ]
               },
               {
                 "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
                   {
                     "type": "rest",
-                    "duration": "q"
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "8",
+                    "finger": 1
                   },
                   {
                     "type": "note",
                     "pitch": "D4",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
                     "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
+                    "finger": 5
+                  },
                   {
                     "type": "note",
                     "pitch": "C3",
-                    "duration": "q",
+                    "duration": "h",
                     "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               },
@@ -17706,67 +15670,9 @@ export const pianoTrainingWeeks = [
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
+                    "pitch": "G4",
+                    "duration": "8",
                     "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
                   },
                   {
                     "type": "note",
@@ -17776,68 +15682,34 @@ export const pianoTrainingWeeks = [
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
+                    "pitch": "E4",
                     "duration": "8",
-                    "finger": 5
+                    "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
+                    "pitch": "D4",
+                    "duration": "8",
+                    "finger": 2
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
+                    "pitch": "C3",
+                    "duration": "h",
                     "finger": 5
                   },
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
                     "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
                   }
                 ]
               },
               {
                 "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
                   {
                     "type": "note",
                     "pitch": "E4",
@@ -17847,86 +15719,36 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "q",
+                    "duration": "8",
                     "finger": 2
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
+                    "duration": "8",
                     "finger": 1
                   },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "qd",
+                    "duration": "8",
                     "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B3",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A3",
                     "duration": "q",
                     "finger": 1
                   }
@@ -17935,211 +15757,25 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
                     "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
                     "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   },
                   {
                     "type": "note",
                     "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
+                    "duration": "h",
                     "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               }
             ]
-          }
+          },
+          "sourceMeasures": "1–4",
+          "transcriptionType": "exact-excerpt"
         },
         "song": {
           "title": "Never Ending Story",
-          "sourceNote": "Partition fournie : Enchaînements harmoniques et rythmes plus variés.",
+          "sourceNote": "Transcription interactive des quatre premières mesures de l’arrangement piano fourni.",
           "requiredSkills": [
             "Suivre une grille C–F–G–C",
             "Noire pointée + croche",
@@ -18148,7 +15784,9 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/never-ending-story.png",
           "scoreImageAlt": "Partition fournie de Never Ending Story",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "exact-excerpt",
+          "sourceMeasures": "1–4",
+          "showScoreWithInteractiveTranscription": true
         }
       }
     ]
@@ -19908,14 +17546,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w12-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Broken Vessels",
-        "objective": "Jouer « Broken Vessels » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Broken Vessels",
+        "objective": "Jouer un extrait réel de « Broken Vessels » à partir de la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Travaille d’abord les mesures 1–3 main droite seule.",
+          "Ajoute ensuite la main gauche en gardant les durées exactes.",
+          "Utilise 50 %, puis 75 %, puis 100 % avant de jouer sur la partition complète."
         ],
         "curriculum": {
           "reading": "Lire plusieurs mesures sans s’arrêter",
@@ -19924,7 +17560,7 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Horloge musicale — pièce complète Skillora",
+          "title": "Broken Vessels — extrait transcrit",
           "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
@@ -19934,881 +17570,109 @@ export const pianoTrainingWeeks = [
               {
                 "treble": [
                   {
+                    "type": "rest",
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
+                    "pitch": "G2",
+                    "duration": "8",
+                    "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
+                    "pitch": "D3",
                     "duration": "8",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
+                    "pitch": "G3",
+                    "duration": "hd",
                     "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               },
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
+                    "type": "rest",
+                    "duration": "w"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "E2",
+                    "duration": "8",
+                    "finger": 5
                   },
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "B2",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "hd",
+                    "finger": 1
                   }
                 ]
               },
               {
                 "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
                   {
                     "type": "rest",
                     "duration": "q"
                   },
                   {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "B4",
+                      "D5"
+                    ],
+                    "duration": "hd",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "C3",
                     "duration": "8",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "G3",
                     "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
                     "finger": 2
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
+                    "duration": "hd",
                     "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               }
             ]
-          }
+          },
+          "sourceMeasures": "1–3",
+          "transcriptionType": "exact-excerpt"
         },
         "song": {
           "title": "Broken Vessels",
-          "sourceNote": "Partition fournie : Régularité, accompagnement lent et travail au métronome.",
+          "sourceNote": "Transcription interactive de l’introduction (mesures 1 à 3) de la partition piano fournie.",
           "requiredSkills": [
             "Lire plusieurs mesures sans s’arrêter",
             "Pulsation stable au métronome",
@@ -20817,7 +17681,9 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/broken-vessels.png",
           "scoreImageAlt": "Partition fournie de Broken Vessels",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "exact-excerpt",
+          "sourceMeasures": "1–3",
+          "showScoreWithInteractiveTranscription": true
         }
       }
     ]
@@ -22159,8 +19025,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w13-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Für Elise — Easy Version",
-        "objective": "Jouer « Für Elise — Easy Version » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Für Elise — Easy Version",
+        "objective": "Jouer les deux premières mesures réelles de la version Easy fournie.",
         "instructions": [
           "Fais d'abord la préparation interactive ci-dessous.",
           "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
@@ -22175,330 +19041,48 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Une octave — pièce complète Skillora",
-          "tempo": 66,
+          "title": "Für Elise — Easy Version — mesures 1-2",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
-            "timeSignature": "4/4",
+            "timeSignature": "3/4",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
                     "type": "rest",
                     "duration": "q"
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
+                    "pitch": "E5",
                     "duration": "8",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "C5",
+                    "pitch": "D#5",
                     "duration": "8",
-                    "finger": 1
+                    "finger": 4
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
+                    "pitch": "E5",
+                    "duration": "8",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
+                    "pitch": "D#5",
                     "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
                     "finger": 4
                   }
                 ],
                 "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
                   {
                     "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
+                    "duration": "hd"
                   }
                 ]
               },
@@ -22506,311 +19090,39 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
+                    "pitch": "E5",
+                    "duration": "8",
                     "finger": 5
                   },
                   {
                     "type": "note",
                     "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "8",
+                    "finger": 4
                   },
                   {
                     "type": "note",
                     "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
                     "duration": "8",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
                     "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
                     "duration": "q",
                     "finger": 1
                   }
                 ],
                 "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
                   {
                     "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "duration": "hd"
                   }
                 ]
               }
@@ -22819,7 +19131,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Für Elise — Easy Version",
-          "sourceNote": "Partition fournie : Déplacements, gamme et lecture d’un extrait classique réel.",
+          "sourceNote": "Extrait réellement transcrit depuis la partition fournie : mesures 1 à 2 de la version Easy.",
           "requiredSkills": [
             "Lire Do à Do sur une octave",
             "Croches régulières",
@@ -22828,14 +19140,15 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/fur-elise-easy.png",
           "scoreImageAlt": "Partition fournie de Für Elise — Easy Version",
-          "interactiveStatus": "preparation-technique",
+          "interactiveStatus": "transcribed-excerpt",
           "bonusPieces": [
             {
               "title": "Für Elise — version plus complète",
               "scoreImage": "assets/piano/scores/fur-elise-full.png",
               "scoreImageAlt": "Partition bonus de Für Elise, version plus complète"
             }
-          ]
+          ],
+          "transcriptionScope": "mesures 1-2"
         }
       }
     ]
@@ -25371,7 +21684,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Pallet Town — Pokémon",
-          "sourceNote": "Partition fournie : Mains ensemble et motifs réguliers sur plusieurs registres.",
+          "sourceNote": "Partition fournie à 3 portées. Le moteur v3 sait désormais afficher 3 portées ; la transcription note par note reste à encoder sans approximation.",
           "requiredSkills": [
             "Suivre deux lignes de gamme simultanées",
             "Croches régulières aux deux mains",
@@ -25380,7 +21693,9 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/pallet-town.png",
           "scoreImageAlt": "Partition fournie de Pallet Town — Pokémon",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "preparation-technique",
+          "transcriptionScope": "en attente — moteur 3 portées",
+          "engineReadyForThreeStaves": true
         }
       }
     ]
@@ -27404,8 +23719,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w15-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Greensleeves",
-        "objective": "Jouer « Greensleeves » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Greensleeves",
+        "objective": "Jouer deux mesures réelles de Greensleeves après l’anacrouse, en 3/4.",
         "instructions": [
           "Fais d'abord la préparation interactive ci-dessous.",
           "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
@@ -27420,102 +23735,26 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Lumière et ombre — pièce complète Skillora",
-          "tempo": 68,
+          "title": "Greensleeves — extrait réel",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
-            "timeSignature": "4/4",
+            "timeSignature": "3/4",
             "measures": [
               {
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
+                    "pitch": "C5",
                     "duration": "h",
-                    "finger": 4
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 3
                   }
                 ],
                 "bass": [
@@ -27526,956 +23765,58 @@ export const pianoTrainingWeeks = [
                     "finger": 5
                   },
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
+                    "type": "note",
+                    "pitch": "C3",
                     "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 3
                   },
                   {
                     "type": "note",
                     "pitch": "E3",
                     "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
                     "finger": 1
                   }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "qd",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F5",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "q",
+                    "finger": 4
+                  }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "A2",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "q",
+                    "finger": 1
                   }
                 ]
               }
@@ -28484,7 +23825,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Greensleeves",
-          "sourceNote": "Partition fournie : Nuances, phrasé et respiration en 3/4.",
+          "sourceNote": "Extrait réellement transcrit depuis la partition fournie : deux mesures complètes après l’anacrouse.",
           "requiredSkills": [
             "Lire une phrase et ses points culminants",
             "Rythmes déjà acquis avec stabilité",
@@ -28493,14 +23834,15 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/greensleeves.png",
           "scoreImageAlt": "Partition fournie de Greensleeves",
-          "interactiveStatus": "preparation-technique",
+          "interactiveStatus": "transcribed-excerpt",
           "bonusPieces": [
             {
               "title": "Broken Vessels — bonus expressif",
               "scoreImage": "assets/piano/scores/broken-vessels.png",
               "scoreImageAlt": "Partition bonus : Broken Vessels — bonus expressif"
             }
-          ]
+          ],
+          "transcriptionScope": "2 mesures après anacrouse"
         }
       }
     ]
@@ -29916,14 +25258,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w16-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Bella's Lullaby",
-        "objective": "Jouer « Bella's Lullaby » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Bella's Lullaby (mesures 1–2)",
+        "objective": "Jouer fidèlement les deux premières mesures de la partition fournie, avec la tenue liée de la basse et la seconde voix de la main gauche.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Observe les deux voix de la main gauche : une basse tenue et une note supérieure indépendante.",
+          "Ne rejoue pas la basse liée au début de la mesure 2 : elle doit continuer à résonner.",
+          "Travaille d’abord la main droite en croches régulières, puis la main gauche, puis les deux ensemble."
         ],
         "curriculum": {
           "reading": "Lire les changements harmoniques",
@@ -29931,691 +25271,196 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Accords avec changements espacés"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Échos — pièce complète Skillora",
-          "tempo": 62,
+          "engine": "timeline-v3",
+          "title": "Bella's Lullaby — mesures 1–2",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "G",
+            "staves": [
+              {
+                "id": "treble",
+                "clef": "treble",
+                "hand": "right"
+              },
+              {
+                "id": "bass",
+                "clef": "bass",
+                "hand": "left"
+              }
+            ],
             "measures": [
               {
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
                     "pitch": "A4",
                     "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
+                    "pitch": "F#4",
                     "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
+                    "pitch": "A4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
+                    "pitch": "F#4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F#4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F#4",
+                    "duration": "8"
                   }
                 ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
+                "bass": {
+                  "voices": [
+                    {
+                      "id": "bass-held",
+                      "events": [
+                        {
+                          "type": "note",
+                          "pitch": "D3",
+                          "duration": "w",
+                          "finger": 5,
+                          "tieToNext": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bass-upper",
+                      "events": [
+                        {
+                          "type": "rest",
+                          "duration": "h"
+                        },
+                        {
+                          "type": "note",
+                          "pitch": "Bb3",
+                          "duration": "h",
+                          "finger": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
               },
               {
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
+                    "pitch": "A4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "pitch": "F#4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F#4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
+                    "duration": "8"
+                  },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
+                    "pitch": "F#4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F#4",
+                    "duration": "8"
                   }
                 ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
+                "bass": {
+                  "voices": [
+                    {
+                      "id": "bass-held",
+                      "events": [
+                        {
+                          "type": "note",
+                          "pitch": "D3",
+                          "duration": "w",
+                          "finger": 5,
+                          "tieFromPrevious": true
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bass-upper",
+                      "events": [
+                        {
+                          "type": "note",
+                          "pitch": "A3",
+                          "duration": "h",
+                          "finger": 1
+                        },
+                        {
+                          "type": "note",
+                          "pitch": "F#3",
+                          "duration": "h"
+                        }
+                      ]
+                    }
+                  ]
+                }
               }
             ]
           }
         },
         "song": {
           "title": "Bella's Lullaby",
-          "sourceNote": "Partition fournie : Pédale, notes tenues et accompagnement lié.",
+          "sourceNote": "Partition fournie : transcription interactive des mesures 1–2. La basse liée et la seconde voix de main gauche sont conservées.",
           "requiredSkills": [
             "Lire les changements harmoniques",
             "Blanches et rondes maintenues",
             "Accords avec changements espacés"
           ],
-          "scoreStatus": "partition-fournie-reference",
+          "scoreStatus": "transcribed-excerpt",
           "scoreImage": "assets/piano/scores/ballas-lullaby.png",
           "scoreImageAlt": "Partition fournie de Bella's Lullaby",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "transcribed",
+          "transcriptionScope": "en attente — voix simultanées + liaisons",
+          "transcribedMeasures": "1–2"
         }
       }
     ]
@@ -32743,8 +27588,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w17-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Pokémon Lullaby",
-        "objective": "Jouer « Pokémon Lullaby » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Pokémon Lullaby",
+        "objective": "Jouer la première mesure réelle : note tenue à droite et arpège régulier à gauche.",
         "instructions": [
           "Fais d'abord la préparation interactive ci-dessous.",
           "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
@@ -32759,10 +27604,10 @@ export const pianoTrainingWeeks = [
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Courant régulier — pièce complète Skillora",
-          "tempo": 66,
+          "title": "Pokémon Lullaby — mesure 1",
+          "tempo": 70,
           "staff": "grand",
-          "measuresPerSystem": 2,
+          "measuresPerSystem": 1,
           "timeline": {
             "timeSignature": "4/4",
             "measures": [
@@ -32770,1171 +27615,59 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
                     "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
                     "duration": "w",
-                    "finger": 1
+                    "finger": 3
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "8",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G3",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A3",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G3",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F3",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "8",
+                    "finger": 4
                   }
                 ]
               }
@@ -33943,7 +27676,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Pokémon Lullaby",
-          "sourceNote": "Partition fournie : Arpèges continus et mélodie chantante.",
+          "sourceNote": "Extrait réellement transcrit depuis la partition fournie : mesure 1, avec la note tenue et l’arpège de basse.",
           "requiredSkills": [
             "Lire les notes d’un accord une par une",
             "Noires puis croches d’arpège",
@@ -33952,7 +27685,8 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/pokemon-lullaby.png",
           "scoreImageAlt": "Partition fournie de Pokémon Lullaby",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "transcribed-excerpt",
+          "transcriptionScope": "mesure 1"
         }
       }
     ]
@@ -36249,13 +29983,11 @@ export const pianoTrainingWeeks = [
         "id": "w18-a5",
         "label": "Morceau / chant de la semaine",
         "title": "Partition réelle — Pokémon Gold/Silver/Crystal — The End",
-        "objective": "Jouer « Pokémon Gold/Silver/Crystal — The End » en utilisant la notion de la semaine et les acquis précédents.",
+        "objective": "Jouer les 4 premières mesures réellement transcrites de la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Travaille d’abord chaque portée séparément.",
+          "La portée supérieure est écrite sous 8va : le son est une octave au-dessus de la note écrite.",
+          "Puis assemble les deux mains à vitesse réduite avant le tempo complet."
         ],
         "curriculum": {
           "reading": "Lire accords majeurs et mineur dans une même grille",
@@ -36263,1183 +29995,240 @@ export const pianoTrainingWeeks = [
           "accompaniment": "C–Am–F–G en arpèges simples"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Cycle — pièce complète Skillora",
-          "tempo": 70,
-          "staff": "grand",
+          "engine": "timeline-v3",
+          "title": "Pokémon — The End · mesures 1 à 4",
+          "tempo": 140,
+          "staff": "custom",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "Ab",
+            "staves": [
+              {
+                "id": "upper",
+                "clef": "treble",
+                "hand": "right",
+                "label": "MD",
+                "keySignature": "Ab"
+              },
+              {
+                "id": "lower",
+                "clef": "treble",
+                "hand": "left",
+                "label": "MG",
+                "keySignature": "Ab"
+              }
+            ],
             "measures": [
               {
-                "treble": [
+                "upper": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
+                    "pitch": "G6",
                     "duration": "q",
-                    "finger": 1
+                    "finger": 1,
+                    "displayPitch": "G5"
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
+                    "pitch": "G6",
                     "duration": "q",
-                    "finger": 3
+                    "finger": 2,
+                    "displayPitch": "G5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A6",
+                    "duration": "q",
+                    "finger": 3,
+                    "displayPitch": "A5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A6",
+                    "duration": "q",
+                    "finger": 4,
+                    "displayPitch": "A5"
                   }
                 ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
+                "lower": [
                   {
                     "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
+                    "duration": "w"
                   }
                 ]
               },
               {
-                "treble": [
+                "upper": [
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 1,
+                    "displayPitch": "B5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 2,
+                    "displayPitch": "B5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 3,
+                    "displayPitch": "B5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 4,
+                    "displayPitch": "B5"
+                  }
+                ],
+                "lower": [
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "q",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
+                    "pitch": "G4",
                     "duration": "q",
                     "finger": 4
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
+                    "pitch": "B4",
                     "duration": "q",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
+                    "pitch": "E5",
                     "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
                     "finger": 1
                   }
                 ]
               },
               {
-                "treble": [
+                "upper": [
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
+                    "pitch": "F7",
+                    "duration": "q",
+                    "finger": 1,
+                    "displayPitch": "F6"
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
+                    "pitch": "E7",
                     "duration": "q",
-                    "finger": 3
+                    "finger": 2,
+                    "displayPitch": "E6"
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
+                    "pitch": "D7",
                     "duration": "q",
-                    "finger": 5
+                    "finger": 3,
+                    "displayPitch": "D6"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E7",
+                    "duration": "q",
+                    "finger": 2,
+                    "displayPitch": "E6"
                   }
                 ],
-                "bass": [
+                "lower": [
                   {
                     "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "G5",
                     "duration": "q",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
+                    "pitch": "G5",
+                    "duration": "q",
                     "finger": 4
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
+                    "pitch": "G5",
                     "duration": "q",
                     "finger": 3
                   },
+                  {
+                    "type": "note",
+                    "pitch": "G5",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ]
+              },
+              {
+                "upper": [
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 1,
+                    "displayPitch": "B5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 2,
+                    "displayPitch": "B5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 3,
+                    "displayPitch": "B5"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B6",
+                    "duration": "q",
+                    "finger": 4,
+                    "displayPitch": "B5"
+                  }
+                ],
+                "lower": [
                   {
                     "type": "note",
                     "pitch": "D4",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "q",
+                    "finger": 4
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
                     "duration": "q",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
+                    "pitch": "D5",
                     "duration": "q",
                     "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               }
@@ -37448,16 +30237,16 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Pokémon Gold/Silver/Crystal — The End",
-          "sourceNote": "Partition fournie : Progressions harmoniques et coordination des deux mains.",
+          "sourceNote": "Transcription interactive des mesures 1 à 4 à partir de la partition fournie. La portée supérieure respecte l’indication 8va via la hauteur audio.",
           "requiredSkills": [
             "Lire accords majeurs et mineur dans une même grille",
             "Croches d’accompagnement régulières",
             "C–Am–F–G en arpèges simples"
           ],
-          "scoreStatus": "partition-fournie-reference",
+          "scoreStatus": "partition-fournie-transcrite",
           "scoreImage": "assets/piano/scores/pokemon-the-end.png",
           "scoreImageAlt": "Partition fournie de Pokémon Gold/Silver/Crystal — The End",
-          "interactiveStatus": "preparation-technique",
+          "interactiveStatus": "transcribed",
           "bonusPieces": [
             {
               "title": "National Park — Pokémon — défi avancé",
@@ -39524,14 +32313,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w19-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Interstellar — Cornfield Chase",
-        "objective": "Jouer « Interstellar — Cornfield Chase » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Transcription interactive — Interstellar : Cornfield Chase (intro, mesures 1–4)",
+        "objective": "Jouer fidèlement les quatre premières mesures de l’introduction : trois noires régulières par mesure, sans accélérer.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Compte 1-2-3 : la mesure est en 3/4.",
+          "La main droite répète Ré4 trois fois par mesure ; laisse la main gauche silencieuse.",
+          "Garde une pulsation parfaitement stable avant de poursuivre la partition fournie."
         ],
         "curriculum": {
           "reading": "Suivre deux lignes rythmiquement différentes",
@@ -39539,967 +32326,36 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Motif autonome main gauche"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Indépendance — pièce complète Skillora",
-          "tempo": 66,
+          "engine": "timeline-v3",
+          "title": "Cornfield Chase — intro mesures 1–4",
+          "tempo": 80,
           "staff": "grand",
-          "measuresPerSystem": 2,
+          "measuresPerSystem": 4,
           "timeline": {
-            "timeSignature": "4/4",
+            "timeSignature": "3/4",
             "measures": [
               {
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
                     "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
                     "duration": "q"
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
                     "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
                     "duration": "q"
                   },
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
                     "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
+                    "duration": "q"
                   }
                 ],
                 "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
                   {
                     "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "duration": "hd"
                   }
                 ]
               },
@@ -40508,68 +32364,23 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
+                    "duration": "q"
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
+                    "pitch": "D4",
+                    "duration": "q"
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "pitch": "D4",
+                    "duration": "q"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "rest",
+                    "duration": "hd"
                   }
                 ]
               },
@@ -40577,25 +32388,49 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
+                    "pitch": "D4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "rest",
+                    "duration": "hd"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D4",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "hd"
                   }
                 ]
               }
@@ -40604,16 +32439,17 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Interstellar — Cornfield Chase",
-          "sourceNote": "Partition fournie : Indépendance des mains et ostinatos.",
+          "sourceNote": "Partition fournie : transcription interactive fidèle de l’introduction, mesures 1–4.",
           "requiredSkills": [
             "Suivre deux lignes rythmiquement différentes",
             "Main droite en croches, main gauche en noires/blanches",
             "Motif autonome main gauche"
           ],
-          "scoreStatus": "partition-fournie-reference",
+          "scoreStatus": "transcribed-excerpt",
           "scoreImage": "assets/piano/scores/interstellar-cornfield-chase.png",
           "scoreImageAlt": "Partition fournie de Interstellar — Cornfield Chase",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "transcribed",
+          "transcribedMeasures": "1–4"
         }
       }
     ]
@@ -42460,13 +34296,11 @@ export const pianoTrainingWeeks = [
         "id": "w20-a5",
         "label": "Morceau / chant de la semaine",
         "title": "Partition réelle — Opening Theme — Detroit: Become Human",
-        "objective": "Jouer « Opening Theme — Detroit: Become Human » en utilisant la notion de la semaine et les acquis précédents.",
+        "objective": "Jouer les 2 premières mesures réellement transcrites du motif d’ouverture.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Main droite : garde les huit croches régulières.",
+          "Main gauche : maintiens la basse pendant toute la mesure.",
+          "Commence lentement puis augmente progressivement."
         ],
         "curriculum": {
           "reading": "Lecture à vue sur deux portées",
@@ -42474,759 +34308,80 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Positions proches et basse simple"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "À première vue — pièce complète Skillora",
-          "tempo": 64,
+          "engine": "timeline-v3",
+          "title": "Detroit: Become Human · ouverture · mesures 1 à 2",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "G",
+            "staves": [
+              {
+                "id": "treble",
+                "clef": "treble",
+                "hand": "right",
+                "label": "MD",
+                "keySignature": "G"
+              },
+              {
+                "id": "bass",
+                "clef": "bass",
+                "hand": "left",
+                "label": "MG",
+                "keySignature": "G"
+              }
+            ],
             "measures": [
               {
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "pitch": "E4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
+                    "pitch": "A3",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
+                    "pitch": "A3",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
+                    "duration": "8"
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
                     "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               },
@@ -43234,303 +34389,51 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
+                    "pitch": "D4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
+                    "pitch": "A3",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
+                    "pitch": "C4",
                     "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F3",
-                      "A3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
+                    "pitch": "A3",
+                    "duration": "8"
                   },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
                   {
                     "type": "note",
                     "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
+                    "duration": "8"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
+                    "type": "note",
+                    "pitch": "F#2",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
                   }
                 ]
               }
@@ -43539,16 +34442,16 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Opening Theme — Detroit: Become Human",
-          "sourceNote": "Partition fournie : Lecture continue et motifs répétés sur deux portées.",
+          "sourceNote": "Transcription interactive des deux premières mesures du motif d’ouverture à partir de la partition fournie.",
           "requiredSkills": [
             "Lecture à vue sur deux portées",
             "Valeurs mélangées sans arrêt",
             "Positions proches et basse simple"
           ],
-          "scoreStatus": "partition-fournie-reference",
+          "scoreStatus": "partition-fournie-transcrite",
           "scoreImage": "assets/piano/scores/detroit-opening-theme.png",
           "scoreImageAlt": "Partition fournie de Opening Theme — Detroit: Become Human",
-          "interactiveStatus": "preparation-technique",
+          "interactiveStatus": "transcribed",
           "bonusPieces": [
             {
               "title": "Never Ending Story — autre arrangement",
@@ -45363,14 +36266,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w21-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Edward Scissorhands — Main Theme",
-        "objective": "Jouer « Edward Scissorhands — Main Theme » en utilisant la notion de la semaine et les acquis précédents.",
+        "title": "Grille réelle — Edward Scissorhands · renversements",
+        "objective": "Travailler les renversements à partir des accords réellement imprimés sur la partition fournie.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Les accords Cm, G7, Ab et G7 sont ceux imprimés sur la partition fournie.",
+          "Les voicings du trainer sont pédagogiques : ils rapprochent les positions pour travailler les renversements.",
+          "La partition originale reste la référence pour l’arrangement exact."
         ],
         "curriculum": {
           "reading": "Reconnaître un accord même quand sa fondamentale n’est pas en bas",
@@ -45378,883 +36279,118 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Renversements pour limiter les déplacements"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Voix proches — pièce complète Skillora",
-          "tempo": 68,
+          "engine": "timeline-v3",
+          "title": "Edward Scissorhands · grille de renversements",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
-            "timeSignature": "4/4",
+            "timeSignature": "3/4",
+            "keySignature": "Eb",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "C5",
+                      "Eb5"
+                    ],
+                    "duration": "hd",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "hd",
+                    "finger": 5
                   }
                 ]
               },
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
+                    "type": "chord",
+                    "pitches": [
+                      "F4",
+                      "G4",
+                      "B4"
+                    ],
+                    "duration": "hd",
+                    "fingers": [
+                      1,
+                      2,
+                      5
+                    ]
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "hd",
+                    "finger": 5
                   }
                 ]
               },
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
+                    "type": "chord",
+                    "pitches": [
+                      "Eb4",
+                      "Ab4",
+                      "C5"
+                    ],
+                    "duration": "hd",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "note",
+                    "pitch": "Ab2",
+                    "duration": "hd",
+                    "finger": 5
                   }
                 ]
               },
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
+                    "type": "chord",
+                    "pitches": [
+                      "D4",
+                      "F4",
+                      "G4",
+                      "B4"
+                    ],
+                    "duration": "hd",
+                    "fingers": [
+                      1,
+                      2,
+                      3,
+                      5
+                    ]
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
+                    "pitch": "G2",
+                    "duration": "hd",
                     "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               }
@@ -46263,7 +36399,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Edward Scissorhands — Main Theme",
-          "sourceNote": "Partition fournie : Renversements et positions d’accords rapprochées.",
+          "sourceNote": "Accords Cm, G7, Ab et G7 relevés sur la partition fournie. Les renversements du trainer sont des voicings pédagogiques, pas une transcription note à note de l’arrangement.",
           "requiredSkills": [
             "Reconnaître un accord même quand sa fondamentale n’est pas en bas",
             "Accords sur blanches et noires",
@@ -46272,7 +36408,7 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/edward-scissorhands.png",
           "scoreImageAlt": "Partition fournie de Edward Scissorhands — Main Theme",
-          "interactiveStatus": "preparation-technique"
+          "interactiveStatus": "harmonic-study-from-score"
         }
       }
     ]
@@ -48417,13 +38553,11 @@ export const pianoTrainingWeeks = [
         "id": "w22-a5",
         "label": "Morceau / chant de la semaine",
         "title": "Partition réelle — Davy Jones — Pirates of the Caribbean",
-        "objective": "Jouer « Davy Jones — Pirates of the Caribbean » en utilisant la notion de la semaine et les acquis précédents.",
+        "objective": "Jouer les 2 premières mesures de l’Andante réellement transcrites.",
         "instructions": [
-          "Fais d'abord la préparation interactive ci-dessous.",
-          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
-          "Main droite seule, puis main gauche seule, puis les deux mains.",
-          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
-          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
+          "Compte 1-2-3 régulièrement.",
+          "Main gauche : tiens chaque blanche pointée pendant les 3 temps.",
+          "Main droite : garde la mélodie souple au-dessus de la note tenue."
         ],
         "curriculum": {
           "reading": "Lire la mélodie sans dépendre du motif de basse",
@@ -48431,1063 +38565,76 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Basse + accord"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Basse et accords — pièce complète Skillora",
-          "tempo": 70,
-          "staff": "grand",
+          "engine": "timeline-v3",
+          "title": "Davy Jones · Andante · mesures 1 à 2",
+          "tempo": 72,
+          "staff": "custom",
           "measuresPerSystem": 2,
           "timeline": {
-            "timeSignature": "4/4",
+            "timeSignature": "3/4",
+            "keySignature": "F",
+            "staves": [
+              {
+                "id": "upper",
+                "clef": "treble",
+                "hand": "right",
+                "label": "MD",
+                "keySignature": "F"
+              },
+              {
+                "id": "lower",
+                "clef": "treble",
+                "hand": "left",
+                "label": "MG",
+                "keySignature": "F"
+              }
+            ],
             "measures": [
               {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
+                "upper": [
                   {
                     "type": "note",
                     "pitch": "C5",
                     "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
                     "finger": 2
                   },
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
+                    "pitch": "E5",
                     "duration": "q",
                     "finger": 3
                   }
                 ],
-                "bass": [
+                "lower": [
                   {
                     "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
+                    "pitch": "D5",
+                    "duration": "hd",
                     "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               },
               {
-                "treble": [
+                "upper": [
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
+                    "pitch": "F5",
                     "duration": "h",
                     "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   },
                   {
                     "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "G5",
                     "duration": "q",
                     "finger": 5
                   }
                 ],
-                "bass": [
+                "lower": [
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
+                    "pitch": "D5",
+                    "duration": "hd",
                     "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "A2",
-                      "C3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
                   }
                 ]
               }
@@ -49496,16 +38643,16 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Davy Jones — Pirates of the Caribbean",
-          "sourceNote": "Partition fournie : Accompagnement main gauche développé et changements de texture.",
+          "sourceNote": "Transcription interactive des deux premières mesures de l’Andante à partir de la partition fournie.",
           "requiredSkills": [
             "Lire la mélodie sans dépendre du motif de basse",
             "Basse sur 1 et accords sur les temps suivants",
             "Basse + accord"
           ],
-          "scoreStatus": "partition-fournie-reference",
+          "scoreStatus": "partition-fournie-transcrite",
           "scoreImage": "assets/piano/scores/davy-jones.png",
           "scoreImageAlt": "Partition fournie de Davy Jones — Pirates of the Caribbean",
-          "interactiveStatus": "preparation-technique",
+          "interactiveStatus": "transcribed",
           "bonusPieces": [
             {
               "title": "La Cumparsita — travail d’articulation",
@@ -51489,7 +40636,9 @@ export const pianoTrainingWeeks = [
                   }
                 ]
               }
-            ]
+            ],
+            "swing": true,
+            "swingRatio": 2
           }
         }
       },
@@ -52576,7 +41725,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Tout le monde veut devenir un cat",
-          "sourceNote": "Partition fournie : Phrasé, swing et coordination souple des deux mains.",
+          "sourceNote": "Partition fournie marquée Swing. Le moteur prend désormais en charge la lecture swing des paires de croches ; la transcription note à note reste volontairement différée tant qu’elle n’est pas vérifiée mesure par mesure.",
           "requiredSkills": [
             "Repérer les fins de phrase",
             "Silences expressifs et notes longues",
@@ -55252,7 +44401,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "The Legend of Zelda Main Theme — Easy",
-          "sourceNote": "Partition fournie : Altérations, accords, triolets et lecture plus avancée.",
+          "sourceNote": "Partition fournie. Le moteur v3.2 prend désormais en charge les triolets 3:2 ; la transcription de Zelda sera faite mesure par mesure dans la prochaine wave.",
           "requiredSkills": [
             "Lire Fa♯ en Sol majeur et Si♭ en Fa majeur",
             "Rythmes mélangés avec altérations",
@@ -56976,12 +46125,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w25-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Ta présence, mes délices",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Ta présence, mes délices ».",
+        "title": "Grille réelle — Ta présence, mes délices",
+        "objective": "Enchaîner les accords réellement indiqués sur la grille fournie, avec des voicings simples et proches.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "La source fournie est une grille d’accords, pas une partition mélodique.",
+          "Chaque accord est donc tenu une mesure dans le trainer pour travailler les changements.",
+          "Le rythme exact du chant n’est pas inventé : utilise la grille fournie comme référence."
         ],
         "curriculum": {
           "reading": "Lire Am, Dm, Em et leurs notes",
@@ -56989,823 +46138,428 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Accords mineurs plaqués et brisés"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Ta présence, mes délices »",
-          "tempo": 66,
+          "engine": "timeline-v3",
+          "title": "Ta présence, mes délices · grille d’accords",
+          "tempo": 56,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "A",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "qd",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
                     "type": "chord",
                     "pitches": [
-                      "A2",
-                      "C3",
-                      "E3"
+                      "F#3",
+                      "A3",
+                      "C#4"
                     ],
                     "duration": "w",
                     "fingers": [
-                      5,
+                      1,
                       3,
-                      1
+                      5
                     ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "D4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "C#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "D4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "C#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "D4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G#3",
+                      "C#4",
+                      "E#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "C#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "A3",
+                      "C#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "G#3",
+                      "B3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "C#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "A3",
+                      "C#4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "D4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "G#3",
+                      "B3"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "B2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G#3",
+                      "C#4",
+                      "E4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C#2",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -57814,7 +46568,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Ta présence, mes délices",
-          "sourceNote": "La grille d’accords a été fournie. Le trainer contient une étude complète sur les mêmes compétences ; la transcription exacte de la mélodie n’est pas présentée comme faite tant qu’elle n’a pas été encodée note par note.",
+          "sourceNote": "Grille harmonique issue de l’image fournie. Le trainer reproduit l’ordre des accords imprimés sous forme de mesures tenues ; il ne prétend pas transcrire une mélodie absente de la source.",
           "requiredSkills": [
             "Lire Am, Dm, Em et leurs notes",
             "Rythmes d’accords mineurs",
@@ -57822,7 +46576,8 @@ export const pianoTrainingWeeks = [
           ],
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/ta-presence-mes-delices.png",
-          "scoreImageAlt": "Partition fournie de Ta présence, mes délices"
+          "scoreImageAlt": "Partition fournie de Ta présence, mes délices",
+          "interactiveStatus": "chord-chart-study"
         }
       }
     ]
@@ -59482,12 +48237,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w26-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Et je chante car tu es bon",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Et je chante car tu es bon ».",
+        "title": "Grille réelle — Et je chante car tu es bon",
+        "objective": "Enchaîner les accords réellement indiqués sur la partition fournie, sans inventer la mélodie.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Joue d’abord les accords seuls, une mesure chacun.",
+          "Garde les yeux sur la partition fournie pour la mélodie.",
+          "Cette étape interactive travaille l’harmonie imprimée ; elle ne remplace pas la ligne mélodique de la source."
         ],
         "curriculum": {
           "reading": "Lire en continu sans regarder le clavier",
@@ -59495,810 +48250,38 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Basses doubles / octaves simples"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Et je chante car tu es bon »",
-          "tempo": 68,
+          "engine": "timeline-v3",
+          "title": "Tu es bon · grille harmonique",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "G",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
+                    "type": "chord",
+                    "pitches": [
+                      "G3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "C4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "F2",
-                      "F3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "G3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
+                    "pitch": "G3",
                     "duration": "w",
-                    "finger": 1
+                    "finger": 5
                   }
-                ],
-                "bass": [
+                ]
+              },
+              {
+                "treble": [
                   {
                     "type": "chord",
                     "pitches": [
@@ -60306,12 +48289,141 @@ export const pianoTrainingWeeks = [
                       "E3",
                       "G3"
                     ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "G3",
+                      "B3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#3",
+                      "A3",
+                      "D4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "D3",
+                      "F#3",
+                      "A3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "C3",
+                      "E3",
+                      "G3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G3",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -60320,20 +48432,23 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Et je chante car tu es bon",
-          "sourceNote": "Partition fournie dans la conversation. Cette étape travaille la tonalité, les accords et l’accompagnement requis sans prétendre reproduire une transcription non vérifiée.",
+          "sourceNote": "Étude harmonique construite uniquement à partir des symboles d’accords visibles sur la partition fournie. La mélodie n’est pas prétendue transcrite.",
           "requiredSkills": [
             "Lire en continu sans regarder le clavier",
             "Pulsation continue malgré les déplacements",
             "Basses doubles / octaves simples"
           ],
-          "scoreStatus": "provided-reference",
+          "scoreStatus": "partition-fournie-reference",
           "bonusPieces": [
             {
               "title": "Quand j’ai vu tes mains — chant bonus",
               "scoreImage": "assets/piano/scores/quand-jai-vu-tes-mains.png",
               "scoreImageAlt": "Partition bonus Quand j’ai vu tes mains"
             }
-          ]
+          ],
+          "scoreImage": "assets/piano/scores/tu-es-bon.png",
+          "scoreImageAlt": "Partition fournie de Tu es bon / Et je chante car tu es bon",
+          "interactiveStatus": "chord-chart-study"
         }
       }
     ]
@@ -62153,12 +50268,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w27-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Venez le célébrer",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Venez le célébrer ».",
+        "title": "Grille réelle — Venez le célébrer",
+        "objective": "Travailler l’enchaînement harmonique imprimé avant de jouer la partition complète.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Joue un accord par mesure.",
+          "Repère Sol, Sim, Mim, Do, Lam, Ré4 et Ré sur la partition.",
+          "Puis joue directement la partition fournie."
         ],
         "curriculum": {
           "reading": "Lire et reconnaître cinq notes sûres",
@@ -62166,823 +50281,180 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Boucle d’accords simple"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Venez le célébrer »",
-          "tempo": 70,
+          "engine": "timeline-v3",
+          "title": "Venez le célébrer · grille imprimée",
+          "tempo": 68,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "G",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "type": "chord",
+                    "pitches": [
+                      "G3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w"
                   }
                 ],
                 "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
                   {
                     "type": "note",
                     "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
                     "duration": "w",
                     "finger": 5
                   }
-                ],
-                "bass": [
+                ]
+              },
+              {
+                "treble": [
                   {
                     "type": "chord",
                     "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
+                      "B3",
+                      "D4",
+                      "F#4"
                     ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "B3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "G3",
+                      "B3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "C3",
+                      "E3",
+                      "G3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A3",
+                      "C4",
+                      "E4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "D3",
+                      "G3",
+                      "A3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "D3",
+                      "F#3",
+                      "A3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G3",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -62991,13 +50463,16 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Venez le célébrer",
-          "sourceNote": "Partition piano fournie. L’étude prépare Sol majeur, accords et accompagnement ; le chant fourni reste la référence musicale.",
+          "sourceNote": "Grille interactive basée sur les symboles d’accords imprimés de la partition fournie. La partition complète reste la référence mélodique et rythmique.",
           "requiredSkills": [
             "Lire et reconnaître cinq notes sûres",
             "Improviser sans perdre la pulsation",
             "Boucle d’accords simple"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/venez-le-celebrer.png",
+          "scoreImageAlt": "Partition fournie de Venez le célébrer",
+          "interactiveStatus": "chord-chart-study"
         }
       }
     ]
@@ -64769,12 +52244,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w28-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Dieu est une fête aujourd’hui",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Dieu est une fête aujourd’hui ».",
+        "title": "Grille réelle — Dieu est une fête aujourd’hui",
+        "objective": "Jouer les accords enrichis visibles sur la feuille fournie : Em, D, Am7, G, B7 et C.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Travaille chaque accord lentement.",
+          "Écoute particulièrement Am7 et B7.",
+          "Utilise ensuite la partition fournie pour la mélodie."
         ],
         "curriculum": {
           "reading": "Lire G7, Am7, Em7 et Cmaj7",
@@ -64782,9 +52257,9 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Accords de 7e plaqués puis brisés"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Dieu est une fête aujourd’hui »",
-          "tempo": 66,
+          "engine": "timeline-v3",
+          "title": "Dieu est une fête aujourd’hui · accords de la source",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -64793,799 +52268,112 @@ export const pianoTrainingWeeks = [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "qd",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "type": "chord",
+                    "pitches": [
+                      "E3",
+                      "G3",
+                      "B3"
+                    ],
+                    "duration": "w"
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
                     "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "qd",
-                    "finger": 1
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
                     "duration": "w",
-                    "finger": 1
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "D3",
+                      "F#3",
+                      "A3"
+                    ],
+                    "duration": "w"
                   }
                 ],
                 "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A3",
+                      "C4",
+                      "E4",
+                      "G4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G3",
+                      "B3",
+                      "D4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "B2",
+                      "D#3",
+                      "F#3",
+                      "A3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "B2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
                   {
                     "type": "chord",
                     "pitches": [
@@ -65593,12 +52381,59 @@ export const pianoTrainingWeeks = [
                       "E3",
                       "G3"
                     ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
                     "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A3",
+                      "C4",
+                      "E4",
+                      "G4"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "B2",
+                      "D#3",
+                      "F#3",
+                      "A3"
+                    ],
+                    "duration": "w"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "B2",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -65607,20 +52442,23 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Dieu est une fête aujourd’hui",
-          "sourceNote": "Deux partitions ont été fournies. L’étude de cette semaine prépare notamment les accords enrichis ; la partition fournie reste la référence du chant.",
+          "sourceNote": "Les accords interactifs proviennent des symboles imprimés sur la feuille simple fournie. Une version piano plus complète est conservée en bonus.",
           "requiredSkills": [
             "Lire G7, Am7, Em7 et Cmaj7",
             "Accords enrichis sur rythmes réguliers",
             "Accords de 7e plaqués puis brisés"
           ],
-          "scoreStatus": "provided-reference",
+          "scoreStatus": "partition-fournie-reference",
           "bonusPieces": [
             {
-              "title": "Blessed Be Your Name — chant bonus",
-              "scoreImage": "assets/piano/scores/blessed-be-your-name.png",
-              "scoreImageAlt": "Partition bonus Blessed Be Your Name"
+              "title": "Dieu est une fête aujourd’hui — arrangement piano fourni",
+              "scoreImage": "assets/piano/scores/dieu-est-une-fete-piano.png",
+              "scoreImageAlt": "Arrangement piano fourni de Dieu est une fête aujourd’hui"
             }
-          ]
+          ],
+          "scoreImage": "assets/piano/scores/dieu-est-une-fete-simple.png",
+          "scoreImageAlt": "Partition simple fournie de Dieu est une fête aujourd’hui",
+          "interactiveStatus": "chord-chart-study"
         }
       }
     ]
@@ -67916,12 +54754,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w29-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Je chanterai l’Éternel tant que je vivrai",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Je chanterai l’Éternel tant que je vivrai ».",
+        "title": "Transcription réelle — Je chanterai l’Éternel · mesures 1 à 4",
+        "objective": "Jouer la mélodie réellement transcrite des quatre premières mesures au tempo progressif.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Commence main droite seule à 50 %.",
+          "Respecte les huit croches de la première mesure.",
+          "La main gauche reste volontairement muette dans le trainer : elle doit être travaillée sur la partition fournie plutôt que reconstruite approximativement."
         ],
         "curriculum": {
           "reading": "Lire plus vite sans deviner",
@@ -67929,1157 +54767,62 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Motifs rapides mais détendus"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Je chanterai l’Éternel »",
-          "tempo": 76,
+          "engine": "timeline-v3",
+          "title": "Je chanterai l’Éternel · mélodie mesures 1 à 4",
+          "tempo": 100,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "F",
             "measures": [
               {
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
                     "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
                     "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
+                    "pitch": "F4",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
+                    "duration": "8"
                   },
                   {
                     "type": "note",
                     "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "Bb4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "8"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
+                    "type": "rest",
+                    "duration": "w"
                   }
                 ]
               },
@@ -69087,25 +54830,94 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C5",
-                    "duration": "w",
-                    "finger": 1
+                    "pitch": "G4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "h"
                   }
                 ],
                 "bass": [
                   {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
+                    "type": "rest",
+                    "duration": "w"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F4",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C4",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "w"
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "h"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "Bb4",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "rest",
+                    "duration": "w"
                   }
                 ]
               }
@@ -69114,20 +54926,23 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Je chanterai l’Éternel tant que je vivrai",
-          "sourceNote": "Partition fournie. L’étude complète travaille la précision et le tempo avant l’exécution de la partition réelle.",
+          "sourceNote": "Les quatre premières mesures de la mélodie sont transcrites dans le trainer. La main gauche reste volontairement sur la partition source jusqu’à transcription certaine.",
           "requiredSkills": [
             "Lire plus vite sans deviner",
             "Croches régulières à tempo progressif",
             "Motifs rapides mais détendus"
           ],
-          "scoreStatus": "provided-reference",
+          "scoreStatus": "partition-fournie-partiellement-transcrite",
           "bonusPieces": [
             {
               "title": "Quand j'ai vu tes mains — bonus chant",
               "scoreImage": "assets/piano/scores/quand-jai-vu-tes-mains.png",
               "scoreImageAlt": "Partition bonus : Quand j'ai vu tes mains — bonus chant"
             }
-          ]
+          ],
+          "scoreImage": "assets/piano/scores/je-chanterai-leternel.png",
+          "scoreImageAlt": "Partition piano fournie de Je chanterai l’Éternel",
+          "interactiveStatus": "transcribed-melody"
         }
       }
     ]
@@ -71331,12 +57146,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w30-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Yahweh se manifestera",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Yahweh se manifestera ».",
+        "title": "Partition réelle + étude harmonique — Yahweh se manifestera",
+        "objective": "Lire la partition fournie puis enchaîner les accords réellement indiqués dans l’arrangement.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Repère les changements d’accords sur la partition fournie.",
+          "Joue l’étude harmonique sans coupure entre les mesures.",
+          "Reviens ensuite à la partition réelle pour travailler le morceau."
         ],
         "curriculum": {
           "reading": "Lire mélodie, accords et arpèges dans la même pièce",
@@ -71344,1183 +57159,232 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Basse, accords puis arpèges"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Yahweh se manifestera »",
+          "engine": "timeline-v3",
+          "title": "Yahweh se manifestera · étude harmonique",
           "tempo": 70,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "G",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
                     "type": "chord",
                     "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
+                      "E4",
+                      "G4",
+                      "C5"
                     ],
                     "duration": "w",
                     "fingers": [
-                      5,
+                      1,
                       3,
-                      1
-                    ]
+                      5
+                    ],
+                    "chordName": "C"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#4",
+                      "A4",
+                      "D5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "D"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#4",
+                      "B4",
+                      "D5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "Bm"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "B2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "B4",
+                      "D5",
+                      "E5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      3,
+                      5
+                    ],
+                    "chordName": "Em7"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "E4",
+                      "G4",
+                      "C5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "C"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#4",
+                      "A4",
+                      "D5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "D"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#4",
+                      "B4",
+                      "D5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "Bm"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "B2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "B4",
+                      "D5",
+                      "E5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      3,
+                      5
+                    ],
+                    "chordName": "Em7"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -72529,20 +57393,23 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Yahweh se manifestera",
-          "sourceNote": "Partitions fournies. L’étude complète prépare les changements de texture et les accords du niveau intermédiaire.",
+          "sourceNote": "La partition fournie reste la référence. Le trainer est une étude harmonique fondée sur les accords visibles dans l’arrangement, pas une transcription complète de la mélodie.",
           "requiredSkills": [
             "Lire mélodie, accords et arpèges dans la même pièce",
             "Rythmes variés sur plusieurs phrases",
             "Basse, accords puis arpèges"
           ],
-          "scoreStatus": "provided-reference",
+          "scoreStatus": "partition-fournie-reference",
           "bonusPieces": [
             {
               "title": "Blessed Be Your Name — bonus",
               "scoreImage": "assets/piano/scores/blessed-be-your-name.png",
               "scoreImageAlt": "Partition bonus : Blessed Be Your Name — bonus"
             }
-          ]
+          ],
+          "scoreImage": "assets/piano/scores/yahweh-se-manifestera.png",
+          "scoreImageAlt": "Partition fournie de Yahweh se manifestera",
+          "interactiveStatus": "harmony-from-score"
         }
       }
     ]
@@ -74390,12 +59257,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w31-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Nous croyons",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Nous croyons ».",
+        "title": "Partition réelle + étude harmonique — Nous croyons",
+        "objective": "Enchaîner les accords imprimés sur la partition avec des positions proches.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Repère Fa♯ mineur et Mi sur la partition.",
+          "Travaille les accords du trainer avec le moins de déplacement possible.",
+          "Reviens ensuite à la mélodie de la partition réelle."
         ],
         "curriculum": {
           "reading": "Lire accords enrichis et altérations",
@@ -74403,823 +59270,258 @@ export const pianoTrainingWeeks = [
           "accompaniment": "sus4, maj7, m7 et transposition"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Nous croyons »",
-          "tempo": 68,
+          "engine": "timeline-v3",
+          "title": "Nous croyons · accords de la partition",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "A",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "qd",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
                     "type": "chord",
                     "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
+                      "F#4",
+                      "A4",
+                      "C#5"
                     ],
                     "duration": "w",
                     "fingers": [
-                      5,
+                      1,
                       3,
-                      1
-                    ]
+                      5
+                    ],
+                    "chordName": "F#m"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "B4",
+                      "E5"
+                    ],
+                    "duration": "h",
+                    "fingers": [
+                      1,
+                      2,
+                      5
+                    ],
+                    "chordName": "Esus4"
+                  },
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G#4",
+                      "B4",
+                      "E5"
+                    ],
+                    "duration": "h",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "E"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#4",
+                      "A4",
+                      "C#5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "F#m"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G#4",
+                      "B4",
+                      "E5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "E"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "C#5",
+                      "E5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "A"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "D5",
+                      "E5"
+                    ],
+                    "duration": "h",
+                    "fingers": [
+                      1,
+                      4,
+                      5
+                    ],
+                    "chordName": "Asus4"
+                  },
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "C#5",
+                      "E5"
+                    ],
+                    "duration": "h",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "A"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "F#4",
+                      "A4",
+                      "C#5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "F#m"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F#2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G#4",
+                      "B4",
+                      "E5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "E"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "E3",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -75228,13 +59530,16 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Nous croyons",
-          "sourceNote": "Partition fournie. L’étude travaille transposition, altérations et accords enrichis avant la partition réelle.",
+          "sourceNote": "Les accords du trainer viennent des symboles imprimés sur la partition fournie (Fa♯m, Mi4/Mi, La4/La…). La mélodie originale reste lue sur la partition.",
           "requiredSkills": [
             "Lire accords enrichis et altérations",
             "Même motif dans plusieurs tonalités",
             "sus4, maj7, m7 et transposition"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/nous-croyons.png",
+          "scoreImageAlt": "Partition fournie de Nous croyons",
+          "interactiveStatus": "harmony-from-score"
         }
       }
     ]
@@ -77422,12 +61727,12 @@ export const pianoTrainingWeeks = [
       {
         "id": "w32-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Partition réelle — Oh ! viens et vois",
-        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Oh ! viens et vois ».",
+        "title": "Projet final — Oh ! viens et vois",
+        "objective": "Utiliser la partition piano complète fournie comme projet final et préparer ses principaux accords enrichis.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Ouvre les deux pages de la partition fournie.",
+          "Travaille les accords enrichis du trainer lentement.",
+          "Joue ensuite la partition réelle par groupes de 4 mesures puis assemble les sections."
         ],
         "curriculum": {
           "reading": "Lecture autonome d’un arrangement complet",
@@ -77435,1183 +61740,238 @@ export const pianoTrainingWeeks = [
           "accompaniment": "Accords enrichis, arpèges et changements de texture"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Étude complète avant « Oh ! viens et vois »",
+          "engine": "timeline-v3",
+          "title": "Oh ! viens et vois · préparation harmonique",
           "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
             "timeSignature": "4/4",
+            "keySignature": "F",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "qd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "8",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
                     "type": "chord",
                     "pitches": [
-                      "C3",
-                      "E3",
-                      "G3"
+                      "A4",
+                      "C5",
+                      "F5"
                     ],
                     "duration": "w",
                     "fingers": [
-                      5,
+                      1,
                       3,
-                      1
-                    ]
+                      5
+                    ],
+                    "chordName": "F"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "Bb4",
+                      "D5",
+                      "F5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      4,
+                      5
+                    ],
+                    "chordName": "Gm7"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "C5",
+                      "E5",
+                      "Bb5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      3,
+                      5
+                    ],
+                    "chordName": "C7"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "C5",
+                      "E5",
+                      "F5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      3,
+                      5
+                    ],
+                    "chordName": "Fmaj7"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "Bb4",
+                      "D5",
+                      "F5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      4,
+                      5
+                    ],
+                    "chordName": "Bbmaj7"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "Bb2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G4",
+                      "Bb4",
+                      "D5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "Gm"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "G#4",
+                      "B4",
+                      "C#5",
+                      "E5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      2,
+                      3,
+                      5
+                    ],
+                    "chordName": "A9"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "A2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "chord",
+                    "pitches": [
+                      "A4",
+                      "D5",
+                      "F5"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "Dm"
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "D3",
+                    "duration": "w",
+                    "finger": 5
                   }
                 ]
               }
@@ -78620,13 +61980,23 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Oh ! viens et vois",
-          "sourceNote": "Partition PDF fournie. L’étude finale prépare les accords enrichis et les changements de texture ; la partition fournie reste le projet final réel.",
+          "sourceNote": "Projet final basé sur la partition piano de deux pages fournie. Le trainer prépare les accords enrichis visibles dans l’arrangement ; la partition reste la source exacte pour les voix et les rythmes.",
           "requiredSkills": [
             "Lecture autonome d’un arrangement complet",
             "Valeurs mélangées sur une pièce longue",
             "Accords enrichis, arpèges et changements de texture"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/oh-viens-et-vois-page-1.png",
+          "scoreImageAlt": "Oh ! viens et vois — partition fournie — page 1",
+          "interactiveStatus": "harmony-from-score",
+          "bonusPieces": [
+            {
+              "title": "Oh ! viens et vois — page 2",
+              "scoreImage": "assets/piano/scores/oh-viens-et-vois-page-2.png",
+              "scoreImageAlt": "Oh ! viens et vois — partition fournie — page 2"
+            }
+          ]
         }
       }
     ]

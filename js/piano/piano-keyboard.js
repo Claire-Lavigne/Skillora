@@ -168,6 +168,12 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
   }
 
   let releaseTimer = null;
+  const retriggerTimers = new Set();
+
+  function clearRetriggerTimers() {
+    retriggerTimers.forEach(timer => window.clearTimeout(timer));
+    retriggerTimers.clear();
+  }
 
   function removePlaying() {
     keyboard.querySelectorAll(".is-playing").forEach(key => {
@@ -199,19 +205,29 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
   }
 
   function setPlaying(notesToPlay = []) {
+    clearRetriggerTimers();
     animate(notesToPlay, 0, true);
   }
 
-  function retrigger(notesToReplay = []) {
+  function retrigger(notesToReplay = [], releaseMs = 55) {
     const list = (Array.isArray(notesToReplay) ? notesToReplay : [notesToReplay])
       .map(canonicalNote);
 
+    // Pour une note répétée, le relâchement doit être visible à l'œil.
+    // On retire la touche immédiatement puis on la réactive quelques
+    // millisecondes plus tard. Stop/étape suivante annulent ce timer.
     list.forEach(note => {
       const key = keyFor(note);
       if (!key) return;
-      key.classList.remove('is-playing');
-      void key.offsetWidth;
-      key.classList.add('is-playing');
+
+      key.classList.remove("is-playing");
+
+      const timer = window.setTimeout(() => {
+        retriggerTimers.delete(timer);
+        key.classList.add("is-playing");
+      }, releaseMs);
+
+      retriggerTimers.add(timer);
     });
   }
 
@@ -221,6 +237,7 @@ export function createPianoKeyboard(container, { notes = [], minWhiteKeys = 7 } 
       releaseTimer = null;
     }
 
+    clearRetriggerTimers();
     removePlaying();
   }
 

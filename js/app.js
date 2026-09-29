@@ -111,6 +111,14 @@ function mountCourseTools(course) {
 }
 
 
+
+function isReferenceOnlyPianoStage(stage) {
+  return Boolean(
+    stage?.song?.scoreImage &&
+    stage?.song?.interactiveStatus === "preparation-technique"
+  );
+}
+
 function makePianoStage(stage, weekIndex, stageIndex) {
   const card = document.createElement("article");
   card.className = "piano-learning-stage";
@@ -175,7 +183,13 @@ function makePianoStage(stage, weekIndex, stageIndex) {
       </div>
     ` : ""}
 
-    <div class="piano-stage-trainer-slot"></div>
+    ${
+      isReferenceOnlyPianoStage(stage)
+        ? `<div class="piano-reference-only-note">
+             La préparation interactive est à l’étape précédente. Ici, joue la partition fournie ci-dessus.
+           </div>`
+        : `<div class="piano-stage-trainer-slot"></div>`
+    }
   `;
 
   return card;
@@ -199,7 +213,7 @@ function mountPianoWeekTools(weekIndex) {
     const slot = card.querySelector(".piano-stage-trainer-slot");
     const stage = stages[stageIndex];
 
-    if (slot && stage?.practice) {
+    if (slot && stage?.practice && !isReferenceOnlyPianoStage(stage)) {
       pianoStageTrainers.push(
         mountPianoStageTrainer(slot, stage)
       );
