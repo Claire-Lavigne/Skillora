@@ -129,96 +129,155 @@ function previousPianoProgressId(stage, fallbackWeekIndex, fallbackStageIndex) {
   return `pw${Number(match[1]) - 1}a${Number(match[2]) - 1}`;
 }
 
-function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null) {
-  const card = document.createElement("article");
-  card.className = "piano-learning-stage";
+function songSectionNames(title = "") {
+  const key = title.toLowerCase();
+  const vocal = [
+    "mon secours est en toi", "ta présence", "dieu est une fête", "nous croyons",
+    "tu es bon", "je chante", "venez le célébrer", "je chanterai", "yahweh",
+    "oh ! viens et vois", "blessed be your name", "broken vessels", "quand j’ai vu tes mains"
+  ].some(name => key.includes(name));
+
+  if (key.includes("mon secours est en toi")) return ["Intro", "Couplet 1", "Refrain", "Couplets 2–3", "Final"];
+  if (key.includes("ta présence")) return ["Couplet 1", "Refrain", "Couplet 2", "Refrain final"];
+  if (key.includes("nous croyons")) return ["Couplet", "Refrain", "Partie 2", "Final"];
+  if (key.includes("yahweh")) return ["Introduction", "Partie 1", "Montée", "Partie 2", "Final"];
+  if (key.includes("oh ! viens et vois")) return ["Introduction", "Partie 1", "Refrain", "Partie 2", "Final"];
+  if (vocal) return ["Introduction", "Couplet", "Refrain", "Partie 2", "Final"];
+  return ["Introduction", "Partie A", "Partie B", "Reprise", "Final"];
+}
+
+function splitPracticeIntoParts(stage, targetSongTitle = "") {
+  const activity = stage?.practice;
+  const measures = activity?.timeline?.measures || [];
+  if (!measures.length) return [];
+
+  const desiredNames = songSectionNames(targetSongTitle || stage.title || "");
+  const partCount = Math.min(desiredNames.length, Math.max(1, Math.ceil(measures.length / 2)));
+  const names = desiredNames.slice(0, partCount);
+  const baseSize = Math.floor(measures.length / partCount);
+  const remainder = measures.length % partCount;
+  let cursor = 0;
+
+  return names.map((name, index) => {
+    const size = baseSize + (index < remainder ? 1 : 0);
+    const slice = measures.slice(cursor, cursor + size);
+    const first = cursor + 1;
+    const last = cursor + size;
+    cursor += size;
+
+    return {
+      label:name,
+      activity:{
+        ...activity,
+        title:`${targetSongTitle || activity.title || "Morceau"} · ${name}`,
+        sourceMeasures:`mesures ${first}–${last}`,
+        timeline:{ ...activity.timeline, measures:slice }
+      }
+    };
+  });
+}
+
+function stageSummaryTitle(stage) {
+  if (stage.label === "Leçon") return stage.title.replace(/^Comprendre\s*[—-]\s*/i, "");
+  if (stage.label === "Dextérité") return stage.title.replace(/^Dextérité\s*(et\s*doigtés)?/i, "").replace(/^\s*[—-]?\s*/, "") || "Technique des doigts";
+  if (stage.label === "Exercice préparatoire") return "Préparation technique";
+  if (stage.label === "Préparation de la partition") return stage.title.replace(/^Préparer\s*/i, "");
+  if (stage.label === "Morceau") return stage.song?.title || stage.title;
+  return stage.title;
+}
+
+function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage = null) {
+  const card = document.createElement("details");
+  card.className = "piano-learning-stage piano-learning-stage--accordion";
   card.dataset.pianoStage = stageIndex;
+  card.open = stageIndex === 0;
 
   const progressId = pianoProgressId(stage, weekIndex, stageIndex);
-
-  const instructions = (stage.instructions || [])
-    .map(text => `<li>${safeLink(text)}</li>`)
-    .join("");
-
   const allBonusPieces = (stage.song?.bonusPieces || []).filter(piece => piece?.scoreImage);
   const continuationPages = allBonusPieces.filter(piece => /page\s*\d+/i.test(`${piece.title || ""} ${piece.scoreImageAlt || ""}`));
   const extraBonusPieces = allBonusPieces.filter(piece => !continuationPages.includes(piece));
   const scorePages = stage.song?.scoreImage
-    ? [
-        {
-          title: stage.song.scoreImageAlt || stage.song.title || stage.title || "Partition",
-          scoreImage: stage.song.scoreImage,
-          scoreImageAlt: stage.song.scoreImageAlt || `Partition de ${stage.song.title || stage.title}`
-        },
-        ...continuationPages
-      ]
+    ? [{
+        title: stage.song.scoreImageAlt || stage.song.title || stage.title || "Partition",
+        scoreImage: stage.song.scoreImage,
+        scoreImageAlt: stage.song.scoreImageAlt || `Partition de ${stage.song.title || stage.title}`
+      }, ...continuationPages]
     : [];
 
-  const displayTitle = stage.title;
-  const displayObjective = stage.objective;
-  const interactiveAuditLabel = stage.song?.sourceIsCanonical && stage.song?.auditStatus !== "ok"
-    ? "Exercice préparatoire"
-    : (stage.song?.scoreImage ? "Transcription interactive" : "Partition");
+  const targetSongTitle = songStage?.song?.title || stage.song?.title || "";
+  const practiceParts = stage.label === "Préparation de la partition"
+    ? splitPracticeIntoParts(stage, targetSongTitle)
+    : [];
+  const isLesson = stage.label === "Leçon";
 
   card.innerHTML = `
-    <div class="piano-learning-stage__head">
-      <div>
+    <summary class="piano-stage-summary">
+      <span class="piano-stage-summary__text">
         <span class="piano-learning-stage__label">${stage.label}</span>
-        <h3>${displayTitle}</h3>
-        <p>${displayObjective}</p>
-      </div>
+        <strong>${stageSummaryTitle(stage)}</strong>
+      </span>
+      <span class="piano-stage-summary__chevron" aria-hidden="true">⌄</span>
+    </summary>
 
-      <label class="piano-stage-complete">
+    <div class="piano-stage-body">
+      <label class="piano-stage-complete piano-stage-complete--compact">
         <input type="checkbox" id="${progressId}">
         <span>Étape terminée</span>
       </label>
+
+      ${isLesson ? `
+        <div class="piano-lesson-note">
+          <strong>À retenir</strong>
+          <p>${stage.objective || ""}</p>
+          ${(stage.instructions || []).length ? `<ul>${stage.instructions.map(item => `<li>${safeLink(item)}</li>`).join("")}</ul>` : ""}
+        </div>
+      ` : ""}
+
+      ${stage.song ? `
+        <div class="piano-song-goal piano-song-goal--compact">
+          <strong>${stage.song.title || stage.title || "Morceau"}</strong>
+          ${scorePages.length ? `
+            <div class="piano-full-score-block">
+              ${scorePages.map((page, pageIndex) => `
+                <figure class="piano-reference-score ${scorePages.length > 1 ? 'piano-reference-score--page' : 'piano-reference-score--single'}">
+                  <figcaption>${scorePages.length > 1 ? `Page ${pageIndex + 1}` : 'Partition complète'}</figcaption>
+                  <img src="${page.scoreImage}" alt="${page.scoreImageAlt || page.title}" loading="lazy">
+                </figure>
+              `).join("")}
+            </div>
+          ` : ""}
+          ${extraBonusPieces.length ? `
+            <details class="piano-bonus-scores">
+              <summary>Partitions bonus</summary>
+              ${extraBonusPieces.map(piece => `
+                <figure class="piano-reference-score piano-reference-score--bonus">
+                  <figcaption>${piece.title}</figcaption>
+                  <img src="${piece.scoreImage}" alt="${piece.scoreImageAlt || piece.title}" loading="lazy">
+                </figure>
+              `).join("")}
+            </details>
+          ` : ""}
+        </div>
+      ` : ""}
+
+      ${practiceParts.length ? `
+        <div class="piano-practice-parts">
+          ${practiceParts.map((part, index) => `
+            <details class="piano-practice-part" ${index === 0 ? 'open' : ''}>
+              <summary>${part.label}</summary>
+              <div class="piano-practice-part-slot" data-part-index="${index}"></div>
+            </details>
+          `).join("")}
+        </div>
+      ` : (
+        isReferenceOnlyPianoStage(stage)
+          ? `<div class="piano-reference-only-note">Travaille la partition complète affichée ci-dessus.</div>`
+          : `<div class="piano-stage-trainer-slot"></div>`
+      )}
     </div>
-
-    <div class="piano-stage-instructions">
-      <strong>Ce que tu dois faire</strong>
-      <ol>${instructions}</ol>
-    </div>
-
-    ${stage.song ? `
-      <div class="piano-song-goal">
-        <strong>Morceau de la semaine</strong>
-        <span>${stage.song.title || stage.title || "Morceau de la semaine"}</span>
-        ${stage.song.sourceNote ? `<p>${stage.song.sourceNote}</p>` : ""}
-        ${scorePages.length ? `
-          <div class="piano-full-score-block">
-            <strong>Partition complète du morceau</strong>
-            ${scorePages.map((page, pageIndex) => `
-              <figure class="piano-reference-score ${scorePages.length > 1 ? 'piano-reference-score--page' : 'piano-reference-score--single'}">
-                <figcaption>${scorePages.length > 1 ? `Page ${pageIndex + 1}` : 'Partition complète'}</figcaption>
-                <img src="${page.scoreImage}" alt="${page.scoreImageAlt || page.title}" loading="lazy">
-              </figure>
-            `).join("")}
-          </div>
-        ` : ""}
-        ${Array.isArray(stage.song.requiredSkills) && stage.song.requiredSkills.length ? `<small>À réutiliser : ${stage.song.requiredSkills.filter(Boolean).join(" · ")}</small>` : ""}
-        ${extraBonusPieces.length ? `
-          <div class="piano-bonus-scores">
-            <strong>Bonus</strong>
-            ${extraBonusPieces.map(piece => `
-              <figure class="piano-reference-score piano-reference-score--bonus">
-                <figcaption>${piece.title}</figcaption>
-                <img src="${piece.scoreImage}" alt="${piece.scoreImageAlt || piece.title}" loading="lazy">
-              </figure>
-            `).join("")}
-          </div>
-        ` : ""}
-      </div>
-    ` : ""}
-
-    ${
-      isReferenceOnlyPianoStage(stage)
-        ? `<div class="piano-reference-only-note">
-             La préparation interactive est à l’étape précédente. Ici, joue la partition fournie ci-dessus.
-           </div>`
-        : `<div class="piano-stage-trainer-slot"></div>`
-    }
   `;
 
+  card.__practiceParts = practiceParts;
   return card;
 }
 
@@ -231,20 +290,45 @@ function mountPianoWeekTools(weekIndex) {
   const week = currentCourse.weeks[weekIndex];
   const stages = week?.[1] || [];
   const page = document.querySelector(`.week-page[data-week="${weekIndex}"]`);
-
   if (!page) return;
 
   const cards = [...page.querySelectorAll(".piano-learning-stage")];
 
-  cards.forEach((card, stageIndex) => {
-    const slot = card.querySelector(".piano-stage-trainer-slot");
-    const stage = stages[stageIndex];
+  function mountOnce(slot, pseudoStage) {
+    if (!slot || slot.dataset.trainerMounted === "true" || !pseudoStage?.practice) return;
+    slot.dataset.trainerMounted = "true";
+    pianoStageTrainers.push(mountPianoStageTrainer(slot, pseudoStage));
+  }
 
-    if (slot && stage?.practice && !isReferenceOnlyPianoStage(stage)) {
-      pianoStageTrainers.push(
-        mountPianoStageTrainer(slot, stage)
-      );
+  cards.forEach((card, stageIndex) => {
+    const stage = stages[stageIndex];
+    const partDetails = [...card.querySelectorAll(".piano-practice-part")];
+
+    if (partDetails.length && Array.isArray(card.__practiceParts)) {
+      const ensureParts = () => {
+        if (!card.open) return;
+        partDetails.forEach((details, partIndex) => {
+          if (!details.open) return;
+          const slot = details.querySelector(".piano-practice-part-slot");
+          const part = card.__practiceParts[partIndex];
+          if (!part?.activity) return;
+          mountOnce(slot, { ...stage, title:part.label, practice:part.activity, song:null });
+        });
+      };
+
+      card.addEventListener("toggle", ensureParts);
+      partDetails.forEach(details => details.addEventListener("toggle", ensureParts));
+      ensureParts();
+      return;
     }
+
+    const slot = card.querySelector(".piano-stage-trainer-slot");
+    const ensureStage = () => {
+      if (!card.open || isReferenceOnlyPianoStage(stage)) return;
+      mountOnce(slot, stage);
+    };
+    card.addEventListener("toggle", ensureStage);
+    ensureStage();
   });
 }
 
@@ -301,9 +385,10 @@ function buildCourse(course) {
     const content = week[1];
 
     if (course.id === "piano") {
+      const songStage = content.find(item => item?.song?.title) || null;
       content.forEach((stage, stageIndex) => {
         page.appendChild(
-          makePianoStage(stage, weekIndex, stageIndex, week[2] || null)
+          makePianoStage(stage, weekIndex, stageIndex, week[2] || null, songStage)
         );
       });
     } else if (content.length && typeof content[0] === "object" && content[0].group) {

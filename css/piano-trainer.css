@@ -940,3 +940,146 @@
 /* Aides finales : lisibles sans gras excessif. */
 .score-help--note{font-size:10px !important;font-weight:400 !important;letter-spacing:0 !important;fill:#59635e !important;}
 .score-help--finger{font-size:10px !important;font-weight:500 !important;letter-spacing:0 !important;fill:#0d6c52 !important;}
+
+/* UX accordéon : une étape = un bloc compact, le détail s'ouvre à la demande. */
+.piano-learning-stage--accordion{
+  padding:0;
+  overflow:hidden;
+}
+
+.piano-learning-stage--accordion > summary{
+  list-style:none;
+}
+
+.piano-learning-stage--accordion > summary::-webkit-details-marker{
+  display:none;
+}
+
+.piano-stage-summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:16px 18px;
+  cursor:pointer;
+  user-select:none;
+}
+
+.piano-stage-summary__text{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+
+.piano-stage-summary__text strong{
+  font-size:17px;
+  line-height:1.3;
+}
+
+.piano-stage-summary__chevron{
+  font-size:20px;
+  transition:transform .15s ease;
+}
+
+.piano-learning-stage--accordion[open] .piano-stage-summary__chevron{
+  transform:rotate(180deg);
+}
+
+.piano-stage-body{
+  border-top:1px solid var(--border);
+  padding:16px 18px 20px;
+}
+
+.piano-stage-complete--compact{
+  margin-left:auto;
+  width:max-content;
+  margin-bottom:12px;
+}
+
+.piano-lesson-note{
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--soft);
+  padding:12px 14px;
+  margin-bottom:12px;
+}
+
+.piano-lesson-note strong{
+  display:block;
+  margin-bottom:5px;
+}
+
+.piano-lesson-note p{
+  margin:0 0 8px;
+}
+
+.piano-lesson-note ul{
+  margin:0;
+  padding-left:18px;
+}
+
+.piano-song-goal--compact{
+  margin-top:0;
+}
+
+.piano-song-goal--compact > strong{
+  font-size:17px;
+}
+
+.piano-practice-parts{
+  display:grid;
+  gap:10px;
+}
+
+.piano-practice-part{
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.piano-practice-part > summary{
+  cursor:pointer;
+  padding:12px 14px;
+  font-weight:750;
+  background:var(--soft);
+}
+
+.piano-practice-part-slot{
+  padding:0 12px 14px;
+}
+
+/* À jouer maintenant + écoute du passage : même zone, car même action pédagogique. */
+.trainer-focus__main{
+  min-width:0;
+  flex:1;
+}
+
+.trainer-focus__main .trainer-listen{
+  margin-top:8px;
+  background:#fff;
+  color:var(--dark);
+}
+
+.trainer-demo-panel{
+  margin-top:12px;
+}
+
+.trainer-audio-credit{
+  display:none !important;
+}
+
+@media(max-width:700px){
+  .piano-stage-summary{
+    align-items:flex-start;
+  }
+  .piano-stage-summary__text{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:5px;
+  }
+  .piano-stage-body{
+    padding:14px 12px 18px;
+  }
+}

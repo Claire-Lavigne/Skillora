@@ -1,5 +1,5 @@
 import { createPianoKeyboard, noteLabelFr } from "./piano-keyboard.js";
-import { preparePiano, playNote, playChord, playTimeline, stopPlayback, pianoSoundCredits } from "./audio-player.js";
+import { preparePiano, playNote, playChord, playTimeline, stopPlayback } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
 import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js";
 import { timelineMoments, timelineNotes, timelineEventRows } from "./music-model.js";
@@ -34,7 +34,12 @@ export function mountPianoStageTrainer(container, stage) {
   container.innerHTML = `
     <div class="piano-stage-tools">
       <div class="trainer-focus" role="status" aria-live="polite" aria-atomic="true">
-        <div><span class="trainer-focus__label">À jouer maintenant</span><strong class="trainer-current">—</strong><span class="trainer-finger"></span></div>
+        <div class="trainer-focus__main">
+          <span class="trainer-focus__label">À jouer maintenant</span>
+          <strong class="trainer-current">—</strong>
+          <span class="trainer-finger"></span>
+          <button class="trainer-listen" type="button">♪ Écouter ce passage</button>
+        </div>
         <div class="trainer-focus__actions"><button class="trainer-prev" type="button">← Précédent</button><button class="trainer-next" type="button">Suivant →</button></div>
       </div>
 
@@ -55,17 +60,16 @@ export function mountPianoStageTrainer(container, stage) {
       <div class="trainer-keyboard-panel"><div class="trainer-section-title"><strong>Clavier</strong></div><div class="trainer-keyboard-slot"></div></div>
 
       <div class="trainer-demo-panel">
-        <div class="trainer-section-title"><strong>Démonstration</strong><span class="trainer-audio-status">Choisis les mains, la vitesse et le métronome.</span></div>
+        <div class="trainer-section-title"><strong>Exercice complet</strong><span class="trainer-audio-status">Choisis les mains, la vitesse et le métronome.</span></div>
         <div class="trainer-demo-settings">
           <label>Mains <select class="trainer-hands"><option value="both">Deux mains</option><option value="right">Main droite</option><option value="left">Main gauche</option></select></label>
           <label>Vitesse <select class="trainer-speed"><option value="0.5">50 %</option><option value="0.75">75 %</option><option value="1" selected>100 %</option></select></label>
           <label class="trainer-metronome-toggle"><input type="checkbox" class="trainer-metronome"> Métronome</label>
         </div>
-        <div class="trainer-demo-actions"><button class="trainer-listen" type="button">♪ Écouter l’étape</button><button class="trainer-play-all" type="button">▶ Démo avec compte</button><button class="trainer-stop" type="button">■ Arrêter</button></div>
+        <div class="trainer-demo-actions"><button class="trainer-play-all" type="button">▶ Écouter tout l’exercice</button><button class="trainer-stop" type="button">■ Arrêter</button></div>
       </div>
 
       <details class="trainer-midi-panel trainer-midi-details"><summary>Vérifier avec un piano numérique MIDI (optionnel)</summary><div class="trainer-midi-row"><button type="button" class="trainer-midi">🎹 Connecter mon piano MIDI</button><span class="trainer-midi-status">Tu peux faire l’exercice sans MIDI.</span></div></details>
-      <p class="trainer-audio-credit">Son : ${pianoSoundCredits.instrument}, échantillons d’${pianoSoundCredits.author} (${pianoSoundCredits.license}).</p>
     </div>`;
 
   const score = container.querySelector('.trainer-score');
