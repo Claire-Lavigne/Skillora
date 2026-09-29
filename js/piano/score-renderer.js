@@ -96,6 +96,15 @@ export async function renderScore(container, activity, {
 
   try {
     const Vex = await import("https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm");
+    if (typeof Vex.loadFonts === "function") {
+      try { await Vex.loadFonts("Bravura", "Academico"); } catch (_) {}
+    }
+    if (typeof Vex.setFonts === "function") {
+      try { Vex.setFonts("Bravura", "Academico"); } catch (_) {}
+    }
+    if (typeof Vex.setMusicFont === "function") {
+      try { Vex.setMusicFont("Bravura"); } catch (_) {}
+    }
     const { Renderer, Stave, StaveNote, Voice, Formatter, Accidental, StaveConnector, Barline, Dot, StaveTie, Tuplet } = Vex;
 
     const signature = timeline.timeSignature || "4/4";
@@ -104,7 +113,7 @@ export async function renderScore(container, activity, {
     const staffSpecs = timelineStaves(timeline);
     const measuresPerSystem = activity.measuresPerSystem || 2;
     const systems = Math.ceil(measures.length / measuresPerSystem);
-    const width = Math.max(620, Math.min(1100, container.clientWidth || 900));
+    const width = Math.max(760, Math.min(1280, container.clientWidth || 900));
     const staffGap = staffSpecs.length >= 3 ? 108 : 146;
     const systemHeight = 74 + staffGap * staffSpecs.length;
     const height = systems * systemHeight + 20;

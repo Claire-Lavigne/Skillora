@@ -698,14 +698,11 @@
 }
 
 
-/* Lecture automatique : toutes les notes restent noires.
-   La note active est signalée par un halo vert, sans diminuer
-   le contraste des autres notes. */
+/* Lecture automatique : les glyphes VexFlow restent intacts.
+   La note active est signalée uniquement par un halo vert. */
 .trainer-score svg .score-event,
 .trainer-score svg .score-event *{
   opacity:1 !important;
-  fill:#111 !important;
-  stroke:#111 !important;
 }
 
 .trainer-score svg.has-score-playback .score-event:not(.is-score-active){
@@ -717,17 +714,10 @@
 }
 
 .trainer-score svg .score-event.is-score-active{
-  opacity:1 !important;
   filter:
     drop-shadow(0 0 1px #fff)
     drop-shadow(0 0 4px rgba(8,122,91,.95))
     drop-shadow(0 0 7px rgba(8,122,91,.45)) !important;
-}
-
-.trainer-score svg .score-event.is-score-active *,
-.trainer-score svg .score-event.is-score-active{
-  fill:#111 !important;
-  stroke:#111 !important;
 }
 
 .trainer-score svg .score-event.is-current-step{
@@ -812,3 +802,141 @@
 .piano-reference-score--bonus{
   margin-top:8px;
 }
+
+
+/* Ajustements lisibilité et objectifs */
+.piano-week-goals{
+  margin-top:10px;
+  max-width:860px;
+  background:var(--soft);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px 14px;
+}
+
+.piano-week-goals strong,
+.piano-week-objectives-inline strong,
+.piano-full-score-block > strong{
+  display:block;
+  margin-bottom:6px;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:var(--accent);
+}
+
+.piano-week-goals ul,
+.piano-week-objectives-inline ul{
+  margin:0;
+  padding-left:18px;
+}
+
+.piano-week-goals li,
+.piano-week-objectives-inline li{
+  margin:4px 0;
+  line-height:1.5;
+}
+
+.piano-week-objectives-inline{
+  margin-top:12px;
+  background:var(--soft);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px 14px;
+}
+
+.trainer-score{
+  overflow-x:auto !important;
+  overflow-y:visible;
+}
+
+.trainer-score svg{
+  width:auto !important;
+  min-width:100%;
+  max-width:none !important;
+  height:auto !important;
+  overflow:visible;
+}
+
+
+.score-help--note{
+  font-size:10.5px !important;
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+  fill:#5b655f !important;
+}
+
+.score-help--finger{
+  font-size:10.5px !important;
+  font-weight:600 !important;
+  letter-spacing:0 !important;
+  fill:#0d6c52 !important;
+}
+
+.piano-full-score-block{
+  margin-top:12px;
+}
+
+.piano-reference-score{
+  margin-top:10px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+  overflow:hidden;
+}
+
+.piano-reference-score figcaption{
+  padding:10px 12px;
+  font-weight:700;
+  border-bottom:1px solid var(--border);
+}
+
+.piano-reference-score img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  object-fit:contain;
+}
+
+.piano-reference-score--single img{
+  width:min(100%, 1000px);
+  margin:0 auto;
+}
+
+.piano-reference-score--page img{
+  width:min(100%, 1100px);
+  margin:0 auto;
+}
+
+
+.score-help--note{
+  font-size:10px !important;
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+  fill:#59635e !important;
+}
+
+.score-help--finger{
+  font-size:10px !important;
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+  fill:#0d6c52 !important;
+}
+
+.week-head{
+  flex-wrap:wrap;
+}
+
+.piano-week-goals{
+  order:3;
+  flex:1 0 100%;
+  max-width:none;
+}
+
+
+
+
+/* Aides finales : lisibles sans gras excessif. */
+.score-help--note{font-size:10px !important;font-weight:400 !important;letter-spacing:0 !important;fill:#59635e !important;}
+.score-help--finger{font-size:10px !important;font-weight:500 !important;letter-spacing:0 !important;fill:#0d6c52 !important;}

@@ -119,23 +119,53 @@ function isReferenceOnlyPianoStage(stage) {
   );
 }
 
-function makePianoStage(stage, weekIndex, stageIndex) {
+function pianoProgressId(stage, weekIndex, stageIndex) {
+  return stage?.id ? `p-${stage.id}` : `pw${weekIndex}a${stageIndex}`;
+}
+
+function previousPianoProgressId(stage, fallbackWeekIndex, fallbackStageIndex) {
+  const match = /^w(\d+)-a(\d+)$/i.exec(stage?.id || "");
+  if (!match) return `pw${fallbackWeekIndex}a${fallbackStageIndex}`;
+  return `pw${Number(match[1]) - 1}a${Number(match[2]) - 1}`;
+}
+
+function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null) {
   const card = document.createElement("article");
   card.className = "piano-learning-stage";
   card.dataset.pianoStage = stageIndex;
 
-  const progressId = `pw${weekIndex}a${stageIndex}`;
+  const progressId = pianoProgressId(stage, weekIndex, stageIndex);
 
   const instructions = (stage.instructions || [])
     .map(text => `<li>${safeLink(text)}</li>`)
     .join("");
 
+  const allBonusPieces = (stage.song?.bonusPieces || []).filter(piece => piece?.scoreImage);
+  const continuationPages = allBonusPieces.filter(piece => /page\s*\d+/i.test(`${piece.title || ""} ${piece.scoreImageAlt || ""}`));
+  const extraBonusPieces = allBonusPieces.filter(piece => !continuationPages.includes(piece));
+  const scorePages = stage.song?.scoreImage
+    ? [
+        {
+          title: stage.song.scoreImageAlt || stage.song.title || stage.title || "Partition",
+          scoreImage: stage.song.scoreImage,
+          scoreImageAlt: stage.song.scoreImageAlt || `Partition de ${stage.song.title || stage.title}`
+        },
+        ...continuationPages
+      ]
+    : [];
+
+  const displayTitle = stage.title;
+  const displayObjective = stage.objective;
+  const interactiveAuditLabel = stage.song?.sourceIsCanonical && stage.song?.auditStatus !== "ok"
+    ? "Exercice préparatoire"
+    : (stage.song?.scoreImage ? "Transcription interactive" : "Partition");
+
   card.innerHTML = `
     <div class="piano-learning-stage__head">
       <div>
         <span class="piano-learning-stage__label">${stage.label}</span>
-        <h3>${stage.title}</h3>
-        <p>${stage.objective}</p>
+        <h3>${displayTitle}</h3>
+        <p>${displayObjective}</p>
       </div>
 
       <label class="piano-stage-complete">
@@ -143,14 +173,6 @@ function makePianoStage(stage, weekIndex, stageIndex) {
         <span>Étape terminée</span>
       </label>
     </div>
-
-    ${stage.curriculum ? `
-      <div class="piano-curriculum-strip">
-        <span><strong>Lecture</strong>${stage.curriculum.reading}</span>
-        <span><strong>Rythme</strong>${stage.curriculum.rhythm}</span>
-        <span><strong>Accompagnement</strong>${stage.curriculum.accompaniment}</span>
-      </div>
-    ` : ""}
 
     <div class="piano-stage-instructions">
       <strong>Ce que tu dois faire</strong>
@@ -162,21 +184,26 @@ function makePianoStage(stage, weekIndex, stageIndex) {
         <strong>Morceau de la semaine</strong>
         <span>${stage.song.title || stage.title || "Morceau de la semaine"}</span>
         ${stage.song.sourceNote ? `<p>${stage.song.sourceNote}</p>` : ""}
-        ${stage.song.scoreImage ? `
-          <details class="piano-reference-score">
-            <summary>Voir la partition fournie</summary>
-            <img src="${stage.song.scoreImage}" alt="${stage.song.scoreImageAlt || `Partition de ${stage.song.title || stage.title}`}" loading="lazy">
-          </details>
+        ${scorePages.length ? `
+          <div class="piano-full-score-block">
+            <strong>Partition complète du morceau</strong>
+            ${scorePages.map((page, pageIndex) => `
+              <figure class="piano-reference-score ${scorePages.length > 1 ? 'piano-reference-score--page' : 'piano-reference-score--single'}">
+                <figcaption>${scorePages.length > 1 ? `Page ${pageIndex + 1}` : 'Partition complète'}</figcaption>
+                <img src="${page.scoreImage}" alt="${page.scoreImageAlt || page.title}" loading="lazy">
+              </figure>
+            `).join("")}
+          </div>
         ` : ""}
         ${Array.isArray(stage.song.requiredSkills) && stage.song.requiredSkills.length ? `<small>À réutiliser : ${stage.song.requiredSkills.filter(Boolean).join(" · ")}</small>` : ""}
-        ${Array.isArray(stage.song.bonusPieces) && stage.song.bonusPieces.length ? `
+        ${extraBonusPieces.length ? `
           <div class="piano-bonus-scores">
             <strong>Bonus</strong>
-            ${stage.song.bonusPieces.map(piece => `
-              <details class="piano-reference-score piano-reference-score--bonus">
-                <summary>${piece.title}</summary>
+            ${extraBonusPieces.map(piece => `
+              <figure class="piano-reference-score piano-reference-score--bonus">
+                <figcaption>${piece.title}</figcaption>
                 <img src="${piece.scoreImage}" alt="${piece.scoreImageAlt || piece.title}" loading="lazy">
-              </details>
+              </figure>
             `).join("")}
           </div>
         ` : ""}
@@ -240,6 +267,16 @@ function buildCourse(course) {
     title.textContent = shortWeekTitle(week[0]);
     head.appendChild(title);
 
+    if (course.id === "piano" && Array.isArray(week?.[2]?.lessonObjectives) && week[2].lessonObjectives.length) {
+      const objectiveList = document.createElement("div");
+      objectiveList.className = "piano-week-goals";
+      objectiveList.innerHTML = `
+        <strong>Objectifs de la semaine</strong>
+        <ul>${week[2].lessonObjectives.map(item => `<li>${item}</li>`).join("")}</ul>
+      `;
+      head.appendChild(objectiveList);
+    }
+
     const checkAllButton = document.createElement("button");
     checkAllButton.type = "button";
     checkAllButton.className = "check-all";
@@ -266,7 +303,7 @@ function buildCourse(course) {
     if (course.id === "piano") {
       content.forEach((stage, stageIndex) => {
         page.appendChild(
-          makePianoStage(stage, weekIndex, stageIndex)
+          makePianoStage(stage, weekIndex, stageIndex, week[2] || null)
         );
       });
     } else if (content.length && typeof content[0] === "object" && content[0].group) {
@@ -333,22 +370,25 @@ async function loadProgress() {
   const checks = data.checks || {};
 
   if (currentCourse.id === "piano") {
-    // Migration conservatrice de l'ancienne progression :
-    // une ancienne semaine entièrement cochée devient une nouvelle semaine entièrement terminée.
+    // Progression stable après réorganisation des semaines : les IDs suivent maintenant
+    // l'exercice lui-même (stage.id) et non sa position dans le parcours.
     currentCourse.weeks.forEach((week, weekIndex) => {
-      const newIds = week[1].map((_, stageIndex) => `pw${weekIndex}a${stageIndex}`);
-      const hasNewProgress = newIds.some(id => Object.prototype.hasOwnProperty.call(checks, id));
+      week[1].forEach((stage, stageIndex) => {
+        const stableId = pianoProgressId(stage, weekIndex, stageIndex);
+        if (Object.prototype.hasOwnProperty.call(checks, stableId)) return;
 
-      if (!hasNewProgress) {
-        const oldKeys = Object.keys(checks).filter(key =>
-          new RegExp(`^w${weekIndex}s\\d+$`).test(key)
-        );
+        const previousId = previousPianoProgressId(stage, weekIndex, stageIndex);
+        if (checks[previousId] === true) checks[stableId] = true;
+      });
 
-        if (oldKeys.length && oldKeys.every(key => checks[key] === true)) {
-          newIds.forEach(id => {
-            checks[id] = true;
-          });
-        }
+      const legacyKeys = Object.keys(checks).filter(key =>
+        new RegExp(`^w${weekIndex}s\\d+$`).test(key)
+      );
+      if (legacyKeys.length && legacyKeys.every(key => checks[key] === true)) {
+        week[1].forEach((stage, stageIndex) => {
+          const stableId = pianoProgressId(stage, weekIndex, stageIndex);
+          if (!Object.prototype.hasOwnProperty.call(checks, stableId)) checks[stableId] = true;
+        });
       }
     });
   }
@@ -359,9 +399,17 @@ async function loadProgress() {
     checkbox.closest(".piano-learning-stage")?.classList.toggle("done", checkbox.checked);
   });
 
-  const savedLevel = Number.isInteger(data.currentLevel)
+  let savedLevel = Number.isInteger(data.currentLevel)
     ? data.currentLevel
     : 0;
+
+  if (currentCourse.id === "piano" && data.planVersion !== 2) {
+    const oldPrefix = `w${String(savedLevel + 1).padStart(2, "0")}-`;
+    const migratedIndex = currentCourse.weeks.findIndex(week =>
+      week?.[1]?.some(stage => String(stage?.id || "").startsWith(oldPrefix))
+    );
+    if (migratedIndex >= 0) savedLevel = migratedIndex;
+  }
 
   currentLevel =
     savedLevel >= 0 && savedLevel < currentCourse.weeks.length
@@ -386,13 +434,16 @@ async function saveProgress() {
     currentCourse.id
   );
 
+  const progressPayload = {
+    checks,
+    currentLevel,
+    updatedAt: serverTimestamp()
+  };
+  if (currentCourse.id === "piano") progressPayload.planVersion = 2;
+
   await setDoc(
     ref,
-    {
-      checks,
-      currentLevel,
-      updatedAt: serverTimestamp()
-    },
+    progressPayload,
     { merge: true }
   );
 
@@ -497,8 +548,8 @@ function expectedCourseStepIds(course) {
     const content = week[1];
 
     if (course.id === "piano") {
-      content.forEach((_, stageIndex) => {
-        ids.push(`pw${weekIndex}a${stageIndex}`);
+      content.forEach((stage, stageIndex) => {
+        ids.push(pianoProgressId(stage, weekIndex, stageIndex));
       });
       return;
     }
