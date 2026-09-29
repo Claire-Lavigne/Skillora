@@ -79,6 +79,7 @@ export function clearScoreActiveEvents(container) {
 export async function renderScore(container, activity, {
   showNoteNames = false,
   showFingers = false,
+  showLyrics = false,
   currentStep = 0
 } = {}) {
   const timeline = activity.timeline;

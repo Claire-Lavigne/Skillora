@@ -68,8 +68,9 @@ function shortWeekTitle(title) {
 function makeStep(text, key, stepNumber) {
   const label = document.createElement("label");
   label.className = "step";
+  const safeKey = String(key || `step-${stepNumber}`).trim() || `step-${stepNumber}`;
   label.innerHTML = `
-    <input type="checkbox" id="${key}">
+    <input type="checkbox" id="${safeKey}">
     <span class="step-number">Étape ${stepNumber}</span>
     <span class="step-text">${safeLink(text)}</span>
   `;
@@ -523,7 +524,12 @@ async function loadProgress() {
   }
 
   document.querySelectorAll('#courseView input[type="checkbox"]').forEach(checkbox => {
-    checkbox.checked = !!checks[checkbox.id];
+    const id = String(checkbox.id || "").trim();
+    if (!id) {
+      checkbox.checked = false;
+      return;
+    }
+    checkbox.checked = !!checks[id];
     checkbox.closest(".step")?.classList.toggle("done", checkbox.checked);
     checkbox.closest(".piano-learning-stage")?.classList.toggle("done", checkbox.checked);
   });
@@ -552,7 +558,9 @@ async function saveProgress() {
   const checks = {};
 
   document.querySelectorAll('#courseView input[type="checkbox"]').forEach(checkbox => {
-    checks[checkbox.id] = checkbox.checked;
+    const id = String(checkbox.id || "").trim();
+    if (!id) return;
+    checks[id] = checkbox.checked;
   });
 
   const ref = doc(
