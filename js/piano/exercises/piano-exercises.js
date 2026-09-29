@@ -4337,52 +4337,43 @@ export const pianoTrainingWeeks = [
       {
         "id": "w09-a1",
         "label": "Leçon",
-        "title": "Comprendre — Triade majeure",
-        "objective": "Reconnaître un accord de Do majeur écrit verticalement",
+        "title": "Comprendre — Les accords Do, Fa et Sol",
+        "objective": "Comprendre à quoi servent C, F et G écrits au-dessus de Joy to the World.",
         "instructions": [
           "Prérequis : S4 : Do à Sol.",
           "Nouvelle notion : Triade majeure · accord plaqué · blanche pointée.",
           "Lis la partition et repère visuellement cette notion avant de jouer."
         ],
         "curriculum": {
-          "reading": "Lire une triade sur la portée",
-          "rhythm": "Noires, blanches et croches dans la même phrase",
-          "accompaniment": "Accord plaqué de Do majeur"
+          "reading": "Reconnaître C, F et G et les notes de leurs triades",
+          "rhythm": "Tenir une blanche pointée pendant 3 temps",
+          "accompaniment": "Accords plaqués Do majeur, Fa majeur et Sol majeur"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Construire Do–Mi–Sol",
-          "tempo": 56,
+          "engine": "timeline-v3",
+          "title": "Do, Fa, Sol — les 3 accords de Joy to the World",
+          "tempo": 54,
           "staff": "grand",
-          "measuresPerSystem": 2,
+          "measuresPerSystem": 3,
           "timeline": {
             "timeSignature": "4/4",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
+                    "type": "chord",
+                    "pitches": [
+                      "C4",
+                      "E4",
+                      "G4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "C"
                   }
                 ],
                 "bass": [
@@ -4397,34 +4388,25 @@ export const pianoTrainingWeeks = [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
+                    "type": "chord",
+                    "pitches": [
+                      "C4",
+                      "F4",
+                      "A4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "F"
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "C3",
+                    "pitch": "F3",
                     "duration": "w",
                     "finger": 5
                   }
@@ -4433,46 +4415,25 @@ export const pianoTrainingWeeks = [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
+                    "type": "chord",
+                    "pitches": [
+                      "B3",
+                      "D4",
+                      "G4"
+                    ],
+                    "duration": "w",
+                    "fingers": [
+                      1,
+                      3,
+                      5
+                    ],
+                    "chordName": "G"
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
+                    "pitch": "G3",
                     "duration": "w",
                     "finger": 5
                   }
@@ -4482,8 +4443,8 @@ export const pianoTrainingWeeks = [
           }
         },
         "lesson": {
-          "explanation": "Un accord est plusieurs notes jouées ensemble. La triade de Do majeur contient Do–Mi–Sol : fondamentale, tierce et quinte. Un accord plaqué se joue en appuyant les notes exactement au même moment.",
-          "example": "Joue Do–Mi–Sol avec 1–3–5, puis vérifie que les trois touches descendent ensemble."
+          "explanation": "Les lettres C, F et G indiquent l’harmonie du morceau : C = Do majeur (Do–Mi–Sol), F = Fa majeur (Fa–La–Do) et G = Sol majeur (Sol–Si–Ré). Elles servent à comprendre quel accord soutient la mélodie et à construire un accompagnement.",
+          "example": "Joue Do–Mi–Sol ensemble, puis Fa–La–Do, puis Sol–Si–Ré. Ensuite repère C, F et G au-dessus de la partition et écoute comment la basse écrite appartient à ces accords."
         }
       },
       {
@@ -5212,7 +5173,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "C5",
                     "duration": "h",
-                    "finger": 5
+                    "finger": 5,
+                    "lyric": "Joy to the world, the Lord is come"
                   },
                   {
                     "type": "note",
@@ -5327,7 +5289,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "A4",
                     "duration": "hd",
-                    "finger": 3
+                    "finger": 3,
+                    "lyric": "Let earth receive her King"
                   },
                   {
                     "type": "note",
@@ -5395,7 +5358,8 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C5",
-                    "duration": "q"
+                    "duration": "q",
+                    "lyric": "Let every heart prepare Him room"
                   },
                   {
                     "type": "note",
@@ -5520,7 +5484,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "G4",
                     "duration": "q",
-                    "finger": 2
+                    "finger": 2,
+                    "lyric": "And heaven and nature sing"
                   },
                   {
                     "type": "note",
@@ -5622,7 +5587,8 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "q"
+                    "duration": "q",
+                    "lyric": "And heaven and nature sing"
                   },
                   {
                     "type": "note",
@@ -5684,7 +5650,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "C4",
                     "duration": "q",
-                    "finger": 1
+                    "finger": 1,
+                    "lyric": "And heaven, and heaven, and nature sing"
                   },
                   {
                     "type": "note",
@@ -5882,7 +5849,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "C5",
                     "duration": "h",
-                    "finger": 5
+                    "finger": 5,
+                    "lyric": "Joy to the world, the Lord is come"
                   },
                   {
                     "type": "note",
@@ -5997,7 +5965,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "A4",
                     "duration": "hd",
-                    "finger": 3
+                    "finger": 3,
+                    "lyric": "Let earth receive her King"
                   },
                   {
                     "type": "note",
@@ -6065,7 +6034,8 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C5",
-                    "duration": "q"
+                    "duration": "q",
+                    "lyric": "Let every heart prepare Him room"
                   },
                   {
                     "type": "note",
@@ -6190,7 +6160,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "G4",
                     "duration": "q",
-                    "finger": 2
+                    "finger": 2,
+                    "lyric": "And heaven and nature sing"
                   },
                   {
                     "type": "note",
@@ -6292,7 +6263,8 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "D4",
-                    "duration": "q"
+                    "duration": "q",
+                    "lyric": "And heaven and nature sing"
                   },
                   {
                     "type": "note",
@@ -6354,7 +6326,8 @@ export const pianoTrainingWeeks = [
                     "type": "note",
                     "pitch": "C4",
                     "duration": "q",
-                    "finger": 1
+                    "finger": 1,
+                    "lyric": "And heaven, and heaven, and nature sing"
                   },
                   {
                     "type": "note",
@@ -6495,7 +6468,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Joy to the World",
-          "sourceNote": "La partition complète fournie est affichée ci-dessus. Les 19 mesures sont retranscrites dans les portées interactives ci-dessous.",
+          "sourceNote": "Les 19 mesures sont retranscrites directement dans la partition interactive.",
           "requiredSkills": [
             "Lire une triade sur la portée",
             "Noires, blanches et croches dans la même phrase",
@@ -6510,7 +6483,8 @@ export const pianoTrainingWeeks = [
           "auditStatus": "corrige",
           "sourceIsCanonical": true,
           "fidelityStatus": "source-verifiee",
-          "interactiveFidelity": "transcription-complete"
+          "interactiveFidelity": "transcription-complete",
+          "hideSourceImageWhenTranscribed": true
         }
       }
     ],

@@ -274,15 +274,34 @@ export async function renderScore(container, activity, {
     grids.forEach(grid => addBeatGrid(svg, grid, signature));
 
     hints.forEach(({items, stave}) => {
+      const helpGroups = [];
       items.forEach(({event, tickable}) => {
         if (event.type === "rest") return;
         const x = noteCenterX(tickable);
-        const y1 = stave.getBottomLineY() + 26;
-        const y2 = y1 + 17;
-        if (showNoteNames) svg.appendChild(svgNode("text", {x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"}, displayEventPitches(event).map(noteLabelFr).join(" + ")));
-        if (showFingers) {
-          const fingers = eventFingers(event);
-          if (fingers.length) svg.appendChild(svgNode("text", {x,y:y2,"text-anchor":"middle",class:"score-help score-help--finger"}, fingers.join("·")));
+        let group = helpGroups.find(candidate => Math.abs(candidate.x - x) < 5);
+        if (!group) {
+          group = { x, events:[] };
+          helpGroups.push(group);
+        }
+        group.events.push(event);
+      });
+
+      const y1 = stave.getBottomLineY() + 26;
+      const y2 = y1 + 17;
+      const y3 = y2 + 17;
+
+      helpGroups.forEach(group => {
+        const pitches = [...new Set(group.events.flatMap(event => displayEventPitches(event).map(noteLabelFr)))];
+        const fingers = [...new Set(group.events.flatMap(event => eventFingers(event).map(String)))];
+        const lyric = group.events.map(event => event.lyric).find(Boolean);
+        if (showNoteNames && pitches.length) {
+          svg.appendChild(svgNode("text", {x:group.x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"}, pitches.join(" + ")));
+        }
+        if (showFingers && fingers.length) {
+          svg.appendChild(svgNode("text", {x:group.x,y:y2,"text-anchor":"middle",class:"score-help score-help--finger"}, fingers.join("·")));
+        }
+        if (showLyrics && lyric) {
+          svg.appendChild(svgNode("text", {x:group.x,y:y3,"text-anchor":"start",class:"score-help score-help--lyric"}, lyric));
         }
       });
     });

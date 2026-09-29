@@ -1,7 +1,7 @@
 import { createPianoKeyboard, noteLabelFr } from "./piano-keyboard.js";
-import { preparePiano, playNote, playChord, playTimeline, stopPlayback } from "./audio-player.js";
+import { preparePiano, playTimeline, stopPlayback } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
-import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js";
+import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js?v=20260929-s5-polish";
 import { timelineMoments, timelineNotes, timelineEventRows } from "./music-model.js";
 
 function prettyMoment(moment) {
@@ -12,17 +12,6 @@ function prettyMoment(moment) {
   return notes.map(n => `${noteLabelFr(n)} (${n})`).join(" + ");
 }
 
-function fingersForMoment(moment) {
-  if (!moment?.events) return "";
-  const parts = [];
-  for (const hand of ["right","left"]) {
-    const fingers = moment.events
-      .filter(row => row.hand === hand)
-      .flatMap(row => row.event.type === "chord" ? (row.event.fingers || []) : [row.event.finger].filter(Boolean));
-    if (fingers.length) parts.push(`${hand === "right" ? "MD" : "MG"} · ${fingers.join(" - ")}`);
-  }
-  return parts.join(" · ");
-}
 
 export function mountPianoStageTrainer(container, stage) {
   const activity = stage.practice;
@@ -31,27 +20,23 @@ export function mountPianoStageTrainer(container, stage) {
     return { destroy(){ container.innerHTML=""; } };
   }
 
+  const isCompleteTranscription = activity?.transcriptionType === "complete-from-supplied-score" || stage.song?.interactiveFidelity === "transcription-complete";
+  const scoreHeading = isCompleteTranscription ? "Partition complète" : (stage.song?.scoreImage ? "Exercice préparatoire interactif" : "Partition");
+
   container.innerHTML = `
     <div class="piano-stage-tools">
-      <div class="trainer-focus" role="status" aria-live="polite" aria-atomic="true">
-        <div class="trainer-focus__main">
-          <span class="trainer-focus__label">À jouer maintenant</span>
-          <strong class="trainer-current">—</strong>
-          <span class="trainer-finger"></span>
-          <button class="trainer-listen" type="button">♪ Écouter ce passage</button>
-        </div>
-        <div class="trainer-focus__actions"><button class="trainer-prev" type="button">← Précédent</button><button class="trainer-next" type="button">Suivant →</button></div>
-      </div>
+      <div class="trainer-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
 
       <div class="trainer-score-panel">
         <div class="trainer-section-title trainer-score-title">
           <div>
-            <strong>${stage.song?.scoreImage ? 'Exercice préparatoire interactif' : 'Partition'}</strong>
+            <strong>${scoreHeading}</strong>
             ${stage.practice?.sourceMeasures ? `<span>Extrait ${stage.practice.sourceMeasures}</span>` : ''}
           </div>
           <div class="score-help-controls">
             <button type="button" class="score-help-toggle score-help-notes" aria-pressed="false">Aide lecture</button>
             <button type="button" class="score-help-toggle score-help-fingers" aria-pressed="false">Aide doigté</button>
+            <button type="button" class="score-help-toggle score-help-lyrics" aria-pressed="false">Aide paroles</button>
           </div>
         </div>
         <div class="trainer-score"></div>
@@ -72,9 +57,9 @@ export function mountPianoStageTrainer(container, stage) {
       <details class="trainer-midi-panel trainer-midi-details"><summary>Vérifier avec un piano numérique MIDI (optionnel)</summary><div class="trainer-midi-row"><button type="button" class="trainer-midi">🎹 Connecter mon piano MIDI</button><span class="trainer-midi-status">Tu peux faire l’exercice sans MIDI.</span></div></details>
     </div>`;
 
+  container.querySelectorAll('.trainer-current,.trainer-current-card,.trainer-current-panel,.trainer-step-nav').forEach(el=>el.remove());
   const score = container.querySelector('.trainer-score');
-  const current = container.querySelector('.trainer-current');
-  const finger = container.querySelector('.trainer-finger');
+  const liveStatus = container.querySelector('.trainer-sr-status');
   const audioStatus = container.querySelector('.trainer-audio-status');
   const midiStatus = container.querySelector('.trainer-midi-status');
   const handsSelect = container.querySelector('.trainer-hands');
@@ -86,35 +71,24 @@ export function mountPianoStageTrainer(container, stage) {
   let stepIndex = 0;
   let showNoteNames = false;
   let showFingers = false;
+  let showLyrics = false;
   let midiConnection = null;
 
   const allMoments = () => timelineMoments(activity.timeline);
   const currentMoment = () => allMoments()[Math.max(0,Math.min(stepIndex, allMoments().length-1))];
 
   async function refreshScore(){
-    await renderScore(score, activity, { showNoteNames, showFingers, currentStep:stepIndex });
+    await renderScore(score, activity, { showNoteNames, showFingers, showLyrics, currentStep:stepIndex });
   }
 
   function renderCurrent(message=''){
     const moment = currentMoment();
-    current.textContent = message || prettyMoment(moment);
-    finger.textContent = fingersForMoment(moment);
+    liveStatus.textContent = message || prettyMoment(moment);
     keyboard.clearPlaying();
     keyboard.highlight(moment?.notes || [], moment?.notes || []);
     clearScoreActiveEvents(score);
     refreshScore();
   }
-
-  container.querySelector('.trainer-prev').addEventListener('click',()=>{ stopPlayback(); stepIndex=Math.max(0,stepIndex-1); renderCurrent(); });
-  container.querySelector('.trainer-next').addEventListener('click',()=>{ stopPlayback(); stepIndex=Math.min(allMoments().length-1,stepIndex+1); renderCurrent(); });
-
-  container.querySelector('.trainer-listen').addEventListener('click', async()=>{
-    const m=currentMoment(); const notes=m?.notes||[];
-    if(!notes.length){ audioStatus.textContent='C’est un silence : compte sans jouer.'; return; }
-    keyboard.animate(notes,700);
-    try { if(notes.length>1) await playChord(notes); else await playNote(notes[0]); audioStatus.textContent='À toi.'; }
-    catch(_){ audioStatus.textContent='Impossible de charger le piano acoustique.'; }
-  });
 
   playAllButton.addEventListener('click', async()=>{
     stopPlayback(); playAllButton.disabled=true; audioStatus.textContent='Préparation du piano…';
@@ -131,8 +105,7 @@ export function mountPianoStageTrainer(container, stage) {
         timeSignature: activity.timeline.timeSignature || '4/4',
         onStep:(moment,index)=>{
           if(moment.countIn){
-            current.textContent=`Compte : ${moment.count}`;
-            finger.textContent='';
+            liveStatus.textContent=`Compte : ${moment.count}`;
             clearScoreActiveEvents(score);
             return;
           }
@@ -145,8 +118,7 @@ export function mountPianoStageTrainer(container, stage) {
           );
           if(global>=0) stepIndex=global;
 
-          current.textContent=prettyMoment({...m,notes:m.notes});
-          finger.textContent=fingersForMoment(m);
+          liveStatus.textContent=prettyMoment({...m,notes:m.notes});
           const attackNotes = (m.events || [])
             .filter(row => !row.event?.tieFromPrevious)
             .flatMap(row => row.event?.type === 'chord' ? (row.event.pitches || []) : [row.event?.pitch].filter(Boolean));
@@ -186,14 +158,14 @@ export function mountPianoStageTrainer(container, stage) {
     playAllButton.disabled=false;
     audioStatus.textContent='Démonstration arrêtée.';
     const moment=currentMoment();
-    current.textContent=prettyMoment(moment);
-    finger.textContent=fingersForMoment(moment);
+    liveStatus.textContent=prettyMoment(moment);
     keyboard.highlight(moment?.notes || [], moment?.notes || []);
   });
 
-  const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers');
+  const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers'); const bLyrics=container.querySelector('.score-help-lyrics');
   bNotes.addEventListener('click',()=>{ showNoteNames=!showNoteNames; bNotes.classList.toggle('is-active',showNoteNames); bNotes.setAttribute('aria-pressed',String(showNoteNames)); refreshScore(); });
   bFingers.addEventListener('click',()=>{ showFingers=!showFingers; bFingers.classList.toggle('is-active',showFingers); bFingers.setAttribute('aria-pressed',String(showFingers)); refreshScore(); });
+  bLyrics.addEventListener('click',()=>{ showLyrics=!showLyrics; bLyrics.classList.toggle('is-active',showLyrics); bLyrics.setAttribute('aria-pressed',String(showLyrics)); refreshScore(); });
 
   container.querySelector('.trainer-midi').addEventListener('click',async()=>{
     if(midiConnection?.disconnect) midiConnection.disconnect(); midiStatus.textContent='Recherche du piano MIDI…';

@@ -16,7 +16,7 @@ import {
 
 import { firebaseConfig } from "./firebase-config.js";
 import { courses, getCourseById } from "./courses.js";
-import { mountPianoStageTrainer } from "./piano/piano-trainer.js";
+import { mountPianoStageTrainer } from "./piano/piano-trainer.js?v=20260929-s5-polish";
 
 const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
   String(value).startsWith("REMPLACE_")
@@ -213,7 +213,11 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
   const allBonusPieces = (stage.song?.bonusPieces || []).filter(piece => piece?.scoreImage);
   const continuationPages = allBonusPieces.filter(piece => /page\s*\d+/i.test(`${piece.title || ""} ${piece.scoreImageAlt || ""}`));
   const extraBonusPieces = allBonusPieces.filter(piece => !continuationPages.includes(piece));
-  const scorePages = stage.song?.scoreImage
+  const shouldShowSourceScore = Boolean(stage.song?.scoreImage) && !(
+    stage.song?.hideSourceImageWhenTranscribed &&
+    stage.song?.interactiveFidelity === "transcription-complete"
+  );
+  const scorePages = shouldShowSourceScore
     ? [{
         title: stage.song.scoreImageAlt || stage.song.title || stage.title || "Partition",
         scoreImage: stage.song.scoreImage,
@@ -253,9 +257,9 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
         </div>
       ` : ""}
 
-      ${stage.song ? `
+      ${stage.song && (stage.label !== "Morceau" || scorePages.length || extraBonusPieces.length) ? `
         <div class="piano-song-goal piano-song-goal--compact">
-          <strong>${stage.song.title || stage.title || "Morceau"}</strong>
+          ${stage.label === "Morceau" ? "" : `<strong>${stage.song.title || stage.title || "Morceau"}</strong>`}
           ${scorePages.length ? `
             <div class="piano-full-score-block">
               ${scorePages.map((page, pageIndex) => `
@@ -291,7 +295,7 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
         </div>
       ` : (
         isReferenceOnlyPianoStage(stage)
-          ? `<div class="piano-reference-only-note">Travaille la partition complète affichée ci-dessus.</div>`
+          ? `<div class="piano-reference-only-note">Travaille la partition de référence.</div>`
           : `<div class="piano-stage-trainer-slot"></div>`
       )}
     </div>
