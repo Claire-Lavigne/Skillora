@@ -1171,14 +1171,10 @@
 }
 
 
-/* Aide paroles : ajout indépendant des aides lecture et doigté. */
-.score-help--lyric{
-  font-size:11px !important;
-  font-weight:400 !important;
-  font-style:italic;
-  fill:#44504a !important;
-  letter-spacing:0 !important;
-}
-
 /* Défense contre d’anciens blocs de navigation par note encore présents dans un cache/merge. */
 .trainer-current,.trainer-current-card,.trainer-current-panel,.trainer-step-nav{display:none !important;}
+
+
+.week-complete-toggle{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid var(--border);border-radius:12px;background:#fff;font-weight:800;white-space:nowrap;}
+.week-complete-toggle input{width:18px;height:18px;accent-color:var(--accent);}
+.score-chord-name{font-size:12px;font-weight:700;fill:#2f3d37;}

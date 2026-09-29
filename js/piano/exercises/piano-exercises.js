@@ -4337,8 +4337,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w09-a1",
         "label": "Leçon",
-        "title": "Comprendre — Les accords Do, Fa et Sol",
-        "objective": "Comprendre à quoi servent C, F et G écrits au-dessus de Joy to the World.",
+        "title": "Lire et jouer les accords C, F et G",
+        "objective": "Reconnaître C, F et G au-dessus de la portée et jouer les trois accords correspondants.",
         "instructions": [
           "Prérequis : S4 : Do à Sol.",
           "Nouvelle notion : Triade majeure · accord plaqué · blanche pointée.",
@@ -4443,8 +4443,8 @@ export const pianoTrainingWeeks = [
           }
         },
         "lesson": {
-          "explanation": "Les lettres C, F et G indiquent l’harmonie du morceau : C = Do majeur (Do–Mi–Sol), F = Fa majeur (Fa–La–Do) et G = Sol majeur (Sol–Si–Ré). Elles servent à comprendre quel accord soutient la mélodie et à construire un accompagnement.",
-          "example": "Joue Do–Mi–Sol ensemble, puis Fa–La–Do, puis Sol–Si–Ré. Ensuite repère C, F et G au-dessus de la partition et écoute comment la basse écrite appartient à ces accords."
+          "explanation": "Dans cet exercice, les symboles C, F et G sont affichés directement au-dessus des accords : C = Do majeur (Do–Mi–Sol), F = Fa majeur (Fa–La–Do), G = Sol majeur (Sol–Si–Ré). Le symbole indique quelle harmonie est jouée à cet endroit.",
+          "example": "Joue successivement l’accord marqué C, puis F, puis G. Regarde le symbole au-dessus de la portée et les trois notes écrites ensemble juste en dessous."
         }
       },
       {

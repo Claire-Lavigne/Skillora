@@ -79,7 +79,6 @@ export function clearScoreActiveEvents(container) {
 export async function renderScore(container, activity, {
   showNoteNames = false,
   showFingers = false,
-  showLyrics = false,
   currentStep = 0
 } = {}) {
   const timeline = activity.timeline;
@@ -217,6 +216,7 @@ export async function renderScore(container, activity, {
       formatter.format(allVoices, measureWidth - (firstOnSystem ? 112 : 30));
 
       builtByStaff.forEach(group => {
+        const staffHintItems = [];
         group.voices.forEach(v => {
           v.voice.draw(context, group.stave);
           (v.tuplets || []).forEach(tuplet => {
@@ -232,9 +232,10 @@ export async function renderScore(container, activity, {
               }
             }
             renderedRows.push({ ...item, systemIndex, stave:group.stave });
+            staffHintItems.push(item);
           });
-          hints.push({ items:v.items, stave:group.stave });
         });
+        hints.push({ items:staffHintItems, stave:group.stave });
       });
 
       const sharedStart = Math.max(...staves.map(x => x.stave.getNoteStartX()));
@@ -289,20 +290,20 @@ export async function renderScore(container, activity, {
 
       const y1 = stave.getBottomLineY() + 26;
       const y2 = y1 + 17;
-      const y3 = y2 + 17;
+      const chordY = stave.getYForLine(0) - 14;
 
       helpGroups.forEach(group => {
         const pitches = [...new Set(group.events.flatMap(event => displayEventPitches(event).map(noteLabelFr)))];
         const fingers = [...new Set(group.events.flatMap(event => eventFingers(event).map(String)))];
-        const lyric = group.events.map(event => event.lyric).find(Boolean);
+        const chordNames = [...new Set(group.events.map(event => event.chordName).filter(Boolean))];
+        if (chordNames.length) {
+          svg.appendChild(svgNode("text", {x:group.x,y:chordY,"text-anchor":"middle",class:"score-chord-name"}, chordNames.join(" / ")));
+        }
         if (showNoteNames && pitches.length) {
           svg.appendChild(svgNode("text", {x:group.x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"}, pitches.join(" + ")));
         }
         if (showFingers && fingers.length) {
           svg.appendChild(svgNode("text", {x:group.x,y:y2,"text-anchor":"middle",class:"score-help score-help--finger"}, fingers.join("·")));
-        }
-        if (showLyrics && lyric) {
-          svg.appendChild(svgNode("text", {x:group.x,y:y3,"text-anchor":"start",class:"score-help score-help--lyric"}, lyric));
         }
       });
     });

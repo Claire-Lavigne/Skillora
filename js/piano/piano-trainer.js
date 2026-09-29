@@ -1,7 +1,7 @@
 import { createPianoKeyboard, noteLabelFr } from "./piano-keyboard.js";
 import { preparePiano, playTimeline, stopPlayback } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
-import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js?v=20260929-s5-polish";
+import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js?v=20260929-cleanup2";
 import { timelineMoments, timelineNotes, timelineEventRows } from "./music-model.js";
 
 function prettyMoment(moment) {
@@ -21,7 +21,7 @@ export function mountPianoStageTrainer(container, stage) {
   }
 
   const isCompleteTranscription = activity?.transcriptionType === "complete-from-supplied-score" || stage.song?.interactiveFidelity === "transcription-complete";
-  const scoreHeading = isCompleteTranscription ? "Partition complète" : (stage.song?.scoreImage ? "Exercice préparatoire interactif" : "Partition");
+  const scoreHeading = "Partition";
 
   container.innerHTML = `
     <div class="piano-stage-tools">
@@ -36,7 +36,6 @@ export function mountPianoStageTrainer(container, stage) {
           <div class="score-help-controls">
             <button type="button" class="score-help-toggle score-help-notes" aria-pressed="false">Aide lecture</button>
             <button type="button" class="score-help-toggle score-help-fingers" aria-pressed="false">Aide doigté</button>
-            <button type="button" class="score-help-toggle score-help-lyrics" aria-pressed="false">Aide paroles</button>
           </div>
         </div>
         <div class="trainer-score"></div>
@@ -71,14 +70,13 @@ export function mountPianoStageTrainer(container, stage) {
   let stepIndex = 0;
   let showNoteNames = false;
   let showFingers = false;
-  let showLyrics = false;
   let midiConnection = null;
 
   const allMoments = () => timelineMoments(activity.timeline);
   const currentMoment = () => allMoments()[Math.max(0,Math.min(stepIndex, allMoments().length-1))];
 
   async function refreshScore(){
-    await renderScore(score, activity, { showNoteNames, showFingers, showLyrics, currentStep:stepIndex });
+    await renderScore(score, activity, { showNoteNames, showFingers, currentStep:stepIndex });
   }
 
   function renderCurrent(message=''){
@@ -162,10 +160,9 @@ export function mountPianoStageTrainer(container, stage) {
     keyboard.highlight(moment?.notes || [], moment?.notes || []);
   });
 
-  const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers'); const bLyrics=container.querySelector('.score-help-lyrics');
+  const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers');
   bNotes.addEventListener('click',()=>{ showNoteNames=!showNoteNames; bNotes.classList.toggle('is-active',showNoteNames); bNotes.setAttribute('aria-pressed',String(showNoteNames)); refreshScore(); });
   bFingers.addEventListener('click',()=>{ showFingers=!showFingers; bFingers.classList.toggle('is-active',showFingers); bFingers.setAttribute('aria-pressed',String(showFingers)); refreshScore(); });
-  bLyrics.addEventListener('click',()=>{ showLyrics=!showLyrics; bLyrics.classList.toggle('is-active',showLyrics); bLyrics.setAttribute('aria-pressed',String(showLyrics)); refreshScore(); });
 
   container.querySelector('.trainer-midi').addEventListener('click',async()=>{
     if(midiConnection?.disconnect) midiConnection.disconnect(); midiStatus.textContent='Recherche du piano MIDI…';

@@ -16,7 +16,7 @@ import {
 
 import { firebaseConfig } from "./firebase-config.js";
 import { courses, getCourseById } from "./courses.js";
-import { mountPianoStageTrainer } from "./piano/piano-trainer.js?v=20260929-s5-polish";
+import { mountPianoStageTrainer } from "./piano/piano-trainer.js?v=20260929-cleanup2";
 
 const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
   String(value).startsWith("REMPLACE_")
@@ -124,6 +124,24 @@ function pianoProgressId(stage, weekIndex, stageIndex) {
   return stage?.id ? `p-${stage.id}` : `pw${weekIndex}a${stageIndex}`;
 }
 
+function pianoWeekProgressId(week, weekIndex) {
+  const anchor = String(week?.[1]?.[0]?.id || `week-${weekIndex + 1}`)
+    .replace(/-a\d+$/i, "")
+    .replace(/[^a-z0-9_-]/gi, "-");
+  return `pweek-${anchor || weekIndex + 1}`;
+}
+
+function pianoWeekCompletedFromChecks(week, weekIndex, checks = {}) {
+  const weekId = pianoWeekProgressId(week, weekIndex);
+  if (checks[weekId] === true) return true;
+  const stableStageIds = week[1].map((stage, stageIndex) => pianoProgressId(stage, weekIndex, stageIndex));
+  const previousStageIds = week[1].map((stage, stageIndex) => previousPianoProgressId(stage, weekIndex, stageIndex));
+  const legacyKeys = Object.keys(checks).filter(key => new RegExp(`^w${weekIndex}s\\d+$`).test(key));
+  return (stableStageIds.length > 0 && stableStageIds.every(id => checks[id] === true)) ||
+    (previousStageIds.length > 0 && previousStageIds.every(id => checks[id] === true)) ||
+    (legacyKeys.length > 0 && legacyKeys.every(id => checks[id] === true));
+}
+
 function previousPianoProgressId(stage, fallbackWeekIndex, fallbackStageIndex) {
   const match = /^w(\d+)-a(\d+)$/i.exec(stage?.id || "");
   if (!match) return `pw${fallbackWeekIndex}a${fallbackStageIndex}`;
@@ -210,7 +228,6 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
   card.dataset.pianoStage = stageIndex;
   card.open = stageIndex === 0;
 
-  const progressId = pianoProgressId(stage, weekIndex, stageIndex);
   const allBonusPieces = (stage.song?.bonusPieces || []).filter(piece => piece?.scoreImage);
   const continuationPages = allBonusPieces.filter(piece => /page\s*\d+/i.test(`${piece.title || ""} ${piece.scoreImageAlt || ""}`));
   const extraBonusPieces = allBonusPieces.filter(piece => !continuationPages.includes(piece));
@@ -246,11 +263,6 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
     </summary>
 
     <div class="piano-stage-body">
-      <label class="piano-stage-complete piano-stage-complete--compact">
-        <input type="checkbox" id="${progressId}">
-        <span>Étape terminée</span>
-      </label>
-
       ${isLesson ? `
         <div class="piano-lesson-content">
           <p>${stage.lesson?.explanation || stage.objective || ""}</p>
@@ -265,7 +277,7 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
             <div class="piano-full-score-block">
               ${scorePages.map((page, pageIndex) => `
                 <figure class="piano-reference-score ${scorePages.length > 1 ? 'piano-reference-score--page' : 'piano-reference-score--single'}">
-                  <figcaption>${scorePages.length > 1 ? `Page ${pageIndex + 1}` : 'Partition complète'}</figcaption>
+                  <figcaption>${scorePages.length > 1 ? `Page ${pageIndex + 1}` : 'Partition'}</figcaption>
                   <img src="${page.scoreImage}" alt="${page.scoreImageAlt || page.title}" loading="lazy">
                 </figure>
               `).join("")}
@@ -389,39 +401,44 @@ function buildCourse(course) {
     const weekActions = document.createElement("div");
     weekActions.className = "week-actions";
 
-    const checkAllButton = document.createElement("button");
-    checkAllButton.type = "button";
-    checkAllButton.className = "check-all";
-    checkAllButton.textContent = "Tout cocher";
-
-    checkAllButton.addEventListener("click", async () => {
-      const boxes = [...page.querySelectorAll('input[type="checkbox"]')];
-      boxes.forEach(checkbox => {
-        checkbox.checked = true;
-        checkbox.closest(".step")?.classList.add("done");
-        checkbox.closest(".piano-learning-stage")?.classList.add("done");
+    if (course.id === "piano") {
+      const weekComplete = document.createElement("label");
+      weekComplete.className = "week-complete-toggle";
+      weekComplete.innerHTML = `
+        <input type="checkbox" id="${pianoWeekProgressId(week, weekIndex)}">
+        <span>Semaine terminée</span>
+      `;
+      weekActions.appendChild(weekComplete);
+    } else {
+      const checkAllButton = document.createElement("button");
+      checkAllButton.type = "button";
+      checkAllButton.className = "check-all";
+      checkAllButton.textContent = "Tout cocher";
+      checkAllButton.addEventListener("click", async () => {
+        const boxes = [...page.querySelectorAll('input[type="checkbox"]')];
+        boxes.forEach(checkbox => {
+          checkbox.checked = true;
+          checkbox.closest(".step")?.classList.add("done");
+        });
+        await saveProgress();
+        updateCourseUI();
       });
-      await saveProgress();
-      updateCourseUI();
-    });
 
-    const uncheckAllButton = document.createElement("button");
-    uncheckAllButton.type = "button";
-    uncheckAllButton.className = "uncheck-all";
-    uncheckAllButton.textContent = "Tout décocher";
-
-    uncheckAllButton.addEventListener("click", async () => {
-      const boxes = [...page.querySelectorAll('input[type="checkbox"]')];
-      boxes.forEach(checkbox => {
-        checkbox.checked = false;
-        checkbox.closest(".step")?.classList.remove("done");
-        checkbox.closest(".piano-learning-stage")?.classList.remove("done");
+      const uncheckAllButton = document.createElement("button");
+      uncheckAllButton.type = "button";
+      uncheckAllButton.className = "uncheck-all";
+      uncheckAllButton.textContent = "Tout décocher";
+      uncheckAllButton.addEventListener("click", async () => {
+        const boxes = [...page.querySelectorAll('input[type="checkbox"]')];
+        boxes.forEach(checkbox => {
+          checkbox.checked = false;
+          checkbox.closest(".step")?.classList.remove("done");
+        });
+        await saveProgress();
+        updateCourseUI();
       });
-      await saveProgress();
-      updateCourseUI();
-    });
-
-    weekActions.append(checkAllButton, uncheckAllButton);
+      weekActions.append(checkAllButton, uncheckAllButton);
+    }
     head.appendChild(weekActions);
     page.appendChild(head);
 
@@ -463,7 +480,7 @@ function buildCourse(course) {
 
     const complete = document.createElement("div");
     complete.className = "complete";
-    complete.textContent = "Niveau terminé. Tu peux passer au niveau suivant.";
+    complete.textContent = course.id === "piano" ? "Semaine terminée. Tu peux passer à la suivante." : "Niveau terminé. Tu peux passer au niveau suivant.";
     page.appendChild(complete);
 
     const nav = document.createElement("div");
@@ -500,25 +517,10 @@ async function loadProgress() {
   const checks = data.checks || {};
 
   if (currentCourse.id === "piano") {
-    // Progression stable après réorganisation des semaines : les IDs suivent maintenant
-    // l'exercice lui-même (stage.id) et non sa position dans le parcours.
     currentCourse.weeks.forEach((week, weekIndex) => {
-      week[1].forEach((stage, stageIndex) => {
-        const stableId = pianoProgressId(stage, weekIndex, stageIndex);
-        if (Object.prototype.hasOwnProperty.call(checks, stableId)) return;
-
-        const previousId = previousPianoProgressId(stage, weekIndex, stageIndex);
-        if (checks[previousId] === true) checks[stableId] = true;
-      });
-
-      const legacyKeys = Object.keys(checks).filter(key =>
-        new RegExp(`^w${weekIndex}s\\d+$`).test(key)
-      );
-      if (legacyKeys.length && legacyKeys.every(key => checks[key] === true)) {
-        week[1].forEach((stage, stageIndex) => {
-          const stableId = pianoProgressId(stage, weekIndex, stageIndex);
-          if (!Object.prototype.hasOwnProperty.call(checks, stableId)) checks[stableId] = true;
-        });
+      const weekId = pianoWeekProgressId(week, weekIndex);
+      if (!Object.prototype.hasOwnProperty.call(checks, weekId) && pianoWeekCompletedFromChecks(week, weekIndex, checks)) {
+        checks[weekId] = true;
       }
     });
   }
@@ -538,7 +540,7 @@ async function loadProgress() {
     ? data.currentLevel
     : 0;
 
-  if (currentCourse.id === "piano" && data.planVersion !== 2) {
+  if (currentCourse.id === "piano" && data.planVersion !== 3) {
     const oldPrefix = `w${String(savedLevel + 1).padStart(2, "0")}-`;
     const migratedIndex = currentCourse.weeks.findIndex(week =>
       week?.[1]?.some(stage => String(stage?.id || "").startsWith(oldPrefix))
@@ -576,7 +578,7 @@ async function saveProgress() {
     currentLevel,
     updatedAt: serverTimestamp()
   };
-  if (currentCourse.id === "piano") progressPayload.planVersion = 2;
+  if (currentCourse.id === "piano") progressPayload.planVersion = 3;
 
   await setDoc(
     ref,
@@ -618,8 +620,9 @@ function updateCourseUI() {
     )
   ];
 
-  document.getElementById("stepCount").textContent =
-    `${currentBoxes.filter(item => item.checked).length} / ${currentBoxes.length} étapes`;
+  document.getElementById("stepCount").textContent = currentCourse.id === "piano"
+    ? (currentBoxes[0]?.checked ? "Semaine terminée" : "Semaine en cours")
+    : `${currentBoxes.filter(item => item.checked).length} / ${currentBoxes.length} étapes`;
 
   document.querySelectorAll(".dot").forEach((dot, index) => {
     dot.classList.toggle("current", index === currentLevel);
@@ -670,12 +673,16 @@ async function getCourseProgressPercent(course) {
   if (!snap.exists()) return 0;
 
   const checks = snap.data().checks || {};
+  if (course.id === "piano") {
+    const completedWeeks = course.weeks.filter((week, weekIndex) =>
+      pianoWeekCompletedFromChecks(week, weekIndex, checks)
+    ).length;
+    return course.weeks.length ? Math.round((completedWeeks / course.weeks.length) * 100) : 0;
+  }
+
   const expectedIds = expectedCourseStepIds(course);
   const checkedSteps = expectedIds.filter(id => checks[id] === true).length;
-
-  return expectedIds.length
-    ? Math.round((checkedSteps / expectedIds.length) * 100)
-    : 0;
+  return expectedIds.length ? Math.round((checkedSteps / expectedIds.length) * 100) : 0;
 }
 
 function expectedCourseStepIds(course) {
@@ -685,9 +692,7 @@ function expectedCourseStepIds(course) {
     const content = week[1];
 
     if (course.id === "piano") {
-      content.forEach((stage, stageIndex) => {
-        ids.push(pianoProgressId(stage, weekIndex, stageIndex));
-      });
+      ids.push(pianoWeekProgressId(week, weekIndex));
       return;
     }
 
