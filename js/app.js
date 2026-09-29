@@ -216,7 +216,11 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
         <span class="piano-learning-stage__label">${stage.label}</span>
         <strong>${stageSummaryTitle(stage)}</strong>
       </span>
-      <span class="piano-stage-summary__chevron" aria-hidden="true">⌄</span>
+      <span class="piano-stage-summary__chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+          <path d="M6.5 9.5 12 15l5.5-5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
     </summary>
 
     <div class="piano-stage-body">
@@ -226,10 +230,9 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
       </label>
 
       ${isLesson ? `
-        <div class="piano-lesson-note">
-          <strong>À retenir</strong>
-          <p>${stage.objective || ""}</p>
-          ${(stage.instructions || []).length ? `<ul>${stage.instructions.map(item => `<li>${safeLink(item)}</li>`).join("")}</ul>` : ""}
+        <div class="piano-lesson-content">
+          <p>${stage.lesson?.explanation || stage.objective || ""}</p>
+          ${stage.lesson?.example ? `<p class="piano-lesson-example"><strong>Exemple :</strong> ${stage.lesson.example}</p>` : ""}
         </div>
       ` : ""}
 
@@ -361,6 +364,9 @@ function buildCourse(course) {
       head.appendChild(objectiveList);
     }
 
+    const weekActions = document.createElement("div");
+    weekActions.className = "week-actions";
+
     const checkAllButton = document.createElement("button");
     checkAllButton.type = "button";
     checkAllButton.className = "check-all";
@@ -377,7 +383,24 @@ function buildCourse(course) {
       updateCourseUI();
     });
 
-    head.appendChild(checkAllButton);
+    const uncheckAllButton = document.createElement("button");
+    uncheckAllButton.type = "button";
+    uncheckAllButton.className = "uncheck-all";
+    uncheckAllButton.textContent = "Tout décocher";
+
+    uncheckAllButton.addEventListener("click", async () => {
+      const boxes = [...page.querySelectorAll('input[type="checkbox"]')];
+      boxes.forEach(checkbox => {
+        checkbox.checked = false;
+        checkbox.closest(".step")?.classList.remove("done");
+        checkbox.closest(".piano-learning-stage")?.classList.remove("done");
+      });
+      await saveProgress();
+      updateCourseUI();
+    });
+
+    weekActions.append(checkAllButton, uncheckAllButton);
+    head.appendChild(weekActions);
     page.appendChild(head);
 
     let counter = 0;

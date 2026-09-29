@@ -44,7 +44,10 @@ main.course-main{max-width:1000px;margin:auto;padding:16px 14px 90px}
 .week-page.active{display:block}
 .week-page h2{margin:0;font-size:clamp(21px,3vw,28px)}
 .week-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
-.check-all{border:0;border-radius:10px;padding:9px 12px;font-weight:800;background:var(--accent2);color:var(--accent);white-space:nowrap}
+.week-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.check-all,.uncheck-all{border:0;border-radius:10px;padding:9px 12px;font-weight:800;white-space:nowrap}
+.check-all{background:var(--accent2);color:var(--accent)}
+.uncheck-all{background:#eef1ef;color:#46524c}
 
 .group-card{border:1px solid var(--border);border-radius:14px;padding:12px;margin:12px 0;background:var(--soft)}
 .group-card h3{margin:0 0 8px;font-size:17px;color:var(--accent)}
@@ -86,7 +89,8 @@ main.course-main{max-width:1000px;margin:auto;padding:16px 14px 90px}
   .home-btn{margin-top:14px}
   .week-page{padding:16px 12px}
   .week-head{align-items:flex-start;flex-direction:column}
-  .check-all{width:100%}
+  .week-actions{width:100%;display:grid;grid-template-columns:1fr 1fr}
+  .check-all,.uncheck-all{width:100%}
   .nav button{flex:1}
   .level-map{grid-template-columns:repeat(6,1fr)}
 }

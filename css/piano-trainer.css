@@ -700,8 +700,7 @@
 
 /* Lecture automatique : les glyphes VexFlow restent intacts.
    La note active est signalée uniquement par un halo vert. */
-.trainer-score svg .score-event,
-.trainer-score svg .score-event *{
+.trainer-score svg .score-event{
   opacity:1 !important;
 }
 
@@ -1082,4 +1081,93 @@
   .piano-stage-body{
     padding:14px 12px 18px;
   }
+}
+
+
+/* Accordéons modernes */
+.piano-stage-summary__chevron{
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  display:grid;
+  place-items:center;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--soft);
+  color:var(--accent);
+  transition:transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.piano-stage-summary__chevron svg{
+  width:17px;
+  height:17px;
+  display:block;
+  transition:transform .18s ease;
+}
+
+.piano-learning-stage--accordion[open] .piano-stage-summary__chevron{
+  transform:none;
+  background:#fff;
+  border-color:var(--accent);
+}
+
+.piano-learning-stage--accordion[open] .piano-stage-summary__chevron svg{
+  transform:rotate(180deg);
+}
+
+.piano-practice-part > summary,
+.piano-bonus-scores > summary,
+.trainer-midi-details > summary{
+  list-style:none;
+  position:relative;
+  padding-right:46px;
+}
+
+.piano-practice-part > summary::-webkit-details-marker,
+.piano-bonus-scores > summary::-webkit-details-marker,
+.trainer-midi-details > summary::-webkit-details-marker{
+  display:none;
+}
+
+.piano-practice-part > summary::after,
+.piano-bonus-scores > summary::after,
+.trainer-midi-details > summary::after{
+  content:"";
+  position:absolute;
+  right:16px;
+  top:50%;
+  width:8px;
+  height:8px;
+  border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;
+  transform:translateY(-65%) rotate(45deg);
+  transition:transform .18s ease;
+  opacity:.72;
+}
+
+.piano-practice-part[open] > summary::after,
+.piano-bonus-scores[open] > summary::after,
+.trainer-midi-details[open] > summary::after{
+  transform:translateY(-35%) rotate(225deg);
+}
+
+/* Une vraie mini-leçon : explication + exemple, sans bloc “À retenir”. */
+.piano-lesson-content{
+  margin-bottom:14px;
+  padding:14px 16px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:var(--soft);
+}
+
+.piano-lesson-content p{
+  margin:0;
+  line-height:1.6;
+}
+
+.piano-lesson-content .piano-lesson-example{
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
 }

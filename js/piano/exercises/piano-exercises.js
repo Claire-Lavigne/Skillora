@@ -101,6 +101,10 @@ export const pianoTrainingWeeks = [
             ]
           },
           "description": ""
+        },
+        "lesson": {
+          "explanation": "Une portée se lit de gauche à droite. En clé de sol, commence par repérer le Do central pour la main droite. En clé de fa, repère le Do plus grave pour la main gauche. Une noire dure 1 temps ; un soupir dure aussi 1 temps, mais tu ne joues rien pendant ce temps.",
+          "example": "Compte 1-2-3-4 sans t’arrêter : joue sur les noires et garde le silence sur le soupir."
         }
       },
       {
@@ -1038,6 +1042,10 @@ export const pianoTrainingWeeks = [
             ]
           },
           "description": ""
+        },
+        "lesson": {
+          "explanation": "Ré et Mi sont les deux notes qui suivent Do en montant. Une blanche vaut 2 temps : tu appuies une seule fois et tu gardes la touche enfoncée pendant deux pulsations. Le legato consiste à relier les notes sans trou entre elles.",
+          "example": "Do–Ré–Mi : garde chaque blanche pendant 2 temps, puis relâche seulement quand la note suivante commence."
         }
       },
       {
@@ -2082,6 +2090,10 @@ export const pianoTrainingWeeks = [
             ]
           },
           "description": ""
+        },
+        "lesson": {
+          "explanation": "Une ronde vaut 4 temps complets. L’objectif n’est pas seulement de reconnaître son symbole : il faut apprendre à maintenir une main immobile pendant que l’autre continue à jouer.",
+          "example": "Main gauche : tiens Do pendant 4 temps. Main droite : joue plusieurs notes au-dessus sans relâcher la basse trop tôt."
         }
       },
       {
@@ -3120,6 +3132,10 @@ export const pianoTrainingWeeks = [
             ]
           },
           "description": ""
+        },
+        "lesson": {
+          "explanation": "La position de cinq doigts place un doigt sur chaque note consécutive : Do–Ré–Mi–Fa–Sol. Cela permet de lire une petite phrase sans déplacer toute la main à chaque note.",
+          "example": "MD : 1=Do, 2=Ré, 3=Mi, 4=Fa, 5=Sol. Cherche d’abord le doigt avant de regarder le clavier."
         }
       },
       {
@@ -4464,6 +4480,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un accord est plusieurs notes jouées ensemble. La triade de Do majeur contient Do–Mi–Sol : fondamentale, tierce et quinte. Un accord plaqué se joue en appuyant les notes exactement au même moment.",
+          "example": "Joue Do–Mi–Sol avec 1–3–5, puis vérifie que les trois touches descendent ensemble."
         }
       },
       {
@@ -6156,6 +6176,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Deux croches partagent un seul temps : chacune dure un demi-temps. Pour les jouer régulièrement, pense « 1-et-2-et ». Un demi-soupir occupe lui aussi un demi-temps.",
+          "example": "Dis 1-et-2-et à voix haute, puis joue une croche sur chaque syllabe."
         }
       },
       {
@@ -7695,6 +7719,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Une basse fondamentale–quinte alterne la note qui donne son nom à l’accord puis sa quinte. Elle crée un accompagnement simple sans jouer encore un accord complet à chaque pulsation.",
+          "example": "Sur Do majeur : joue Do puis Sol à la main gauche, en gardant une pulsation régulière."
         }
       },
       {
@@ -9118,6 +9146,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un intervalle est la distance entre deux notes. Une seconde avance vers la note voisine ; une tierce saute une note. Les reconnaître visuellement accélère la lecture sans devoir nommer chaque note une par une.",
+          "example": "Do→Ré = seconde. Do→Mi = tierce. Repère la forme du mouvement avant de jouer."
         }
       },
       {
@@ -10393,6 +10425,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Dans une grille d’accords, le symbole placé au-dessus de la mélodie indique l’harmonie à utiliser à cet endroit. La mélodie et l’accord ne sont pas deux exercices séparés : ils doivent avancer sur la même pulsation.",
+          "example": "Quand tu vois C, prépare Do–Mi–Sol ; quand le symbole passe à F ou G, change l’accord exactement au bon moment."
         }
       },
       {
@@ -12415,6 +12451,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un accord mineur se construit comme un accord majeur mais avec une tierce plus basse. C’est cette tierce qui change immédiatement la couleur de l’accord.",
+          "example": "Compare La–Do♯–Mi et La–Do–Mi : le second est La mineur. Écoute la différence avant de mémoriser la forme."
         }
       },
       {
@@ -14600,6 +14640,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un accord de 7e ajoute une quatrième note à la triade. Une dominante 7 crée une tension qui appelle généralement l’accord suivant ; elle ne doit pas être jouée comme un simple accord majeur.",
+          "example": "B7 = Si–Ré♯–Fa♯–La. Joue-le puis résous vers Mi mineur pour entendre la tension puis le repos."
         }
       },
       {
@@ -16595,6 +16639,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un accord sus4 remplace temporairement la tierce par la quarte. La quarte redescend ensuite vers la tierce : c’est la résolution qui donne son effet au sus4.",
+          "example": "Esus4 = Mi–La–Si, puis E = Mi–Sol♯–Si. Ne relâche pas tout : fais seulement bouger La vers Sol♯."
         }
       },
       {
@@ -18718,6 +18766,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Les accords de dominante 7 peuvent apparaître dans plusieurs tonalités. Pour les lire vite, repère d’abord la fondamentale, puis la structure de l’accord plutôt que de reconstruire chaque note au hasard.",
+          "example": "A7 contient La–Do♯–Mi–Sol ; C7 contient Do–Mi–Sol–Si♭. Compare les deux formes sur le clavier."
         }
       },
       {
@@ -21181,6 +21233,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un accord slash indique une basse précise différente de la fondamentale. Ré/Fa♯ signifie : joue un accord de Ré, mais place Fa♯ comme note la plus grave.",
+          "example": "Compare Ré majeur en position normale puis Ré/Fa♯ : l’accord reste Ré majeur, seule la basse change."
         }
       },
       {
@@ -23113,6 +23169,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Dans un accompagnement pop continu, la main gauche ou les accords gardent un motif stable pendant que la mélodie évolue. La difficulté principale est de ne pas interrompre le motif au changement d’accord.",
+          "example": "Travaille d’abord C–F–G–C en boucle sans mélodie, puis ajoute la main droite."
         }
       },
       {
@@ -25465,6 +25525,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "En 3/4, chaque mesure contient 3 temps et le premier est généralement le plus appuyé. Une anacrouse est une ou plusieurs notes placées avant le premier temps fort de la première mesure.",
+          "example": "Compte 1-2-3 | 1-2-3. Si le morceau commence avant le premier « 1 », ne transforme pas cette anacrouse en mesure complète."
         }
       },
       {
@@ -27561,6 +27625,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Le chromatisme utilise deux hauteurs voisines séparées d’un demi-ton, comme Ré♯ puis Ré naturel. Une altération accidentelle reste valable jusqu’à la fin de la mesure pour la même note et la même octave.",
+          "example": "Sur Für Elise, observe Mi–Ré♯–Mi–Ré♯–Mi avant de jouer : le mouvement est minuscule mais doit rester précis."
         }
       },
       {
@@ -29095,6 +29163,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "L’indication 8va signifie que les notes écrites doivent sonner une octave plus haut. Elle évite d’écrire trop de lignes supplémentaires au-dessus de la portée.",
+          "example": "Lis d’abord la note écrite, puis déplace mentalement le son d’une octave sans changer son nom."
         }
       },
       {
@@ -31647,6 +31719,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Quand une main joue des croches continues et l’autre des accords ponctuels, les deux mains partagent la même grille de temps. Les accords doivent tomber exactement sur les bons points du flux de croches.",
+          "example": "Travaille la main droite seule avec métronome, puis ajoute seulement les accords qui tombent sur les temps indiqués."
         }
       },
       {
@@ -33039,6 +33115,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Le voicing consiste à faire ressortir une voix importante, souvent la mélodie, au-dessus de l’accompagnement. Toutes les notes ne doivent donc pas être jouées au même volume.",
+          "example": "Joue l’accompagnement doucement, puis refais la phrase en donnant légèrement plus de poids à la note mélodique."
         }
       },
       {
@@ -34957,6 +35037,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Une même main peut jouer plusieurs voix : certaines notes restent tenues pendant que d’autres bougent. Il faut penser en lignes musicales, pas seulement en positions d’accords.",
+          "example": "Tiens la note longue avec un doigt pendant que les autres doigts continuent l’arpège sans la couper."
         }
       },
       {
@@ -36620,6 +36704,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un ostinato est un motif qui se répète. Pour qu’il reste stable, mémorise sa forme et son doigté jusqu’à ce qu’il demande très peu d’attention, afin que l’autre main puisse jouer librement.",
+          "example": "Répète 1–5–3–5 lentement sur un seul accord avant de changer d’harmonie."
         }
       },
       {
@@ -38873,6 +38961,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Sol majeur comporte un Fa♯ à l’armure. Cela signifie que chaque Fa est dièse sauf indication contraire. Les accords sus4 peuvent ensuite être utilisés comme couleur dans cette tonalité.",
+          "example": "Joue la gamme de Sol et vérifie que le seul changement par rapport à Do majeur est Fa♯."
         }
       },
       {
@@ -40898,6 +40990,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Avec trois portées, tu dois identifier quel plan appartient à quelle main ou quelle voix avant de jouer. Lis d’abord verticalement ce qui se passe au même instant, puis horizontalement chaque ligne.",
+          "example": "Colorie mentalement les rôles : mélodie, accompagnement, basse. Travaille deux plans à la fois avant d’en ajouter un troisième."
         }
       },
       {
@@ -43472,6 +43568,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un triolet divise un temps en trois parts égales. Ce n’est pas la même sensation que deux croches ou quatre doubles croches : les trois notes doivent être parfaitement espacées.",
+          "example": "Dis « tri-o-let » sur un seul temps, puis alterne un temps de triolets et un temps de deux croches."
         }
       },
       {
@@ -46115,6 +46215,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un ostinato long demande de l’endurance et une pulsation stable. Plus le motif dure, plus il faut éviter de crisper la main et d’accélérer inconsciemment.",
+          "example": "Travaille 4 mesures à vitesse réduite ; si le tempo change, ralentis encore plutôt que de forcer."
         }
       },
       {
@@ -48410,6 +48514,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un morceau peut changer de texture : notes longues, accords, arpèges ou passages plus rythmiques. Le tempo peut aussi évoluer. Il faut préparer chaque texture séparément avant d’enchaîner.",
+          "example": "Marque sur la partition les endroits où le geste change, puis pratique uniquement les transitions entre deux textures."
         }
       },
       {
@@ -50628,6 +50736,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Le swing transforme deux croches égales en sensation longue–courte. On ne joue donc pas mécaniquement 50/50 : la première dure davantage que la seconde.",
+          "example": "Joue « long-court, long-court » sur une note, puis applique la même sensation à la phrase sans durcir les accents."
         }
       },
       {
@@ -53737,6 +53849,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un renversement contient les mêmes notes qu’un accord, mais dans un autre ordre. Il permet de rapprocher deux accords successifs et de réduire les grands sauts de la main.",
+          "example": "Pour Do majeur, compare Do–Mi–Sol, Mi–Sol–Do et Sol–Do–Mi. Cherche ensuite la position la plus proche de l’accord suivant."
         }
       },
       {
@@ -55634,6 +55750,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Les strates répétitives sont plusieurs motifs réguliers superposés. Pour rester précis à tempo élevé, chaque strate doit d’abord être automatisée séparément puis assemblée lentement.",
+          "example": "Travaille 2 mesures en boucle à 50 %, puis 75 %. N’augmente la vitesse que si les accents et les durées restent identiques."
         }
       },
       {
@@ -57676,6 +57796,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Un voicing enrichi contient souvent 4 notes ou plus. Le but n’est pas seulement de les atteindre, mais de choisir une position confortable et de garder la note importante audible dans l’ensemble.",
+          "example": "Joue d’abord l’accord note par note, puis ensemble, puis cherche quel doigt peut rester en place lors du changement suivant."
         }
       },
       {
@@ -60252,6 +60376,10 @@ export const pianoTrainingWeeks = [
               }
             ]
           }
+        },
+        "lesson": {
+          "explanation": "Le projet final demande de savoir travailler seul : découper la partition, repérer les difficultés, choisir un doigté, ralentir, puis assembler les sections sans perdre la musicalité.",
+          "example": "Travaille par blocs de 4 mesures : lecture, mains séparées, mains ensemble lentes, puis enchaînement avec le bloc suivant."
         }
       },
       {
