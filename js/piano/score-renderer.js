@@ -1,3 +1,4 @@
+import * as Vex from "https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm";
 import {
   timeSignatureCapacity,
   validateTimeline,
@@ -6,15 +7,6 @@ import {
   measureStaffVoices,
   displayEventPitches
 } from "./music-model.js";
-
-let vexFlowPromise = null;
-
-function loadVexFlow() {
-  if (!vexFlowPromise) {
-    vexFlowPromise = import("https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm");
-  }
-  return vexFlowPromise;
-}
 
 function normalizeNoteForVex(note) {
   const match = /^([A-G])(#|b)?(\d)$/.exec(note);
@@ -104,7 +96,6 @@ export async function renderScore(container, activity, {
   container.innerHTML = '<div class="score-loading">Chargement de la partition…</div>';
 
   try {
-    const Vex = await loadVexFlow();
     const { Renderer, Stave, StaveNote, Voice, Formatter, Accidental, StaveConnector, Barline, Dot, StaveTie, Tuplet } = Vex;
 
     const signature = timeline.timeSignature || "4/4";
