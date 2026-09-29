@@ -1,32 +1,4 @@
 import {
-
-let vexFlowPromise = null;
-
-function loadVexFlow() {
-  if (globalThis.VexFlow) return Promise.resolve(globalThis.VexFlow);
-  if (vexFlowPromise) return vexFlowPromise;
-
-  vexFlowPromise = new Promise((resolve, reject) => {
-    const existing = document.querySelector('script[data-skillora-vexflow]');
-    const finish = () => globalThis.VexFlow ? resolve(globalThis.VexFlow) : reject(new Error('VexFlow indisponible'));
-
-    if (existing) {
-      existing.addEventListener('load', finish, { once:true });
-      existing.addEventListener('error', () => reject(new Error('VexFlow n’a pas pu être chargé')), { once:true });
-      return;
-    }
-
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/vexflow@5.0.0/build/cjs/vexflow.js';
-    script.async = true;
-    script.dataset.skilloraVexflow = 'true';
-    script.addEventListener('load', finish, { once:true });
-    script.addEventListener('error', () => reject(new Error('VexFlow n’a pas pu être chargé')), { once:true });
-    document.head.appendChild(script);
-  });
-
-  return vexFlowPromise;
-}
   timeSignatureCapacity,
   validateTimeline,
   momentIndexByEventId,
@@ -34,6 +6,15 @@ function loadVexFlow() {
   measureStaffVoices,
   displayEventPitches
 } from "./music-model.js";
+
+let vexFlowPromise = null;
+
+function loadVexFlow() {
+  if (!vexFlowPromise) {
+    vexFlowPromise = import("https://cdn.jsdelivr.net/npm/vexflow@5.0.0/+esm");
+  }
+  return vexFlowPromise;
+}
 
 function normalizeNoteForVex(note) {
   const match = /^([A-G])(#|b)?(\d)$/.exec(note);
