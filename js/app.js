@@ -151,10 +151,27 @@ function makePianoStage(stage, weekIndex, stageIndex) {
 
     ${stage.song ? `
       <div class="piano-song-goal">
-        <strong>Objectif chant</strong>
+        <strong>Morceau de la semaine</strong>
         <span>${stage.song.title || stage.title || "Morceau de la semaine"}</span>
         ${stage.song.sourceNote ? `<p>${stage.song.sourceNote}</p>` : ""}
-        ${Array.isArray(stage.song.requiredSkills) && stage.song.requiredSkills.length ? `<small>À réutiliser : ${stage.song.requiredSkills.join(" · ")}</small>` : ""}
+        ${stage.song.scoreImage ? `
+          <details class="piano-reference-score">
+            <summary>Voir la partition fournie</summary>
+            <img src="${stage.song.scoreImage}" alt="${stage.song.scoreImageAlt || `Partition de ${stage.song.title || stage.title}`}" loading="lazy">
+          </details>
+        ` : ""}
+        ${Array.isArray(stage.song.requiredSkills) && stage.song.requiredSkills.length ? `<small>À réutiliser : ${stage.song.requiredSkills.filter(Boolean).join(" · ")}</small>` : ""}
+        ${Array.isArray(stage.song.bonusPieces) && stage.song.bonusPieces.length ? `
+          <div class="piano-bonus-scores">
+            <strong>Bonus</strong>
+            ${stage.song.bonusPieces.map(piece => `
+              <details class="piano-reference-score piano-reference-score--bonus">
+                <summary>${piece.title}</summary>
+                <img src="${piece.scoreImage}" alt="${piece.scoreImageAlt || piece.title}" loading="lazy">
+              </details>
+            `).join("")}
+          </div>
+        ` : ""}
       </div>
     ` : ""}
 

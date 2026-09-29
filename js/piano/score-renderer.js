@@ -22,7 +22,14 @@ function noteLabelFr(note) {
 function vexDuration(duration, rest = false) {
   const dotted = duration === "hd" || duration === "qd";
   const base = duration === "hd" ? "h" : duration === "qd" ? "q" : duration;
-  return { value: `${base}${rest ? "r" : ""}`, dotted };
+
+  // Le suffixe `d` doit faire partie de la durée VexFlow pour que la note
+  // compte réellement 1,5× sa valeur dans la voix. Le Dot ci-dessous ne sert
+  // ensuite qu'à dessiner le point sur la portée. Sans ce `d`, une blanche
+  // pointée était comptée comme 2 temps au lieu de 3 et VexFlow rejetait la
+  // mesure en mode strict.
+  const value = `${base}${dotted ? "d" : ""}${rest ? "r" : ""}`;
+  return { value, dotted };
 }
 
 function svgNode(name, attrs = {}, text = "") {
@@ -215,9 +222,6 @@ export async function renderScore(container, activity, {
         if (pitch.includes("b")) note.addModifier(new Accidental("b"), index);
       });
 
-      if (eventToMoment.get(eventId) === currentStep) {
-        note.setStyle({ fillStyle:"#10664c", strokeStyle:"#10664c" });
-      }
       return note;
     }
 

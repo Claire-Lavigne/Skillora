@@ -40,7 +40,7 @@ export function mountPianoStageTrainer(container, stage) {
 
       <div class="trainer-score-panel">
         <div class="trainer-section-title trainer-score-title">
-          <div><strong>Partition complète de l’exercice</strong><span>Les silences et les durées font partie de l’exercice.</span></div>
+          <div><strong>Partition</strong></div>
           <div class="score-help-controls">
             <button type="button" class="score-help-toggle score-help-notes" aria-pressed="false">Aide lecture</button>
             <button type="button" class="score-help-toggle score-help-fingers" aria-pressed="false">Aide doigté</button>
@@ -49,7 +49,7 @@ export function mountPianoStageTrainer(container, stage) {
         <div class="trainer-score"></div>
       </div>
 
-      <div class="trainer-keyboard-panel"><div class="trainer-section-title"><strong>Clavier</strong><span>Toute la tessiture de l’exercice reste visible.</span></div><div class="trainer-keyboard-slot"></div></div>
+      <div class="trainer-keyboard-panel"><div class="trainer-section-title"><strong>Clavier</strong></div><div class="trainer-keyboard-slot"></div></div>
 
       <div class="trainer-demo-panel">
         <div class="trainer-section-title"><strong>Démonstration</strong><span class="trainer-audio-status">Choisis les mains, la vitesse et le métronome.</span></div>
@@ -92,8 +92,8 @@ export function mountPianoStageTrainer(container, stage) {
     const moment = currentMoment();
     current.textContent = message || prettyMoment(moment);
     finger.textContent = fingersForMoment(moment);
+    keyboard.clearPlaying();
     keyboard.highlight(moment?.notes || [], moment?.notes || []);
-    keyboard.setPlaying(moment?.notes || []);
     clearScoreActiveEvents(score);
     refreshScore();
   }
@@ -169,7 +169,17 @@ export function mountPianoStageTrainer(container, stage) {
     }
   });
 
-  container.querySelector('.trainer-stop').addEventListener('click',()=>{ stopPlayback(); keyboard.clearPlaying(); clearScoreActiveEvents(score); playAllButton.disabled=false; audioStatus.textContent='Démonstration arrêtée.'; renderCurrent(); });
+  container.querySelector('.trainer-stop').addEventListener('click',()=>{
+    stopPlayback();
+    keyboard.clearPlaying();
+    clearScoreActiveEvents(score);
+    playAllButton.disabled=false;
+    audioStatus.textContent='Démonstration arrêtée.';
+    const moment=currentMoment();
+    current.textContent=prettyMoment(moment);
+    finger.textContent=fingersForMoment(moment);
+    keyboard.highlight(moment?.notes || [], moment?.notes || []);
+  });
 
   const bNotes=container.querySelector('.score-help-notes'); const bFingers=container.querySelector('.score-help-fingers');
   bNotes.addEventListener('click',()=>{ showNoteNames=!showNoteNames; bNotes.classList.toggle('is-active',showNoteNames); bNotes.setAttribute('aria-pressed',String(showNoteNames)); refreshScore(); });

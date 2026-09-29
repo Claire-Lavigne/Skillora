@@ -13,9 +13,9 @@ export const pianoTrainingWeeks = [
           "Clé de sol : main droite. Clé de fa : main gauche."
         ],
         "curriculum": {
-          "reading": "Repérer Do4 en clé de sol et Do3 en clé de fa",
-          "rhythm": "Noire et soupir",
-          "accompaniment": "Basse simple"
+          "reading": "Repérer Do4 à la main droite et Do3 à la main gauche",
+          "rhythm": "Noire = 1 temps · soupir = 1 temps",
+          "accompaniment": "Une basse simple à la main gauche"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -106,16 +106,16 @@ export const pianoTrainingWeeks = [
       {
         "id": "w01-a2",
         "label": "Exercice 1",
-        "title": "Question main droite, réponse main gauche",
-        "objective": "Lire 4 mesures sans arrêter la pulsation.",
+        "title": "Alterner les deux mains",
+        "objective": "Jouer le Do à la main droite puis à la main gauche sans perdre les 4 temps de la mesure.",
         "instructions": [
-          "Joue seulement quand ta portée contient une note.",
-          "Les silences de l’autre main comptent aussi."
+          "Compte 1-2-3-4 sans t’arrêter.",
+          "Joue uniquement la main qui a une note écrite."
         ],
         "curriculum": {
-          "reading": "Do4 / Do3",
-          "rhythm": "Noires, blanches et silences déjà expliqués visuellement",
-          "accompaniment": "Réponse de basse"
+          "reading": "Repérer Do4 à la main droite et Do3 à la main gauche",
+          "rhythm": "Noire = 1 temps · soupir = 1 temps",
+          "accompaniment": "Une basse simple à la main gauche"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -248,16 +248,16 @@ export const pianoTrainingWeeks = [
       {
         "id": "w01-a3",
         "label": "Exercice 2",
-        "title": "Silence sur le temps 2",
-        "objective": "Ne pas combler les silences : le silence fait partie de la musique.",
+        "title": "Laisser un temps de silence",
+        "objective": "Respecter un soupir d’un temps sans avancer ni retarder la note suivante.",
         "instructions": [
           "Compte chaque mesure jusqu’à 4.",
           "Sur le temps 2, garde les mains immobiles quand le soupir apparaît."
         ],
         "curriculum": {
-          "reading": "Do sur les deux portées",
-          "rhythm": "Soupir placé sur différents temps",
-          "accompaniment": "Basse simple tenue"
+          "reading": "Repérer Do4 à la main droite et Do3 à la main gauche",
+          "rhythm": "Noire = 1 temps · soupir = 1 temps",
+          "accompaniment": "Une basse simple à la main gauche"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -411,9 +411,9 @@ export const pianoTrainingWeeks = [
           "Les deux dernières mesures se jouent ensemble."
         ],
         "curriculum": {
-          "reading": "Do dans deux registres",
-          "rhythm": "Pulsation stable + silences",
-          "accompaniment": "Basse simple"
+          "reading": "Repérer Do4 à la main droite et Do3 à la main gauche",
+          "rhythm": "Noire = 1 temps · soupir = 1 temps",
+          "accompaniment": "Une basse simple à la main gauche"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -650,7 +650,7 @@ export const pianoTrainingWeeks = [
       {
         "id": "w01-chant",
         "label": "Morceau de la semaine",
-        "title": "Premier duo — pièce originale complète",
+        "title": "Étude de pulsation — deux portées",
         "objective": "Jouer une pièce complète de 8 mesures avec des silences réels.",
         "instructions": [
           "Joue la pièce du début à la fin.",
@@ -658,12 +658,12 @@ export const pianoTrainingWeeks = [
           "Objectif : 3 passages sans arrêt à 60 BPM."
         ],
         "curriculum": {
-          "reading": "Clé de sol + clé de fa",
-          "rhythm": "Noire, blanche, ronde et silences",
-          "accompaniment": "Basse simple"
+          "reading": "Repérer Do4 à la main droite et Do3 à la main gauche",
+          "rhythm": "Noire = 1 temps · soupir = 1 temps",
+          "accompaniment": "Une basse simple à la main gauche"
         },
         "song": {
-          "title": "Premier duo",
+          "title": "Pulsation — deux portées",
           "sourceMode": "original",
           "sourceNote": "Pièce originale Skillora complète.",
           "uniqueForWeek": true
@@ -922,9 +922,9 @@ export const pianoTrainingWeeks = [
       }
     ],
     "curriculum": {
-      "reading": "Clé de sol + clé de fa : repérer les Do",
-      "rhythm": "Noires",
-      "accompaniment": "Basse simple : fondamentale"
+      "reading": "Repérer Do4 à la main droite et Do3 à la main gauche",
+      "rhythm": "Noire = 1 temps · soupir = 1 temps",
+      "accompaniment": "Une basse simple à la main gauche"
     },
     "engine": "timeline-v2"
   },
@@ -942,9 +942,9 @@ export const pianoTrainingWeeks = [
           "Une blanche tient pendant 2 pulsations."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi sur les deux clés",
-          "rhythm": "Noire + blanche",
-          "accompaniment": "Basse répétée"
+          "reading": "Lire Do, Ré et Mi sur les deux portées",
+          "rhythm": "Blanche = 2 temps · noire = 1 temps",
+          "accompaniment": "Répéter une basse sans perdre la pulsation"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -1036,9 +1036,9 @@ export const pianoTrainingWeeks = [
           "Garde les doigts posés au-dessus des touches."
         ],
         "curriculum": {
-          "reading": "Lecture mélangée Do Ré Mi",
-          "rhythm": "Noires et blanches",
-          "accompaniment": "Basse tenue"
+          "reading": "Lire Do, Ré et Mi sur les deux portées",
+          "rhythm": "Blanche = 2 temps · noire = 1 temps",
+          "accompaniment": "Répéter une basse sans perdre la pulsation"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -1190,9 +1190,9 @@ export const pianoTrainingWeeks = [
           "Ne joue pas pendant les silences."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi en clé de fa",
-          "rhythm": "Blanche + silences",
-          "accompaniment": "Basse mélodique"
+          "reading": "Lire Do, Ré et Mi sur les deux portées",
+          "rhythm": "Blanche = 2 temps · noire = 1 temps",
+          "accompaniment": "Répéter une basse sans perdre la pulsation"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -1333,9 +1333,9 @@ export const pianoTrainingWeeks = [
           "Travaille MD seule, puis MG seule, puis ensemble."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi deux mains",
-          "rhythm": "Noire + blanche + ronde",
-          "accompaniment": "Basse répétée"
+          "reading": "Lire Do, Ré et Mi sur les deux portées",
+          "rhythm": "Blanche = 2 temps · noire = 1 temps",
+          "accompaniment": "Répéter une basse sans perdre la pulsation"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -1590,19 +1590,19 @@ export const pianoTrainingWeeks = [
       {
         "id": "w02-chant",
         "label": "Morceau de la semaine",
-        "title": "Chemin tranquille — pièce originale complète",
+        "title": "Étude de lecture — Do, Ré, Mi",
         "objective": "Jouer 12 mesures complètes avec Do–Ré–Mi et des durées variées.",
         "instructions": [
           "Objectif : aucun arrêt entre les mesures.",
           "Puis rejoue à 75 % sans aides."
         ],
         "curriculum": {
-          "reading": "Trois notes sur deux portées",
-          "rhythm": "Noire, blanche, ronde, silences",
-          "accompaniment": "Basse répétée"
+          "reading": "Lire Do, Ré et Mi sur les deux portées",
+          "rhythm": "Blanche = 2 temps · noire = 1 temps",
+          "accompaniment": "Répéter une basse sans perdre la pulsation"
         },
         "song": {
-          "title": "Chemin tranquille",
+          "title": "Lecture — do, ré, mi",
           "sourceMode": "original",
           "sourceNote": "Pièce originale Skillora complète.",
           "uniqueForWeek": true
@@ -1969,9 +1969,9 @@ export const pianoTrainingWeeks = [
       }
     ],
     "curriculum": {
-      "reading": "Cinq doigts sur les deux portées",
-      "rhythm": "Blanches",
-      "accompaniment": "Basse répétée"
+      "reading": "Lire Do, Ré et Mi sur les deux portées",
+      "rhythm": "Blanche = 2 temps · noire = 1 temps",
+      "accompaniment": "Répéter une basse sans perdre la pulsation"
     },
     "engine": "timeline-v2"
   },
@@ -1988,9 +1988,9 @@ export const pianoTrainingWeeks = [
           "Ne rejoue pas la note au milieu."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi sans aide automatique",
-          "rhythm": "Ronde, blanche, noire et silences",
-          "accompaniment": "Fondamentale tenue"
+          "reading": "Lire Do, Ré et Mi sans suivre toujours le même ordre",
+          "rhythm": "Ronde = 4 temps · silences indépendants",
+          "accompaniment": "Tenir une basse pendant que l’autre main joue"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -2063,9 +2063,9 @@ export const pianoTrainingWeeks = [
           "Ne coupe pas la note tenue quand l’autre main change."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi deux mains",
-          "rhythm": "Durées différentes simultanées",
-          "accompaniment": "Note tenue"
+          "reading": "Lire Do, Ré et Mi sans suivre toujours le même ordre",
+          "rhythm": "Ronde = 4 temps · silences indépendants",
+          "accompaniment": "Tenir une basse pendant que l’autre main joue"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -2205,9 +2205,9 @@ export const pianoTrainingWeeks = [
           "Garde la pulsation dans ta tête."
         ],
         "curriculum": {
-          "reading": "Deux portées indépendantes",
-          "rhythm": "Silences à des endroits différents",
-          "accompaniment": "Fondamentale + note voisine"
+          "reading": "Lire Do, Ré et Mi sans suivre toujours le même ordre",
+          "rhythm": "Ronde = 4 temps · silences indépendants",
+          "accompaniment": "Tenir une basse pendant que l’autre main joue"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -2355,9 +2355,9 @@ export const pianoTrainingWeeks = [
           "Essaie d’entendre intérieurement la pulsation pendant les silences."
         ],
         "curriculum": {
-          "reading": "Lecture fluide Do Ré Mi",
-          "rhythm": "Rondes + silences + durées superposées",
-          "accompaniment": "Basse tenue"
+          "reading": "Lire Do, Ré et Mi sans suivre toujours le même ordre",
+          "rhythm": "Ronde = 4 temps · silences indépendants",
+          "accompaniment": "Tenir une basse pendant que l’autre main joue"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -2596,19 +2596,19 @@ export const pianoTrainingWeeks = [
       {
         "id": "w03-chant",
         "label": "Morceau de la semaine",
-        "title": "Trois notes, une phrase — pièce originale complète",
+        "title": "Étude de tenue — rondes et indépendance",
         "objective": "Jouer 12 mesures en gardant la continuité malgré les silences.",
         "instructions": [
           "Travaille 4 mesures par 4 mesures.",
           "Puis enchaîne les 12 mesures sans arrêt."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi autonome",
-          "rhythm": "Noire, blanche, ronde, silences indépendants",
-          "accompaniment": "Basse tenue et mouvement conjoint"
+          "reading": "Lire Do, Ré et Mi sans suivre toujours le même ordre",
+          "rhythm": "Ronde = 4 temps · silences indépendants",
+          "accompaniment": "Tenir une basse pendant que l’autre main joue"
         },
         "song": {
-          "title": "Trois notes, une phrase",
+          "title": "Tenue — rondes et indépendance",
           "sourceMode": "original",
           "sourceNote": "Pièce originale Skillora complète.",
           "uniqueForWeek": true
@@ -2949,9 +2949,9 @@ export const pianoTrainingWeeks = [
       }
     ],
     "curriculum": {
-      "reading": "Do Ré Mi mélangés sur les deux clés",
-      "rhythm": "Rondes",
-      "accompaniment": "Fondamentale + quinte"
+      "reading": "Lire Do, Ré et Mi sans suivre toujours le même ordre",
+      "rhythm": "Ronde = 4 temps · silences indépendants",
+      "accompaniment": "Tenir une basse pendant que l’autre main joue"
     },
     "engine": "timeline-v2"
   },
@@ -2968,9 +2968,9 @@ export const pianoTrainingWeeks = [
           "MG : Do5 Ré4 Mi3 Fa2 Sol1."
         ],
         "curriculum": {
-          "reading": "Do à Sol sur les deux clés",
-          "rhythm": "Noire, blanche, ronde",
-          "accompaniment": "Fondamentale tenue"
+          "reading": "Lire Do à Sol sur les deux portées",
+          "rhythm": "Noires, blanches et silences",
+          "accompaniment": "Tenir une basse pendant la mélodie"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -3085,9 +3085,9 @@ export const pianoTrainingWeeks = [
           "Lis la note avant de regarder le clavier."
         ],
         "curriculum": {
-          "reading": "Do à Sol mélangés",
-          "rhythm": "Noires + blanches",
-          "accompaniment": "Basse C/G"
+          "reading": "Lire Do à Sol sur les deux portées",
+          "rhythm": "Noires, blanches et silences",
+          "accompaniment": "Tenir une basse pendant la mélodie"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -3233,9 +3233,9 @@ export const pianoTrainingWeeks = [
           "La main gauche tient une basse pendant que la droite joue quatre noires."
         ],
         "curriculum": {
-          "reading": "Do Ré Mi Fa Sol",
-          "rhythm": "4 noires contre une ronde",
-          "accompaniment": "Basse fondamentale tenue"
+          "reading": "Lire Do à Sol sur les deux portées",
+          "rhythm": "Noires, blanches et silences",
+          "accompaniment": "Tenir une basse pendant la mélodie"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -3385,17 +3385,17 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w04-a4",
-        "label": "Mélodie finale",
-        "title": "Hymne à la joie — première phrase réelle",
-        "objective": "Jouer les 8 premières mesures de la vraie mélodie de Beethoven avec basse simple.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Hymne à la joie — Beethoven",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Hymne à la joie — Beethoven ».",
         "instructions": [
           "Travaille d’abord la main droite seule.",
           "Ajoute ensuite les rondes de basse."
         ],
         "curriculum": {
-          "reading": "Do à Sol",
-          "rhythm": "Noires + blanches",
-          "accompaniment": "Basse C/G tenue"
+          "reading": "Lire Do à Sol sur les deux portées",
+          "rhythm": "Noires, blanches et silences",
+          "accompaniment": "Tenir une basse pendant la mélodie"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -3687,9 +3687,9 @@ export const pianoTrainingWeeks = [
           "Objectif final : 3 passages à 72 BPM."
         ],
         "curriculum": {
-          "reading": "Do à Sol sur deux portées",
-          "rhythm": "Noires + blanches, 4/4",
-          "accompaniment": "Basses fondamentales tenues"
+          "reading": "Lire Do à Sol sur les deux portées",
+          "rhythm": "Noires, blanches et silences",
+          "accompaniment": "Tenir une basse pendant la mélodie"
         },
         "song": {
           "title": "Hymne à la joie",
@@ -4243,18 +4243,18 @@ export const pianoTrainingWeeks = [
       }
     ],
     "curriculum": {
-      "reading": "Do à Sol sur les deux clés",
-      "rhythm": "Noires + silences",
-      "accompaniment": "Basse alternée"
+      "reading": "Lire Do à Sol sur les deux portées",
+      "rhythm": "Noires, blanches et silences",
+      "accompaniment": "Tenir une basse pendant la mélodie"
     },
     "engine": "timeline-v2"
   },
   {
     "title": "Semaine 5 — Croches et demi-soupirs",
     "curriculum": {
-      "reading": "Do à Sol en clé de sol, Do et Sol en clé de fa",
-      "rhythm": "Croches par paires + demi-soupir",
-      "accompaniment": "Basse tenue pendant que la main droite joue plus vite"
+      "reading": "Lire une mélodie qui se déplace au-delà d’une position fixe",
+      "rhythm": "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+      "accompaniment": "Basse longue pendant des notes plus rapides à droite"
     },
     "stages": [
       {
@@ -4268,9 +4268,9 @@ export const pianoTrainingWeeks = [
           "Pendant une note longue de la main gauche, la touche doit rester maintenue."
         ],
         "curriculum": {
-          "reading": "Do à Sol en clé de sol, Do et Sol en clé de fa",
-          "rhythm": "Croches par paires + demi-soupir",
-          "accompaniment": "Basse tenue pendant que la main droite joue plus vite"
+          "reading": "Lire une mélodie qui se déplace au-delà d’une position fixe",
+          "rhythm": "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+          "accompaniment": "Basse longue pendant des notes plus rapides à droite"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -4476,9 +4476,9 @@ export const pianoTrainingWeeks = [
           "Les demi-soupirs font partie du rythme."
         ],
         "curriculum": {
-          "reading": "Do à Sol en clé de sol, Do et Sol en clé de fa",
-          "rhythm": "Croches par paires + demi-soupir",
-          "accompaniment": "Basse tenue pendant que la main droite joue plus vite"
+          "reading": "Lire une mélodie qui se déplace au-delà d’une position fixe",
+          "rhythm": "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+          "accompaniment": "Basse longue pendant des notes plus rapides à droite"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -4860,9 +4860,9 @@ export const pianoTrainingWeeks = [
           "Écoute si la basse reste présente jusqu’à la fin de sa valeur."
         ],
         "curriculum": {
-          "reading": "Do à Sol en clé de sol, Do et Sol en clé de fa",
-          "rhythm": "Croches par paires + demi-soupir",
-          "accompaniment": "Basse tenue pendant que la main droite joue plus vite"
+          "reading": "Lire une mélodie qui se déplace au-delà d’une position fixe",
+          "rhythm": "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+          "accompaniment": "Basse longue pendant des notes plus rapides à droite"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -5057,18 +5057,18 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w05-a4",
-        "label": "Mélodie finale",
-        "title": "Les pas légers",
-        "objective": "Jouer une mélodie de 8 mesures avec croches, silences et basses tenues.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Simple Gifts",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Simple Gifts ».",
         "instructions": [
           "Cherche d’abord les demi-soupirs.",
           "Travaille mains séparées.",
           "Puis assemble sans laisser la basse se relâcher trop tôt."
         ],
         "curriculum": {
-          "reading": "Do à Sol en clé de sol, Do et Sol en clé de fa",
-          "rhythm": "Croches par paires + demi-soupir",
-          "accompaniment": "Basse tenue pendant que la main droite joue plus vite"
+          "reading": "Lire une mélodie qui se déplace au-delà d’une position fixe",
+          "rhythm": "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+          "accompaniment": "Basse longue pendant des notes plus rapides à droite"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -5418,23 +5418,22 @@ export const pianoTrainingWeeks = [
       {
         "id": "w05-chant",
         "label": "Morceau / chant de la semaine",
-        "title": "Marche des croches — étude complète Skillora",
-        "objective": "Jouer un morceau complet de 12 mesures en respectant les croches et les silences.",
+        "title": "Simple Gifts — mélodie réelle",
+        "objective": "Jouer les 8 premières mesures de la mélodie de Joseph Brackett en respectant les croches.",
         "instructions": [
-          "Joue les 4 premières mesures en boucle.",
-          "Ajoute ensuite les mesures 5 à 8.",
-          "Termine par 9 à 12.",
-          "Objectif : 2 passages complets sans raccourcir les basses."
+          "Travaille 2 mesures à la fois.",
+          "Garde les croches régulières.",
+          "Ajoute la basse seulement quand la mélodie est stable."
         ],
         "curriculum": {
-          "reading": "Do à Sol en clé de sol, Do et Sol en clé de fa",
-          "rhythm": "Croches par paires + demi-soupir",
-          "accompaniment": "Basse tenue pendant que la main droite joue plus vite"
+          "reading": "Lire une mélodie qui se déplace au-delà d’une position fixe",
+          "rhythm": "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+          "accompaniment": "Basse longue pendant des notes plus rapides à droite"
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Marche des croches — étude complète Skillora",
-          "tempo": 58,
+          "title": "Simple Gifts — mélodie réelle",
+          "tempo": 72,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -5444,33 +5443,45 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C4",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
                     "duration": "8",
                     "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
+                    "pitch": "D5",
                     "duration": "8",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
+                    "pitch": "E5",
+                    "duration": "8",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
+                    "pitch": "E5",
+                    "duration": "8",
                     "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F5",
+                    "duration": "8",
+                    "finger": 4
                   }
                 ],
                 "bass": [
@@ -5486,33 +5497,39 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "G5",
                     "duration": "q",
                     "finger": 5
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
+                    "pitch": "G5",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G5",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
                     "duration": "q",
-                    "finger": 4
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
                   }
                 ],
                 "bass": [
@@ -5528,43 +5545,33 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "D5",
                     "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
+                    "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
+                    "pitch": "D5",
                     "duration": "q",
-                    "finger": 3
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 2
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "C3",
+                    "pitch": "G2",
                     "duration": "w",
                     "finger": 5
                   }
@@ -5574,75 +5581,39 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
+                    "pitch": "D5",
+                    "duration": "8",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
+                    "pitch": "E5",
+                    "duration": "8",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
+                    "pitch": "D5",
+                    "duration": "8",
+                    "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
+                    "pitch": "B4",
+                    "duration": "8",
+                    "finger": 1
+                  },
                   {
                     "type": "note",
                     "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
                     "duration": "q",
-                    "finger": 3
+                    "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
+                    "pitch": "G4",
                     "duration": "q",
-                    "finger": 4
+                    "finger": 1
                   }
                 ],
                 "bass": [
@@ -5658,30 +5629,44 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
+                    "pitch": "B4",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
                     "duration": "8",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "C4",
+                    "pitch": "E5",
                     "duration": "q",
-                    "finger": 1
+                    "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
+                    "pitch": "D5",
+                    "duration": "8",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "8",
                     "finger": 2
                   }
                 ],
@@ -5698,117 +5683,27 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
+                    "pitch": "E5",
+                    "duration": "q",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
+                    "pitch": "F5",
+                    "duration": "q",
                     "finger": 4
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
+                    "pitch": "G5",
+                    "duration": "qd",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G5",
                     "duration": "8",
                     "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
                   }
                 ],
                 "bass": [
@@ -5824,33 +5719,39 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "D4",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
                     "duration": "8",
                     "finger": 2
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
+                    "pitch": "E5",
                     "duration": "8",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
+                    "pitch": "D5",
                     "duration": "q",
                     "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
                   }
                 ],
                 "bass": [
@@ -5866,67 +5767,25 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C4",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
                     "duration": "8",
                     "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
+                    "pitch": "B4",
                     "duration": "8",
-                    "finger": 2
+                    "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
+                    "pitch": "C5",
                     "duration": "h",
                     "finger": 1
                   }
@@ -5944,13 +5803,14 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Marche des croches — étude complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète, conçue pour la notion de la semaine.",
+          "title": "Simple Gifts",
+          "sourceNote": "Mélodie du domaine public, transcrite en Do majeur.",
           "requiredSkills": [
-            "Do à Sol en clé de sol, Do et Sol en clé de fa",
-            "Croches par paires + demi-soupir",
-            "Basse tenue pendant que la main droite joue plus vite"
-          ]
+            "Lire une mélodie qui se déplace au-delà d’une position fixe",
+            "Deux croches = 1 temps · demi-soupir = 1/2 temps",
+            "Basse longue pendant des notes plus rapides à droite"
+          ],
+          "scoreStatus": "public-domain-real"
         }
       }
     ]
@@ -5958,8 +5818,8 @@ export const pianoTrainingWeeks = [
   {
     "title": "Semaine 6 — Lecture mélangée et fondamentale–quinte",
     "curriculum": {
-      "reading": "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-      "rhythm": "Noire, blanche, ronde, croches et silences mélangés",
+      "reading": "Lire des notes mélangées sans réciter la gamme",
+      "rhythm": "Mélanger noires, blanches, rondes, croches et silences",
       "accompaniment": "Fondamentale puis quinte à la main gauche"
     },
     "stages": [
@@ -5974,8 +5834,8 @@ export const pianoTrainingWeeks = [
           "Main gauche : fondamentale puis quinte."
         ],
         "curriculum": {
-          "reading": "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-          "rhythm": "Noire, blanche, ronde, croches et silences mélangés",
+          "reading": "Lire des notes mélangées sans réciter la gamme",
+          "rhythm": "Mélanger noires, blanches, rondes, croches et silences",
           "accompaniment": "Fondamentale puis quinte à la main gauche"
         },
         "practice": {
@@ -6144,8 +6004,8 @@ export const pianoTrainingWeeks = [
           "Les silences ne sont pas des pauses dans le comptage."
         ],
         "curriculum": {
-          "reading": "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-          "rhythm": "Noire, blanche, ronde, croches et silences mélangés",
+          "reading": "Lire des notes mélangées sans réciter la gamme",
+          "rhythm": "Mélanger noires, blanches, rondes, croches et silences",
           "accompaniment": "Fondamentale puis quinte à la main gauche"
         },
         "practice": {
@@ -6468,8 +6328,8 @@ export const pianoTrainingWeeks = [
           "Ajoute la main droite seulement quand la basse est régulière."
         ],
         "curriculum": {
-          "reading": "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-          "rhythm": "Noire, blanche, ronde, croches et silences mélangés",
+          "reading": "Lire des notes mélangées sans réciter la gamme",
+          "rhythm": "Mélanger noires, blanches, rondes, croches et silences",
           "accompaniment": "Fondamentale puis quinte à la main gauche"
         },
         "practice": {
@@ -6641,17 +6501,17 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w06-a4",
-        "label": "Mélodie finale",
-        "title": "Chemin mélangé",
-        "objective": "Lire une vraie phrase sans motif de gamme prévisible.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — When the Saints Go Marching In",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « When the Saints Go Marching In ».",
         "instructions": [
           "Repère d’abord les sauts.",
           "Entoure mentalement les silences.",
           "Maintiens les deux blanches de la basse jusqu’à leur terme."
         ],
         "curriculum": {
-          "reading": "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-          "rhythm": "Noire, blanche, ronde, croches et silences mélangés",
+          "reading": "Lire des notes mélangées sans réciter la gamme",
+          "rhythm": "Mélanger noires, blanches, rondes, croches et silences",
           "accompaniment": "Fondamentale puis quinte à la main gauche"
         },
         "practice": {
@@ -6960,296 +6820,58 @@ export const pianoTrainingWeeks = [
       {
         "id": "w06-chant",
         "label": "Morceau / chant de la semaine",
-        "title": "Labyrinthe — étude complète Skillora",
-        "objective": "Jouer 12 mesures de lecture mélangée sans anticiper les notes par habitude.",
+        "title": "When the Saints Go Marching In — mélodie réelle",
+        "objective": "Jouer le thème traditionnel complet en lisant des rythmes et des notes variés.",
         "instructions": [
-          "Lis une mesure silencieusement avant de la jouer.",
-          "Joue à 50 % si nécessaire.",
-          "Objectif : finir sans réciter la gamme dans ta tête."
+          "Compte 1-2 dans chaque mesure.",
+          "Travaille d’abord la mélodie seule.",
+          "Ajoute ensuite la basse sur chaque mesure."
         ],
         "curriculum": {
-          "reading": "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-          "rhythm": "Noire, blanche, ronde, croches et silences mélangés",
+          "reading": "Lire des notes mélangées sans réciter la gamme",
+          "rhythm": "Mélanger noires, blanches, rondes, croches et silences",
           "accompaniment": "Fondamentale puis quinte à la main gauche"
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Labyrinthe — étude complète Skillora",
-          "tempo": 60,
+          "title": "When the Saints Go Marching In — mélodie réelle",
+          "tempo": 76,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
-            "timeSignature": "4/4",
+            "timeSignature": "2/4",
             "measures": [
               {
                 "treble": [
                   {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "h",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
                     "type": "rest",
-                    "duration": "q"
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "8",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
+                    "pitch": "C5",
                     "duration": "8",
                     "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
+                    "pitch": "E5",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F5",
                     "duration": "8",
                     "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "q"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
                   }
                 ],
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "G2",
+                    "pitch": "C3",
                     "duration": "h",
                     "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
                   }
                 ]
               },
@@ -7257,19 +6879,7 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
+                    "pitch": "G5",
                     "duration": "h",
                     "finger": 5
                   }
@@ -7278,86 +6888,8 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C3",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
                     "duration": "h",
                     "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
                   }
                 ]
               },
@@ -7369,27 +6901,139 @@ export const pianoTrainingWeeks = [
                   },
                   {
                     "type": "note",
-                    "pitch": "F4",
+                    "pitch": "C5",
                     "duration": "8",
-                    "finger": 4
+                    "finger": 1
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
+                    "pitch": "E5",
+                    "duration": "8",
                     "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "G4",
+                    "pitch": "F5",
+                    "duration": "8",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G5",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "8"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "8",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F5",
+                    "duration": "8",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G5",
                     "duration": "q",
                     "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "h",
+                    "finger": 2
                   }
                 ],
                 "bass": [
@@ -7398,12 +7042,40 @@ export const pianoTrainingWeeks = [
                     "pitch": "G2",
                     "duration": "h",
                     "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "8"
                   },
                   {
                     "type": "note",
-                    "pitch": "D3",
+                    "pitch": "E5",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "8",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
                     "duration": "h",
-                    "finger": 1
+                    "finger": 5
                   }
                 ]
               },
@@ -7411,8 +7083,8 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "w",
+                    "pitch": "C5",
+                    "duration": "h",
                     "finger": 1
                   }
                 ],
@@ -7420,7 +7092,149 @@ export const pianoTrainingWeeks = [
                   {
                     "type": "note",
                     "pitch": "C3",
-                    "duration": "w",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "G5",
+                    "duration": "q",
+                    "finger": 5
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G5",
+                    "duration": "8",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F5",
+                    "duration": "qd",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F2",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "rest",
+                    "duration": "q"
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "8",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "F5",
+                    "duration": "8",
+                    "finger": 4
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "F2",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G5",
+                    "duration": "q",
+                    "finger": 5
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "E5",
+                    "duration": "q",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "h",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "h",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "h",
                     "finger": 5
                   }
                 ]
@@ -7429,13 +7243,14 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Labyrinthe — étude complète Skillora",
-          "sourceNote": "Composition originale Skillora : lecture mélangée et fondamentale–quinte.",
+          "title": "When the Saints Go Marching In",
+          "sourceNote": "Mélodie traditionnelle du domaine public.",
           "requiredSkills": [
-            "Lecture mélangée Do–Ré–Mi–Fa–Sol sans ordre",
-            "Noire, blanche, ronde, croches et silences mélangés",
+            "Lire des notes mélangées sans réciter la gamme",
+            "Mélanger noires, blanches, rondes, croches et silences",
             "Fondamentale puis quinte à la main gauche"
-          ]
+          ],
+          "scoreStatus": "public-domain-real"
         }
       }
     ]
@@ -7443,9 +7258,9 @@ export const pianoTrainingWeeks = [
   {
     "title": "Semaine 7 — Secondes, tierces et blanche pointée",
     "curriculum": {
-      "reading": "Reconnaître secondes et tierces par leur forme sur la portée",
-      "rhythm": "Blanche pointée = 3 temps + noire",
-      "accompaniment": "Basse alternée fondamentale–quinte"
+      "reading": "Reconnaître les mouvements conjoints et les sauts de tierce",
+      "rhythm": "Blanche pointée = 3 temps",
+      "accompaniment": "Basse régulière pendant une mélodie plus libre"
     },
     "stages": [
       {
@@ -7459,9 +7274,9 @@ export const pianoTrainingWeeks = [
           "Compte une blanche pointée : 1-2-3."
         ],
         "curriculum": {
-          "reading": "Reconnaître secondes et tierces par leur forme sur la portée",
-          "rhythm": "Blanche pointée = 3 temps + noire",
-          "accompaniment": "Basse alternée fondamentale–quinte"
+          "reading": "Reconnaître les mouvements conjoints et les sauts de tierce",
+          "rhythm": "Blanche pointée = 3 temps",
+          "accompaniment": "Basse régulière pendant une mélodie plus libre"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -7601,9 +7416,9 @@ export const pianoTrainingWeeks = [
           "La basse alterne tous les 2 temps."
         ],
         "curriculum": {
-          "reading": "Reconnaître secondes et tierces par leur forme sur la portée",
-          "rhythm": "Blanche pointée = 3 temps + noire",
-          "accompaniment": "Basse alternée fondamentale–quinte"
+          "reading": "Reconnaître les mouvements conjoints et les sauts de tierce",
+          "rhythm": "Blanche pointée = 3 temps",
+          "accompaniment": "Basse régulière pendant une mélodie plus libre"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -7857,9 +7672,9 @@ export const pianoTrainingWeeks = [
           "Compare visuellement seconde et tierce."
         ],
         "curriculum": {
-          "reading": "Reconnaître secondes et tierces par leur forme sur la portée",
-          "rhythm": "Blanche pointée = 3 temps + noire",
-          "accompaniment": "Basse alternée fondamentale–quinte"
+          "reading": "Reconnaître les mouvements conjoints et les sauts de tierce",
+          "rhythm": "Blanche pointée = 3 temps",
+          "accompaniment": "Basse régulière pendant une mélodie plus libre"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -8116,18 +7931,18 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w07-a4",
-        "label": "Mélodie finale",
-        "title": "Pas et sauts",
-        "objective": "Mélanger secondes, tierces et blanche pointée dans une phrase de 8 mesures.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Aura Lee",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Aura Lee ».",
         "instructions": [
           "Repère les tierces avant de jouer.",
           "Compte les blanches pointées à voix haute.",
           "Ne laisse pas la main gauche suivre le rythme de la droite."
         ],
         "curriculum": {
-          "reading": "Reconnaître secondes et tierces par leur forme sur la portée",
-          "rhythm": "Blanche pointée = 3 temps + noire",
-          "accompaniment": "Basse alternée fondamentale–quinte"
+          "reading": "Reconnaître les mouvements conjoints et les sauts de tierce",
+          "rhythm": "Blanche pointée = 3 temps",
+          "accompaniment": "Basse régulière pendant une mélodie plus libre"
         },
         "practice": {
           "engine": "timeline-v2",
@@ -8397,22 +8212,22 @@ export const pianoTrainingWeeks = [
       {
         "id": "w07-chant",
         "label": "Morceau / chant de la semaine",
-        "title": "Trois temps tenus — étude complète Skillora",
-        "objective": "Jouer un morceau complet de 12 mesures en différenciant pas, sauts et notes tenues 3 temps.",
+        "title": "Aura Lee — mélodie réelle",
+        "objective": "Jouer une vraie mélodie en utilisant mouvements conjoints, tierces et notes longues.",
         "instructions": [
-          "Travaille les mesures contenant une blanche pointée seules.",
-          "Puis enchaîne par groupes de 4 mesures.",
-          "Objectif : aucune blanche pointée écourtée."
+          "Repère les secondes et les tierces avant de jouer.",
+          "Tiens les blanches et les rondes jusqu’au bout.",
+          "Ajoute la basse après avoir stabilisé la mélodie."
         ],
         "curriculum": {
-          "reading": "Reconnaître secondes et tierces par leur forme sur la portée",
-          "rhythm": "Blanche pointée = 3 temps + noire",
-          "accompaniment": "Basse alternée fondamentale–quinte"
+          "reading": "Reconnaître les mouvements conjoints et les sauts de tierce",
+          "rhythm": "Blanche pointée = 3 temps",
+          "accompaniment": "Basse régulière pendant une mélodie plus libre"
         },
         "practice": {
           "engine": "timeline-v2",
-          "title": "Trois temps tenus — étude complète Skillora",
-          "tempo": 56,
+          "title": "Aura Lee — mélodie réelle",
+          "tempo": 68,
           "staff": "grand",
           "measuresPerSystem": 2,
           "timeline": {
@@ -8422,109 +8237,25 @@ export const pianoTrainingWeeks = [
                 "treble": [
                   {
                     "type": "note",
-                    "pitch": "C4",
-                    "duration": "hd",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "hd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
                     "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
+                    "duration": "q",
                     "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "hd",
-                    "finger": 3
                   },
                   {
                     "type": "note",
-                    "pitch": "D4",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
                     "duration": "q",
                     "finger": 2
                   }
@@ -8532,259 +8263,205 @@ export const pianoTrainingWeeks = [
                 "bass": [
                   {
                     "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
                     "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "hd",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "hd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F4",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "h",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "F2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "hd",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D4",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E4",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C4",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "h",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C4",
                     "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "q",
                     "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "w",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "G4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 2
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "C3",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "q",
+                    "finger": 3
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "D5",
+                    "duration": "h",
+                    "finger": 3
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "q",
+                    "finger": 2
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "A4",
+                    "duration": "q",
+                    "finger": 1
+                  },
+                  {
+                    "type": "note",
+                    "pitch": "B4",
+                    "duration": "q",
+                    "finger": 1
+                  }
+                ],
+                "bass": [
+                  {
+                    "type": "note",
+                    "pitch": "G2",
+                    "duration": "w",
+                    "finger": 5
+                  }
+                ]
+              },
+              {
+                "treble": [
+                  {
+                    "type": "note",
+                    "pitch": "C5",
+                    "duration": "w",
+                    "finger": 2
                   }
                 ],
                 "bass": [
@@ -8800,13 +8477,14 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Trois temps tenus — étude complète Skillora",
-          "sourceNote": "Composition originale Skillora : secondes, tierces et blanche pointée.",
+          "title": "Aura Lee",
+          "sourceNote": "Mélodie du domaine public, transposée de Sol majeur vers Do majeur pour ce niveau.",
           "requiredSkills": [
-            "Reconnaître secondes et tierces par leur forme sur la portée",
-            "Blanche pointée = 3 temps + noire",
-            "Basse alternée fondamentale–quinte"
-          ]
+            "Reconnaître les mouvements conjoints et les sauts de tierce",
+            "Blanche pointée = 3 temps",
+            "Basse régulière pendant une mélodie plus libre"
+          ],
+          "scoreStatus": "public-domain-real"
         }
       }
     ]
@@ -9473,9 +9151,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w08-a4",
-        "label": "Mélodie finale",
-        "title": "Premier duo complet",
-        "objective": "Jouer 12 mesures où les deux mains ont des rythmes différents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Les Aristochats",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Les Aristochats ».",
         "instructions": [
           "Découpe en blocs de 4 mesures.",
           "Travaille la basse seule jusqu’à ce qu’elle soit automatique.",
@@ -9908,12 +9586,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w08-chant",
         "label": "Morceau / chant de la semaine",
-        "title": "Premier duo — pièce complète Skillora",
-        "objective": "Jouer une pièce complète de 16 mesures avec deux mains réellement indépendantes.",
+        "title": "Partition réelle — Les Aristochats",
+        "objective": "Jouer « Les Aristochats » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille mesures 1–4, 5–8, 9–12 puis 13–16.",
-          "Utilise le mode main droite / main gauche.",
-          "Objectif final : 2 passages à 100 % sans arrêter la pulsation."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Deux lignes réellement simultanées",
@@ -10495,13 +10175,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Premier duo — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : première pièce longue avec indépendance réelle des mains.",
+          "title": "Les Aristochats",
+          "sourceNote": "Partition fournie : Première vraie pièce à deux mains : croches, accords et coordination.",
           "requiredSkills": [
             "Deux lignes réellement simultanées",
             "Rythmes indépendants entre les mains",
             "Fondamentale–quinte sous une vraie mélodie"
-          ]
+          ],
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/les-aristochats.png",
+          "scoreImageAlt": "Partition fournie de Les Aristochats",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -11364,9 +11048,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w09-a4",
-        "label": "Mélodie finale",
-        "title": "Fenêtre en Do",
-        "objective": "Jouer une mélodie développée qui combine l’accord de Do majeur Do–Mi–Sol et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Joy to the World",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Joy to the World ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -11893,12 +11577,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w09-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Premiers accords — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise l’accord de Do majeur Do–Mi–Sol et les acquis précédents.",
+        "title": "Partition réelle — Joy to the World",
+        "objective": "Jouer « Joy to the World » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire une triade sur la portée",
@@ -12580,14 +12266,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Premiers accords — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Joy to the World",
+          "sourceNote": "Partition fournie : Accords simples et mélodie réelle sur une partition accessible.",
           "requiredSkills": [
             "Lire une triade sur la portée",
             "Noires, blanches et croches dans la même phrase",
             "Accord plaqué de Do majeur"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/joy-to-the-world.png",
+          "scoreImageAlt": "Partition fournie de Joy to the World",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -13670,9 +13359,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w10-a4",
-        "label": "Mélodie finale",
-        "title": "Trois couleurs",
-        "objective": "Jouer une mélodie développée qui combine les accords de Fa et Sol majeurs et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Mon secours est en toi",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Mon secours est en toi ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -14353,12 +14042,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w10-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Cadence claire — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise les accords de Fa et Sol majeurs et les acquis précédents.",
+        "title": "Partition réelle — Mon secours est en toi",
+        "objective": "Jouer « Mon secours est en toi » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire C, F et G comme formes d’accord",
@@ -15250,14 +14941,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Cadence claire — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Mon secours est en toi",
+          "sourceNote": "Partition fournie : Travail des accords de Fa, Sol et Do dans un vrai chant.",
           "requiredSkills": [
             "Lire C, F et G comme formes d’accord",
             "Croches, noires et blanches",
             "Accords plaqués C–F–G"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/mon-secours-est-en-toi.png",
+          "scoreImageAlt": "Partition fournie de Mon secours est en toi",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -16550,9 +16244,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w11-a4",
-        "label": "Mélodie finale",
-        "title": "Retour à Do",
-        "objective": "Jouer une mélodie développée qui combine la cadence I–IV–V–I et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Never Ending Story",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Never Ending Story ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -17365,12 +17059,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w11-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Retour à la maison — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise la cadence I–IV–V–I et les acquis précédents.",
+        "title": "Partition réelle — Never Ending Story",
+        "objective": "Jouer « Never Ending Story » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Suivre une grille C–F–G–C",
@@ -18442,14 +18138,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Retour à la maison — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Never Ending Story",
+          "sourceNote": "Partition fournie : Enchaînements harmoniques et rythmes plus variés.",
           "requiredSkills": [
             "Suivre une grille C–F–G–C",
             "Noire pointée + croche",
             "Enchaîner C–F–G–C sans interruption"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/never-ending-story.png",
+          "scoreImageAlt": "Partition fournie de Never Ending Story",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -19526,9 +19225,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w12-a4",
-        "label": "Mélodie finale",
-        "title": "Métronome tranquille",
-        "objective": "Jouer une mélodie développée qui combine jouer avec un tempo fixe sans accélérer et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Broken Vessels",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Broken Vessels ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -20209,12 +19908,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w12-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Horloge musicale — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise jouer avec un tempo fixe sans accélérer et les acquis précédents.",
+        "title": "Partition réelle — Broken Vessels",
+        "objective": "Jouer « Broken Vessels » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire plusieurs mesures sans s’arrêter",
@@ -21106,14 +20807,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Horloge musicale — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Broken Vessels",
+          "sourceNote": "Partition fournie : Régularité, accompagnement lent et travail au métronome.",
           "requiredSkills": [
             "Lire plusieurs mesures sans s’arrêter",
             "Pulsation stable au métronome",
             "Accords réguliers sur les temps"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/broken-vessels.png",
+          "scoreImageAlt": "Partition fournie de Broken Vessels",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -21948,9 +21652,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w13-a4",
-        "label": "Mélodie finale",
-        "title": "Escalier en Do",
-        "objective": "Jouer une mélodie développée qui combine la gamme de Do majeur avec passage du pouce et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Für Elise — Easy Version",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Für Elise — Easy Version ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -22455,12 +22159,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w13-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Une octave — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise la gamme de Do majeur avec passage du pouce et les acquis précédents.",
+        "title": "Partition réelle — Für Elise — Easy Version",
+        "objective": "Jouer « Für Elise — Easy Version » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire Do à Do sur une octave",
@@ -23112,14 +22818,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Une octave — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Für Elise — Easy Version",
+          "sourceNote": "Partition fournie : Déplacements, gamme et lecture d’un extrait classique réel.",
           "requiredSkills": [
             "Lire Do à Do sur une octave",
             "Croches régulières",
             "Basse simple sous mouvement de gamme"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/fur-elise-easy.png",
+          "scoreImageAlt": "Partition fournie de Für Elise — Easy Version",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "Für Elise — version plus complète",
+              "scoreImage": "assets/piano/scores/fur-elise-full.png",
+              "scoreImageAlt": "Partition bonus de Für Elise, version plus complète"
+            }
+          ]
         }
       }
     ]
@@ -24176,9 +23892,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w14-a4",
-        "label": "Mélodie finale",
-        "title": "Deux escaliers",
-        "objective": "Jouer une mélodie développée qui combine le mouvement conjoint mains ensemble et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Pallet Town — Pokémon",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Pallet Town — Pokémon ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -24815,12 +24531,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w14-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Mains ensemble — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise le mouvement conjoint mains ensemble et les acquis précédents.",
+        "title": "Partition réelle — Pallet Town — Pokémon",
+        "objective": "Jouer « Pallet Town — Pokémon » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Suivre deux lignes de gamme simultanées",
@@ -25652,14 +25370,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Mains ensemble — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Pallet Town — Pokémon",
+          "sourceNote": "Partition fournie : Mains ensemble et motifs réguliers sur plusieurs registres.",
           "requiredSkills": [
             "Suivre deux lignes de gamme simultanées",
             "Croches régulières aux deux mains",
             "Main gauche en mouvement plutôt qu’en accords"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/pallet-town.png",
+          "scoreImageAlt": "Partition fournie de Pallet Town — Pokémon",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -26868,9 +26589,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w15-a4",
-        "label": "Mélodie finale",
-        "title": "Respirer avec la phrase",
-        "objective": "Jouer une mélodie développée qui combine faire varier l’intensité sans changer le tempo et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Greensleeves",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Greensleeves ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -27683,12 +27404,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w15-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Lumière et ombre — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise faire varier l’intensité sans changer le tempo et les acquis précédents.",
+        "title": "Partition réelle — Greensleeves",
+        "objective": "Jouer « Greensleeves » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire une phrase et ses points culminants",
@@ -28760,14 +28483,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Lumière et ombre — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Greensleeves",
+          "sourceNote": "Partition fournie : Nuances, phrasé et respiration en 3/4.",
           "requiredSkills": [
             "Lire une phrase et ses points culminants",
             "Rythmes déjà acquis avec stabilité",
             "Accords plus doux sous une mélodie expressive"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/greensleeves.png",
+          "scoreImageAlt": "Partition fournie de Greensleeves",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "Broken Vessels — bonus expressif",
+              "scoreImage": "assets/piano/scores/broken-vessels.png",
+              "scoreImageAlt": "Partition bonus : Broken Vessels — bonus expressif"
+            }
+          ]
         }
       }
     ]
@@ -29654,9 +29387,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w16-a4",
-        "label": "Mélodie finale",
-        "title": "Résonance",
-        "objective": "Jouer une mélodie développée qui combine laisser résonner sans brouiller les changements d’accord et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Bella's Lullaby",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Bella's Lullaby ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -30183,12 +29916,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w16-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Échos — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise laisser résonner sans brouiller les changements d’accord et les acquis précédents.",
+        "title": "Partition réelle — Bella's Lullaby",
+        "objective": "Jouer « Bella's Lullaby » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire les changements harmoniques",
@@ -30870,14 +30605,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Échos — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Bella's Lullaby",
+          "sourceNote": "Partition fournie : Pédale, notes tenues et accompagnement lié.",
           "requiredSkills": [
             "Lire les changements harmoniques",
             "Blanches et rondes maintenues",
             "Accords avec changements espacés"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/ballas-lullaby.png",
+          "scoreImageAlt": "Partition fournie de Bella's Lullaby",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -32102,9 +31840,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w17-a4",
-        "label": "Mélodie finale",
-        "title": "Rivière d’arpèges",
-        "objective": "Jouer une mélodie développée qui combine transformer un accord en notes successives et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Pokémon Lullaby",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Pokémon Lullaby ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -33005,12 +32743,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w17-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Courant régulier — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise transformer un accord en notes successives et les acquis précédents.",
+        "title": "Partition réelle — Pokémon Lullaby",
+        "objective": "Jouer « Pokémon Lullaby » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire les notes d’un accord une par une",
@@ -34202,14 +33942,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Courant régulier — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Pokémon Lullaby",
+          "sourceNote": "Partition fournie : Arpèges continus et mélodie chantante.",
           "requiredSkills": [
             "Lire les notes d’un accord une par une",
             "Noires puis croches d’arpège",
             "Arpège 1–5–3–5"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/pokemon-lullaby.png",
+          "scoreImageAlt": "Partition fournie de Pokémon Lullaby",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -35602,9 +35345,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w18-a4",
-        "label": "Mélodie finale",
-        "title": "Boucle de quatre accords",
-        "objective": "Jouer une mélodie développée qui combine la progression C–Am–F–G et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Pokémon Gold/Silver/Crystal — The End",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Pokémon Gold/Silver/Crystal — The End ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -36505,12 +36248,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w18-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Cycle — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise la progression C–Am–F–G et les acquis précédents.",
+        "title": "Partition réelle — Pokémon Gold/Silver/Crystal — The End",
+        "objective": "Jouer « Pokémon Gold/Silver/Crystal — The End » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire accords majeurs et mineur dans une même grille",
@@ -37702,14 +37447,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Cycle — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Pokémon Gold/Silver/Crystal — The End",
+          "sourceNote": "Partition fournie : Progressions harmoniques et coordination des deux mains.",
           "requiredSkills": [
             "Lire accords majeurs et mineur dans une même grille",
             "Croches d’accompagnement régulières",
             "C–Am–F–G en arpèges simples"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/pokemon-the-end.png",
+          "scoreImageAlt": "Partition fournie de Pokémon Gold/Silver/Crystal — The End",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "National Park — Pokémon — défi avancé",
+              "scoreImage": "assets/piano/scores/national-park-pokemon.png",
+              "scoreImageAlt": "Partition bonus National Park Pokémon"
+            }
+          ]
         }
       }
     ]
@@ -38954,9 +38709,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w19-a4",
-        "label": "Mélodie finale",
-        "title": "Deux chemins",
-        "objective": "Jouer une mélodie développée qui combine des rythmes différents dans chaque main et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Interstellar — Cornfield Chase",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Interstellar — Cornfield Chase ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -39769,12 +39524,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w19-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Indépendance — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise des rythmes différents dans chaque main et les acquis précédents.",
+        "title": "Partition réelle — Interstellar — Cornfield Chase",
+        "objective": "Jouer « Interstellar — Cornfield Chase » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Suivre deux lignes rythmiquement différentes",
@@ -40846,14 +40603,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Indépendance — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Interstellar — Cornfield Chase",
+          "sourceNote": "Partition fournie : Indépendance des mains et ostinatos.",
           "requiredSkills": [
             "Suivre deux lignes rythmiquement différentes",
             "Main droite en croches, main gauche en noires/blanches",
             "Motif autonome main gauche"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/interstellar-cornfield-chase.png",
+          "scoreImageAlt": "Partition fournie de Interstellar — Cornfield Chase",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -41884,9 +41644,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w20-a4",
-        "label": "Mélodie finale",
-        "title": "Lecture surprise",
-        "objective": "Jouer une mélodie développée qui combine lire sans préparer chaque note à l’avance et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Opening Theme — Detroit: Become Human",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Opening Theme — Detroit: Become Human ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -42699,12 +42459,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w20-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "À première vue — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise lire sans préparer chaque note à l’avance et les acquis précédents.",
+        "title": "Partition réelle — Opening Theme — Detroit: Become Human",
+        "objective": "Jouer « Opening Theme — Detroit: Become Human » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lecture à vue sur deux portées",
@@ -43776,14 +43538,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "À première vue — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Opening Theme — Detroit: Become Human",
+          "sourceNote": "Partition fournie : Lecture continue et motifs répétés sur deux portées.",
           "requiredSkills": [
             "Lecture à vue sur deux portées",
             "Valeurs mélangées sans arrêt",
             "Positions proches et basse simple"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/detroit-opening-theme.png",
+          "scoreImageAlt": "Partition fournie de Opening Theme — Detroit: Become Human",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "Never Ending Story — autre arrangement",
+              "scoreImage": "assets/piano/scores/never-ending-story.png",
+              "scoreImageAlt": "Autre arrangement fourni de Never Ending Story"
+            }
+          ]
         }
       }
     ]
@@ -44908,9 +44680,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w21-a4",
-        "label": "Mélodie finale",
-        "title": "Chemin le plus court",
-        "objective": "Jouer une mélodie développée qui combine rapprocher les accords grâce aux renversements et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Edward Scissorhands — Main Theme",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Edward Scissorhands — Main Theme ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -45591,12 +45363,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w21-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Voix proches — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise rapprocher les accords grâce aux renversements et les acquis précédents.",
+        "title": "Partition réelle — Edward Scissorhands — Main Theme",
+        "objective": "Jouer « Edward Scissorhands — Main Theme » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Reconnaître un accord même quand sa fondamentale n’est pas en bas",
@@ -46488,14 +46262,17 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Voix proches — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Edward Scissorhands — Main Theme",
+          "sourceNote": "Partition fournie : Renversements et positions d’accords rapprochées.",
           "requiredSkills": [
             "Reconnaître un accord même quand sa fondamentale n’est pas en bas",
             "Accords sur blanches et noires",
             "Renversements pour limiter les déplacements"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/edward-scissorhands.png",
+          "scoreImageAlt": "Partition fournie de Edward Scissorhands — Main Theme",
+          "interactiveStatus": "preparation-technique"
         }
       }
     ]
@@ -47824,9 +47601,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w22-a4",
-        "label": "Mélodie finale",
-        "title": "Accompagnement régulier",
-        "objective": "Jouer une mélodie développée qui combine combiner basse et accord dans une même mesure et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Davy Jones — Pirates of the Caribbean",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Davy Jones — Pirates of the Caribbean ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -48639,12 +48416,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w22-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Basse et accords — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise combiner basse et accord dans une même mesure et les acquis précédents.",
+        "title": "Partition réelle — Davy Jones — Pirates of the Caribbean",
+        "objective": "Jouer « Davy Jones — Pirates of the Caribbean » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire la mélodie sans dépendre du motif de basse",
@@ -49716,14 +49495,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Basse et accords — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Davy Jones — Pirates of the Caribbean",
+          "sourceNote": "Partition fournie : Accompagnement main gauche développé et changements de texture.",
           "requiredSkills": [
             "Lire la mélodie sans dépendre du motif de basse",
             "Basse sur 1 et accords sur les temps suivants",
             "Basse + accord"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/davy-jones.png",
+          "scoreImageAlt": "Partition fournie de Davy Jones — Pirates of the Caribbean",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "La Cumparsita — travail d’articulation",
+              "scoreImage": "assets/piano/scores/la-cumparsita.png",
+              "scoreImageAlt": "Partition bonus de La Cumparsita"
+            }
+          ]
         }
       }
     ]
@@ -50892,9 +50681,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w23-a4",
-        "label": "Mélodie finale",
-        "title": "Respiration",
-        "objective": "Jouer une mélodie développée qui combine organiser la musique en phrases et laisser respirer les silences et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Tout le monde veut devenir un cat",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Tout le monde veut devenir un cat ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -51707,12 +51496,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w23-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Entre les phrases — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise organiser la musique en phrases et laisser respirer les silences et les acquis précédents.",
+        "title": "Partition réelle — Tout le monde veut devenir un cat",
+        "objective": "Jouer « Tout le monde veut devenir un cat » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Repérer les fins de phrase",
@@ -52784,14 +52575,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Entre les phrases — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "Tout le monde veut devenir un cat",
+          "sourceNote": "Partition fournie : Phrasé, swing et coordination souple des deux mains.",
           "requiredSkills": [
             "Repérer les fins de phrase",
             "Silences expressifs et notes longues",
             "Accompagnement lié mais léger"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/tout-le-monde-veut-devenir-un-cat.png",
+          "scoreImageAlt": "Partition fournie de Tout le monde veut devenir un cat",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "Binks no Sake — autre travail du swing",
+              "scoreImage": "assets/piano/scores/binks-no-sake.png",
+              "scoreImageAlt": "Partition bonus de Binks no Sake"
+            }
+          ]
         }
       }
     ]
@@ -53972,9 +53773,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w24-a4",
-        "label": "Mélodie finale",
-        "title": "Deux tonalités",
-        "objective": "Jouer une mélodie développée qui combine les altérations Fa♯ et Si♭ et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — The Legend of Zelda Main Theme — Easy",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « The Legend of Zelda Main Theme — Easy ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -54611,12 +54412,14 @@ export const pianoTrainingWeeks = [
       {
         "id": "w24-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Deux couleurs tonales — pièce complète Skillora",
-        "objective": "Jouer une pièce complète qui réutilise les altérations Fa♯ et Si♭ et les acquis précédents.",
+        "title": "Partition réelle — The Legend of Zelda Main Theme — Easy",
+        "objective": "Jouer « The Legend of Zelda Main Theme — Easy » en utilisant la notion de la semaine et les acquis précédents.",
         "instructions": [
-          "Travaille par blocs de 4 mesures.",
-          "Utilise les modes main droite / main gauche avant les deux mains.",
-          "Objectif : deux passages complets sans arrêt au tempo indiqué."
+          "Fais d'abord la préparation interactive ci-dessous.",
+          "Travaille ensuite la partition fournie par petites sections de 2 à 4 mesures.",
+          "Main droite seule, puis main gauche seule, puis les deux mains.",
+          "Utilise 50 % puis 75 % avant de revenir au tempo de travail.",
+          "Valide l'étape quand tu peux jouer l'extrait choisi sans arrêter la pulsation."
         ],
         "curriculum": {
           "reading": "Lire Fa♯ en Sol majeur et Si♭ en Fa majeur",
@@ -55448,14 +55251,24 @@ export const pianoTrainingWeeks = [
           }
         },
         "song": {
-          "title": "Deux couleurs tonales — pièce complète Skillora",
-          "sourceNote": "Composition originale Skillora : partition complète intégrée au trainer.",
+          "title": "The Legend of Zelda Main Theme — Easy",
+          "sourceNote": "Partition fournie : Altérations, accords, triolets et lecture plus avancée.",
           "requiredSkills": [
             "Lire Fa♯ en Sol majeur et Si♭ en Fa majeur",
             "Rythmes mélangés avec altérations",
             "Accords de G, D, F, Bb et C"
           ],
-          "scoreStatus": "complete-original"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/zelda-main-theme-easy.png",
+          "scoreImageAlt": "Partition fournie de The Legend of Zelda Main Theme — Easy",
+          "interactiveStatus": "preparation-technique",
+          "bonusPieces": [
+            {
+              "title": "National Park — Pokémon — lecture avancée",
+              "scoreImage": "assets/piano/scores/national-park-pokemon.png",
+              "scoreImageAlt": "Partition bonus National Park Pokémon"
+            }
+          ]
         }
       }
     ]
@@ -56524,9 +56337,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w25-a4",
-        "label": "Mélodie finale",
-        "title": "Couleurs mineures",
-        "objective": "Jouer une mélodie développée qui combine enchaîner plusieurs accords mineurs avec des majeurs et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Ta présence, mes délices",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Ta présence, mes délices ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -57163,8 +56976,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w25-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Ta présence, mes délices »",
-        "objective": "Jouer une pièce complète qui réutilise enchaîner plusieurs accords mineurs avec des majeurs et les acquis précédents.",
+        "title": "Partition réelle — Ta présence, mes délices",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Ta présence, mes délices ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -58007,7 +57820,9 @@ export const pianoTrainingWeeks = [
             "Rythmes d’accords mineurs",
             "Accords mineurs plaqués et brisés"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "partition-fournie-reference",
+          "scoreImage": "assets/piano/scores/ta-presence-mes-delices.png",
+          "scoreImageAlt": "Partition fournie de Ta présence, mes délices"
         }
       }
     ]
@@ -59028,9 +58843,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w26-a4",
-        "label": "Mélodie finale",
-        "title": "Yeux sur la portée",
-        "objective": "Jouer une mélodie développée qui combine se déplacer en gardant les yeux sur la partition et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Et je chante car tu es bon",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Et je chante car tu es bon ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -59667,8 +59482,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w26-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Et je chante car tu es bon »",
-        "objective": "Jouer une pièce complète qui réutilise se déplacer en gardant les yeux sur la partition et les acquis précédents.",
+        "title": "Partition réelle — Et je chante car tu es bon",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Et je chante car tu es bon ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -60511,7 +60326,14 @@ export const pianoTrainingWeeks = [
             "Pulsation continue malgré les déplacements",
             "Basses doubles / octaves simples"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "provided-reference",
+          "bonusPieces": [
+            {
+              "title": "Quand j’ai vu tes mains — chant bonus",
+              "scoreImage": "assets/piano/scores/quand-jai-vu-tes-mains.png",
+              "scoreImageAlt": "Partition bonus Quand j’ai vu tes mains"
+            }
+          ]
         }
       }
     ]
@@ -61692,9 +61514,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w27-a4",
-        "label": "Mélodie finale",
-        "title": "Question-réponse libre",
-        "objective": "Jouer une mélodie développée qui combine créer de petites phrases avec une gamme pentatonique et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Venez le célébrer",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Venez le célébrer ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -62331,8 +62153,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w27-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Venez le célébrer »",
-        "objective": "Jouer une pièce complète qui réutilise créer de petites phrases avec une gamme pentatonique et les acquis précédents.",
+        "title": "Partition réelle — Venez le célébrer",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Venez le célébrer ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -64308,9 +64130,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w28-a4",
-        "label": "Mélodie finale",
-        "title": "Accords plus riches",
-        "objective": "Jouer une mélodie développée qui combine ajouter une septième sans perdre la forme de l’accord et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Dieu est une fête aujourd’hui",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Dieu est une fête aujourd’hui ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -64947,8 +64769,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w28-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Dieu est une fête aujourd’hui »",
-        "objective": "Jouer une pièce complète qui réutilise ajouter une septième sans perdre la forme de l’accord et les acquis précédents.",
+        "title": "Partition réelle — Dieu est une fête aujourd’hui",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Dieu est une fête aujourd’hui ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -65791,7 +65613,14 @@ export const pianoTrainingWeeks = [
             "Accords enrichis sur rythmes réguliers",
             "Accords de 7e plaqués puis brisés"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "provided-reference",
+          "bonusPieces": [
+            {
+              "title": "Blessed Be Your Name — chant bonus",
+              "scoreImage": "assets/piano/scores/blessed-be-your-name.png",
+              "scoreImageAlt": "Partition bonus Blessed Be Your Name"
+            }
+          ]
         }
       }
     ]
@@ -67184,9 +67013,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w29-a4",
-        "label": "Mélodie finale",
-        "title": "Course régulière",
-        "objective": "Jouer une mélodie développée qui combine augmenter le tempo sans perdre la précision et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Je chanterai l’Éternel tant que je vivrai",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Je chanterai l’Éternel tant que je vivrai ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -68087,8 +67916,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w29-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Je chanterai l’Éternel »",
-        "objective": "Jouer une pièce complète qui réutilise augmenter le tempo sans perdre la précision et les acquis précédents.",
+        "title": "Partition réelle — Je chanterai l’Éternel tant que je vivrai",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Je chanterai l’Éternel tant que je vivrai ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -69291,7 +69120,14 @@ export const pianoTrainingWeeks = [
             "Croches régulières à tempo progressif",
             "Motifs rapides mais détendus"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "provided-reference",
+          "bonusPieces": [
+            {
+              "title": "Quand j'ai vu tes mains — bonus chant",
+              "scoreImage": "assets/piano/scores/quand-jai-vu-tes-mains.png",
+              "scoreImageAlt": "Partition bonus : Quand j'ai vu tes mains — bonus chant"
+            }
+          ]
         }
       }
     ]
@@ -70592,9 +70428,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w30-a4",
-        "label": "Mélodie finale",
-        "title": "Assembler les sections",
-        "objective": "Jouer une mélodie développée qui combine enchaîner plusieurs textures dans un seul morceau et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Yahweh se manifestera",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Yahweh se manifestera ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -71495,8 +71331,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w30-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Yahweh se manifestera »",
-        "objective": "Jouer une pièce complète qui réutilise enchaîner plusieurs textures dans un seul morceau et les acquis précédents.",
+        "title": "Partition réelle — Yahweh se manifestera",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Yahweh se manifestera ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -72699,7 +72535,14 @@ export const pianoTrainingWeeks = [
             "Rythmes variés sur plusieurs phrases",
             "Basse, accords puis arpèges"
           ],
-          "scoreStatus": "provided-reference"
+          "scoreStatus": "provided-reference",
+          "bonusPieces": [
+            {
+              "title": "Blessed Be Your Name — bonus",
+              "scoreImage": "assets/piano/scores/blessed-be-your-name.png",
+              "scoreImageAlt": "Partition bonus : Blessed Be Your Name — bonus"
+            }
+          ]
         }
       }
     ]
@@ -73908,9 +73751,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w31-a4",
-        "label": "Mélodie finale",
-        "title": "Déplacer la couleur",
-        "objective": "Jouer une mélodie développée qui combine reconnaître une progression et la déplacer dans une autre tonalité et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Nous croyons",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Nous croyons ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -74547,8 +74390,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w31-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Nous croyons »",
-        "objective": "Jouer une pièce complète qui réutilise reconnaître une progression et la déplacer dans une autre tonalité et les acquis précédents.",
+        "title": "Partition réelle — Nous croyons",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Nous croyons ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",
@@ -76676,9 +76519,9 @@ export const pianoTrainingWeeks = [
       },
       {
         "id": "w32-a4",
-        "label": "Mélodie finale",
-        "title": "Répétition générale",
-        "objective": "Jouer une mélodie développée qui combine réunir lecture, rythme, accompagnement, accords et expression et les acquis précédents.",
+        "label": "Préparation du morceau",
+        "title": "Préparation — Oh ! viens et vois",
+        "objective": "Préparer les gestes, le rythme et la lecture nécessaires pour jouer « Oh ! viens et vois ».",
         "instructions": [
           "Découpe en phrases de 4 mesures.",
           "Garde une pulsation continue.",
@@ -77579,8 +77422,8 @@ export const pianoTrainingWeeks = [
       {
         "id": "w32-a5",
         "label": "Morceau / chant de la semaine",
-        "title": "Étude complète avant « Oh ! viens et vois »",
-        "objective": "Jouer une pièce complète qui réutilise réunir lecture, rythme, accompagnement, accords et expression et les acquis précédents.",
+        "title": "Partition réelle — Oh ! viens et vois",
+        "objective": "Appliquer l’ensemble des acquis de la semaine dans « Oh ! viens et vois ».",
         "instructions": [
           "Travaille par blocs de 4 mesures.",
           "Utilise les modes main droite / main gauche avant les deux mains.",

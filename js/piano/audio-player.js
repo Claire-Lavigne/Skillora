@@ -111,23 +111,16 @@ function noteDurationFromBeat(beatSeconds, ratio = 0.9, min = 0.55, max = 1.8) {
   return clamp(beatSeconds * ratio, min, max);
 }
 
-function scheduleMetronome(startTime, totalBeats, beatSeconds, countInBeats = 0, signature = "4/4") {
+function playMetronomeClick(beatIndex = 0, signature = "4/4") {
   if (!Tone || !metronomeSynth) return;
-
   const beatsPerMeasure = Math.max(1, Number((signature || "4/4").split("/")[0]) || 4);
-  const countInStart = startTime - countInBeats * beatSeconds;
-  const clickCount = Math.max(0, Math.ceil(countInBeats + totalBeats));
-
-  for (let i = 0; i < clickCount; i += 1) {
-    const time = countInStart + i * beatSeconds;
-    const isAccent = i % beatsPerMeasure === 0;
-    metronomeSynth.triggerAttackRelease(
-      isAccent ? "C6" : "A5",
-      isAccent ? "16n" : "32n",
-      time,
-      isAccent ? 0.58 : 0.38
-    );
-  }
+  const isAccent = beatIndex % beatsPerMeasure === 0;
+  metronomeSynth.triggerAttackRelease(
+    isAccent ? "C6" : "A5",
+    isAccent ? "16n" : "32n",
+    Tone.now(),
+    isAccent ? 0.58 : 0.38
+  );
 }
 
 export async function preparePiano() {
@@ -151,6 +144,7 @@ export function stopPlayback() {
 
   try {
     sampler?.releaseAll?.();
+    metronomeSynth?.triggerRelease?.();
   } catch (_) {
     // L'arrêt visuel reste prioritaire si le navigateur refuse une libération audio.
   }
@@ -304,7 +298,7 @@ export async function playTimeline(timelineRows, bpm = 60, {
   const token = ++playbackToken;
   const safeBpm = clamp(bpm * speed, 25, 220);
   const beatSeconds = 60 / safeBpm;
-  const startTime = Tone.now() + Math.max(0.08, countInBeats * beatSeconds);
+  const beatMs = beatSeconds * 1000;
 
   const soundingRows = timelineRows.filter(row => {
     const event = row.event;
@@ -313,21 +307,6 @@ export async function playTimeline(timelineRows, bpm = 60, {
     return notes.length > 0;
   });
 
-  // L'audio est planifié avec la durée musicale complète de chaque événement.
-  soundingRows.forEach((row, index) => {
-    const event = row.event;
-    const notes = event.type === "chord" ? (event.pitches || []) : [event.pitch].filter(Boolean);
-    const duration = Math.max(0.08, row.durationBeats * beatSeconds);
-
-    instrument.triggerAttackRelease(
-      notes,
-      duration,
-      startTime + row.startBeat * beatSeconds,
-      naturalVelocity(index, notes.length > 1 ? 0.61 : 0.72)
-    );
-  });
-
-  // Les moments pédagogiques restent fondés sur les DÉBUTS d'événements.
   const groupedStarts = new Map();
   timelineRows.forEach(row => {
     const key = row.startBeat.toFixed(6);
@@ -339,27 +318,28 @@ export async function playTimeline(timelineRows, bpm = 60, {
     .map(events => ({ startBeat: events[0].startBeat, events }))
     .sort((a, b) => a.startBeat - b.startBeat);
 
-  // Pour l'animation du clavier, on crée aussi une frontière à CHAQUE FIN de note.
-  // Cela permet de maintenir une ronde pendant 4 temps même si l'autre main
-  // joue plusieurs événements pendant ce temps.
-  const boundarySet = new Set([0]);
-  timelineRows.forEach(row => {
-    boundarySet.add(Number(row.startBeat.toFixed(6)));
-    boundarySet.add(Number((row.startBeat + row.durationBeats).toFixed(6)));
-  });
-
-  const boundaries = [...boundarySet].sort((a, b) => a - b);
   const totalBeats = timelineRows.reduce(
     (max, row) => Math.max(max, row.startBeat + row.durationBeats),
     0
   );
 
+  // Toutes les frontières utiles : débuts, fins et pulsations du métronome.
+  const boundarySet = new Set([0, Number(totalBeats.toFixed(6))]);
+  timelineRows.forEach(row => {
+    boundarySet.add(Number(row.startBeat.toFixed(6)));
+    boundarySet.add(Number((row.startBeat + row.durationBeats).toFixed(6)));
+  });
   if (metronome) {
-    scheduleMetronome(startTime, totalBeats, beatSeconds, countInBeats, timeSignature);
+    for (let beat = 0; beat <= Math.ceil(totalBeats); beat += 1) {
+      boundarySet.add(Number(beat.toFixed(6)));
+    }
   }
+  const boundaries = [...boundarySet].sort((a, b) => a - b);
 
+  // Compte à rebours. Rien n'est planifié à l'avance : Stop peut donc tout arrêter immédiatement.
   for (let count = 0; count < countInBeats; count += 1) {
     if (token !== playbackToken) return;
+    if (metronome) playMetronomeClick(count, timeSignature);
     onStep?.({ countIn: true, count: count + 1, notes: [], events: [] }, -1);
     onVisualState?.({
       beat: -countInBeats + count,
@@ -367,7 +347,7 @@ export async function playTimeline(timelineRows, bpm = 60, {
       activeEvents: [],
       countIn: true
     });
-    await wait(beatSeconds * 1000);
+    await wait(beatMs);
   }
 
   const playbackStartMs = performance.now();
@@ -376,12 +356,30 @@ export async function playTimeline(timelineRows, bpm = 60, {
   for (const beat of boundaries) {
     if (token !== playbackToken) return;
 
-    const targetMs = beat * beatSeconds * 1000;
+    const targetMs = beat * beatMs;
     const elapsed = performance.now() - playbackStartMs;
     if (targetMs > elapsed) await wait(targetMs - elapsed);
     if (token !== playbackToken) return;
 
-    // Une note est visuellement active de son début inclus à sa fin exclue.
+    // Joue uniquement les événements qui commencent MAINTENANT.
+    // Aucun événement futur n'est mis en file d'attente, donc Stop est réellement immédiat.
+    const startingRows = soundingRows.filter(row => Math.abs(row.startBeat - beat) < 0.000001);
+    startingRows.forEach((row, index) => {
+      const event = row.event;
+      const notes = event.type === "chord" ? (event.pitches || []) : [event.pitch].filter(Boolean);
+      const duration = Math.max(0.08, row.durationBeats * beatSeconds);
+      instrument.triggerAttackRelease(
+        notes,
+        duration,
+        Tone.now(),
+        naturalVelocity(index, notes.length > 1 ? 0.61 : 0.72)
+      );
+    });
+
+    if (metronome && Math.abs(beat - Math.round(beat)) < 0.000001 && beat < totalBeats) {
+      playMetronomeClick(Math.round(beat), timeSignature);
+    }
+
     const activeRows = soundingRows.filter(row => {
       const rowEnd = row.startBeat + row.durationBeats;
       return row.startBeat <= beat + 0.000001 && rowEnd > beat + 0.000001;
@@ -401,7 +399,6 @@ export async function playTimeline(timelineRows, bpm = 60, {
       countIn: false
     });
 
-    // onStep n'est déclenché que lorsqu'un nouvel événement commence à cette frontière.
     while (
       startIndex < startMoments.length &&
       Math.abs(startMoments[startIndex].startBeat - beat) < 0.000001
@@ -412,25 +409,20 @@ export async function playTimeline(timelineRows, bpm = 60, {
         if (e.type === "rest") return [];
         return e.type === "chord" ? (e.pitches || []) : [e.pitch].filter(Boolean);
       });
-
       onStep?.({ ...moment, notes, countIn: false }, startIndex);
       startIndex += 1;
     }
   }
 
-  const elapsed = performance.now() - playbackStartMs;
-  const remaining = totalBeats * beatSeconds * 1000 - elapsed;
-  if (remaining > 0) await wait(remaining);
-
-  // État final : toutes les touches sont relâchées.
+  if (token !== playbackToken) return;
+  sampler?.releaseAll?.();
   onVisualState?.({
     beat: totalBeats,
     activeNotes: [],
     activeEvents: [],
     countIn: false
   });
-
-  if (token === playbackToken) onDone?.();
+  onDone?.();
 }
 
 export const pianoSoundCredits = {
