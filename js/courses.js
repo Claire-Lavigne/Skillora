@@ -1,5 +1,5 @@
 import { shopifyCourse } from "./courses/shopify.js";
-import { pianoCourse } from "./courses/piano.js";
+import { pianoCourse } from "./courses/piano.js?v=20260930-final";
 import { wordpressCourse } from "./courses/wordpress.js";
 import { googleWorkspaceCourse } from "./courses/google-workspace.js";
 import { officeCourse } from "./courses/office.js";

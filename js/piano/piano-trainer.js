@@ -1,7 +1,7 @@
 import { createPianoKeyboard, noteLabelFr } from "./piano-keyboard.js";
 import { preparePiano, playTimeline, stopPlayback } from "./audio-player.js";
 import { connectMidi } from "./midi-input.js";
-import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js?v=20260929-cleanup2";
+import { renderScore, setScoreActiveEvents, clearScoreActiveEvents } from "./score-renderer.js?v=20260930-final";
 import { timelineMoments, timelineNotes, timelineEventRows } from "./music-model.js";
 
 function prettyMoment(moment) {

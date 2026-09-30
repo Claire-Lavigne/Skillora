@@ -15,8 +15,8 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
 
 import { firebaseConfig } from "./firebase-config.js";
-import { courses, getCourseById } from "./courses.js";
-import { mountPianoStageTrainer } from "./piano/piano-trainer.js?v=20260929-cleanup2";
+import { courses, getCourseById } from "./courses.js?v=20260930-final";
+import { mountPianoStageTrainer } from "./piano/piano-trainer.js?v=20260930-final";
 
 const firebaseConfigured = !Object.values(firebaseConfig).some(value =>
   String(value).startsWith("REMPLACE_")
@@ -114,10 +114,8 @@ function mountCourseTools(course) {
 
 
 function isReferenceOnlyPianoStage(stage) {
-  return Boolean(
-    stage?.song?.scoreImage &&
-    stage?.song?.interactiveStatus === "preparation-technique"
-  );
+  // Toutes les étapes piano disposent désormais d'une portée customisée.
+  return false;
 }
 
 function pianoProgressId(stage, weekIndex, stageIndex) {
@@ -228,20 +226,11 @@ function makePianoStage(stage, weekIndex, stageIndex, weekMeta = null, songStage
   card.dataset.pianoStage = stageIndex;
   card.open = stageIndex === 0;
 
-  const allBonusPieces = (stage.song?.bonusPieces || []).filter(piece => piece?.scoreImage);
-  const continuationPages = allBonusPieces.filter(piece => /page\s*\d+/i.test(`${piece.title || ""} ${piece.scoreImageAlt || ""}`));
-  const extraBonusPieces = allBonusPieces.filter(piece => !continuationPages.includes(piece));
-  const shouldShowSourceScore = Boolean(stage.song?.scoreImage) && !(
-    stage.song?.hideSourceImageWhenTranscribed &&
-    stage.song?.interactiveFidelity === "transcription-complete"
-  );
-  const scorePages = shouldShowSourceScore
-    ? [{
-        title: stage.song.scoreImageAlt || stage.song.title || stage.title || "Partition",
-        scoreImage: stage.song.scoreImage,
-        scoreImageAlt: stage.song.scoreImageAlt || `Partition de ${stage.song.title || stage.title}`
-      }, ...continuationPages]
-    : [];
+  // Les images des partitions fournies restent archivées dans /assets pour la
+  // vérification de fidélité, mais l'interface d'apprentissage n'affiche plus
+  // de « partition papier ». La portée VexFlow est désormais la surface de travail.
+  const scorePages = [];
+  const extraBonusPieces = [];
 
   const targetSongTitle = songStage?.song?.title || stage.song?.title || "";
   const practiceParts = stage.label === "Préparation de la partition"

@@ -288,22 +288,36 @@ export async function renderScore(container, activity, {
         group.events.push(event);
       });
 
-      const y1 = stave.getBottomLineY() + 26;
-      const y2 = y1 + 17;
+      // Les aides sont placées sur plusieurs lignes lorsque deux événements
+      // sont trop proches horizontalement. Cela évite les textes superposés
+      // sur les accords, les voix multiples et les passages de croches.
+      helpGroups.sort((a,b) => a.x - b.x);
+      const lanes = [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY];
+      const baseY = stave.getBottomLineY() + 25;
+      const laneHeight = 16;
       const chordY = stave.getYForLine(0) - 14;
 
       helpGroups.forEach(group => {
         const pitches = [...new Set(group.events.flatMap(event => displayEventPitches(event).map(noteLabelFr)))];
         const fingers = [...new Set(group.events.flatMap(event => eventFingers(event).map(String)))];
         const chordNames = [...new Set(group.events.map(event => event.chordName).filter(Boolean))];
+        const noteText = pitches.join("·");
+        const fingerText = fingers.join("·");
+        const approxWidth = Math.max(18, noteText.length * 6.2, fingerText.length * 5.2);
+        const left = group.x - approxWidth / 2 - 4;
+        let lane = lanes.findIndex(lastRight => left > lastRight + 6);
+        if (lane < 0) lane = lanes.indexOf(Math.min(...lanes));
+        lanes[lane] = group.x + approxWidth / 2 + 4;
+
         if (chordNames.length) {
           svg.appendChild(svgNode("text", {x:group.x,y:chordY,"text-anchor":"middle",class:"score-chord-name"}, chordNames.join(" / ")));
         }
         if (showNoteNames && pitches.length) {
-          svg.appendChild(svgNode("text", {x:group.x,y:y1,"text-anchor":"middle",class:"score-help score-help--note"}, pitches.join(" + ")));
+          svg.appendChild(svgNode("text", {x:group.x,y:baseY + lane * laneHeight,"text-anchor":"middle",class:"score-help score-help--note"}, noteText));
         }
         if (showFingers && fingers.length) {
-          svg.appendChild(svgNode("text", {x:group.x,y:y2,"text-anchor":"middle",class:"score-help score-help--finger"}, fingers.join("·")));
+          const fingerY = baseY + lane * laneHeight + (showNoteNames ? 13 : 0);
+          svg.appendChild(svgNode("text", {x:group.x,y:fingerY,"text-anchor":"middle",class:"score-help score-help--finger"}, fingerText));
         }
       });
     });
