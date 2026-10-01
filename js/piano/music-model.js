@@ -145,6 +145,11 @@ export function timelineEventRows(timeline) {
         });
       });
     });
+
+    // Avance le curseur global après chaque mesure. Sans cette ligne,
+    // toutes les mesures redémarrent au temps 0 et leurs notes sont
+    // superposées pendant la lecture audio.
+    measureStart += capacity;
   });
 
   if (timeline.swing) {

@@ -16690,211 +16690,96 @@ export const pianoTrainingWeeks = [
           "accompaniment": "sus4, maj7, m7 et transposition"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Même fonction, autre tonalité",
+          "engine": "timeline-v3",
+          "title": "Nous croyons · Fa♯m → Mi4 → Mi",
           "tempo": 60,
           "staff": "grand",
           "measuresPerSystem": 2,
+          "staffLabels": {
+                    "treble": "Extrait de la transcription source",
+                    "bass": "Accompagnement pédagogique — main gauche"
+          },
           "timeline": {
-            "timeSignature": "4/4",
-            "measures": [
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "8",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
+                    "timeSignature": "4/4",
+                    "keySignature": "A",
+                    "measures": [
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#4",
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q",
+                                                            "chordName": "Esus4"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "G#4",
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "A2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "Esus4"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              }
                     ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "E3",
-                      "G3",
-                      "B3",
-                      "D4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "E3",
-                      "G3",
-                      "B3",
-                      "D4"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3",
-                      "B3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3",
-                      "B3"
-                    ],
-                    "duration": "h",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ]
-              }
-            ]
           }
-        },
+},
         "lesson": {
           "explanation": "Un accord sus4 remplace temporairement la tierce par la quarte. La quarte redescend ensuite vers la tierce : c’est la résolution qui donne son effet au sus4.",
           "example": "Esus4 = Mi–La–Si, puis E = Mi–Sol♯–Si. Ne relâche pas tout : fais seulement bouger La vers Sol♯."
@@ -16916,537 +16801,96 @@ export const pianoTrainingWeeks = [
           "accompaniment": "sus4, maj7, m7 et transposition"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Progression en Do puis en Sol",
+          "engine": "timeline-v3",
+          "title": "Nous croyons · La → La4 → La",
           "tempo": 62,
           "staff": "grand",
           "measuresPerSystem": 2,
+          "staffLabels": {
+                    "treble": "Extrait de la transcription source",
+                    "bass": "Accompagnement pédagogique — main gauche"
+          },
           "timeline": {
-            "timeSignature": "4/4",
-            "measures": [
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
+                    "timeSignature": "4/4",
+                    "keySignature": "A",
+                    "measures": [
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "w",
+                                                            "chordName": "A"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "A"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D5",
+                                                            "duration": "q",
+                                                            "chordName": "Asus4"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q",
+                                                            "chordName": "A"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "D3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "Asus4"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "A"
+                                                  }
+                                        ]
+                              }
                     ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "E3",
-                      "G3",
-                      "B3",
-                      "D4"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "E3",
-                      "G3",
-                      "B3",
-                      "D4"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3",
-                      "B3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3",
-                      "B3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F#3",
-                      "A3",
-                      "C4"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "D3",
-                      "F#3",
-                      "A3",
-                      "C4"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "E3",
-                      "G3",
-                      "B3",
-                      "D4"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "E3",
-                      "G3",
-                      "B3",
-                      "D4"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3",
-                      "B3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "C3",
-                      "E3",
-                      "G3",
-                      "B3"
-                    ],
-                    "duration": "q",
-                    "fingers": [
-                      5,
-                      3,
-                      1,
-                      1
-                    ]
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "w",
-                    "finger": 1
-                  }
-                ]
-              }
-            ]
           }
-        }
+}
       },
       {
         "id": "w31-a3",
@@ -17464,413 +16908,233 @@ export const pianoTrainingWeeks = [
           "accompaniment": "sus4, maj7, m7 et transposition"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Accords enrichis sans grands déplacements",
-          "tempo": 64,
+          "engine": "timeline-v3",
+          "title": "Nous croyons · changement 2/4 → 4/4 et finale",
+          "tempo": 60,
           "staff": "grand",
           "measuresPerSystem": 2,
+          "staffLabels": {
+                    "treble": "Extrait de la transcription source",
+                    "bass": "Accompagnement pédagogique — main gauche"
+          },
           "timeline": {
-            "timeSignature": "4/4",
-            "measures": [
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "h",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
+                    "timeSignature": "4/4",
+                    "keySignature": "A",
+                    "measures": [
+                              {
+                                        "timeSignature": "2/4",
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q",
+                                                            "chordName": "F#m"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "h",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "timeSignature": "4/4",
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "B4",
+                                                            "duration": "w",
+                                                            "chordName": "E",
+                                                            "tieToNext": true
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "B4",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "B4",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D5",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "8",
+                                                            "chordName": "F#"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "B4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "hd"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A#2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "rest",
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "B4",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D5",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "8",
+                                                            "chordName": "F#"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "B4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "hd",
+                                                            "tieToNext": true
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A#2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "w",
+                                                            "chordName": "F#"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A#2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#"
+                                                  }
+                                        ]
+                              }
                     ]
-                  }
-                ]
-              }
-            ]
           }
-        }
+}
       },
       {
         "id": "w31-a4",
@@ -17888,627 +17152,571 @@ export const pianoTrainingWeeks = [
           "accompaniment": "sus4, maj7, m7 et transposition"
         },
         "practice": {
-          "engine": "timeline-v2",
-          "title": "Déplacer la couleur",
+          "engine": "timeline-v3",
+          "title": "Nous croyons · refrain, mesures 19 à 34",
           "tempo": 66,
           "staff": "grand",
           "measuresPerSystem": 2,
+          "staffLabels": {
+                    "treble": "Extrait de la transcription source",
+                    "bass": "Accompagnement pédagogique — main gauche"
+          },
           "timeline": {
-            "timeSignature": "4/4",
-            "measures": [
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "8",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "qd",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "h",
-                    "finger": 2
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "h",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "h",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "8",
-                    "finger": 5
-                  },
-                  {
-                    "type": "rest",
-                    "duration": "8"
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "q",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "D5",
-                    "duration": "qd",
-                    "finger": 2
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E5",
-                    "duration": "8",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "G2",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B2",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "D3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "F#5",
-                    "duration": "q",
-                    "finger": 4
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G5",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "h",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "A4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "B4",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "C5",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "note",
-                    "pitch": "C3",
-                    "duration": "q",
-                    "finger": 5
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "E3",
-                    "duration": "q",
-                    "finger": 3
-                  },
-                  {
-                    "type": "note",
-                    "pitch": "G3",
-                    "duration": "q",
-                    "finger": 1
-                  }
-                ]
-              },
-              {
-                "treble": [
-                  {
-                    "type": "note",
-                    "pitch": "G4",
-                    "duration": "w",
-                    "finger": 5
-                  }
-                ],
-                "bass": [
-                  {
-                    "type": "chord",
-                    "pitches": [
-                      "G2",
-                      "B2",
-                      "D3"
-                    ],
-                    "duration": "w",
-                    "fingers": [
-                      5,
-                      3,
-                      1
+                    "timeSignature": "4/4",
+                    "keySignature": "A",
+                    "measures": [
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#4",
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q",
+                                                            "chordName": "Esus4"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "G#4",
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "A2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "Esus4"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "q",
+                                                            "chordName": "F#m"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "G#4",
+                                                            "duration": "8",
+                                                            "chordName": "E"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D4",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "h",
+                                                            "chordName": "F#m"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "h",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#4",
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q",
+                                                            "chordName": "Esus4"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "G#4",
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "A2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "Esus4"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "G#4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D4",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "w",
+                                                            "chordName": "A"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "A"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D5",
+                                                            "duration": "q",
+                                                            "chordName": "Asus4"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q",
+                                                            "chordName": "A"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "D3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "Asus4"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "A"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q",
+                                                            "chordName": "E"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "G#4",
+                                                            "duration": "8"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "F#4",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "E2",
+                                                                      "G#2",
+                                                                      "B2"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "E"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "w",
+                                                            "chordName": "A"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "A"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "D5",
+                                                            "duration": "q",
+                                                            "chordName": "Asus4"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q",
+                                                            "chordName": "A"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "h"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "D3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "Asus4"
+                                                  },
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "A2",
+                                                                      "C#3",
+                                                                      "E3"
+                                                            ],
+                                                            "duration": "q",
+                                                            "chordName": "A"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "w",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              },
+                              {
+                                        "timeSignature": "2/4",
+                                        "treble": [
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "A4",
+                                                            "duration": "q",
+                                                            "chordName": "F#m"
+                                                  },
+                                                  {
+                                                            "type": "note",
+                                                            "pitch": "C#5",
+                                                            "duration": "q"
+                                                  }
+                                        ],
+                                        "bass": [
+                                                  {
+                                                            "type": "chord",
+                                                            "pitches": [
+                                                                      "F#2",
+                                                                      "A2",
+                                                                      "C#3"
+                                                            ],
+                                                            "duration": "h",
+                                                            "chordName": "F#m"
+                                                  }
+                                        ]
+                              }
                     ]
-                  }
-                ]
-              }
-            ]
           }
-        }
+}
       },
       {
         "id": "w31-a5",
@@ -18540,807 +17748,1539 @@ export const pianoTrainingWeeks = [
                     "keySignature": "A",
                     "measures": [
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "F#m"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "Esus4"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "q",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "h"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "A2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "Esus4"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "F#m"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "h",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "h"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "h",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "F#m"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "Esus4"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "q",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "h"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "A2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "Esus4"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "E4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "E4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "F#m"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "F#4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "h",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "h"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "h",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "A"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "C#3",
-                                                                      "E3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "A"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "B4",
-                                                            "duration": "q",
-                                                            "chordName": "Asus4"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "B4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "A"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "C#3",
-                                                                      "E3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
                                                             ],
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "D3",
-                                                                      "E3"
-                                                            ],
-                                                            "duration": "h",
-                                                            "chordName": "Asus4"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "C#3",
-                                                                      "E3"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "A"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "D3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "F#m"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "B4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "h",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "h"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "h",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "A"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "C#3",
-                                                                      "E3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "A"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "B4",
-                                                            "duration": "q",
-                                                            "chordName": "Asus4"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "B4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "A"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "C#3",
-                                                                      "E3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
                                                             ],
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "D3",
-                                                                      "E3"
-                                                            ],
-                                                            "duration": "h",
-                                                            "chordName": "Asus4"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "A2",
-                                                                      "C#3",
-                                                                      "E3"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "A"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "D3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q"
-                                                  },
-                                                  {
-                                                            "type": "rest",
-                                                            "duration": "8"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "G#4",
-                                                            "duration": "8"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "F#m"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "timeSignature": "2/4",
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "B4",
-                                                            "duration": "q",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "F#2",
-                                                                      "A2",
-                                                                      "C#3"
+                                                            "timeSignature": "2/4",
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "q",
-                                                            "chordName": "F#m"
-                                                  },
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
-                                                            ],
-                                                            "duration": "q",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "timeSignature": "4/4",
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "w",
-                                                            "chordName": "E",
-                                                            "tieToNext": true
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
+                                                            "timeSignature": "4/4",
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E",
+                                                                                                                        "tieToNext": true
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
                               },
                               {
-                                        "treble": [
-                                                  {
-                                                            "type": "note",
-                                                            "pitch": "A4",
-                                                            "duration": "w",
-                                                            "chordName": "E"
-                                                  }
-                                        ],
-                                        "bass": [
-                                                  {
-                                                            "type": "chord",
-                                                            "pitches": [
-                                                                      "E2",
-                                                                      "G#2",
-                                                                      "B2"
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
                                                             ],
-                                                            "duration": "w",
-                                                            "chordName": "E"
-                                                  }
-                                        ]
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#4",
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8",
+                                                                                                                        "chordName": "E"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "D4",
+                                                                                                                        "duration": "q"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#4",
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Esus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "D4",
+                                                                                                                        "duration": "q"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "D5",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "D3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "G#4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "F#4",
+                                                                                                                        "duration": "q"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "D5",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "D3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "Asus4"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3",
+                                                                                                                                                      "E3"
+                                                                                                                        ],
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "A"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "timeSignature": "2/4",
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "A4",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "F#m"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "q"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "h",
+                                                                                                                        "chordName": "F#m"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "timeSignature": "4/4",
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E",
+                                                                                                                        "tieToNext": true
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "D5",
+                                                                                                                        "duration": "q"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "8",
+                                                                                                                        "chordName": "F#"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "hd"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A#2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "rest",
+                                                                                                                        "duration": "q",
+                                                                                                                        "chordName": "E"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "q"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "D5",
+                                                                                                                        "duration": "q"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "E2",
+                                                                                                                                                      "G#2",
+                                                                                                                                                      "B2"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "E"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "8",
+                                                                                                                        "chordName": "F#"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "B4",
+                                                                                                                        "duration": "8"
+                                                                                          },
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "hd",
+                                                                                                                        "tieToNext": true
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A#2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#"
+                                                                                          }
+                                                            ]
+                              },
+                              {
+                                                            "treble": [
+                                                                                          {
+                                                                                                                        "type": "note",
+                                                                                                                        "pitch": "C#5",
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#"
+                                                                                          }
+                                                            ],
+                                                            "bass": [
+                                                                                          {
+                                                                                                                        "type": "chord",
+                                                                                                                        "pitches": [
+                                                                                                                                                      "F#2",
+                                                                                                                                                      "A#2",
+                                                                                                                                                      "C#3"
+                                                                                                                        ],
+                                                                                                                        "duration": "w",
+                                                                                                                        "chordName": "F#"
+                                                                                          }
+                                                            ]
                               }
-                    ]
+]
           }
 },
         "song": {
           "title": "Nous croyons",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords.",
           "requiredSkills": [
             "Lire accords enrichis et altérations",
             "Même motif dans plusieurs tonalités",
@@ -19349,8 +19289,8 @@ export const pianoTrainingWeeks = [
           "scoreStatus": "partition-fournie-reference",
           "scoreImage": "assets/piano/scores/nous-croyons.png",
           "scoreImageAlt": "Partition fournie de Nous croyons",
-          "interactiveStatus": "transcription-en-cours",
-          "transcriptionProgress": "18/40",
+          "interactiveStatus": "transcription-complete",
+          "transcriptionProgress": "40/40",
           "sourceIsCanonical": true,
           "hideSourceImageWhenTranscribed": true
         }
@@ -19365,7 +19305,7 @@ export const pianoTrainingWeeks = [
         "Lire une armure avec plusieurs dièses"
       ],
       "dexterity": "Alterner 4e→3e dans Esus4/E et Asus4/A",
-      "scorePreparation": "Boucles F#m–E–A avec suspensions"
+      "scorePreparation": "Extraits réels de « Nous croyons » : Fa♯m–Mi4–Mi, La–La4–La, changement 2/4→4/4 et refrain"
     }
   },
   {
@@ -21835,7 +21775,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Je chanterai l’Éternel tant que je vivrai",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire plus vite sans deviner",
             "Croches régulières à tempo progressif",
@@ -23725,7 +23665,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Et je chante car tu es bon",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords.",
           "requiredSkills": [
             "Lire en continu sans regarder le clavier",
             "Pulsation continue malgré les déplacements",
@@ -26084,7 +26024,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Never Ending Story",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Suivre une grille C–F–G–C",
             "Noire pointée + croche",
@@ -28256,7 +28196,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Greensleeves",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire une phrase et ses points culminants",
             "Rythmes déjà acquis avec stabilité",
@@ -29740,7 +29680,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Für Elise — Easy Version",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire Do à Do sur une octave",
             "Croches régulières",
@@ -32327,7 +32267,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Pokémon Gold/Silver/Crystal — The End",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire accords majeurs et mineur dans une même grille",
             "Croches d’accompagnement régulières",
@@ -33734,7 +33674,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Les Aristochats",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Deux lignes réellement simultanées",
             "Rythmes indépendants entre les mains",
@@ -35650,7 +35590,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Broken Vessels",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire plusieurs mesures sans s’arrêter",
             "Pulsation stable au métronome",
@@ -37287,7 +37227,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Bella's Lullaby",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire les changements harmoniques",
             "Blanches et rondes maintenues",
@@ -39540,7 +39480,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Pokémon Lullaby",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire les notes d’un accord une par une",
             "Noires puis croches d’arpège",
@@ -41584,7 +41524,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Venez le célébrer",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords.",
           "requiredSkills": [
             "Lire et reconnaître cinq notes sûres",
             "Improviser sans perdre la pulsation",
@@ -44146,7 +44086,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Pallet Town — Pokémon",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Suivre deux lignes de gamme simultanées",
             "Croches régulières aux deux mains",
@@ -46836,7 +46776,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "The Legend of Zelda Main Theme — Easy",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire Fa♯ en Sol majeur et Si♭ en Fa majeur",
             "Rythmes mélangés avec altérations",
@@ -49057,7 +48997,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Interstellar — Cornfield Chase",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Suivre deux lignes rythmiquement différentes",
             "Main droite en croches, main gauche en noires/blanches",
@@ -51321,7 +51261,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Davy Jones — Pirates of the Caribbean",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lire la mélodie sans dépendre du motif de basse",
             "Basse sur 1 et accords sur les temps suivants",
@@ -54422,7 +54362,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Tout le monde veut devenir un cat",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Repérer les fins de phrase",
             "Silences expressifs et notes longues",
@@ -56398,7 +56338,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Edward Scissorhands — Main Theme",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords.",
           "requiredSkills": [
             "Reconnaître un accord même quand sa fondamentale n’est pas en bas",
             "Accords sur blanches et noires",
@@ -58417,7 +58357,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Opening Theme — Detroit: Become Human",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords. La partition source complète fournie est la référence exacte. L’outil interactif ci-dessous est un exercice préparatoire et n’est pas présenté comme une transcription exacte du morceau.",
           "requiredSkills": [
             "Lecture à vue sur deux portées",
             "Valeurs mélangées sans arrêt",
@@ -60908,7 +60848,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Yahweh se manifestera",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords.",
           "requiredSkills": [
             "Lire mélodie, accords et arpèges dans la même pièce",
             "Rythmes variés sur plusieurs phrases",
@@ -63387,7 +63327,7 @@ export const pianoTrainingWeeks = [
         },
         "song": {
           "title": "Oh ! viens et vois",
-          "sourceNote": "La partition fournie affichée ci-dessous reste la source canonique. La portée interactive n’est considérée comme une transcription que pour les mesures réellement saisies depuis cette source.",
+          "sourceNote": "La partition fournie reste la source canonique. Les 40 mesures ont été retranscrites dans la portée interactive ; la portée de fa est un accompagnement pédagogique ajouté à partir des symboles d’accords.",
           "requiredSkills": [
             "Lecture autonome d’un arrangement complet",
             "Valeurs mélangées sur une pièce longue",
