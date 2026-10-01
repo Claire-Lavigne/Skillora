@@ -23,8 +23,9 @@ function noteLabelFr(note) {
 }
 
 function vexDuration(duration, rest = false) {
-  const dotted = duration === "hd" || duration === "qd";
-  const base = duration === "hd" ? "h" : duration === "qd" ? "q" : duration;
+  const dottedMap = { hd:"h", qd:"q", "8d":"8", "16d":"16" };
+  const dotted = Object.prototype.hasOwnProperty.call(dottedMap, duration);
+  const base = dotted ? dottedMap[duration] : duration;
   return { value:`${base}${dotted ? "d" : ""}${rest ? "r" : ""}`, dotted };
 }
 
@@ -108,7 +109,7 @@ export async function renderScore(container, activity, {
     const staffGap = staffSpecs.length >= 3 ? 108 : 146;
     const systemHeight = 74 + staffGap * staffSpecs.length;
     const height = systems * systemHeight + 20;
-    const measureCapacity = timeSignatureCapacity(signature);
+    const defaultMeasureCapacity = timeSignatureCapacity(signature);
 
     container.innerHTML = "";
     const renderer = new Renderer(container, Renderer.Backends.SVG);
@@ -166,7 +167,10 @@ export async function renderScore(container, activity, {
     const pad = 14;
     const measureWidth = (width - pad * 2) / measuresPerSystem;
 
+    let absoluteMeasureStart = 0;
     measures.forEach((measure, measureIndex) => {
+      const measureSignature = measure.timeSignature || signature;
+      const measureCapacity = timeSignatureCapacity(measureSignature);
       const systemIndex = Math.floor(measureIndex / measuresPerSystem);
       const pos = measureIndex % measuresPerSystem;
       const x = pad + pos * measureWidth;
@@ -194,6 +198,18 @@ export async function renderScore(container, activity, {
         staves.forEach(x => x.stave.setNoteStartX(shared));
       }
       staves.forEach(x => x.stave.draw());
+
+      if (firstOnSystem) {
+        staves.forEach(({ spec, stave }) => {
+          if (!spec.label) return;
+          const label = svgNode("text", {
+            x: stave.getNoteStartX(),
+            y: stave.getYForLine(0) - 24,
+            class: spec.hand === "left" ? "score-staff-label score-staff-label--pedagogic" : "score-staff-label"
+          }, spec.label);
+          context.svg?.appendChild?.(label);
+        });
+      }
 
       try {
         const top = staves[0].stave;
@@ -244,7 +260,7 @@ export async function renderScore(container, activity, {
         bottom:staves[staves.length-1].stave.getBottomLineY()+20,
         start:sharedStart,
         end:x + measureWidth - 12,
-        absoluteStart:measureIndex * measureCapacity,
+        absoluteStart:absoluteMeasureStart,
         capacity:measureCapacity
       });
     });
@@ -322,7 +338,7 @@ export async function renderScore(container, activity, {
       });
     });
 
-    container.__scoreLayout = { grids, signature, totalBeats:measures.length * measureCapacity };
+    container.__scoreLayout = { grids, signature, totalBeats:absoluteMeasureStart };
     clearScoreActiveEvents(container);
   } catch (error) {
     console.error("Erreur VexFlow :", error);

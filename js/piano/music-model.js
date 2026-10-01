@@ -3,7 +3,9 @@ export const DURATION_BEATS = Object.freeze({
   h: 2,
   q: 1,
   "8": 0.5,
+  "8d": 0.75,
   "16": 0.25,
+  "16d": 0.375,
   "32": 0.125,
   hd: 3,
   qd: 1.5
@@ -91,10 +93,10 @@ export function measureVoiceBeats(events = []) {
 export function validateTimeline(timeline) {
   const problems = [];
   const signature = timeline.timeSignature || "4/4";
-  const capacity = timeSignatureCapacity(signature);
   const staves = timelineStaves(timeline);
 
   (timeline.measures || []).forEach((measure, measureIndex) => {
+    const capacity = timeSignatureCapacity(measure.timeSignature || signature);
     staves.forEach(staff => {
       const voices = measureStaffVoices(measure, staff.id);
       voices.forEach((voice, voiceIndex) => {
@@ -108,17 +110,17 @@ export function validateTimeline(timeline) {
     });
   });
 
-  return { ok: problems.length === 0, problems, capacity };
+  return { ok: problems.length === 0, problems, capacity: timeSignatureCapacity(signature) };
 }
 
 export function timelineEventRows(timeline) {
   const signature = timeline.timeSignature || "4/4";
-  const capacity = timeSignatureCapacity(signature);
   const staves = timelineStaves(timeline);
   const rows = [];
+  let measureStart = 0;
 
   (timeline.measures || []).forEach((measure, measureIndex) => {
-    const measureStart = measureIndex * capacity;
+    const capacity = timeSignatureCapacity(measure.timeSignature || signature);
 
     staves.forEach((staff, staffIndex) => {
       measureStaffVoices(measure, staff.id).forEach((voice, voiceIndex) => {
